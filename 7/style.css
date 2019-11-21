@@ -4,7 +4,7 @@
 }
 
 body {
-   object-fit: cover;
+   ;
 }
 
 .cite {
@@ -17,7 +17,7 @@ flex-direction:colum;
 
 .header {
    z-index: 1;
-   width: 720px;
+   width: 100%;
    /*
    background-image: url(imgg3/BAG2.png);
    background-repeat: no-repeat;
