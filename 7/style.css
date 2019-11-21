@@ -36,6 +36,7 @@ flex-direction:colum;
    background: #FFF0DF;
    border: 2px solid rgba(70, 54, 36, 0.6);
    box-sizing: border-box;
+  display: flex;
 }
 
 .footer {
@@ -187,6 +188,7 @@ flex-direction:colum;
 
 .contanier-aside {
    margin: 400px auto;
+flex:1;
    justify-content: space-around;
    display: flex;
    flex-direction: row;
