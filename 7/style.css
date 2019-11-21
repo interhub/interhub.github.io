@@ -10,7 +10,8 @@ body {
 .cite {
    margin: 0 auto;
    width: 100%;
-
+display:flex;
+flex-direction:colum;
 }
 
 
@@ -35,7 +36,6 @@ body {
    background: #FFF0DF;
    border: 2px solid rgba(70, 54, 36, 0.6);
    box-sizing: border-box;
-float:left;
 }
 
 .footer {
