@@ -1,0 +1,456 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   overflow-x: hidden;
+}
+
+.cite {
+   margin: 0 auto;
+   width: 100%;
+
+}
+
+
+.header {
+   z-index: 1;
+   width: 100%;
+
+   /*
+   background-image: url(imgg3/BAG2.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-origin: padding-box;
+*/
+
+}
+
+.aside {
+   position: relative;
+   top: -1em;
+   z-index: 0;
+   width: 100%;
+   display: flex;
+
+   background: #FFF0DF;
+   border: 2px solid rgba(70, 54, 36, 0.6);
+   box-sizing: border-box;
+   /*   transition: all 0.5s ease-in;*/
+
+}
+
+.footer {
+   width: 100%;
+   height: 406px;
+   background: #262626;
+   position: relative;
+   top: -1em;
+}
+
+#log {}
+
+#bga2 {
+   width: 100%;
+   height: 100%;
+   box-shadow: 0 5px 5px 5px #000;
+
+}
+
+.bga1 {
+   width: 100%;
+   height: 100%;
+   box-shadow: 0 5px 5px 5px #000;
+
+}
+
+#logo {
+   position: absolute;
+   width: 55%;
+   margin: 16% 21%;
+
+}
+
+#ege {
+   position: absolute;
+   width: 33%;
+   margin: 0% 0%;
+   transition: width 0.2s ease-in-out,
+      margin 0.2s ease-in-out;
+   cursor: pointer;
+}
+
+#ege:hover {
+   width: 38%;
+   margin: 0% -3%;
+}
+
+#ukrop {
+   position: absolute;
+   width: 17%;
+   margin: 10% 0%;
+}
+
+#bread-b {
+   position: absolute;
+   width: 32%;
+   margin: 25% 0%;
+   z-index: 1;
+   transition: width 0.2s ease-in-out,
+      margin 0.2s ease-in-out;
+   cursor: pointer;
+}
+
+#bread-b:hover {
+   width: 37%;
+   margin: 23% -2%;
+}
+
+#meat {
+   z-index: 1;
+   position: absolute;
+   width: 33%;
+   margin: 38% 20%;
+   transition: width 0.2s ease-in-out,
+      margin 0.2s ease-in-out;
+   cursor: pointer;
+}
+
+#meat:hover {
+   width: 38%;
+   margin: 33% 17%;
+}
+
+#peper {
+   z-index: 1;
+   position: absolute;
+   width: 25%;
+   margin: 7% 40%;
+   transform: rotate(10deg);
+   transition: width 0.1s ease-in-out,
+      margin 0.1s ease-in-out;
+
+}
+
+#peper:hover {
+   width: 26%;
+   margin: 7% 39.5%;
+}
+
+#ows {
+   position: absolute;
+   width: 35%;
+   margin: 34% 57%;
+   transition: width 0.2s ease-in-out,
+      margin 0.2s ease-in-out;
+   cursor: pointer;
+   z-index: 1;
+}
+
+#ows:hover {
+   width: 39%;
+   margin: 32% 57%;
+}
+
+#bread {
+   position: absolute;
+   width: 16%;
+   margin: 36% 84%;
+   transition: width 0.2s ease-in-out,
+      margin 0.2s ease-in-out;
+   cursor: pointer;
+}
+
+#kruasan {
+   position: absolute;
+   width: 19%;
+   margin: 14% 78%;
+   transition: transform 0.8s;
+   transition-timing-function: cubic-bezier(0, 0, 0, 1);
+   cursor: pointer;
+}
+
+#kruasan:hover {
+   transform: rotate(720deg);
+}
+
+#pop {
+   position: absolute;
+   width: 20%;
+   margin: 0% 70%;
+   transition: width 0.2s ease-in-out,
+      margin 0.2s ease-in-out;
+   cursor: pointer;
+}
+
+#pop:hover {
+   width: 25%;
+   margin: 0% 69%;
+}
+
+.contanier-aside {
+   width: 100%;
+   height: 100%;
+   margin: 0 auto;
+   flex: 1;
+   display: flex;
+   flex-direction: row;
+   margin: 30% auto;
+   justify-content: space-around;
+   transition: all 1.5s ease-in-out;
+}
+
+
+
+.box-registr {
+   flex: 1;
+   width: 20%;
+   height: 1400px;
+   background: rgba(255, 81, 26, 0.1);
+   margin: 0 3%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+
+
+}
+
+
+
+
+.box-registr-none {
+   flex: 1;
+   height: 1400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin: 0 3%;
+
+
+}
+
+.box-r1 {
+   height: 600px;
+   background: rgba(255, 81, 26, 0.1);
+   padding: 30px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+
+
+
+
+.box-form-1 {
+   width: 100%;
+   margin-top: 80px;
+
+}
+
+h3 {
+   font-family: Yanone Kaffeesatz;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 4vw;
+   line-height: 0.7em;
+   text-align: center;
+
+   color: #20130F;
+}
+
+.box-form-3 {
+   height: 15vw
+}
+
+p {
+   font-family: Yanone Kaffeesatz;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 2vw;
+   line-height: 2vw;
+   text-align: center;
+
+   color: #20130F;
+}
+
+
+.box-form-2 {
+   margin-top: 2%;
+}
+
+.box-form-5 {
+   background: #B04233;
+   border-radius: 25px;
+   color: #FFFFFF;
+   width: 70%;
+   margin: 0 auto;
+   padding: 2%;
+   cursor: pointer;
+}
+
+.xform {
+   height: 2%;
+   width: 99%;
+   margin: 1% auto;
+   padding: 1% 0;
+   font-size: 1em;
+   font-family: Yanone Kaffeesatz;
+   font-style: normal;
+   font-weight: normal;
+
+   border-radius: 30px;
+}
+
+.x1form {
+   background-color: #e3e3e3;
+   height: 2%;
+   width: 99%;
+   margin: 2% auto;
+   padding: 5% 0;
+   font-family: Yanone Kaffeesatz;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 2vw;
+   border-radius: 30px;
+}
+
+/*
+@media only screen and (max-width:1000px) {
+   .aside {
+      position: relative;
+      top: -1em;
+      z-index: 0;
+      width: 100%;
+      height: 1300px;
+      display: flex;
+
+      background: #FFF0DF;
+      border: 2px solid rgba(70, 54, 36, 0.6);
+      box-sizing: border-box;
+      transition: all 0.5s ease-in;
+
+   }
+
+   .contanier-aside {
+      width: 100%;
+      height: 100%;
+      margin: 20% auto;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      transition: all 1.5s ease-in-out;
+      justify-content: space-around;
+      box-sizing: border-box;
+      margin-bottom: 30%;
+
+   }
+
+
+
+   .box-registr {
+      flex: 1;
+      width: 94%;
+      height: 320px;
+      background: rgba(255, 81, 26, 0.1);
+      margin: 3% auto;
+   }
+
+
+
+
+   .box-registr-none {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 3% 20%;
+
+
+   }
+
+   .box-r1 {
+      height: 320px;
+      background: rgba(255, 81, 26, 0.1);
+      margin: 6% 0;
+   }
+
+   h3 {
+      font-size: 2em;
+   }
+
+
+
+   p {
+      font-size: 1em;
+   }
+
+   .x1form {
+      font-size: 0.5em
+   }
+
+
+}*/
+
+.box-r-1 {
+   width: 100%;
+
+   margin-top: 30px;
+
+
+}
+
+.box-r-2 {
+   position: absolute;
+   left: 250px;
+
+   top: 26%;
+
+   width: 20%;
+   height: 2%;
+   background-color: none;
+   flex: 2;
+   margin: 0;
+   padding: 0;
+
+}
+
+.box-r-4 {
+   margin: 0 auto;
+
+
+}
+
+.yo {
+   width: 6vw;
+   margin-top: 50px;
+   cursor: pointer;
+}
+
+.box-r-3 {
+   margin-top: 100px;
+}
+
+.box-footer-1 {
+   margin: 0 20%;
+   color: white;
+   filter: invert();
+   padding-top: 50px;
+}
+
+.box-footer-2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   margin: 20px auto;
+   color: white
+}
+
+.links {
+   filter: invert(100%);
+   margin: 20px;
+   width: 3%;
+   cursor: pointer;
+}
