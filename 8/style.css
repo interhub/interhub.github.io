@@ -212,7 +212,7 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   padding: 5%;
+   padding: 2%;
 }
 
 
@@ -306,7 +306,7 @@ p {
    border-radius: 30px;
 }
 
-@media only screen and (max-width:1300px) {
+@media only screen and (max-width:500px) {
    .aside {
       position: relative;
       top: -1em;
@@ -344,6 +344,7 @@ p {
       height: 320px;
       background: rgba(255, 81, 26, 0.1);
       margin: 3% auto;
+padding:5%;
    }
 
 
