@@ -1,0 +1,232 @@
+body {
+  background-color: rgba(200, 208, 253, 0.5);
+  color: #08805b;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  overflow-x: hidden; }
+
+.but {
+  padding-top: 5px;
+  text-align: center;
+  border-radius: 2px;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 100;
+  background-color: #172a5f;
+  border: 1.5px solid #172a5f;
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.but2 {
+  padding-top: 5px;
+  text-align: center;
+  border-radius: 2px;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 900;
+  background-color: white;
+  color: #172a5f;
+  border: 1.5px solid #172a5f;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.but:hover {
+  color: #172a5f;
+  border: 1.5px solid #172a5f;
+  font-weight: 900;
+  background-color: white; }
+
+.but2:hover {
+  color: white;
+  border: 1.5px solid #172a5f;
+  font-weight: 100;
+  background-color: #250a43; }
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  margin: auto;
+  text-align: justify;
+  text-shadow: 2px 2px 10px white; }
+
+h4 {
+  font-family: Roboto, bold;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 38px;
+  color: #0a323e;
+  margin: 0;
+  text-decoration: none; }
+
+.margin-header {
+  margin-top: 15%;
+  margin-left: 0px; }
+
+.margin-header-p {
+  margin-top: 20px;
+  margin-left: 0px; }
+
+.margin-header-b {
+  margin-top: 20px; }
+
+h1 {
+  color: #172a5f;
+  text-shadow: 0 0 4px #969696; }
+
+.button {
+  text-align: center; }
+
+.margin-left-button-2 {
+  margin-left: -12px; }
+
+.p-just-1 {
+  text-align: justify; }
+
+@media screen and (max-width: 576px) {
+  .bg {
+    background-size: 50%;
+    background-position: top right; }
+  aside {
+    background-size: 50%;
+    background-position: center right;
+    padding-bottom: 0;
+    margin: 0; } }
+
+.void {
+  width: 100%;
+  height: 100px; }
+
+.left-marg-4h {
+  margin-left: 0px; }
+
+.margin-header-2 {
+  margin-top: 10%;
+  margin-left: 0px; }
+
+.margin-header-3 {
+  margin-top: 10%;
+  margin-left: 0px; }
+
+.void2 {
+  width: 100%;
+  height: 50px; }
+
+.h1_3 {
+  text-align: right; }
+
+.margin-header-4 {
+  margin-top: 15%;
+  margin-left: 0px; }
+
+.bg4 {
+  background-image: url(/img-2/hero4.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: right top; }
+
+.void3 {
+  width: 100%;
+  height: 5%; }
+
+.mar-h-5 {
+  margin-top: 20%; }
+
+.but-width {
+  width: 90%; }
+
+.hero {
+  width: 50%;
+  position: absolute;
+  display: normal;
+  -webkit-filter: drop-shadow(2px 2px 20px #ffffac);
+  filter: drop-shadow(2px 2px 20px #ffffac); }
+
+.background-1 {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  opacity: 0.3;
+  position: fixed; }
+
+@media screen and (max-width: 2000px) {
+  .background-1 {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    opacity: 0.3;
+    position: fixed; }
+  .hero1 {
+    width: 50%;
+    right: 0;
+    top: 80px; }
+  .hero2 {
+    margin-top: 15%;
+    width: 25%;
+    right: 0; }
+  .hero3 {
+    width: 25%;
+    right: 0;
+    margin-top: -20px; }
+  .hero4 {
+    width: 50%;
+    left: 0;
+    margin-top: -33%;
+    margin-bottom: 10%; }
+  .hero5 {
+    margin-top: 10%;
+    width: 40%;
+    left: 30%; }
+  .price-margin {
+    margin-top: 30%; }
+  .margin-header-3 {
+    margin-top: 20%; } }
+
+@media screen and (max-width: 768px) {
+  .background-1 {
+    opacity: 0.3;
+    position: fixed; }
+  h1 {
+    line-height: 0.8em; }
+  .margin-header {
+    margin-top: -6%; }
+  .hero {
+    width: 50%;
+    position: relative; }
+  .hero1 {
+    left: 50%;
+    top: 5px; }
+  .hero2 {
+    width: 70%;
+    left: 30%;
+    margin-top: -20%; }
+  .hero3 {
+    margin-top: 7%;
+    width: 60%;
+    left: 20%; }
+  .hero4 {
+    width: 60%;
+    left: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%; }
+  .hero5 {
+    margin-top: 10%;
+    width: 60%;
+    left: 20%; }
+  .price-margin {
+    margin-top: 0px; } }
+
+.header-line {
+  text-decoration: underline; }
+
+.header-line-none {
+  text-decoration: none; }
