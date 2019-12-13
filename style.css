@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    color:antiquewhite;
+ }
+
+.input{
+    height: 20px;
+}
+
+p{
+    display: inline;
+    background-color: #4649ad;
+    }
+.row{
+    margin: 2px;
+    }
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px; 
+    
+}
+
+.btn_box{
+    display: inline;
+}
+
+#dell{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    font-size: 2em;
+    text-align: center;
+    }
