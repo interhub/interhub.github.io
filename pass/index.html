@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <p>Генератор паролей.</p>
+ <div class="radio">
+   <div clasd="line">
+ <input type="checkbox" id="check1" value="check">
+ <label>цифры</label>
+ </div>
+ <div class="line">
+ <input type="checkbox" id="check2" value="check">
+ <label>буквы</label>
+ </div>
+ <div class="line">
+ <input type="checkbox" id="check3" value="check">
+ <label>символы</label>
+ </div>
+ <div class="line">
+ <input type="checkbox" id="check4" value="check">
+ <label>заглавные</label>
+ </div>
+ <div class="line">
+   <input type="number" id="len" placeholder="" value="8"> 
+   <label>количество символов</label>
+ </div>
+ </div>
+  <button id="btn" class="btn" >Сгенерировать</button>
+  <ul class="box" id="box" ></ul>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
