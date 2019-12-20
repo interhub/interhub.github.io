@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+  font-weight: 900;
+  margin: 15px auto;
+  width: 230px;
+  font-size: 1.7Em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+.input{
+    height: 30px;
+    width: 70vw;
+    border-radius: 10px;
+    background: none;
+    background-color: lightgray;
+    font-size: 1.2Em;
+    font-weight: 500;
+}
+
+
+
+li{
+  list-style-type: decimal;
+    display: block;
+    background-color: lightblue;
+    font-size: 2Em;
+    font-family: sans-serif;
+    
+   /* font-variant: small-caps;*/
+   
+    color: darkblue;
+    }
+    
+.row{
+    margin: 2px;
+    }
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px; 
+    
+}
+
+.btn_box{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#dell{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    font-size: 2em;
+    text-align: center;
+    
+    }
+
+button {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 6px;
+  background: none;
+  background-color: darkslateblue;
+  color: white;
+  font-size: 1.2Em;
+  box-shadow: 0 0 5px 1px #555;
+  width: 200px;
+}
+
+body{
+  background-color:lightsteelblue;
+}
+
+#clear{
+  margin: 15px;
+}
+
+header{
+  width: 90vw;
+  margin: 0 auto;
+}
+
+li::first-line{
+  font-weight: 700;
+  color: black;
+  
+  
+}
+
+
+.box{
+  display: flex;
+  flex-direction: column-reverse;
+}
