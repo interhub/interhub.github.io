@@ -113,8 +113,8 @@ function find_num(phone, name){
 function find_result(phone, name){
     if (name==="") alert("Введите имя");
     else if (!table[name]) alert("Контакт не найден");
-    else if(table[name]) alert("Номер: "+table[name]);
-
+    else if(table[name]) alert("Номер: "+table[name]+"\n скопирован в буфер обмена");
+     nacigator.clipboard.writeText(table[name]);
 }
 
 function display_block(){
