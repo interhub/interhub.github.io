@@ -35,7 +35,8 @@ container.style.display = "none";
 
 //функции
 function empty(){
-  localStorage.clear();   
+  localStorage.clear(); 
+location.reload();  
 }
 
 
