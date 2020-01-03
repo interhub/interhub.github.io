@@ -1,0 +1,50 @@
+body {
+    font-size: 15pt;
+    height: 1500px;
+    margin:0;
+    padding:0;
+    background-color:lightgray;
+    font-family: sans-serif;
+}
+.tops{
+  height: 30px;
+}
+p{
+  padding: 0 10px 0 10px;
+}
+.scroll-box{
+  left:0;
+  top:0;
+  position: fixed;
+  height: 10px;
+  width: 100vw;
+  background-color: grey;
+}
+#scroll{
+  width:1%;
+  height: 10px;
+  background-color: darkred;
+  position: absolute;
+  
+}
+h1{
+  position: fixed;
+  background-color: darkgray;
+  width: 100vw;
+  top:-20px;
+}
+h4{
+  display:none;
+  font-weight: 800;
+  color:darkred;
+  position: fixed;
+  bottom:0;
+  left:50%;
+}
+ul{
+  list-style: square;
+ 
+}
+ul>li{
+  margin: 15px;
+}
