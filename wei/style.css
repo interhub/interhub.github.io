@@ -1,0 +1,87 @@
+body{
+  margin: 0;
+  padding:0;
+}
+*{
+  margin: 0
+}
+*:focus{
+  outline: none
+}
+h1,h2,h3,h4,h5{
+  text-align: center;
+  font-size:1.5em;
+  text-align:right;
+  padding-right: 20px;
+  margin-bottom: 40px;
+  
+}
+p,.input,button{
+  margin:5px;
+}
+
+button{
+  border-radius: 10px;
+  width:100px;
+  height:40px;
+  font-weight: 800;
+}
+nav button{
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  font-size: 7px;
+}
+input{
+  border-radius:5px;
+  width: 200px;
+  height: 50px;
+  font-size: 22px;
+  background-color: #cceeee;
+  margin-top: 10px;
+}
+.add_page p{
+  text-align: center
+}
+.menu_page{
+  display: flex;
+  flex-direction: column;
+}
+.btn_setting {
+  display: flex;
+  justify-content: space-around;
+}
+.line{
+  display: block;
+  margin: 15px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+.pushap{
+  position: fixed;
+  top: 100px;
+  right: 30%;
+  left: 20%;
+  width: 200px;
+  height: 120px;
+  background-color: lightgoldenrodyellow;
+  border-radius: 3px;
+  text-align: center;
+  line-height:0px;
+  letter-spacing: -2px;
+  font-weight:100;
+  text-shadow: 0 0 2px #000;
+  box-shadow: 0 0 5px 5px #444;
+}
+.pixel{
+  vertical-align: -40px;
+  font-size: 20px;
+  font-family: monospace;
+  word-wrap: break-word;
+}
+
+#clear{
+  position: absolute;
+  bottom: 30px;
+  background-color: red;
+}

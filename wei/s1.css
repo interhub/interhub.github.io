@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+  color: white;
+  background-color: darkred;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  background-color: gray;
+  color: lightgray;
+}
+
+button,
+.input {
+  background-color: lightcyan;
+}

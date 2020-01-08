@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  color: darkblue;
+  background-color: lightblue;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  background-color: lightskyblue;
+  color: black;
+}
+
+button,
+.input {
+  background-color: darkblue;
+  color: white;
+}

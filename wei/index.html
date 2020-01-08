@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Wei Control menu</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+
+<link id="style" rel="stylesheet" href="">
+</head>
+
+<body>
+  <nav>
+    <button id="menu">Меню</button>
+  </nav>
+  
+  <div class="menu_page">
+  <h2>Контроль веса</h2>
+  <div class="btn_setting">
+    <button id="add">Добавить измерение</button>
+  <button id="gr">Статистика</button>
+  <button id="setting">Параметры</button>
+  </div>
+  <p>При добавление измерений приложение автоматически составляет статистику и отслеживает время добавления показаний</p>
+  <ul>
+    <li>Помощь в контроле веса</li>
+    <li>Удобная статистика</li>
+    <li>Понятный интерфейс</li>
+  </ul>
+  </div>
+  
+  <div class="add_page">
+    <h2>Добавить измерение</h2>
+    <p>
+      <input type="number" placeholder="Введите вес (xx.x)" id="weight">
+    
+      <button id="add_w">Добавить</button>
+    </p>
+  </div>
+  
+  <div class="gr_page">
+    <h2>Статистика веса</h2>
+    <canvas></canvas>
+    <div class="user_weights">
+      
+    </div>
+  </div>
+  
+  <div class="setting_page">
+    <h2>Параметры приложения</h2>
+    <div class="btn_setting">
+    <button id="user_set_btn" >Сменить пользователя</button>
+    <button id="user_new_btn">Добавить пользователя</button>
+    <button id="set_theme">Сменить тему</button>
+    </div>
+    <button id="clear">Очистить данные</button>
+  </div>
+  
+  <div class="add_user">
+    <h2>Добавить пользователя</h2>
+    <input type="text" id="name" placeholder="Введите имя">
+    <button id="add_hesh">Добавить</button>
+  </div>
+  
+  <div class="set_user">
+    <h2>Сменить пользователя</h2>
+    <div class="user_box">
+      
+    </div>
+  </div>
+  
+  <div class="pushap">
+      <span class="pixel"></span>
+  </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+  <script src="setstyle.js"></script>
+</body>
+</html>

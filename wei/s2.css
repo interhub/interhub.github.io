@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  color: black;
+  background-color: white;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  background-color: whitesmoke;
+  color: darkgreen;
+}
+
+button,
+.input {
+  background-color: darkgreen;
+  color:white;
+}
