@@ -1,0 +1,22 @@
+.inp{
+  width: 200px;
+  margin: 0 auto;
+}
+input{
+  width: 180px;
+  height: 40px;
+  background-color: lightblue;
+  font-size: 1em;
+}
+button{
+  width: 100px;
+  height: 40px;
+  font-weight: 600;
+  background-color: blue;
+  color:white
+}
+p{
+  font-size: 1.2em;
+  font-weight: 700;
+  text-decoration: underline;
+}
