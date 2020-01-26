@@ -58,8 +58,10 @@ function mathsr(obj){
 
 
 function addgr(obj){
-
-info.push([`${String(obj.num)}. ${obj.name}`||"0",obj.bal,sr]);
+var n=((obj.num)==undefined)?
+"0":
+`${String(obj.num)}. ${obj.name}`;
+info.push([n,obj.bal,sr]);
 
 google.charts.load('current', { 'packages': ['corechart'] });
 google.charts.setOnLoadCallback(drawChart);
@@ -70,7 +72,7 @@ function drawChart() {
   var options = {
     title: 'Ссредний бал успеваемости',
     hAxis: { title: 'Количество студентов', titleTextStyle: { color: '#333' } },
-    vAxis: { minValue: 0 }
+    vAxis: { minValue: 0}
   };
 
   var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
