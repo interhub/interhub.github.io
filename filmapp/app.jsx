@@ -212,7 +212,7 @@ const NewFilmsAdd = (function() {
 
 
  new Filmadd(ids(),
-  "Фантастическая четверка",
+"Гений",
   69,
     ["adventure"],
     [],
