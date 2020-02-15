@@ -1,6 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+/* import React from 'react';
 
+import ReactDOM from 'react-dom';
+*/
 import Tip from "./Tip.js";
 import User from "./User.js";
 import Comment from "./Comment.js";
@@ -617,11 +618,11 @@ function Start(props) {
      if(cat==="start"){
       
      }else{
-      return (<div>
+      return (<div key={i}>
       <div id="headercat">
        <h3>{getCategory(cat)}</h3>
        </div>
-       <div key={i} id = "catstart"
+       <div id = "catstart"
        className = "d-flex flex-nowrap overflow-auto">
        {states[cat].films.map((num,n)=>{
         return <Filmboard id={num} key={n} 
@@ -665,9 +666,9 @@ function Filmobj(props){
    }} >Отправить</button>
    <div id="comments" className="text-left d-flex flex-column-reverse">
    {obj.allot.map((obt,i)=>{
-    return(<div>
+    return(<div key={i}>
     <hr/>
-     <h4 key={i}>{obt.text}</h4>
+     <h4 >{obt.text}</h4>
      <label>{obt.dlit}</label>
      <hr/>
      </div>
