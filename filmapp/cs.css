@@ -1,0 +1,147 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+
+body{
+ font-family: 'Nunito', sans-serif !important;
+ background-color: #e8f8fa !important;
+}
+
+#content{
+ position: relative;
+ top:70px;
+ width: 100vw;
+ margin: 0 auto;
+ min-height: 800px
+ 
+}
+nav{
+ position: fixed !important;
+ width: 100vw !important;
+ z-index: 20;
+ top: 0 !important
+}
+.nav-item{
+ height: 60px !important;
+ box-sizing: border-box;
+ padding: 10px;
+ transition: all 0.25s ease-in-out;
+}
+.nav-item:hover{
+ color:darkblue !important;
+ background-color: rgba(250,250,255,0.5)!important;
+ font-weight: 800;
+ font-size: 1.0em !important;
+ border-radius: 15px;
+ 
+}
+.navbar {
+ background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(56,123,152,1) 100%);
+color: white !important;
+font-weight: 600;
+}
+.collapse{
+ height: 100vh;
+ transition: all 0.1s ease-in-out;
+}
+
+.img{
+  margin: 0px 30px 0 5px;
+ font-size: 0.5em;
+ padding: 15px;
+ width: 40px;
+ height: 40px;
+ border-radius: 20px;
+ background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(131,44,189,1) 100%);
+}
+.logo{
+ display: flex;
+}
+
+.hei{
+ min-height: 800px;
+}
+
+#spins{
+ margin-top: 50vh !important;
+}
+
+#filmboard{
+ width: 70vw !important;
+ height: 400px !important;
+ max-width: 450px !important;
+ min-height: 300px !important;
+ border-radius: 15px !important;
+ background-color: #ceecea !important;
+ margin-bottom: 5px !important;
+ box-sizing: border-box !important;
+ padding: 10px !important;
+ transition: all 0.1s ease-out;
+ transform: scale(0.95,0.95);
+ box-shadow: 0 0 3px 2px darkblue;
+}
+#filmboard:active{
+ transform: scale(0.90,0.90)
+}
+#selfimgs{
+ border-radius: 10px !important;
+ object-fit: cover !important;
+    width: 150px !important;
+    height: 200px !important;
+    margin: 0 auto;
+}
+#images{
+ box-sizing: border-box !important;
+ padding: 0 50px 0 50px !important;
+ text-align: center !important;
+ width: 100% !important;
+ height: 200px !important;
+}
+
+#names>h4{
+ text-decoration: underline;
+ height: 60px !important;
+ overflow-y: scroll !important;
+}
+#names{
+}
+#rating{
+}
+
+#button{
+ width: 50px;
+ height: 50px;
+ box-sizing: border-box;
+ padding: 12px 15px;
+ position: fixed;
+ bottom:30px;
+ right: 40px;
+ border-radius: 25px;
+ background: rgba(30, 80, 174, 1.0);
+ background: -webkit-radial-gradient(top left, rgba(30, 80, 174, 1.0), rgba(255, 93, 91, 0.5));
+ transition: all 0.1 ease-in;
+ box-shadow: 2px 2px 3px gray;
+
+}
+#button:active{
+ transform: scale(1.1,1.1 )
+}
+#icon{
+ width: 100%;
+ filter: invert(100%) drop-shadow(2px 2px 2px gray) blur(0.2px)
+}
+#fru{
+ font-weight: 900;
+}
+#headercat{
+ border-radius: 20px 10px 0 0;
+ background-color: rgb(34,103,195,0.2);
+ padding-left: 20px;
+ margin: 30px 0 -10px 0 !important;
+}
+#catstart{
+ background-color: rgba(50,50,50,0.6)
+}
