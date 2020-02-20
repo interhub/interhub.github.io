@@ -1,0 +1,54 @@
+body {
+    font-size: 15pt;
+    height: 4800px;
+    background-color: white;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: fantasy;
+}
+.start>div{
+ position:fixed;
+ background-color: lightblue;
+}
+#coffe,#cake,#burger{
+ position: fixed;
+ left: 5vw;
+}
+div>p,#info{
+ display: inline;
+ position: fixed;
+}
+#txt-coffe,#txt-cake,#txt-burger{
+ background-color: lightcoral;
+ right: 10px;
+}
+pre{
+ position: fixed
+}
+@media (orientation:portrait){
+ #menu{
+  width: 80vw;
+  height: auto;
+ }
+}
+@media (orientation:landscape){
+ #menu{
+  margin-top:-50px;
+  height: 90vh;
+  width: auto;
+ }
+}
+
+#menu{
+ /*width: 80vw;*/
+ box-shadow: 0 0 50px gray;
+}
+#img{
+ position: fixed;
+ width: 100%;
+ text-align: center;
+ z-index: 20;
+}
