@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="jq.js"></script>
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+   
+   <div class="register">
+   <p>Регистрация</p>
+   <input type="text" placeholder="имя" id="names">
+  <input type="text" id="login" placeholder="логин"><br/>
+  <input type="password" id="pass" placeholder="пароль"><br/>
+  <label for="date">Дата рождения</label><br/>
+  <input type="date" id="date"><br/>
+  <button id="btn">Рагистрация</button>
+   </div>
+   <div class="in">
+    <p>Войти в аккаунт</p>
+    <input type="text" id="login-in" placeholder="логин" ><br/>
+    <input type="password" placeholder="Пароль" id="password-in"><br/>
+    <button id="btn-in">Войти</button>
+    <br/>
+    <p>Оставлять сообщения можно только зарегистрированным пользователям</p>
+   </div>
+   <div class="out">
+    <button id="out">Выйти из аккаунта</button>
+    <h3>Страница: <span id="span-name"></span></h3>
+   </div>
+   <hr/>
+   <div class="messages">
+    <p>Оставите сообщения</p>
+    <textarea></textarea><br/>
+    <button id="btn-mess">Отправить</button>
+   </div>
+   <div class="display"></div>
+  
+  </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>

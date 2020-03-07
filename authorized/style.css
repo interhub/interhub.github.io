@@ -1,0 +1,11 @@
+body {
+    font-size: 15pt;
+}
+li{
+ border:1px solid silver;
+ margin: 5px;
+ padding: 15px;
+}
+.out,.messages{
+ display: none;
+}
