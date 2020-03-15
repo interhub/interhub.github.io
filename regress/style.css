@@ -1,0 +1,43 @@
+body {
+    font-size: 15pt;
+    background-color: #4749ad;
+    color:white;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 3px;
+}
+.header{
+ display: flex;
+ flex-flow: row nowrap;
+ justify-content: space-between;
+ align-items: center;
+}
+.header>*{
+ width: 33%;
+}
+#date{
+ text-align: center;
+}
+#parm>input{
+ margin-top: 25px;
+}
+#rezs{
+ margin: 20px 0 ;
+ display: flex;
+ justify-content: space-between;
+}
+#rezs>button{
+ width: 33%;
+}
+#new{
+ width: 30%;
+ height: 40px;
+}
+#app button{
+ border-radius: 1px;
+ border: 3px outset lightgray;
+ background-color: white;
+ color: #4649ad;
+ font-weight: 700;
+}

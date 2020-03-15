@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="jq.js"></script>
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <p>Регрессия. Прогнозирование данных на основе статистики на примере малого бизнеса. Коэффициент точности=<span id="k"><b>4</b></span> </p>
+  <div id="app">
+   <div class="header">
+   <button id="prev">Предыдущий день</button>
+   <div id="date">День 1</div>
+   <button id="next">Следующий день</button>
+   </div>
+   <div id="parm">
+    <input type="range" min="1" max="5" value="4" id="range"/>
+    <label>Погода <span id="weather">4</span> из 5</label><br>
+    <input type="checkbox" id="week"/>
+    <label for="week">Сегодня выходной</label><br>
+    <input type="checkbox" id="prad"/>
+    <label for="prad">Сегодня праздник</label><br>
+    <div id="rezs">
+     <button id="prognoz">Прогнозировать</button>
+     <button id="add">Добавить данные</button>
+    </div>
+    <div id="text">
+     <p>Сколько изделий продано</p>
+     <input type="range" id="val" min="0" max="200" value="50"/> 
+     <label id="col">50 шт.</label>
+     <button id="new">Внести</button>
+    </div>
+    <div id="display">
+     
+    </div>
+   </div>
+   
+  </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
