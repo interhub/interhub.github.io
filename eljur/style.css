@@ -1,0 +1,35 @@
+body {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+#app{
+ overflow-x: scroll;
+ position: relative;
+ right: 0;
+ 
+}
+#table{
+ border: 1px solid green;
+ border-collapse: collapse;
+ 
+ 
+}
+#table td{
+ padding: 15px;
+}
+.nones{
+ display:none;
+}
+#table tr:nth-child(1){
+ background-color: lightblue;
+}
+#table tr td:first-child{
+ background-color: lightyellow;
+}
+#table tr:first-child td:first-child{
+ background-color: lightgray;
+}
+#table td {
+ border-radius: 2px;
+}
