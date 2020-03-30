@@ -1,0 +1,31 @@
+body {
+    font-size: 15pt;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#duck{
+ border-radius: 10px;
+ position: relative;
+ transform: rotateY(180deg);
+ top:35vh;
+ right: 80px ;
+ 
+}
+#box{
+ position: relative;
+ text-align: center;
+ height: 100vh;
+ background-color: lightblue;
+ top:0;
+ 
+}
+#box p{
+ color: white;
+ font-weight: 900;
+ margin-top: 0;
+ text-shadow: 4px 3px 0px gray;
+}
+#block{
+ background: linear-gradient(green,darkgreen)
+}
