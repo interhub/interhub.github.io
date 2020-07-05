@@ -32,7 +32,7 @@ const Card = (props) => {
   <div className="btns btns-1" 
   onClick={()=>{
    $(".showInfo").children().slideToggle(500)
-  }} > Подробнее о фотографии..</div>
+  }} > Подробнее о фотографии..</div> 
   <div className="btns btns-2"
   id={likes.links.includes(props.obj.media.m)?"likes":""}
   onClick={(event)=>{
