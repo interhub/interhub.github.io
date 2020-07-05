@@ -105,7 +105,7 @@ function add(objs, name) {
   <h2>Категория #{name}</h2>
   {objs.items.map((el,i)=>
    <Card obj={el} key={i} name={name}/>
-  )}
+  )} 
   </div>)
  Rend(Items)
 }
