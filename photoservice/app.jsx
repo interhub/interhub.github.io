@@ -75,7 +75,7 @@ const Card = (props) => {
 }
 
 
-var proxy = "https://cors-anywhere.herokuapp.com/";
+var proxy = "https://cors-proxy.htmldriven.com/?url=";
 
 
 
