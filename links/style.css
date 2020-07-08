@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   font-family: sans-serif;
   max-width: 500px;
   display: flex;
@@ -27,8 +27,9 @@ h2:active {
 }
 
 
-a {
+.img_box a {
   color: #fff;
+  height: 100%;
   /*font-family: helvetica;*/
   text-decoration: none;
   text-transform: uppercase;
@@ -42,9 +43,9 @@ img {
 .img_box {
   overflow: hidden;
   align-items: center;
-  padding: 5px;
-  margin: 20px;
-  height: 15vh;
+  /*padding: 5px;*/
+  margin: 10px;
+  height: 12vh;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -52,7 +53,8 @@ img {
   /*border-color: #000b40;*/
   outline: 1px solid rgba(0, 30, 121, 0.76);
   transition: all 0.1s ease;
-
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .img_box:active {
@@ -76,7 +78,10 @@ img {
 
 #tg {
   height: 70%;
+  margin: 11px;
 }
-#only{
+
+#only {
   height: 130%;
+  margin-top: -8px;
 }
