@@ -85,3 +85,10 @@ img {
   height: 130%;
   margin-top: -8px;
 }
+
+#new {
+  width: 80px;
+  object-fit: contain;
+  margin-left: -95px;
+  transform: rotate(-20deg);
+}
