@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/kisa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kisa/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +76,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -105,20 +104,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603500643966</updated>
-      <workItem from="1603500645137" duration="297000" />
+      <workItem from="1603500645137" duration="721000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="297000" />
+    <option name="totallyTimeSpent" value="721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="961" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="npm" order="0" sideWeight="0.30671296" side_tool="true" visible="true" weight="0.24969475" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.693287" visible="true" weight="0.18681319" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.693287" visible="true" weight="0.18681319" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
@@ -137,7 +135,7 @@
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
       <window_info active="true" anchor="right" id="Run" order="5" side_tool="true" visible="true" weight="0.1990232" />
-      <window_info anchor="right" id="Terminal" order="6" side_tool="true" weight="0.32967034" />
+      <window_info active="true" anchor="right" id="Terminal" order="6" side_tool="true" visible="true" weight="0.32967034" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
