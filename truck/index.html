@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>truck (redirect)</title>
+</head>
+<body>
+<h2></h2>
+<script>
+    const title = document.querySelector('h2')
+    console.log(title,'title')
+    let time = 3
+    const setCount = (time) => title.innerText = `Переход через ${time} сек`
+    window.onload = () => {
+        setCount(time)
+        setInterval(() => {
+            time--
+            setCount(time)
+            if (!time)
+                window.location = 'https://trucks-305916.ew.r.appspot.com'
+        }, 1000)
+    }
+</script>
+</body>
+</html>
