@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +110,7 @@
       <workItem from="1616539194177" duration="707000" />
       <workItem from="1618299614937" duration="436000" />
       <workItem from="1620634359935" duration="718000" />
-      <workItem from="1620640947861" duration="1720000" />
+      <workItem from="1620640947861" duration="2111000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -149,7 +147,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620643032593</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add save video">
+      <created>1620650127343</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1620650127343</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add save gif 3">
+      <created>1620650248071</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1620650248071</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -203,7 +215,9 @@
     <MESSAGE value="add rename 2" />
     <MESSAGE value="add new source lib" />
     <MESSAGE value="add rename file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add rename file" />
+    <MESSAGE value="add save video" />
+    <MESSAGE value="add save gif 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="add save gif 3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">
