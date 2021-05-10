@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="" />
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/parallax-lib.gif" beforeDir="false" afterPath="$PROJECT_DIR$/source/parallax-lib.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/truck/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/truck/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,13 +84,17 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/source" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source" />
+      <recent name="$PROJECT_DIR$/img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/phonebase" />
     </key>
@@ -105,6 +113,8 @@
       <workItem from="1603500645137" duration="721000" />
       <workItem from="1616539194177" duration="707000" />
       <workItem from="1618299614937" duration="436000" />
+      <workItem from="1620634359935" duration="718000" />
+      <workItem from="1620640947861" duration="111000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -113,7 +123,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616539522700</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add all image new">
+      <created>1620634449048</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620634449048</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add rename 2">
+      <created>1620634477615</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620634477615</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -163,7 +187,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="add refactoring" />
+    <MESSAGE value="add all image new" />
+    <MESSAGE value="add rename 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="add rename 2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">
