@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="" />
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +112,7 @@
       <workItem from="1616539194177" duration="707000" />
       <workItem from="1618299614937" duration="436000" />
       <workItem from="1620634359935" duration="718000" />
-      <workItem from="1620640947861" duration="2111000" />
+      <workItem from="1620640947861" duration="2655000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -161,7 +163,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620650248071</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="publish file">
+      <created>1620650558596</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620650558596</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add publish parallax-lib-2.gif">
+      <created>1620650903355</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1620650903355</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -217,7 +233,9 @@
     <MESSAGE value="add rename file" />
     <MESSAGE value="add save video" />
     <MESSAGE value="add save gif 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="add save gif 3" />
+    <MESSAGE value="publish file" />
+    <MESSAGE value="add publish parallax-lib-2.gif" />
+    <option name="LAST_COMMIT_MESSAGE" value="add publish parallax-lib-2.gif" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">
