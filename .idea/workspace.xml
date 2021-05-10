@@ -112,7 +112,7 @@
       <workItem from="1616539194177" duration="707000" />
       <workItem from="1618299614937" duration="436000" />
       <workItem from="1620634359935" duration="718000" />
-      <workItem from="1620640947861" duration="2655000" />
+      <workItem from="1620640947861" duration="3274000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -177,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620650903355</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add video">
+      <created>1620656892901</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1620656892901</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -235,7 +242,8 @@
     <MESSAGE value="add save gif 3" />
     <MESSAGE value="publish file" />
     <MESSAGE value="add publish parallax-lib-2.gif" />
-    <option name="LAST_COMMIT_MESSAGE" value="add publish parallax-lib-2.gif" />
+    <MESSAGE value="add video" />
+    <option name="LAST_COMMIT_MESSAGE" value="add video" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">
