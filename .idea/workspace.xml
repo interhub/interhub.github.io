@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mary_cosmos/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mary_cosmos/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +83,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mary_cosmos/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -117,7 +118,8 @@
       <workItem from="1620640947861" duration="4223000" />
       <workItem from="1620730317493" duration="428000" />
       <workItem from="1623326312448" duration="112000" />
-      <workItem from="1623411400403" duration="1178000" />
+      <workItem from="1623411400403" duration="1245000" />
+      <workItem from="1623507047433" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -203,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623326402947</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add fix linter">
+      <created>1623412793631</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1623412793631</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -264,7 +273,8 @@
     <MESSAGE value="add video" />
     <MESSAGE value="add update image old first" />
     <MESSAGE value="add push" />
-    <option name="LAST_COMMIT_MESSAGE" value="add push" />
+    <MESSAGE value="add fix linter" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fix linter" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">
