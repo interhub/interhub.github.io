@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="change image">
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add publish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kisa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kisa/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kisa/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/kisa/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +122,8 @@
       <workItem from="1623411400403" duration="1245000" />
       <workItem from="1623507047433" duration="123000" />
       <workItem from="1627905305098" duration="801000" />
-      <workItem from="1631955528717" duration="766000" />
+      <workItem from="1631955528717" duration="1026000" />
+      <workItem from="1631957092533" duration="123000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -230,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627905425173</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add publish">
+      <created>1631956390447</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1631956390447</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -294,7 +301,8 @@
     <MESSAGE value="add fix linter" />
     <MESSAGE value="add save stayfitt" />
     <MESSAGE value="change image" />
-    <option name="LAST_COMMIT_MESSAGE" value="change image" />
+    <MESSAGE value="add publish" />
+    <option name="LAST_COMMIT_MESSAGE" value="add publish" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">
