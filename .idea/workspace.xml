@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add flubber example video">
-      <change afterPath="$PROJECT_DIR$/source/flubber-ex-full.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/flubber-ex.gif" afterDir="false" />
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="create new library">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/truck/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/truck/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +83,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/source" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -125,7 +124,8 @@
       <workItem from="1627905305098" duration="801000" />
       <workItem from="1631955528717" duration="1026000" />
       <workItem from="1631957092533" duration="123000" />
-      <workItem from="1633017803557" duration="1749000" />
+      <workItem from="1633017803557" duration="2298000" />
+      <workItem from="1633513617269" duration="39000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -246,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633017901205</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="create new library">
+      <created>1633020966001</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1633020966002</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -312,7 +319,8 @@
     <MESSAGE value="change image" />
     <MESSAGE value="add publish" />
     <MESSAGE value="add flubber example video" />
-    <option name="LAST_COMMIT_MESSAGE" value="add flubber example video" />
+    <MESSAGE value="create new library" />
+    <option name="LAST_COMMIT_MESSAGE" value="create new library" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">

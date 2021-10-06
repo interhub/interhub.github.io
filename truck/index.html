@@ -8,8 +8,9 @@
 <h2></h2>
 <script>
     const title = document.querySelector('h2')
-    console.log(title, 'title')
     let time = 3
+    const address = 'https://truckserver2.herokuapp.com'
+
     const setCount = (time) => title.innerText = `Переход через ${time} сек`
     window.onload = () => {
         setCount(time)
@@ -17,7 +18,7 @@
             time--
             setCount(time)
             if (!time)
-                window.location = 'https://trucks-305916.ew.r.appspot.com'
+                window.location = address
         }, 1000)
     }
 </script>
