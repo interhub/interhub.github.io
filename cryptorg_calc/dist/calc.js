@@ -149,13 +149,6 @@ var subPercent = function subPercent() {
   var percent = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
   return fixNumber(value * (100 - percent) / 100);
 };
-
-var checkMarketValid = function checkMarketValid() {
-  var price = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
-  var min = subPercent(MIN_END_MARKET_VALUE, MAX_DELTA_MARKET_PERCENT);
-  var max = addPercent(MIN_END_MARKET_VALUE, MAX_DELTA_MARKET_PERCENT);
-  return price > min && price < max;
-};
 /**
  * INPUT PARAMS
  */
@@ -179,9 +172,7 @@ var START_MART = new SettingItem('START_MART', 1.2, 'мартенгейл');
 var TAKE_PROFIT_PERCENT = new SettingItem('TAKE_PROFIT_PERCENT', 0.5, 'тейк профит процент');
 var START_BUY = new SettingItem('START_BUY', 18, 'первый закуп');
 var MAX_LOSE_PERCENT = new SettingItem('MAX_LOSE_PERCENT', 15, 'макс падение цены в процентах');
-var MAX_BUY = new SettingItem('MAX_BUY', 606, 'максимум вложений'); //минимальная цена валюты допустимая
-
-var MIN_END_MARKET_VALUE = subPercent(START_MARKET_VALUE.value, MAX_LOSE_PERCENT.value);
+var MAX_BUY = new SettingItem('MAX_BUY', 606, 'максимум вложений');
 var orderPoints = [];
 
 var generateChart = function generateChart() {
@@ -233,14 +224,27 @@ var logCalc = function logCalc() {
 
   orderPoints = [];
   console.log('START OF', new Date().toLocaleString());
-  var TP_KOEF = addPercent(1, TAKE_PROFIT_PERCENT.value); //computed
+  var TP_KOEF = addPercent(1, TAKE_PROFIT_PERCENT.value); //цена предыдущего ордера
 
-  var LAST_ORDER_VALUE = START_BUY.value;
-  var SUM_OF_BUY = START_BUY.value;
-  var LAST_MONEY_AFTER_DOWN_SUM = START_BUY.value;
-  var MARKET_VALUE = START_MARKET_VALUE.value;
+  var LAST_ORDER_VALUE = START_BUY.value; //сумма вложений текущая
+
+  var SUM_OF_BUY = START_BUY.value; //стоимотсть денег после предыдущего падения
+
+  var LAST_MONEY_AFTER_DOWN_SUM = START_BUY.value; //текущая цена рынка
+
+  var MARKET_VALUE = START_MARKET_VALUE.value; //минимальная цена валюты допустимая
+
+  var MIN_END_MARKET_VALUE = subPercent(START_MARKET_VALUE.value, MAX_LOSE_PERCENT.value);
   var LAST_STEP_PERCENT = STEP_DEFAULT_PERCENT.value;
-  var STEP_DELTA_SUM = STEP_DEFAULT_PERCENT.value; //first buy
+  var STEP_DELTA_SUM = STEP_DEFAULT_PERCENT.value;
+
+  var checkMarketValid = function checkMarketValid() {
+    var price = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+    var min = subPercent(MIN_END_MARKET_VALUE, MAX_DELTA_MARKET_PERCENT);
+    var max = addPercent(MIN_END_MARKET_VALUE, MAX_DELTA_MARKET_PERCENT);
+    return price > min && price < max;
+  }; //first buy
+
 
   console.log('start buy = ', LAST_ORDER_VALUE, 'MARKET PRICE', MARKET_VALUE);
   console.log('MARKET 1st sell price', addPercent(MARKET_VALUE, TAKE_PROFIT_PERCENT.value));

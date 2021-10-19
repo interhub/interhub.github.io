@@ -18,12 +18,6 @@ const subPercent = (value = 0, percent = 0) => {
 }
 
 
-const checkMarketValid = (price = 0) => {
-    const min = subPercent(MIN_END_MARKET_VALUE, MAX_DELTA_MARKET_PERCENT)
-    const max = addPercent(MIN_END_MARKET_VALUE, MAX_DELTA_MARKET_PERCENT)
-    return price > min && price < max
-}
-
 /**
  * INPUT PARAMS
  */
@@ -54,9 +48,6 @@ const START_BUY = new SettingItem('START_BUY', 18, 'первый закуп')
 
 const MAX_LOSE_PERCENT = new SettingItem('MAX_LOSE_PERCENT', 15, 'макс падение цены в процентах')
 const MAX_BUY = new SettingItem('MAX_BUY', 606, 'максимум вложений')
-
-//минимальная цена валюты допустимая
-let MIN_END_MARKET_VALUE = subPercent(START_MARKET_VALUE.value, MAX_LOSE_PERCENT.value)
 
 let orderPoints: { marketValue: number, orderPrice: number, lastStep: number, sumStep: number, upToTp: number }[] = []
 
@@ -112,14 +103,25 @@ const logCalc = () => {
     orderPoints = []
     console.log('START OF', new Date().toLocaleString())
     let TP_KOEF = addPercent(1, TAKE_PROFIT_PERCENT.value)
-    //computed
+    //цена предыдущего ордера
     let LAST_ORDER_VALUE = START_BUY.value
+    //сумма вложений текущая
     let SUM_OF_BUY = START_BUY.value
+    //стоимотсть денег после предыдущего падения
     let LAST_MONEY_AFTER_DOWN_SUM = START_BUY.value
+    //текущая цена рынка
     let MARKET_VALUE = START_MARKET_VALUE.value
+    //минимальная цена валюты допустимая
+    let MIN_END_MARKET_VALUE = subPercent(START_MARKET_VALUE.value, MAX_LOSE_PERCENT.value)
 
     let LAST_STEP_PERCENT = STEP_DEFAULT_PERCENT.value
     let STEP_DELTA_SUM = STEP_DEFAULT_PERCENT.value
+
+    const checkMarketValid = (price = 0) => {
+        const min = subPercent(MIN_END_MARKET_VALUE, MAX_DELTA_MARKET_PERCENT)
+        const max = addPercent(MIN_END_MARKET_VALUE, MAX_DELTA_MARKET_PERCENT)
+        return price > min && price < max
+    }
 
     //first buy
     console.log('start buy = ', LAST_ORDER_VALUE, 'MARKET PRICE', MARKET_VALUE)
