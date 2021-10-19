@@ -186,7 +186,7 @@ var generateChart = function generateChart() {
     return a + b;
   }, 0);
   chartBox.innerHTML += "<p style=\"margin: 0; color: green\">\u041D\u0430\u0447\u0430\u043B\u043E \u0441\u0434\u0435\u043B\u043A\u0438 \u043F\u043E \u0446\u0435\u043D\u0435 ".concat(START_BUY.value, " USDT</p>");
-  chartBox.innerHTML += "<p style=\"margin: 0; color: green\">\u0421\u0443\u043C \u0432\u043B\u043E\u0436\u0435\u043D\u0438\u044F ".concat(sumBuy, " USDT</p>");
+  chartBox.innerHTML += "<p style=\"margin: 0; color: ".concat(sumBuy > MAX_BUY.value ? 'red' : 'green', "\">\u0421\u0443\u043C \u0432\u043B\u043E\u0436\u0435\u043D\u0438\u044F ").concat(sumBuy, " USDT</p>");
   orderPoints.forEach(function (point, index) {
     var SIZE_KOEF = 30;
     var H_PIXELS = point.lastStep * SIZE_KOEF;

@@ -58,7 +58,7 @@ const generateChart = () => {
         return orderPrice
     }).reduce((a, b) => a + b, 0)
     chartBox.innerHTML += `<p style="margin: 0; color: green">Начало сделки по цене ${START_BUY.value} USDT</p>`
-    chartBox.innerHTML += `<p style="margin: 0; color: green">Сум вложения ${sumBuy} USDT</p>`
+    chartBox.innerHTML += `<p style="margin: 0; color: ${sumBuy>MAX_BUY.value ? 'red':'green'}">Сум вложения ${sumBuy} USDT</p>`
     orderPoints.forEach((point, index) => {
         const SIZE_KOEF = 30
         const H_PIXELS = point.lastStep * SIZE_KOEF
