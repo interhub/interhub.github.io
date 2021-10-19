@@ -58,7 +58,7 @@ const MAX_BUY = new SettingItem('MAX_BUY', 606, 'максимум вложени
 let MIN_END_MARKET_VALUE = subPercent(START_MARKET_VALUE, MAX_LOSE_PERCENT.value)
 let MARKET_VALUE = START_MARKET_VALUE
 
-let orderPoints: { marketValue: number, orderPrice: number, lastStep: number, sumStep: number }[] = []
+let orderPoints: { marketValue: number, orderPrice: number, lastStep: number, sumStep: number, upToTp: number }[] = []
 
 const generateChart = () => {
     if (typeof window === 'undefined') return //IF not DOM then break
@@ -74,6 +74,7 @@ ${point.marketValue} цена рынка (USDT) /
 ${point.orderPrice} цена ордера (USDT) /
 ${point.lastStep} шаг цены (%) / 
 ${point.sumStep} сум падение цены (%) / 
+${point.upToTp} процент треб. роста до TP (%) 
 </p>
 </div>`
     })
@@ -192,7 +193,7 @@ const logCalc = () => {
             ['✅ Доход от продажи Take Profit (USD)']: SALARY_FROM_SELL_TP,
         })
 
-        orderPoints.push({orderPrice: ORDER_VALUE, marketValue: MARKET_VALUE, lastStep: LAST_STEP_PERCENT, sumStep: STEP_DELTA_SUM})
+        orderPoints.push({orderPrice: ORDER_VALUE, marketValue: MARKET_VALUE, lastStep: LAST_STEP_PERCENT, sumStep: STEP_DELTA_SUM, upToTp: FULL_TP_PERCENT_FROM_ORDER})
 
         console.log(` Страховочный ордер ${i + 1} \n`)
 
