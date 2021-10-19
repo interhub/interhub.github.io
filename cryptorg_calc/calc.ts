@@ -63,18 +63,19 @@ let orderPoints: { marketValue: number, orderPrice: number, lastStep: number, su
 const generateChart = () => {
     if (typeof window === 'undefined') return //IF not DOM then break
     const chartBox = document.querySelector('#chart')
-    chartBox.innerHTML=''
+    chartBox.innerHTML = ''
     orderPoints.forEach((point, index) => {
         const SIZE_KOEF = 30
         const H_PIXELS = point.lastStep * SIZE_KOEF
         chartBox.innerHTML += `
 <div style="height: ${H_PIXELS}px; width: 100%; background-color: #313131" >
 <p style="margin: 3px; color: #fff">
-${point.marketValue} цена рынка (USDT) /
-${point.orderPrice} цена ордера (USDT) /
-${point.lastStep} шаг цены (%) / 
-${point.sumStep} сум падение цены (%) / 
-${point.upToTp} процент треб. роста до TP (%) 
+<label>№${index + 1}</label>
+<label>${point.marketValue} цена рынка (USDT) /</label>
+<label>${point.orderPrice} цена ордера (USDT) /</label>
+<label>${point.lastStep} шаг цены (%) /</label> 
+<label style="color: red">${point.sumStep} сум падение цены (%) /</label> 
+<label style="color: greenyellow;" >${point.upToTp} процент треб. роста до TP (%)</label> 
 </p>
 </div>`
     })
@@ -193,7 +194,13 @@ const logCalc = () => {
             ['✅ Доход от продажи Take Profit (USD)']: SALARY_FROM_SELL_TP,
         })
 
-        orderPoints.push({orderPrice: ORDER_VALUE, marketValue: MARKET_VALUE, lastStep: LAST_STEP_PERCENT, sumStep: STEP_DELTA_SUM, upToTp: FULL_TP_PERCENT_FROM_ORDER})
+        orderPoints.push({
+            orderPrice: ORDER_VALUE,
+            marketValue: MARKET_VALUE,
+            lastStep: LAST_STEP_PERCENT,
+            sumStep: STEP_DELTA_SUM,
+            upToTp: FULL_TP_PERCENT_FROM_ORDER
+        })
 
         console.log(` Страховочный ордер ${i + 1} \n`)
 
