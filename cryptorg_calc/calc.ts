@@ -198,7 +198,7 @@ const logCalc = () => {
         console.log(` Страховочный ордер ${i + 1} \n`)
 
         //перед началом след цикла (в конце предыдущего)
-        STEP_DELTA_SUM += LAST_STEP_PERCENT
+        STEP_DELTA_SUM = fixNumber(STEP_DELTA_SUM + LAST_STEP_PERCENT)
         LAST_STEP_PERCENT = fixNumber(LAST_STEP_PERCENT * STEP_DIN.value)
     }
 
