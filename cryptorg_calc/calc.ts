@@ -1,5 +1,6 @@
 //MARKET VALUES
 let MAX_DELTA_MARKET_PERCENT = 3
+const IS_NODE = typeof window === 'undefined'
 
 const fixNumber = (num = 0, point = 3) => parseFloat(num.toFixed(point))
 
@@ -25,15 +26,23 @@ class SettingItem {
     static items: any = []
 
     name: string
-    value: number
     placeholder: string
+    value: number
 
     constructor(name, value, placeholder) {
         this.name = name
-        this.value = value
+        const ramValue = parseFloat(localStorage.getItem(name)) || value
+        this._value = ramValue
         this.placeholder = placeholder
         SettingItem.items.push(this)
     }
+
+    set _value(val: number) {
+        if (!IS_NODE)
+            localStorage.setItem(this.name, String(val))
+        this.value = val
+    }
+
 }
 
 
@@ -51,33 +60,37 @@ const MAX_BUY = new SettingItem('MAX_BUY', 606, 'максимум вложени
 let orderPoints: { marketValue: number, orderPrice: number, lastStep: number, sumStep: number, upToTp: number }[] = []
 
 const generateChart = () => {
-    if (typeof window === 'undefined') return //IF not DOM then break
+    if (IS_NODE) return //IF not DOM then break
     const chartBox = document.querySelector('#chart')
     chartBox.innerHTML = ''
     const sumBuy = START_BUY.value + orderPoints.map(({orderPrice}) => {
         return orderPrice
     }).reduce((a, b) => a + b, 0)
     chartBox.innerHTML += `<p style="margin: 0; color: green">Начало сделки по цене ${START_BUY.value} USDT</p>`
-    chartBox.innerHTML += `<p style="margin: 0; color: ${sumBuy>MAX_BUY.value ? 'red':'green'}">Сум вложения ${sumBuy} USDT</p>`
+    chartBox.innerHTML += `<p style="margin: 0; color: ${sumBuy > MAX_BUY.value ? 'red' : 'green'}">Сум вложения ${sumBuy} USDT</p>`
     orderPoints.forEach((point, index) => {
+        const MIN_H = 25
         const SIZE_KOEF = 30
-        const H_PIXELS = point.lastStep * SIZE_KOEF
+        const H_PIXELS = MIN_H + point.lastStep * SIZE_KOEF
         chartBox.innerHTML += `
-<div style="height: ${H_PIXELS}px; width: 100%; background-color: #313131; margin-top: 2px; display: flex; align-items: flex-end" >
-<p style="color: #fff; margin: 0px; margin-left: 5px;">
-<label>№${index + 1})</label>
-<label>${point.marketValue} цена рынка (USDT) /</label>
-<label>${point.orderPrice} цена ордера (USDT) /</label>
-<label style="color: red">${point.lastStep} шаг цены (%) /</label> 
-<label style="color: orange">${point.sumStep} сум падение цены (%) /</label> 
-<label style="color: greenyellow;" >${point.upToTp} процент треб. роста до TP (%) (до цены рынка ${addPercent(point.marketValue, point.upToTp)} USDT)</label> 
+<div style="height: ${H_PIXELS}px; width: 100%; background-color: #313131; margin-top: 2px; display: flex; align-items: flex-end; overflow: scroll; flex-direction: row; color: #fff" >
+<p style="margin: 0px; margin-left: 5px; word-break: keep-all">
+<p style="padding-right: 5px;">№${index + 1})</p>
+<p>${point.marketValue} цена рынка (USDT)</p>
+<p>${point.orderPrice} цена ордера (USDT)</p>
+<p style="color: #ff8181">${point.lastStep} шаг цены (%)</p> 
+<p style="color: orange">${point.sumStep} сум падение цены (%)</p> 
+<p style="color: greenyellow; padding-left: 5px; padding-right: 5px" >${point.upToTp} процент треб. роста до TP (%)</p> 
+<p style="color: #70af11;" >до цены рынка ${addPercent(point.marketValue, point.upToTp)} USDT</p> 
 </p>
+<div style="width: 20px; height: ${point.upToTp}%; background-color: #2ecc40"></div>
+<div style="width: 20px; height: ${point.sumStep}%; background-color: #cc2e2e"></div>
 </div>`
     })
 }
 
 const generateDom = () => {
-    if (typeof window === 'undefined') return //IF not DOM then break
+    if (IS_NODE) return //IF not DOM then break
     const container = document.querySelector('#inputs')
 
     SettingItem.items.forEach(({name, placeholder, value}) => {
@@ -92,10 +105,12 @@ const generateDom = () => {
             generateChart()
         }
         document.addEventListener('input', function (e) {
+
             //@ts-ignore
             if (e.target && e.target.id == name && e.target.value) {
                 //@ts-ignore
                 const value = Number.parseFloat(e.target.value) || 0
+                localStorage.setItem(name, String(value))
                 onChange(value)
             }
         })

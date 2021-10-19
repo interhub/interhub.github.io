@@ -122,8 +122,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
 //MARKET VALUES
 var MAX_DELTA_MARKET_PERCENT = 3;
+var IS_NODE = typeof window === 'undefined';
 
 var fixNumber = function fixNumber() {
   var num = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
@@ -153,14 +158,27 @@ var subPercent = function subPercent() {
  */
 
 
-var SettingItem = function SettingItem(name, value, placeholder) {
-  _classCallCheck(this, SettingItem);
+var SettingItem = /*#__PURE__*/function () {
+  function SettingItem(name, value, placeholder) {
+    _classCallCheck(this, SettingItem);
 
-  this.name = name;
-  this.value = value;
-  this.placeholder = placeholder;
-  SettingItem.items.push(this);
-};
+    this.name = name;
+    var ramValue = parseFloat(localStorage.getItem(name)) || value;
+    this._value = ramValue;
+    this.placeholder = placeholder;
+    SettingItem.items.push(this);
+  }
+
+  _createClass(SettingItem, [{
+    key: "_value",
+    set: function set(val) {
+      if (!IS_NODE) localStorage.setItem(this.name, String(val));
+      this.value = val;
+    }
+  }]);
+
+  return SettingItem;
+}();
 
 SettingItem.items = [];
 var START_MARKET_VALUE = new SettingItem('START_MARKET_VALUE', 185, 'цена валюты входа');
@@ -175,7 +193,7 @@ var MAX_BUY = new SettingItem('MAX_BUY', 606, 'максимум вложений
 var orderPoints = [];
 
 var generateChart = function generateChart() {
-  if (typeof window === 'undefined') return; //IF not DOM then break
+  if (IS_NODE) return; //IF not DOM then break
 
   var chartBox = document.querySelector('#chart');
   chartBox.innerHTML = '';
@@ -188,14 +206,15 @@ var generateChart = function generateChart() {
   chartBox.innerHTML += "<p style=\"margin: 0; color: green\">\u041D\u0430\u0447\u0430\u043B\u043E \u0441\u0434\u0435\u043B\u043A\u0438 \u043F\u043E \u0446\u0435\u043D\u0435 ".concat(START_BUY.value, " USDT</p>");
   chartBox.innerHTML += "<p style=\"margin: 0; color: ".concat(sumBuy > MAX_BUY.value ? 'red' : 'green', "\">\u0421\u0443\u043C \u0432\u043B\u043E\u0436\u0435\u043D\u0438\u044F ").concat(sumBuy, " USDT</p>");
   orderPoints.forEach(function (point, index) {
+    var MIN_H = 25;
     var SIZE_KOEF = 30;
-    var H_PIXELS = point.lastStep * SIZE_KOEF;
-    chartBox.innerHTML += "\n<div style=\"height: ".concat(H_PIXELS, "px; width: 100%; background-color: #313131; margin-top: 2px; display: flex; align-items: flex-end\" >\n<p style=\"color: #fff; margin: 0px; margin-left: 5px;\">\n<label>\u2116").concat(index + 1, ")</label>\n<label>").concat(point.marketValue, " \u0446\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 (USDT) /</label>\n<label>").concat(point.orderPrice, " \u0446\u0435\u043D\u0430 \u043E\u0440\u0434\u0435\u0440\u0430 (USDT) /</label>\n<label style=\"color: red\">").concat(point.lastStep, " \u0448\u0430\u0433 \u0446\u0435\u043D\u044B (%) /</label> \n<label style=\"color: orange\">").concat(point.sumStep, " \u0441\u0443\u043C \u043F\u0430\u0434\u0435\u043D\u0438\u0435 \u0446\u0435\u043D\u044B (%) /</label> \n<label style=\"color: greenyellow;\" >").concat(point.upToTp, " \u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u0442\u0440\u0435\u0431. \u0440\u043E\u0441\u0442\u0430 \u0434\u043E TP (%) (\u0434\u043E \u0446\u0435\u043D\u044B \u0440\u044B\u043D\u043A\u0430 ").concat(addPercent(point.marketValue, point.upToTp), " USDT)</label> \n</p>\n</div>");
+    var H_PIXELS = MIN_H + point.lastStep * SIZE_KOEF;
+    chartBox.innerHTML += "\n<div style=\"height: ".concat(H_PIXELS, "px; width: 100%; background-color: #313131; margin-top: 2px; display: flex; align-items: flex-end; overflow: scroll; flex-direction: row; color: #fff\" >\n<p style=\"margin: 0px; margin-left: 5px; word-break: keep-all\">\n<p style=\"padding-right: 5px;\">\u2116").concat(index + 1, ")</p>\n<p>").concat(point.marketValue, " \u0446\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 (USDT)</p>\n<p>").concat(point.orderPrice, " \u0446\u0435\u043D\u0430 \u043E\u0440\u0434\u0435\u0440\u0430 (USDT)</p>\n<p style=\"color: #ff8181\">").concat(point.lastStep, " \u0448\u0430\u0433 \u0446\u0435\u043D\u044B (%)</p> \n<p style=\"color: orange\">").concat(point.sumStep, " \u0441\u0443\u043C \u043F\u0430\u0434\u0435\u043D\u0438\u0435 \u0446\u0435\u043D\u044B (%)</p> \n<p style=\"color: greenyellow; padding-left: 5px; padding-right: 5px\" >").concat(point.upToTp, " \u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u0442\u0440\u0435\u0431. \u0440\u043E\u0441\u0442\u0430 \u0434\u043E TP (%)</p> \n<p style=\"color: #70af11;\" >\u0434\u043E \u0446\u0435\u043D\u044B \u0440\u044B\u043D\u043A\u0430 ").concat(addPercent(point.marketValue, point.upToTp), " USDT</p> \n</p>\n<div style=\"width: 20px; height: ").concat(point.upToTp, "%; background-color: #2ecc40\"></div>\n<div style=\"width: 20px; height: ").concat(point.sumStep, "%; background-color: #cc2e2e\"></div>\n</div>");
   });
 };
 
 var generateDom = function generateDom() {
-  if (typeof window === 'undefined') return; //IF not DOM then break
+  if (IS_NODE) return; //IF not DOM then break
 
   var container = document.querySelector('#inputs');
   SettingItem.items.forEach(function (_ref2) {
@@ -219,6 +238,7 @@ var generateDom = function generateDom() {
         //@ts-ignore
         var _value = Number.parseFloat(e.target.value) || 0;
 
+        localStorage.setItem(name, String(_value));
         onChange(_value);
       }
     });
@@ -338,7 +358,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51147" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57431" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

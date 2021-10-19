@@ -6,12 +6,12 @@
   "author": "stepanturchenko <stepanstepan4@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev_eth": "nodemon calc_eth_scalp.js",
-    "dev_ltc": "nodemon calc.ts",
-    "build": "parcel calc.ts"
+    "dev": "nodemon calc.ts",
+    "build": "open index.html && parcel calc.ts"
   },
   "dependencies": {
     "@types/node": "^16.11.1",
     "typescript": "^4.4.4"
   }
 }
+
