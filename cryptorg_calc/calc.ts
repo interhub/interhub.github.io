@@ -71,11 +71,11 @@ const generateChart = () => {
         chartBox.innerHTML += `
 <div style="height: ${H_PIXELS}px; width: 100%; background-color: #313131" >
 <p style="margin: 3px; color: #fff">
-<label>№${index + 1}</label>
+<label>№${index + 1})</label>
 <label>${point.marketValue} цена рынка (USDT) /</label>
 <label>${point.orderPrice} цена ордера (USDT) /</label>
-<label style="color: orange">${point.lastStep} шаг цены (%) /</label> 
-<label style="color: red">${point.sumStep} сум падение цены (%) /</label> 
+<label style="color: red">${point.lastStep} шаг цены (%) /</label> 
+<label style="color: orange">${point.sumStep} сум падение цены (%) /</label> 
 <label style="color: greenyellow;" >${point.upToTp} процент треб. роста до TP (%)</label> 
 </p>
 </div>`

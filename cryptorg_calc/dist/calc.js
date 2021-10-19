@@ -193,7 +193,7 @@ var generateChart = function generateChart() {
   orderPoints.forEach(function (point, index) {
     var SIZE_KOEF = 30;
     var H_PIXELS = point.lastStep * SIZE_KOEF;
-    chartBox.innerHTML += "\n<div style=\"height: ".concat(H_PIXELS, "px; width: 100%; background-color: #313131\" >\n<p style=\"margin: 3px; color: #fff\">\n<label>\u2116").concat(index + 1, "</label>\n<label>").concat(point.marketValue, " \u0446\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 (USDT) /</label>\n<label>").concat(point.orderPrice, " \u0446\u0435\u043D\u0430 \u043E\u0440\u0434\u0435\u0440\u0430 (USDT) /</label>\n<label style=\"color: orange\">").concat(point.lastStep, " \u0448\u0430\u0433 \u0446\u0435\u043D\u044B (%) /</label> \n<label style=\"color: red\">").concat(point.sumStep, " \u0441\u0443\u043C \u043F\u0430\u0434\u0435\u043D\u0438\u0435 \u0446\u0435\u043D\u044B (%) /</label> \n<label style=\"color: greenyellow;\" >").concat(point.upToTp, " \u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u0442\u0440\u0435\u0431. \u0440\u043E\u0441\u0442\u0430 \u0434\u043E TP (%)</label> \n</p>\n</div>");
+    chartBox.innerHTML += "\n<div style=\"height: ".concat(H_PIXELS, "px; width: 100%; background-color: #313131\" >\n<p style=\"margin: 3px; color: #fff\">\n<label>\u2116").concat(index + 1, ")</label>\n<label>").concat(point.marketValue, " \u0446\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 (USDT) /</label>\n<label>").concat(point.orderPrice, " \u0446\u0435\u043D\u0430 \u043E\u0440\u0434\u0435\u0440\u0430 (USDT) /</label>\n<label style=\"color: red\">").concat(point.lastStep, " \u0448\u0430\u0433 \u0446\u0435\u043D\u044B (%) /</label> \n<label style=\"color: orange\">").concat(point.sumStep, " \u0441\u0443\u043C \u043F\u0430\u0434\u0435\u043D\u0438\u0435 \u0446\u0435\u043D\u044B (%) /</label> \n<label style=\"color: greenyellow;\" >").concat(point.upToTp, " \u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u0442\u0440\u0435\u0431. \u0440\u043E\u0441\u0442\u0430 \u0434\u043E TP (%)</label> \n</p>\n</div>");
   });
 };
 
@@ -327,7 +327,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61396" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61440" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
