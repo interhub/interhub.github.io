@@ -58,7 +58,7 @@ const MAX_BUY = new SettingItem('MAX_BUY', 606, 'максимум вложени
 let MIN_END_MARKET_VALUE = subPercent(START_MARKET_VALUE, MAX_LOSE_PERCENT.value)
 let MARKET_VALUE = START_MARKET_VALUE
 
-const orderPoints: { marketValue: number, orderPrice: number, lastStep: number }[] = []
+let orderPoints: { marketValue: number, orderPrice: number, lastStep: number }[] = []
 
 const generateChart = () => {
     if (typeof window === 'undefined') return //IF not DOM then break
@@ -105,6 +105,7 @@ const generateDom = () => {
 }
 
 const logCalc = () => {
+    orderPoints = []
     console.log('START OF', new Date().toLocaleString())
     let TP_KOEF = addPercent(1, TAKE_PROFIT_PERCENT.value)
     //computed

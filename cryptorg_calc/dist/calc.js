@@ -231,6 +231,7 @@ var generateDom = function generateDom() {
 var logCalc = function logCalc() {
   var _console$table;
 
+  orderPoints = [];
   console.log('START OF', new Date().toLocaleString());
   var TP_KOEF = addPercent(1, TAKE_PROFIT_PERCENT.value); //computed
 
