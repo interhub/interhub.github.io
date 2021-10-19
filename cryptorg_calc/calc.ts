@@ -1,6 +1,5 @@
 // const jq = require('jquery')
 //MARKET VALUES
-let START_MARKET_VALUE = 185
 let MAX_DELTA_MARKET_PERCENT = 3
 
 const fixNumber = (num = 0, point = 3) => parseFloat(num.toFixed(point))
@@ -44,6 +43,8 @@ class SettingItem {
     }
 }
 
+
+const START_MARKET_VALUE = new SettingItem('START_MARKET_VALUE', 185, 'цена валюты входа')
 const ORDER_LEN = new SettingItem('ORDER_LEN', 10, 'макс число ордеров')
 const STEP_DEFAULT_PERCENT = new SettingItem('STEP_DEFAULT_PERCENT', 1, 'шаг цены дефолтный')
 const STEP_DIN = new SettingItem('STEP_DIN', 1.1, 'динамический шаг цены')
@@ -55,8 +56,8 @@ const MAX_LOSE_PERCENT = new SettingItem('MAX_LOSE_PERCENT', 15, 'макс па�
 const MAX_BUY = new SettingItem('MAX_BUY', 606, 'максимум вложений')
 
 //минимальная цена валюты допустимая
-let MIN_END_MARKET_VALUE = subPercent(START_MARKET_VALUE, MAX_LOSE_PERCENT.value)
-let MARKET_VALUE = START_MARKET_VALUE
+let MIN_END_MARKET_VALUE = subPercent(START_MARKET_VALUE.value, MAX_LOSE_PERCENT.value)
+let MARKET_VALUE = START_MARKET_VALUE.value
 
 let orderPoints: { marketValue: number, orderPrice: number, lastStep: number, sumStep: number, upToTp: number }[] = []
 
@@ -73,7 +74,7 @@ const generateChart = () => {
 <label>№${index + 1}</label>
 <label>${point.marketValue} цена рынка (USDT) /</label>
 <label>${point.orderPrice} цена ордера (USDT) /</label>
-<label>${point.lastStep} шаг цены (%) /</label> 
+<label style="color: orange">${point.lastStep} шаг цены (%) /</label> 
 <label style="color: red">${point.sumStep} сум падение цены (%) /</label> 
 <label style="color: greenyellow;" >${point.upToTp} процент треб. роста до TP (%)</label> 
 </p>
@@ -133,7 +134,7 @@ const logCalc = () => {
         ['Take profit (%)']: TAKE_PROFIT_PERCENT.value,
         ['Макс. Число ордеров']: ORDER_LEN.value,
         ['Макс сумм депозит($)']: MAX_BUY.value,
-        ['Нач цена рынка (вход)']: START_MARKET_VALUE,
+        ['Нач цена рынка (вход)']: START_MARKET_VALUE.value,
         ['Мин цена рынка (ласт ордер)']: MIN_END_MARKET_VALUE,
     })
 
@@ -180,7 +181,7 @@ const logCalc = () => {
             ['🌧 куплен СО (USD)']: ORDER_VALUE,
             ['🚷 Потери при продаже на этом уровне (usd)']: DELTA_RESET_MONEY,
             ['🚶 последний шаг падения цены СО (%)']: LAST_STEP_PERCENT,
-            ['📉 сумарное падение цены (%)']: getPercentDiff(START_MARKET_VALUE, MARKET_VALUE),
+            ['📉 сумарное падение цены (%)']: getPercentDiff(START_MARKET_VALUE.value, MARKET_VALUE),
             ['🌧 следующий ордер СО может быть на уровне']: subPercent(MARKET_VALUE, LAST_STEP_PERCENT * STEP_DIN.value),
             [(IS_VALID_MARKET_PRICE ? '✅' : '⛔️') + ' текушая цена валюты (крипты)']: MARKET_VALUE,
             ['📈 ✅ цена валюты Take Profit (крипты)']: TP_MARKET_PRICE,
@@ -190,7 +191,7 @@ const logCalc = () => {
             ['💸 сумма денег для продажи Take Profit']: TP_SELL_SUM_VALUE,
             ['Цена валюты для откупа всех вложенных денег (крипты)']: RESET_MONEY_VALUE,
             ['⬆️ Процент треб. роста для продажи TP']: `${FULL_TP_PERCENT_FROM_ORDER} %`,
-            ['🦺 Процент падения от уровня закупа до продажи TP (страховка)']: getPercentDiff(START_MARKET_VALUE, TP_MARKET_PRICE),
+            ['🦺 Процент падения от уровня закупа до продажи TP (страховка)']: getPercentDiff(START_MARKET_VALUE.value, TP_MARKET_PRICE),
             ['✅ Доход от продажи Take Profit (USD)']: SALARY_FROM_SELL_TP,
         })
 

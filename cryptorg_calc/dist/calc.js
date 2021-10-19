@@ -124,7 +124,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 // const jq = require('jquery')
 //MARKET VALUES
-var START_MARKET_VALUE = 185;
 var MAX_DELTA_MARKET_PERCENT = 3;
 
 var fixNumber = function fixNumber() {
@@ -172,6 +171,7 @@ var SettingItem = function SettingItem(name, value, placeholder) {
 };
 
 SettingItem.items = [];
+var START_MARKET_VALUE = new SettingItem('START_MARKET_VALUE', 185, 'цена валюты входа');
 var ORDER_LEN = new SettingItem('ORDER_LEN', 10, 'макс число ордеров');
 var STEP_DEFAULT_PERCENT = new SettingItem('STEP_DEFAULT_PERCENT', 1, 'шаг цены дефолтный');
 var STEP_DIN = new SettingItem('STEP_DIN', 1.1, 'динамический шаг цены');
@@ -181,8 +181,8 @@ var START_BUY = new SettingItem('START_BUY', 18, 'первый закуп');
 var MAX_LOSE_PERCENT = new SettingItem('MAX_LOSE_PERCENT', 15, 'макс падение цены в процентах');
 var MAX_BUY = new SettingItem('MAX_BUY', 606, 'максимум вложений'); //минимальная цена валюты допустимая
 
-var MIN_END_MARKET_VALUE = subPercent(START_MARKET_VALUE, MAX_LOSE_PERCENT.value);
-var MARKET_VALUE = START_MARKET_VALUE;
+var MIN_END_MARKET_VALUE = subPercent(START_MARKET_VALUE.value, MAX_LOSE_PERCENT.value);
+var MARKET_VALUE = START_MARKET_VALUE.value;
 var orderPoints = [];
 
 var generateChart = function generateChart() {
@@ -193,7 +193,7 @@ var generateChart = function generateChart() {
   orderPoints.forEach(function (point, index) {
     var SIZE_KOEF = 30;
     var H_PIXELS = point.lastStep * SIZE_KOEF;
-    chartBox.innerHTML += "\n<div style=\"height: ".concat(H_PIXELS, "px; width: 100%; background-color: #313131\" >\n<p style=\"margin: 3px; color: #fff\">\n<label>\u2116").concat(index + 1, "</label>\n<label>").concat(point.marketValue, " \u0446\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 (USDT) /</label>\n<label>").concat(point.orderPrice, " \u0446\u0435\u043D\u0430 \u043E\u0440\u0434\u0435\u0440\u0430 (USDT) /</label>\n<label>").concat(point.lastStep, " \u0448\u0430\u0433 \u0446\u0435\u043D\u044B (%) /</label> \n<label style=\"color: red\">").concat(point.sumStep, " \u0441\u0443\u043C \u043F\u0430\u0434\u0435\u043D\u0438\u0435 \u0446\u0435\u043D\u044B (%) /</label> \n<label style=\"color: greenyellow;\" >").concat(point.upToTp, " \u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u0442\u0440\u0435\u0431. \u0440\u043E\u0441\u0442\u0430 \u0434\u043E TP (%)</label> \n</p>\n</div>");
+    chartBox.innerHTML += "\n<div style=\"height: ".concat(H_PIXELS, "px; width: 100%; background-color: #313131\" >\n<p style=\"margin: 3px; color: #fff\">\n<label>\u2116").concat(index + 1, "</label>\n<label>").concat(point.marketValue, " \u0446\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 (USDT) /</label>\n<label>").concat(point.orderPrice, " \u0446\u0435\u043D\u0430 \u043E\u0440\u0434\u0435\u0440\u0430 (USDT) /</label>\n<label style=\"color: orange\">").concat(point.lastStep, " \u0448\u0430\u0433 \u0446\u0435\u043D\u044B (%) /</label> \n<label style=\"color: red\">").concat(point.sumStep, " \u0441\u0443\u043C \u043F\u0430\u0434\u0435\u043D\u0438\u0435 \u0446\u0435\u043D\u044B (%) /</label> \n<label style=\"color: greenyellow;\" >").concat(point.upToTp, " \u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u0442\u0440\u0435\u0431. \u0440\u043E\u0441\u0442\u0430 \u0434\u043E TP (%)</label> \n</p>\n</div>");
   });
 };
 
@@ -246,7 +246,7 @@ var logCalc = function logCalc() {
   console.log('MARKET 1st sell price', addPercent(MARKET_VALUE, TAKE_PROFIT_PERCENT.value));
   console.log('START TP = ', LAST_ORDER_VALUE * TP_KOEF + '\n___');
   console.log('\nПараметры для бота');
-  console.table((_console$table = {}, _defineProperty(_console$table, 'Мартенгейл', START_MART.value), _defineProperty(_console$table, 'Динамический шаг СО', STEP_DIN.value), _defineProperty(_console$table, 'Шаг СО(%)', STEP_DEFAULT_PERCENT.value), _defineProperty(_console$table, 'Take profit (%)', TAKE_PROFIT_PERCENT.value), _defineProperty(_console$table, 'Макс. Число ордеров', ORDER_LEN.value), _defineProperty(_console$table, 'Макс сумм депозит($)', MAX_BUY.value), _defineProperty(_console$table, 'Нач цена рынка (вход)', START_MARKET_VALUE), _defineProperty(_console$table, 'Мин цена рынка (ласт ордер)', MIN_END_MARKET_VALUE), _console$table));
+  console.table((_console$table = {}, _defineProperty(_console$table, 'Мартенгейл', START_MART.value), _defineProperty(_console$table, 'Динамический шаг СО', STEP_DIN.value), _defineProperty(_console$table, 'Шаг СО(%)', STEP_DEFAULT_PERCENT.value), _defineProperty(_console$table, 'Take profit (%)', TAKE_PROFIT_PERCENT.value), _defineProperty(_console$table, 'Макс. Число ордеров', ORDER_LEN.value), _defineProperty(_console$table, 'Макс сумм депозит($)', MAX_BUY.value), _defineProperty(_console$table, 'Нач цена рынка (вход)', START_MARKET_VALUE.value), _defineProperty(_console$table, 'Мин цена рынка (ласт ордер)', MIN_END_MARKET_VALUE), _console$table));
 
   for (var i = 0; i < ORDER_LEN.value; i++) {
     var _console$table2;
@@ -281,7 +281,7 @@ var logCalc = function logCalc() {
     var IS_VALID_SUM = SUM_OF_BUY <= MAX_BUY.value;
     var IS_VALID_MARKET_PRICE = checkMarketValid(MARKET_VALUE);
     var MARKET_DELTA_RESULT = getPercentDiff(MIN_END_MARKET_VALUE, MARKET_VALUE);
-    console.table((_console$table2 = {}, _defineProperty(_console$table2, '🌧 куплен СО (USD)', ORDER_VALUE), _defineProperty(_console$table2, '🚷 Потери при продаже на этом уровне (usd)', DELTA_RESET_MONEY), _defineProperty(_console$table2, '🚶 последний шаг падения цены СО (%)', LAST_STEP_PERCENT), _defineProperty(_console$table2, '📉 сумарное падение цены (%)', getPercentDiff(START_MARKET_VALUE, MARKET_VALUE)), _defineProperty(_console$table2, '🌧 следующий ордер СО может быть на уровне', subPercent(MARKET_VALUE, LAST_STEP_PERCENT * STEP_DIN.value)), _defineProperty(_console$table2, (IS_VALID_MARKET_PRICE ? '✅' : '⛔️') + ' текушая цена валюты (крипты)', MARKET_VALUE), _defineProperty(_console$table2, '📈 ✅ цена валюты Take Profit (крипты)', TP_MARKET_PRICE), _defineProperty(_console$table2, 'отклонение цены от мин допустимой', "".concat(MARKET_DELTA_RESULT, "% from max ").concat(MAX_DELTA_MARKET_PERCENT, "%")), _defineProperty(_console$table2, '👇 стоимость денег после падения', SUM_REAL_CURRENT_MONEY), _defineProperty(_console$table2, (IS_VALID_SUM ? '👍' : '⛔️') + ' суммарные текущие вложения', SUM_OF_BUY), _defineProperty(_console$table2, '💸 сумма денег для продажи Take Profit', TP_SELL_SUM_VALUE), _defineProperty(_console$table2, 'Цена валюты для откупа всех вложенных денег (крипты)', RESET_MONEY_VALUE), _defineProperty(_console$table2, '⬆️ Процент треб. роста для продажи TP', "".concat(FULL_TP_PERCENT_FROM_ORDER, " %")), _defineProperty(_console$table2, '🦺 Процент падения от уровня закупа до продажи TP (страховка)', getPercentDiff(START_MARKET_VALUE, TP_MARKET_PRICE)), _defineProperty(_console$table2, '✅ Доход от продажи Take Profit (USD)', SALARY_FROM_SELL_TP), _console$table2));
+    console.table((_console$table2 = {}, _defineProperty(_console$table2, '🌧 куплен СО (USD)', ORDER_VALUE), _defineProperty(_console$table2, '🚷 Потери при продаже на этом уровне (usd)', DELTA_RESET_MONEY), _defineProperty(_console$table2, '🚶 последний шаг падения цены СО (%)', LAST_STEP_PERCENT), _defineProperty(_console$table2, '📉 сумарное падение цены (%)', getPercentDiff(START_MARKET_VALUE.value, MARKET_VALUE)), _defineProperty(_console$table2, '🌧 следующий ордер СО может быть на уровне', subPercent(MARKET_VALUE, LAST_STEP_PERCENT * STEP_DIN.value)), _defineProperty(_console$table2, (IS_VALID_MARKET_PRICE ? '✅' : '⛔️') + ' текушая цена валюты (крипты)', MARKET_VALUE), _defineProperty(_console$table2, '📈 ✅ цена валюты Take Profit (крипты)', TP_MARKET_PRICE), _defineProperty(_console$table2, 'отклонение цены от мин допустимой', "".concat(MARKET_DELTA_RESULT, "% from max ").concat(MAX_DELTA_MARKET_PERCENT, "%")), _defineProperty(_console$table2, '👇 стоимость денег после падения', SUM_REAL_CURRENT_MONEY), _defineProperty(_console$table2, (IS_VALID_SUM ? '👍' : '⛔️') + ' суммарные текущие вложения', SUM_OF_BUY), _defineProperty(_console$table2, '💸 сумма денег для продажи Take Profit', TP_SELL_SUM_VALUE), _defineProperty(_console$table2, 'Цена валюты для откупа всех вложенных денег (крипты)', RESET_MONEY_VALUE), _defineProperty(_console$table2, '⬆️ Процент треб. роста для продажи TP', "".concat(FULL_TP_PERCENT_FROM_ORDER, " %")), _defineProperty(_console$table2, '🦺 Процент падения от уровня закупа до продажи TP (страховка)', getPercentDiff(START_MARKET_VALUE.value, TP_MARKET_PRICE)), _defineProperty(_console$table2, '✅ Доход от продажи Take Profit (USD)', SALARY_FROM_SELL_TP), _console$table2));
     orderPoints.push({
       orderPrice: ORDER_VALUE,
       marketValue: MARKET_VALUE,
@@ -327,7 +327,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61266" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61396" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
