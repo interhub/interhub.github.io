@@ -189,6 +189,7 @@ var generateChart = function generateChart() {
   if (typeof window === 'undefined') return; //IF not DOM then break
 
   var chartBox = document.querySelector('#chart');
+  chartBox.innerHTML = '';
   orderPoints.forEach(function (point, index) {
     var SIZE_KOEF = 30;
     var H_PIXELS = point.lastStep * SIZE_KOEF;

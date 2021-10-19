@@ -63,6 +63,7 @@ let orderPoints: { marketValue: number, orderPrice: number, lastStep: number }[]
 const generateChart = () => {
     if (typeof window === 'undefined') return //IF not DOM then break
     const chartBox = document.querySelector('#chart')
+    chartBox.innerHTML=''
     orderPoints.forEach((point, index) => {
         const SIZE_KOEF = 30
         const H_PIXELS = point.lastStep * SIZE_KOEF
