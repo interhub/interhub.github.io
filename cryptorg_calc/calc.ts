@@ -57,7 +57,6 @@ const MAX_BUY = new SettingItem('MAX_BUY', 606, 'максимум вложени
 
 //минимальная цена валюты допустимая
 let MIN_END_MARKET_VALUE = subPercent(START_MARKET_VALUE.value, MAX_LOSE_PERCENT.value)
-let MARKET_VALUE = START_MARKET_VALUE.value
 
 let orderPoints: { marketValue: number, orderPrice: number, lastStep: number, sumStep: number, upToTp: number }[] = []
 
@@ -117,6 +116,7 @@ const logCalc = () => {
     let LAST_ORDER_VALUE = START_BUY.value
     let SUM_OF_BUY = START_BUY.value
     let LAST_MONEY_AFTER_DOWN_SUM = START_BUY.value
+    let MARKET_VALUE = START_MARKET_VALUE.value
 
     let LAST_STEP_PERCENT = STEP_DEFAULT_PERCENT.value
     let STEP_DELTA_SUM = STEP_DEFAULT_PERCENT.value
