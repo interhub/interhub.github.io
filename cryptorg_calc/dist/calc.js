@@ -182,7 +182,6 @@ var MAX_LOSE_PERCENT = new SettingItem('MAX_LOSE_PERCENT', 15, 'макс пад�
 var MAX_BUY = new SettingItem('MAX_BUY', 606, 'максимум вложений'); //минимальная цена валюты допустимая
 
 var MIN_END_MARKET_VALUE = subPercent(START_MARKET_VALUE.value, MAX_LOSE_PERCENT.value);
-var MARKET_VALUE = START_MARKET_VALUE.value;
 var orderPoints = [];
 
 var generateChart = function generateChart() {
@@ -239,6 +238,7 @@ var logCalc = function logCalc() {
   var LAST_ORDER_VALUE = START_BUY.value;
   var SUM_OF_BUY = START_BUY.value;
   var LAST_MONEY_AFTER_DOWN_SUM = START_BUY.value;
+  var MARKET_VALUE = START_MARKET_VALUE.value;
   var LAST_STEP_PERCENT = STEP_DEFAULT_PERCENT.value;
   var STEP_DELTA_SUM = STEP_DEFAULT_PERCENT.value; //first buy
 
@@ -327,7 +327,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61757" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64599" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
