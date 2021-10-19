@@ -70,7 +70,7 @@ const generateChart = () => {
 <label>${point.orderPrice} цена ордера (USDT) /</label>
 <label style="color: red">${point.lastStep} шаг цены (%) /</label> 
 <label style="color: orange">${point.sumStep} сум падение цены (%) /</label> 
-<label style="color: greenyellow;" >${point.upToTp} процент треб. роста до TP (%)</label> 
+<label style="color: greenyellow;" >${point.upToTp} процент треб. роста до TP (%) (до цены рынка ${addPercent(point.marketValue, point.upToTp)} USDT)</label> 
 </p>
 </div>`
     })
