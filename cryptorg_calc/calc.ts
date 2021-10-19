@@ -1,4 +1,3 @@
-// const jq = require('jquery')
 //MARKET VALUES
 let MAX_DELTA_MARKET_PERCENT = 3
 
@@ -55,12 +54,17 @@ const generateChart = () => {
     if (typeof window === 'undefined') return //IF not DOM then break
     const chartBox = document.querySelector('#chart')
     chartBox.innerHTML = ''
+    const sumBuy = START_BUY.value + orderPoints.map(({orderPrice}) => {
+        return orderPrice
+    }).reduce((a, b) => a + b, 0)
+    chartBox.innerHTML += `<p style="margin: 0; color: green">Начало сделки по цене ${START_BUY.value} USDT</p>`
+    chartBox.innerHTML += `<p style="margin: 0; color: green">Сум вложения ${sumBuy} USDT</p>`
     orderPoints.forEach((point, index) => {
         const SIZE_KOEF = 30
         const H_PIXELS = point.lastStep * SIZE_KOEF
         chartBox.innerHTML += `
-<div style="height: ${H_PIXELS}px; width: 100%; background-color: #313131" >
-<p style="margin: 3px; color: #fff">
+<div style="height: ${H_PIXELS}px; width: 100%; background-color: #313131; margin-top: 2px; display: flex; align-items: flex-end" >
+<p style="color: #fff; margin: 0px; margin-left: 5px;">
 <label>№${index + 1})</label>
 <label>${point.marketValue} цена рынка (USDT) /</label>
 <label>${point.orderPrice} цена ордера (USDT) /</label>

@@ -122,7 +122,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-// const jq = require('jquery')
 //MARKET VALUES
 var MAX_DELTA_MARKET_PERCENT = 3;
 
@@ -180,10 +179,18 @@ var generateChart = function generateChart() {
 
   var chartBox = document.querySelector('#chart');
   chartBox.innerHTML = '';
+  var sumBuy = START_BUY.value + orderPoints.map(function (_ref) {
+    var orderPrice = _ref.orderPrice;
+    return orderPrice;
+  }).reduce(function (a, b) {
+    return a + b;
+  }, 0);
+  chartBox.innerHTML += "<p style=\"margin: 0; color: green\">\u041D\u0430\u0447\u0430\u043B\u043E \u0441\u0434\u0435\u043B\u043A\u0438 \u043F\u043E \u0446\u0435\u043D\u0435 ".concat(START_BUY.value, " USDT</p>");
+  chartBox.innerHTML += "<p style=\"margin: 0; color: green\">\u0421\u0443\u043C \u0432\u043B\u043E\u0436\u0435\u043D\u0438\u044F ".concat(sumBuy, " USDT</p>");
   orderPoints.forEach(function (point, index) {
     var SIZE_KOEF = 30;
     var H_PIXELS = point.lastStep * SIZE_KOEF;
-    chartBox.innerHTML += "\n<div style=\"height: ".concat(H_PIXELS, "px; width: 100%; background-color: #313131\" >\n<p style=\"margin: 3px; color: #fff\">\n<label>\u2116").concat(index + 1, ")</label>\n<label>").concat(point.marketValue, " \u0446\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 (USDT) /</label>\n<label>").concat(point.orderPrice, " \u0446\u0435\u043D\u0430 \u043E\u0440\u0434\u0435\u0440\u0430 (USDT) /</label>\n<label style=\"color: red\">").concat(point.lastStep, " \u0448\u0430\u0433 \u0446\u0435\u043D\u044B (%) /</label> \n<label style=\"color: orange\">").concat(point.sumStep, " \u0441\u0443\u043C \u043F\u0430\u0434\u0435\u043D\u0438\u0435 \u0446\u0435\u043D\u044B (%) /</label> \n<label style=\"color: greenyellow;\" >").concat(point.upToTp, " \u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u0442\u0440\u0435\u0431. \u0440\u043E\u0441\u0442\u0430 \u0434\u043E TP (%)</label> \n</p>\n</div>");
+    chartBox.innerHTML += "\n<div style=\"height: ".concat(H_PIXELS, "px; width: 100%; background-color: #313131; margin-top: 2px; display: flex; align-items: flex-end\" >\n<p style=\"color: #fff; margin: 0px; margin-left: 5px;\">\n<label>\u2116").concat(index + 1, ")</label>\n<label>").concat(point.marketValue, " \u0446\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 (USDT) /</label>\n<label>").concat(point.orderPrice, " \u0446\u0435\u043D\u0430 \u043E\u0440\u0434\u0435\u0440\u0430 (USDT) /</label>\n<label style=\"color: red\">").concat(point.lastStep, " \u0448\u0430\u0433 \u0446\u0435\u043D\u044B (%) /</label> \n<label style=\"color: orange\">").concat(point.sumStep, " \u0441\u0443\u043C \u043F\u0430\u0434\u0435\u043D\u0438\u0435 \u0446\u0435\u043D\u044B (%) /</label> \n<label style=\"color: greenyellow;\" >").concat(point.upToTp, " \u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u0442\u0440\u0435\u0431. \u0440\u043E\u0441\u0442\u0430 \u0434\u043E TP (%)</label> \n</p>\n</div>");
   });
 };
 
@@ -191,15 +198,15 @@ var generateDom = function generateDom() {
   if (typeof window === 'undefined') return; //IF not DOM then break
 
   var container = document.querySelector('#inputs');
-  SettingItem.items.forEach(function (_ref) {
-    var name = _ref.name,
-        placeholder = _ref.placeholder,
-        value = _ref.value;
+  SettingItem.items.forEach(function (_ref2) {
+    var name = _ref2.name,
+        placeholder = _ref2.placeholder,
+        value = _ref2.value;
     container.innerHTML += "\n<p>\n<input type=\"text\" placeholder=\"".concat(placeholder, "\" value=\"").concat(value, "\" id=\"").concat(name, "\" />\n<label> ").concat(placeholder, "</label></p>\n");
 
     var onChange = function onChange(val) {
-      SettingItem.items.find(function (_ref2) {
-        var n = _ref2.name;
+      SettingItem.items.find(function (_ref3) {
+        var n = _ref3.name;
         return n === name;
       }).value = val;
       logCalc();
@@ -331,7 +338,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64599" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50112" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
