@@ -145,13 +145,13 @@ var getPercentDiff = function getPercentDiff() {
 var addPercent = function addPercent() {
   var value = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
   var percent = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-  return fixNumber(value * (100 + percent) / 100);
+  return Math.abs(fixNumber(value * (100 + percent) / 100));
 };
 
 var subPercent = function subPercent() {
   var value = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
   var percent = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-  return fixNumber(value * (100 - percent) / 100);
+  return Math.abs(fixNumber(value * (100 - percent) / 100));
 };
 /**
  * INPUT PARAMS
@@ -181,6 +181,16 @@ var SettingItem = /*#__PURE__*/function () {
 }();
 
 SettingItem.items = [];
+var COLORS;
+
+(function (COLORS) {
+  COLORS["ORANGE"] = "#cc8f2e";
+  COLORS["RED"] = "#fc5252";
+  COLORS["GREEN"] = "#2ecc40";
+  COLORS["GREEN_DARK"] = "#70af11";
+  COLORS["LIGHT"] = "#e3e3e3";
+})(COLORS || (COLORS = {}));
+
 var START_MARKET_VALUE = new SettingItem('START_MARKET_VALUE', 185, 'цена валюты входа');
 var ORDER_LEN = new SettingItem('ORDER_LEN', 10, 'макс число ордеров');
 var STEP_DEFAULT_PERCENT = new SettingItem('STEP_DEFAULT_PERCENT', 1, 'шаг цены дефолтный');
@@ -190,7 +200,16 @@ var TAKE_PROFIT_PERCENT = new SettingItem('TAKE_PROFIT_PERCENT', 0.5, 'тейк 
 var START_BUY = new SettingItem('START_BUY', 18, 'первый закуп');
 var MAX_LOSE_PERCENT = new SettingItem('MAX_LOSE_PERCENT', 15, 'макс падение цены в процентах');
 var MAX_BUY = new SettingItem('MAX_BUY', 606, 'максимум вложений');
-var orderPoints = [];
+var orderPoints = []; //минимальная цена валюты допустимая
+
+var MIN_END_MARKET_VALUE = subPercent(START_MARKET_VALUE.value, MAX_LOSE_PERCENT.value);
+
+var checkMarketValid = function checkMarketValid() {
+  var price = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+  var min = subPercent(MIN_END_MARKET_VALUE, MAX_DELTA_MARKET_PERCENT);
+  var max = addPercent(MIN_END_MARKET_VALUE, MAX_DELTA_MARKET_PERCENT);
+  return price > min && price < max;
+};
 
 var generateChart = function generateChart() {
   if (IS_NODE) return; //IF not DOM then break
@@ -202,16 +221,17 @@ var generateChart = function generateChart() {
     return orderPrice;
   }).reduce(function (a, b) {
     return a + b;
-  }, 0);
-  chartBox.innerHTML += "<p style=\"margin: 0; color: green\">\u041D\u0430\u0447\u0430\u043B\u043E \u0441\u0434\u0435\u043B\u043A\u0438 \u043F\u043E \u0446\u0435\u043D\u0435 ".concat(START_BUY.value, " USDT</p>");
-  chartBox.innerHTML += "<p style=\"margin: 0; color: ".concat(sumBuy > MAX_BUY.value ? 'red' : 'green', "\">\u0421\u0443\u043C \u0432\u043B\u043E\u0436\u0435\u043D\u0438\u044F ").concat(sumBuy, " USDT</p>");
+  }, 0); //create first lines info
+
+  chartBox.innerHTML += "\n<p style=\"margin: 0; color: ".concat(COLORS.GREEN_DARK, "\">\n\u041D\u0430\u0447\u0430\u043B\u043E \u0441\u0434\u0435\u043B\u043A\u0438 \u043F\u043E\u043A\u0443\u043F\u043A\u0430 ").concat(START_BUY.value, " USDT<br> \u0440\u044B\u043D\u043E\u043A ").concat(START_MARKET_VALUE.value, " USDT\n<br> \u043C\u0438\u043D \u0446\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 ").concat(MIN_END_MARKET_VALUE, " USDT = \u043F\u0430\u0434\u0435\u043D\u0438\u0435 \u043D\u0430 ").concat(MAX_LOSE_PERCENT.value, " % </p>\n");
+  chartBox.innerHTML += "<p style=\"margin: 0; color: ".concat(sumBuy > MAX_BUY.value ? COLORS.RED : COLORS.GREEN_DARK, "\">\u0421\u0443\u043C \u0432\u043B\u043E\u0436\u0435\u043D\u0438\u044F ").concat(sumBuy, " USDT</p>");
   orderPoints.forEach(function (point, index) {
     var MIN_H = 40;
     var SIZE_KOEF = 30;
     var H_PIXELS = MIN_H + point.lastStep * SIZE_KOEF;
     var MAX_SAME_KOEF = H_PIXELS / Math.max(point.upToTp, point.sumStep); //create line item
 
-    chartBox.innerHTML += "\n<div style=\"height: ".concat(H_PIXELS, "px; width: 100%; background-color: #313131; margin-top: 2px; display: flex; align-items: flex-end; overflow: scroll; flex-direction: row; color: #fff\" >\n<p style=\"margin: 0px; margin-left: 5px; word-break: keep-all\">\n<p style=\"padding-right: 5px;\">\u2116").concat(index + 1, ")</p>\n<p>").concat(point.marketValue, " \u0446\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 (USDT)</p>\n<p>").concat(point.orderPrice, " \u0446\u0435\u043D\u0430 \u043E\u0440\u0434\u0435\u0440\u0430 (USDT)</p>\n<p style=\"color: #ff8181\">").concat(point.lastStep, " \u0448\u0430\u0433 \u0446\u0435\u043D\u044B (%)</p> \n<p style=\"color: orange\">").concat(point.sumStep, " \u0441\u0443\u043C \u043F\u0430\u0434\u0435\u043D\u0438\u0435 \u0446\u0435\u043D\u044B (%)</p> \n<p style=\"color: greenyellow; padding-left: 5px; padding-right: 5px\" >").concat(point.upToTp, " \u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u0442\u0440\u0435\u0431. \u0440\u043E\u0441\u0442\u0430 \u0434\u043E TP (%)</p> \n<p style=\"color: #70af11;\" >\u0434\u043E \u0446\u0435\u043D\u044B \u0440\u044B\u043D\u043A\u0430 ").concat(addPercent(point.marketValue, point.upToTp), " USDT</p> \n</p>\n<div style=\"width: 20px; height: ").concat(point.upToTp * MAX_SAME_KOEF, "px; background-color: #2ecc40\"></div>\n<div style=\"width: 20px; height: ").concat(point.sumStep * MAX_SAME_KOEF, "px; background-color: #cc2e2e\"></div>\n</div>");
+    chartBox.innerHTML += "\n<div style=\"height: ".concat(H_PIXELS, "px; width: 100%; background-color: #313131; margin-top: 2px; display: flex; align-items: flex-end; overflow: scroll; flex-direction: row;\" >\n<p style=\"margin: 0px; margin-left: 5px; word-break: keep-all\">\n<p style=\"padding-right: 5px; color: #929292\">\u2116").concat(index + 1, ". </p>\n<p style=\"color: ").concat(COLORS.LIGHT, ";\">").concat(point.marketValue, " \u0446\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 (USDT)</p> \n<p style=\"color: ").concat(COLORS.LIGHT, ";\">").concat(point.orderPrice, " \u0446\u0435\u043D\u0430 \u043E\u0440\u0434\u0435\u0440\u0430 (USDT)</p>\n<p style=\"color: ").concat(COLORS.ORANGE, "\">").concat(point.lastStep, " (%) \u0448\u0430\u0433 \u0446\u0435\u043D\u044B</p> \n<p style=\"color: ").concat(COLORS.RED, "\">").concat(point.sumStep, " (%) \u0441\u0443\u043C \u043F\u0430\u0434\u0435\u043D\u0438\u0435 \u0446\u0435\u043D\u044B</p> \n<p style=\"color: ").concat(COLORS.GREEN, "; padding-left: 5px; padding-right: 5px\" >").concat(point.upToTp, " (%) \u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u0442\u0440\u0435\u0431. \u0440\u043E\u0441\u0442\u0430 \u0434\u043E TP</p> \n<p style=\"color: ").concat(COLORS.GREEN_DARK, ";\" >\u0426\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 TP ").concat(addPercent(point.marketValue, point.upToTp), " USDT</p> \n</p>\n<div style=\"width: 20px; height: ").concat(point.lastStep * MAX_SAME_KOEF, "px; background-color: ").concat(COLORS.ORANGE, "\"></div>\n<div style=\"width: 20px; height: ").concat(point.upToTp * MAX_SAME_KOEF, "px; background-color: ").concat(COLORS.GREEN, "\"></div>\n<div style=\"width: 20px; height: ").concat(point.sumStep * MAX_SAME_KOEF, "px; background-color: ").concat(COLORS.RED, "\"></div>\n</div>");
   });
 };
 
@@ -223,7 +243,7 @@ var generateDom = function generateDom() {
     var name = _ref2.name,
         placeholder = _ref2.placeholder,
         value = _ref2.value;
-    container.innerHTML += "\n<p>\n<input type=\"text\" placeholder=\"".concat(placeholder, "\" value=\"").concat(value, "\" id=\"").concat(name, "\" />\n<label> ").concat(placeholder, "</label></p>\n");
+    container.innerHTML += "\n<p>\n<input type=\"number\" placeholder=\"".concat(placeholder, "\" value=\"").concat(value, "\" id=\"").concat(name, "\" />\n<label> ").concat(placeholder, "</label></p>\n");
 
     var onChange = function onChange(val) {
       SettingItem.items.find(function (_ref3) {
@@ -261,19 +281,9 @@ var logCalc = function logCalc() {
 
   var LAST_MONEY_AFTER_DOWN_SUM = START_BUY.value; //текущая цена рынка
 
-  var MARKET_VALUE = START_MARKET_VALUE.value; //минимальная цена валюты допустимая
-
-  var MIN_END_MARKET_VALUE = subPercent(START_MARKET_VALUE.value, MAX_LOSE_PERCENT.value);
+  var MARKET_VALUE = START_MARKET_VALUE.value;
   var LAST_STEP_PERCENT = STEP_DEFAULT_PERCENT.value;
-  var STEP_DELTA_SUM = STEP_DEFAULT_PERCENT.value;
-
-  var checkMarketValid = function checkMarketValid() {
-    var price = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
-    var min = subPercent(MIN_END_MARKET_VALUE, MAX_DELTA_MARKET_PERCENT);
-    var max = addPercent(MIN_END_MARKET_VALUE, MAX_DELTA_MARKET_PERCENT);
-    return price > min && price < max;
-  }; //first buy
-
+  var STEP_DELTA_SUM = STEP_DEFAULT_PERCENT.value; //first buy
 
   console.log('start buy = ', LAST_ORDER_VALUE, 'MARKET PRICE', MARKET_VALUE);
   console.log('MARKET 1st sell price', addPercent(MARKET_VALUE, TAKE_PROFIT_PERCENT.value));

@@ -10,11 +10,11 @@ const getPercentDiff = (from = 0, to = 0) => {
 }
 
 const addPercent = (value = 0, percent = 0) => {
-    return fixNumber(value * (100 + percent) / 100)
+    return Math.abs(fixNumber(value * (100 + percent) / 100))
 }
 
 const subPercent = (value = 0, percent = 0) => {
-    return fixNumber(value * (100 - percent) / 100,)
+    return Math.abs(fixNumber(value * (100 - percent) / 100,))
 }
 
 
@@ -45,6 +45,14 @@ class SettingItem {
 
 }
 
+enum COLORS {
+    ORANGE = '#cc8f2e',
+    RED = '#fc5252',
+    GREEN = '#2ecc40',
+    GREEN_DARK = '#70af11',
+    LIGHT = '#e3e3e3'
+}
+
 
 const START_MARKET_VALUE = new SettingItem('START_MARKET_VALUE', 185, 'цена валюты входа')
 const ORDER_LEN = new SettingItem('ORDER_LEN', 10, 'макс число ордеров')
@@ -59,6 +67,15 @@ const MAX_BUY = new SettingItem('MAX_BUY', 606, 'максимум вложени
 
 let orderPoints: { marketValue: number, orderPrice: number, lastStep: number, sumStep: number, upToTp: number }[] = []
 
+//минимальная цена валюты допустимая
+let MIN_END_MARKET_VALUE = subPercent(START_MARKET_VALUE.value, MAX_LOSE_PERCENT.value)
+
+const checkMarketValid = (price = 0) => {
+    const min = subPercent(MIN_END_MARKET_VALUE, MAX_DELTA_MARKET_PERCENT)
+    const max = addPercent(MIN_END_MARKET_VALUE, MAX_DELTA_MARKET_PERCENT)
+    return price > min && price < max
+}
+
 const generateChart = () => {
     if (IS_NODE) return //IF not DOM then break
     const chartBox = document.querySelector('#chart')
@@ -66,8 +83,13 @@ const generateChart = () => {
     const sumBuy = START_BUY.value + orderPoints.map(({orderPrice}) => {
         return orderPrice
     }).reduce((a, b) => a + b, 0)
-    chartBox.innerHTML += `<p style="margin: 0; color: green">Начало сделки по цене ${START_BUY.value} USDT</p>`
-    chartBox.innerHTML += `<p style="margin: 0; color: ${sumBuy > MAX_BUY.value ? 'red' : 'green'}">Сум вложения ${sumBuy} USDT</p>`
+    //create first lines info
+    chartBox.innerHTML += `
+<p style="margin: 0; color: ${COLORS.GREEN_DARK}">
+Начало сделки покупка ${START_BUY.value} USDT<br> рынок ${START_MARKET_VALUE.value} USDT
+<br> мин цена рынка ${MIN_END_MARKET_VALUE} USDT = падение на ${MAX_LOSE_PERCENT.value} % </p>
+`
+    chartBox.innerHTML += `<p style="margin: 0; color: ${sumBuy > MAX_BUY.value ? COLORS.RED : COLORS.GREEN_DARK}">Сум вложения ${sumBuy} USDT</p>`
     orderPoints.forEach((point, index) => {
         const MIN_H = 40
         const SIZE_KOEF = 30
@@ -75,18 +97,19 @@ const generateChart = () => {
         const MAX_SAME_KOEF = H_PIXELS / Math.max(point.upToTp, point.sumStep)
         //create line item
         chartBox.innerHTML += `
-<div style="height: ${H_PIXELS}px; width: 100%; background-color: #313131; margin-top: 2px; display: flex; align-items: flex-end; overflow: scroll; flex-direction: row; color: #fff" >
+<div style="height: ${H_PIXELS}px; width: 100%; background-color: #313131; margin-top: 2px; display: flex; align-items: flex-end; overflow: scroll; flex-direction: row;" >
 <p style="margin: 0px; margin-left: 5px; word-break: keep-all">
-<p style="padding-right: 5px;">№${index + 1})</p>
-<p>${point.marketValue} цена рынка (USDT)</p>
-<p>${point.orderPrice} цена ордера (USDT)</p>
-<p style="color: #ff8181">${point.lastStep} шаг цены (%)</p> 
-<p style="color: orange">${point.sumStep} сум падение цены (%)</p> 
-<p style="color: greenyellow; padding-left: 5px; padding-right: 5px" >${point.upToTp} процент треб. роста до TP (%)</p> 
-<p style="color: #70af11;" >до цены рынка ${addPercent(point.marketValue, point.upToTp)} USDT</p> 
+<p style="padding-right: 5px; color: #929292">№${index + 1}. </p>
+<p style="color: ${COLORS.LIGHT};">${point.marketValue} цена рынка (USDT)</p> 
+<p style="color: ${COLORS.LIGHT};">${point.orderPrice} цена ордера (USDT)</p>
+<p style="color: ${COLORS.ORANGE}">${point.lastStep} (%) шаг цены</p> 
+<p style="color: ${COLORS.RED}">${point.sumStep} (%) сум падение цены</p> 
+<p style="color: ${COLORS.GREEN}; padding-left: 5px; padding-right: 5px" >${point.upToTp} (%) процент треб. роста до TP</p> 
+<p style="color: ${COLORS.GREEN_DARK};" >Цена рынка TP ${addPercent(point.marketValue, point.upToTp)} USDT</p> 
 </p>
-<div style="width: 20px; height: ${point.upToTp * MAX_SAME_KOEF}px; background-color: #2ecc40"></div>
-<div style="width: 20px; height: ${point.sumStep * MAX_SAME_KOEF}px; background-color: #cc2e2e"></div>
+<div style="width: 20px; height: ${point.lastStep * MAX_SAME_KOEF}px; background-color: ${COLORS.ORANGE}"></div>
+<div style="width: 20px; height: ${point.upToTp * MAX_SAME_KOEF}px; background-color: ${COLORS.GREEN}"></div>
+<div style="width: 20px; height: ${point.sumStep * MAX_SAME_KOEF}px; background-color: ${COLORS.RED}"></div>
 </div>`
     })
 }
@@ -98,7 +121,7 @@ const generateDom = () => {
     SettingItem.items.forEach(({name, placeholder, value}) => {
         container.innerHTML += `
 <p>
-<input type="text" placeholder="${placeholder}" value="${value}" id="${name}" />
+<input type="number" placeholder="${placeholder}" value="${value}" id="${name}" />
 <label> ${placeholder}</label></p>
 `
         let onChange = (val) => {
@@ -132,17 +155,10 @@ const logCalc = () => {
     let LAST_MONEY_AFTER_DOWN_SUM = START_BUY.value
     //текущая цена рынка
     let MARKET_VALUE = START_MARKET_VALUE.value
-    //минимальная цена валюты допустимая
-    let MIN_END_MARKET_VALUE = subPercent(START_MARKET_VALUE.value, MAX_LOSE_PERCENT.value)
 
     let LAST_STEP_PERCENT = STEP_DEFAULT_PERCENT.value
     let STEP_DELTA_SUM = STEP_DEFAULT_PERCENT.value
 
-    const checkMarketValid = (price = 0) => {
-        const min = subPercent(MIN_END_MARKET_VALUE, MAX_DELTA_MARKET_PERCENT)
-        const max = addPercent(MIN_END_MARKET_VALUE, MAX_DELTA_MARKET_PERCENT)
-        return price > min && price < max
-    }
 
     //first buy
     console.log('start buy = ', LAST_ORDER_VALUE, 'MARKET PRICE', MARKET_VALUE)
