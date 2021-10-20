@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add address redirect">
-      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add fix ram save">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cryptorg_calc/calc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cryptorg_calc/calc.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cryptorg_calc/dist/calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/cryptorg_calc/dist/calc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cryptorg_calc/dist/calc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/cryptorg_calc/dist/calc.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryptorg_calc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cryptorg_calc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryptorg_calc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/cryptorg_calc/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +147,8 @@
       <workItem from="1633017803557" duration="2298000" />
       <workItem from="1633513617269" duration="595000" />
       <workItem from="1633515203329" duration="64000" />
-      <workItem from="1634658404229" duration="2596000" />
+      <workItem from="1634658404229" duration="2635000" />
+      <workItem from="1634748207338" duration="791000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -285,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633513666087</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add fix ram save">
+      <created>1634661185391</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1634661185391</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -334,6 +339,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="add refactoring" />
     <MESSAGE value="add all image new" />
     <MESSAGE value="add rename 2" />
@@ -353,7 +360,8 @@
     <MESSAGE value="add flubber example video" />
     <MESSAGE value="create new library" />
     <MESSAGE value="add address redirect" />
-    <option name="LAST_COMMIT_MESSAGE" value="add address redirect" />
+    <MESSAGE value="add fix ram save" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fix ram save" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">

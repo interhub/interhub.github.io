@@ -206,10 +206,12 @@ var generateChart = function generateChart() {
   chartBox.innerHTML += "<p style=\"margin: 0; color: green\">\u041D\u0430\u0447\u0430\u043B\u043E \u0441\u0434\u0435\u043B\u043A\u0438 \u043F\u043E \u0446\u0435\u043D\u0435 ".concat(START_BUY.value, " USDT</p>");
   chartBox.innerHTML += "<p style=\"margin: 0; color: ".concat(sumBuy > MAX_BUY.value ? 'red' : 'green', "\">\u0421\u0443\u043C \u0432\u043B\u043E\u0436\u0435\u043D\u0438\u044F ").concat(sumBuy, " USDT</p>");
   orderPoints.forEach(function (point, index) {
-    var MIN_H = 25;
+    var MIN_H = 40;
     var SIZE_KOEF = 30;
     var H_PIXELS = MIN_H + point.lastStep * SIZE_KOEF;
-    chartBox.innerHTML += "\n<div style=\"height: ".concat(H_PIXELS, "px; width: 100%; background-color: #313131; margin-top: 2px; display: flex; align-items: flex-end; overflow: scroll; flex-direction: row; color: #fff\" >\n<p style=\"margin: 0px; margin-left: 5px; word-break: keep-all\">\n<p style=\"padding-right: 5px;\">\u2116").concat(index + 1, ")</p>\n<p>").concat(point.marketValue, " \u0446\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 (USDT)</p>\n<p>").concat(point.orderPrice, " \u0446\u0435\u043D\u0430 \u043E\u0440\u0434\u0435\u0440\u0430 (USDT)</p>\n<p style=\"color: #ff8181\">").concat(point.lastStep, " \u0448\u0430\u0433 \u0446\u0435\u043D\u044B (%)</p> \n<p style=\"color: orange\">").concat(point.sumStep, " \u0441\u0443\u043C \u043F\u0430\u0434\u0435\u043D\u0438\u0435 \u0446\u0435\u043D\u044B (%)</p> \n<p style=\"color: greenyellow; padding-left: 5px; padding-right: 5px\" >").concat(point.upToTp, " \u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u0442\u0440\u0435\u0431. \u0440\u043E\u0441\u0442\u0430 \u0434\u043E TP (%)</p> \n<p style=\"color: #70af11;\" >\u0434\u043E \u0446\u0435\u043D\u044B \u0440\u044B\u043D\u043A\u0430 ").concat(addPercent(point.marketValue, point.upToTp), " USDT</p> \n</p>\n<div style=\"width: 20px; height: ").concat(point.upToTp, "%; background-color: #2ecc40\"></div>\n<div style=\"width: 20px; height: ").concat(point.sumStep, "%; background-color: #cc2e2e\"></div>\n</div>");
+    var MAX_SAME_KOEF = H_PIXELS / Math.max(point.upToTp, point.sumStep); //create line item
+
+    chartBox.innerHTML += "\n<div style=\"height: ".concat(H_PIXELS, "px; width: 100%; background-color: #313131; margin-top: 2px; display: flex; align-items: flex-end; overflow: scroll; flex-direction: row; color: #fff\" >\n<p style=\"margin: 0px; margin-left: 5px; word-break: keep-all\">\n<p style=\"padding-right: 5px;\">\u2116").concat(index + 1, ")</p>\n<p>").concat(point.marketValue, " \u0446\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 (USDT)</p>\n<p>").concat(point.orderPrice, " \u0446\u0435\u043D\u0430 \u043E\u0440\u0434\u0435\u0440\u0430 (USDT)</p>\n<p style=\"color: #ff8181\">").concat(point.lastStep, " \u0448\u0430\u0433 \u0446\u0435\u043D\u044B (%)</p> \n<p style=\"color: orange\">").concat(point.sumStep, " \u0441\u0443\u043C \u043F\u0430\u0434\u0435\u043D\u0438\u0435 \u0446\u0435\u043D\u044B (%)</p> \n<p style=\"color: greenyellow; padding-left: 5px; padding-right: 5px\" >").concat(point.upToTp, " \u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u0442\u0440\u0435\u0431. \u0440\u043E\u0441\u0442\u0430 \u0434\u043E TP (%)</p> \n<p style=\"color: #70af11;\" >\u0434\u043E \u0446\u0435\u043D\u044B \u0440\u044B\u043D\u043A\u0430 ").concat(addPercent(point.marketValue, point.upToTp), " USDT</p> \n</p>\n<div style=\"width: 20px; height: ").concat(point.upToTp * MAX_SAME_KOEF, "px; background-color: #2ecc40\"></div>\n<div style=\"width: 20px; height: ").concat(point.sumStep * MAX_SAME_KOEF, "px; background-color: #cc2e2e\"></div>\n</div>");
   });
 };
 
@@ -358,7 +360,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57431" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50539" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

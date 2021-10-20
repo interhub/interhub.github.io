@@ -69,9 +69,11 @@ const generateChart = () => {
     chartBox.innerHTML += `<p style="margin: 0; color: green">Начало сделки по цене ${START_BUY.value} USDT</p>`
     chartBox.innerHTML += `<p style="margin: 0; color: ${sumBuy > MAX_BUY.value ? 'red' : 'green'}">Сум вложения ${sumBuy} USDT</p>`
     orderPoints.forEach((point, index) => {
-        const MIN_H = 25
+        const MIN_H = 40
         const SIZE_KOEF = 30
         const H_PIXELS = MIN_H + point.lastStep * SIZE_KOEF
+        const MAX_SAME_KOEF = H_PIXELS / Math.max(point.upToTp, point.sumStep)
+        //create line item
         chartBox.innerHTML += `
 <div style="height: ${H_PIXELS}px; width: 100%; background-color: #313131; margin-top: 2px; display: flex; align-items: flex-end; overflow: scroll; flex-direction: row; color: #fff" >
 <p style="margin: 0px; margin-left: 5px; word-break: keep-all">
@@ -83,8 +85,8 @@ const generateChart = () => {
 <p style="color: greenyellow; padding-left: 5px; padding-right: 5px" >${point.upToTp} процент треб. роста до TP (%)</p> 
 <p style="color: #70af11;" >до цены рынка ${addPercent(point.marketValue, point.upToTp)} USDT</p> 
 </p>
-<div style="width: 20px; height: ${point.upToTp}%; background-color: #2ecc40"></div>
-<div style="width: 20px; height: ${point.sumStep}%; background-color: #cc2e2e"></div>
+<div style="width: 20px; height: ${point.upToTp * MAX_SAME_KOEF}px; background-color: #2ecc40"></div>
+<div style="width: 20px; height: ${point.sumStep * MAX_SAME_KOEF}px; background-color: #cc2e2e"></div>
 </div>`
     })
 }
