@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add fix numbers more">
-      <change beforePath="$PROJECT_DIR$/cryptorg_calc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cryptorg_calc/index.html" afterDir="false" />
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add fix title">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cryptorg_calc/calc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cryptorg_calc/calc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cryptorg_calc/dist/calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/cryptorg_calc/dist/calc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cryptorg_calc/dist/calc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/cryptorg_calc/dist/calc.js.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +149,7 @@
       <workItem from="1633515203329" duration="64000" />
       <workItem from="1634658404229" duration="2635000" />
       <workItem from="1634748207338" duration="1979000" />
-      <workItem from="1634834159418" duration="570000" />
+      <workItem from="1634834159418" duration="1029000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -309,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634834184820</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="add fix title">
+      <created>1634847526853</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1634847526853</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -383,7 +393,8 @@
     <MESSAGE value="add low lines differents" />
     <MESSAGE value="add number fixes" />
     <MESSAGE value="add fix numbers more" />
-    <option name="LAST_COMMIT_MESSAGE" value="add fix numbers more" />
+    <MESSAGE value="add fix title" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fix title" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">

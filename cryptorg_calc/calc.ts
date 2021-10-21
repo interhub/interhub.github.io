@@ -97,19 +97,19 @@ const generateChart = () => {
         const MAX_SAME_KOEF = H_PIXELS / Math.max(point.upToTp, point.sumStep)
         //create line item
         chartBox.innerHTML += `
-<div style="height: ${H_PIXELS}px; width: 100%; background-color: #313131; margin-top: 2px; display: flex; align-items: flex-end; overflow: scroll; flex-direction: row;" >
-<p style="margin: 0px; margin-left: 5px; word-break: keep-all">
-<p style="padding-right: 5px; color: #929292">№${index + 1}. </p>
-<p style="color: ${COLORS.LIGHT};">${point.marketValue} цена рынка (USDT)</p> 
-<p style="color: ${COLORS.LIGHT};">${point.orderPrice} цена ордера (USDT)</p>
-<p style="color: ${COLORS.ORANGE}">${point.lastStep} (%) шаг цены</p> 
-<p style="color: ${COLORS.RED}">${point.sumStep} (%) сум падение цены</p> 
-<p style="color: ${COLORS.GREEN}; padding-left: 5px; padding-right: 5px" >${point.upToTp} (%) процент треб. роста до TP</p> 
-<p style="color: ${COLORS.GREEN_DARK};" >Цена рынка TP ${addPercent(point.marketValue, point.upToTp)} USDT</p> 
-</p>
-<div style="width: 20px; height: ${point.lastStep * MAX_SAME_KOEF}px; background-color: ${COLORS.ORANGE}"></div>
-<div style="width: 20px; height: ${point.upToTp * MAX_SAME_KOEF}px; background-color: ${COLORS.GREEN}"></div>
-<div style="width: 20px; height: ${point.sumStep * MAX_SAME_KOEF}px; background-color: ${COLORS.RED}"></div>
+<div style="height: ${H_PIXELS}px; width: 100%; background-color: #313131; margin-top: 2px; display: flex; overflow: scroll; flex-direction: row;" >
+<p style="padding-right: 5px; color: #929292; flex: 0.3">№${index + 1}. </p>
+<p style="color: ${COLORS.LIGHT}; flex: 1">${point.marketValue} цена рынка (USDT)</p> 
+<p style="color: ${COLORS.LIGHT}; flex: 1">${point.orderPrice} цена ордера (USDT)</p>
+<p style="color: ${COLORS.ORANGE}; flex: 1">${point.lastStep} (%) шаг цены</p> 
+<p style="color: ${COLORS.RED}; flex: 1">${point.sumStep} (%) сум падение цены</p> 
+<p style="color: ${COLORS.GREEN}; flex: 1" >${point.upToTp} (%) процент треб. роста до TP</p> 
+<p style="color: ${COLORS.GREEN_DARK}; flex: 1" >Цена рынка TP ${addPercent(point.marketValue, point.upToTp)} USDT</p> 
+<div style="flex: 1; flex-direction: row; display:flex; align-items: flex-end; justify-content: center">
+    <div style="width: 20px; height: ${point.lastStep * MAX_SAME_KOEF}px; background-color: ${COLORS.ORANGE}"></div>
+    <div style="width: 20px; height: ${point.upToTp * MAX_SAME_KOEF}px; background-color: ${COLORS.GREEN}"></div>
+    <div style="width: 20px; height: ${point.sumStep * MAX_SAME_KOEF}px; background-color: ${COLORS.RED}"></div>
+</div>
 </div>`
     })
 }

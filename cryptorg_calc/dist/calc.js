@@ -132,7 +132,7 @@ var IS_NODE = typeof window === 'undefined';
 
 var fixNumber = function fixNumber() {
   var num = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
-  var point = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3;
+  var point = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
   return parseFloat(num.toFixed(point));
 };
 
@@ -231,7 +231,7 @@ var generateChart = function generateChart() {
     var H_PIXELS = MIN_H + point.lastStep * SIZE_KOEF;
     var MAX_SAME_KOEF = H_PIXELS / Math.max(point.upToTp, point.sumStep); //create line item
 
-    chartBox.innerHTML += "\n<div style=\"height: ".concat(H_PIXELS, "px; width: 100%; background-color: #313131; margin-top: 2px; display: flex; align-items: flex-end; overflow: scroll; flex-direction: row;\" >\n<p style=\"margin: 0px; margin-left: 5px; word-break: keep-all\">\n<p style=\"padding-right: 5px; color: #929292\">\u2116").concat(index + 1, ". </p>\n<p style=\"color: ").concat(COLORS.LIGHT, ";\">").concat(point.marketValue, " \u0446\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 (USDT)</p> \n<p style=\"color: ").concat(COLORS.LIGHT, ";\">").concat(point.orderPrice, " \u0446\u0435\u043D\u0430 \u043E\u0440\u0434\u0435\u0440\u0430 (USDT)</p>\n<p style=\"color: ").concat(COLORS.ORANGE, "\">").concat(point.lastStep, " (%) \u0448\u0430\u0433 \u0446\u0435\u043D\u044B</p> \n<p style=\"color: ").concat(COLORS.RED, "\">").concat(point.sumStep, " (%) \u0441\u0443\u043C \u043F\u0430\u0434\u0435\u043D\u0438\u0435 \u0446\u0435\u043D\u044B</p> \n<p style=\"color: ").concat(COLORS.GREEN, "; padding-left: 5px; padding-right: 5px\" >").concat(point.upToTp, " (%) \u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u0442\u0440\u0435\u0431. \u0440\u043E\u0441\u0442\u0430 \u0434\u043E TP</p> \n<p style=\"color: ").concat(COLORS.GREEN_DARK, ";\" >\u0426\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 TP ").concat(addPercent(point.marketValue, point.upToTp), " USDT</p> \n</p>\n<div style=\"width: 20px; height: ").concat(point.lastStep * MAX_SAME_KOEF, "px; background-color: ").concat(COLORS.ORANGE, "\"></div>\n<div style=\"width: 20px; height: ").concat(point.upToTp * MAX_SAME_KOEF, "px; background-color: ").concat(COLORS.GREEN, "\"></div>\n<div style=\"width: 20px; height: ").concat(point.sumStep * MAX_SAME_KOEF, "px; background-color: ").concat(COLORS.RED, "\"></div>\n</div>");
+    chartBox.innerHTML += "\n<div style=\"height: ".concat(H_PIXELS, "px; width: 100%; background-color: #313131; margin-top: 2px; display: flex; overflow: scroll; flex-direction: row;\" >\n<p style=\"padding-right: 5px; color: #929292; flex: 0.3\">\u2116").concat(index + 1, ". </p>\n<p style=\"color: ").concat(COLORS.LIGHT, "; flex: 1\">").concat(point.marketValue, " \u0446\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 (USDT)</p> \n<p style=\"color: ").concat(COLORS.LIGHT, "; flex: 1\">").concat(point.orderPrice, " \u0446\u0435\u043D\u0430 \u043E\u0440\u0434\u0435\u0440\u0430 (USDT)</p>\n<p style=\"color: ").concat(COLORS.ORANGE, "; flex: 1\">").concat(point.lastStep, " (%) \u0448\u0430\u0433 \u0446\u0435\u043D\u044B</p> \n<p style=\"color: ").concat(COLORS.RED, "; flex: 1\">").concat(point.sumStep, " (%) \u0441\u0443\u043C \u043F\u0430\u0434\u0435\u043D\u0438\u0435 \u0446\u0435\u043D\u044B</p> \n<p style=\"color: ").concat(COLORS.GREEN, "; flex: 1\" >").concat(point.upToTp, " (%) \u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u0442\u0440\u0435\u0431. \u0440\u043E\u0441\u0442\u0430 \u0434\u043E TP</p> \n<p style=\"color: ").concat(COLORS.GREEN_DARK, "; flex: 1\" >\u0426\u0435\u043D\u0430 \u0440\u044B\u043D\u043A\u0430 TP ").concat(addPercent(point.marketValue, point.upToTp), " USDT</p> \n<div style=\"flex: 1; flex-direction: row; display:flex; align-items: flex-end; justify-content: center\">\n    <div style=\"width: 20px; height: ").concat(point.lastStep * MAX_SAME_KOEF, "px; background-color: ").concat(COLORS.ORANGE, "\"></div>\n    <div style=\"width: 20px; height: ").concat(point.upToTp * MAX_SAME_KOEF, "px; background-color: ").concat(COLORS.GREEN, "\"></div>\n    <div style=\"width: 20px; height: ").concat(point.sumStep * MAX_SAME_KOEF, "px; background-color: ").concat(COLORS.RED, "\"></div>\n</div>\n</div>");
   });
 };
 
@@ -370,7 +370,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50539" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57591" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
