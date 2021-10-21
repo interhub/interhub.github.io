@@ -2,7 +2,7 @@
 let MAX_DELTA_MARKET_PERCENT = 3
 const IS_NODE = typeof window === 'undefined'
 
-const fixNumber = (num = 0, point = 3) => parseFloat(num.toFixed(point))
+const fixNumber = (num = 0, point = 6) => parseFloat(num.toFixed(point))
 
 
 const getPercentDiff = (from = 0, to = 0) => {
