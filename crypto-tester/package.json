@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev:watch": "nodemon index.ts",
+    "dev:watch": "parcel index.ts",
     "start": "ts-node index.ts",
     "build": "parcel build index.ts",
     "upload": "git add . && got commit -m 'autocommit upload && git push origin master"

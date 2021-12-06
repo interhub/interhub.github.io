@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add repo 2" />
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add repo 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,12 +102,32 @@
       <recent name="$PROJECT_DIR$/phonebase" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.upload">
+  <component name="RunManager" selected="npm.build (1)">
+    <configuration name="build (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/crypto-tester/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/cryptorg_calc/package.json" />
       <command value="run" />
       <scripts>
         <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev:watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/crypto-tester/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev:watch" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -123,6 +145,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev:watch" />
+        <item itemvalue="npm.build (1)" />
         <item itemvalue="npm.upload" />
         <item itemvalue="npm.build" />
       </list>
@@ -158,7 +182,7 @@
       <workItem from="1634748207338" duration="1979000" />
       <workItem from="1634834159418" duration="1891000" />
       <workItem from="1638799739667" duration="280000" />
-      <workItem from="1638800070547" duration="21000" />
+      <workItem from="1638800070547" duration="969000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>

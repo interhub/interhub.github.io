@@ -28090,7 +28090,7 @@ var getHistoryAsync_1 = __importDefault(require("./getHistoryAsync"));
 var moment_1 = __importDefault(require("moment"));
 
 var getPredicts = /*#__PURE__*/function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(moveDays) {
+  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(moveDays, samePeriod) {
     var history, TEST_MOVE, LAST_PERIOD, getCheckedPeriods, CHECKED_PERIODS, SORTED_CHECKED_PERIODS, MAX_SAMES_PERIODS;
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
@@ -28103,15 +28103,15 @@ var getPredicts = /*#__PURE__*/function () {
             history = _context.sent;
             TEST_MOVE = moveDays; //of days
 
-            LAST_PERIOD = history.slice(-(config_1.SAME_PERIOD + TEST_MOVE), -TEST_MOVE || undefined);
+            LAST_PERIOD = history.slice(-(samePeriod + TEST_MOVE), -TEST_MOVE || undefined);
             console.log((0, moment_1.default)(LAST_PERIOD[LAST_PERIOD.length - 1].DATE, 'DD/MM/YY').add(1, 'day').format('DD MMMM YYYY'), 'date predict 📅');
 
             getCheckedPeriods = function getCheckedPeriods() {
               var CHECKED_PERIODS = [];
               history.map(function (obj, i, arr) {
                 try {
-                  var period = arr.slice(i, i + 7);
-                  if (period.length < config_1.SAME_PERIOD) return; //check periods to different to last period and add to array
+                  var period = arr.slice(i, i + samePeriod);
+                  if (period.length < samePeriod) return; //check periods to different to last period and add to array
 
                   var diffKoefsPeriod = period.map(function (item, i, day) {
                     return (0, utils_1.getDiffItemsKoef)(day[i], LAST_PERIOD[i]);
@@ -28121,7 +28121,7 @@ var getPredicts = /*#__PURE__*/function () {
                     var DATE = _ref2.DATE;
                     return DATE;
                   }).join('   ');
-                  var nextDayChange = arr[i + 7] ? arr[i + 7].CHANGE_PERCENT_REAL : 0;
+                  var nextDayChange = arr[i + samePeriod] ? arr[i + samePeriod].CHANGE_PERCENT_REAL : 0;
                   CHECKED_PERIODS.push({
                     period: period,
                     diffSumKoef: diffSumKoef,
@@ -28161,7 +28161,7 @@ var getPredicts = /*#__PURE__*/function () {
     }, _callee);
   }));
 
-  return function getPredicts(_x) {
+  return function getPredicts(_x, _x2) {
     return _ref.apply(this, arguments);
   };
 }();
@@ -30795,7 +30795,7 @@ var printChart_1 = __importDefault(require("./src/printChart"));
 var start = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
     var moveDays,
-        enableLogs,
+        samePeriod,
         pogrs,
         PREDICTES,
         testPeriods,
@@ -30805,10 +30805,10 @@ var start = /*#__PURE__*/function () {
         switch (_context.prev = _context.next) {
           case 0:
             moveDays = _args.length > 0 && _args[0] !== undefined ? _args[0] : 0;
-            enableLogs = _args.length > 1 && _args[1] !== undefined ? _args[1] : true;
+            samePeriod = _args.length > 1 && _args[1] !== undefined ? _args[1] : 7;
             pogrs = [];
             _context.next = 5;
-            return (0, getPredicts_1.default)(moveDays);
+            return (0, getPredicts_1.default)(moveDays, samePeriod);
 
           case 5:
             PREDICTES = _context.sent;
@@ -30819,12 +30819,12 @@ var start = /*#__PURE__*/function () {
 
               var isExistRealData = ((_ref2 = (0, lodash_1.head)(predicts)) === null || _ref2 === void 0 ? void 0 : _ref2.diffSumKoef) === 0;
               var isExistFuture = ((_ref3 = (0, lodash_1.head)(predicts)) === null || _ref3 === void 0 ? void 0 : _ref3.nextChangePercent) !== 0;
-              if (enableLogs) console.log({
+              console.log({
                 isExistRealData: isExistRealData
               });
               var otherPredicts = isExistRealData ? predicts.slice(1) : predicts;
 
-              if (!isExistRealData && enableLogs) {
+              if (!isExistRealData) {
                 console.log('test impossible so have no data for future');
               }
 
@@ -30832,7 +30832,7 @@ var start = /*#__PURE__*/function () {
               var otherChangesPercents = (0, lodash_1.map)(otherPredicts, 'nextChangePercent');
               var realChange = isExistRealData && isExistFuture ? realItem.nextChangePercent : 'not exist';
               var mainChange = (0, lodash_1.head)(otherChangesPercents);
-              if (enableLogs) console.log({
+              console.log({
                 mainChange: mainChange,
                 realChange: realChange
               });
@@ -30840,7 +30840,7 @@ var start = /*#__PURE__*/function () {
               if (isExistRealData && typeof realChange === 'number') {
                 var pogrPercent = (0, utils_1.getDiffPercent)(realChange, mainChange) / 100;
                 pogrs.push(pogrPercent);
-                if (enableLogs) console.log({
+                console.log({
                   pogrPercent: pogrPercent
                 });
               }
@@ -30862,25 +30862,35 @@ var start = /*#__PURE__*/function () {
 }();
 
 var move = 0;
-start(move);
+var samePeriod = 7;
+start(move, samePeriod);
 
 if (browser_or_node_1.isBrowser) {
   var backBtn = document.querySelector('#back_btn');
   var frontBrn = document.querySelector('#front_btn');
-  console.log(backBtn, frontBrn); //@ts-ignore
+  var periodInput = document.querySelector('#period'); //@ts-ignore
 
   frontBrn.addEventListener('click', function () {
-    move <= 0 ? move = 0 : move--;
-    if (!!move) start(move);
+    if (move - 1 < 0) return;
+    move--;
+    start(move, samePeriod);
   }); //@ts-ignore
 
   backBtn.addEventListener('click', function () {
     move++;
     console.log(move, 'click');
-    start(move);
+    start(move, samePeriod);
+  });
+  periodInput.addEventListener('input', function (e) {
+    var _e$target;
+
+    //@ts-ignore
+    var value = parseInt(e === null || e === void 0 ? void 0 : (_e$target = e.target) === null || _e$target === void 0 ? void 0 : _e$target.value) || 0;
+    var newSamePeriod = value < 7 ? 7 : value;
+    start(move, newSamePeriod);
   });
 }
-},{"regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js","lodash":"node_modules/lodash/lodash.js","browser-or-node":"node_modules/browser-or-node/lib/index.js","./src/utils":"src/utils.ts","./src/getPredicts":"src/getPredicts.ts","./src/printChart":"src/printChart.ts"}],"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js","lodash":"node_modules/lodash/lodash.js","browser-or-node":"node_modules/browser-or-node/lib/index.js","./src/utils":"src/utils.ts","./src/getPredicts":"src/getPredicts.ts","./src/printChart":"src/printChart.ts"}],"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -30908,7 +30918,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54426" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63958" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -31084,5 +31094,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.ts"], null)
+},{}]},{},["../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.ts"], null)
 //# sourceMappingURL=/index.js.map

@@ -7,33 +7,30 @@ import getPredicts from './src/getPredicts'
 import printChart from './src/printChart'
 
 
-const start = async (moveDays: number = 0, enableLogs = true) => {
+const start = async (moveDays: number = 0, samePeriod = 7) => {
     const pogrs: number[] = []
 
-    const PREDICTES = await getPredicts(moveDays)
+    const PREDICTES = await getPredicts(moveDays, samePeriod)
     printChart(PREDICTES)
 
     const testPeriods = (predicts: PredictType[]) => {
 
         const isExistRealData = head(predicts)?.diffSumKoef === 0
         const isExistFuture = head(predicts)?.nextChangePercent !== 0
-        if (enableLogs)
-            console.log({isExistRealData})
+        console.log({isExistRealData})
         const otherPredicts = isExistRealData ? predicts.slice(1) : predicts
-        if (!isExistRealData && enableLogs) {
+        if (!isExistRealData) {
             console.log('test impossible so have no data for future')
         }
         const realItem = predicts[0]
         const otherChangesPercents = map(otherPredicts, 'nextChangePercent')
         const realChange = isExistRealData && isExistFuture ? realItem.nextChangePercent : 'not exist'
         const mainChange = head(otherChangesPercents)
-        if (enableLogs)
-            console.log({mainChange, realChange})
+        console.log({mainChange, realChange})
         if (isExistRealData && typeof realChange === 'number') {
             const pogrPercent = getDiffPercent(realChange, mainChange) / 100
             pogrs.push(pogrPercent)
-            if (enableLogs)
-                console.log({pogrPercent})
+            console.log({pogrPercent})
         }
     }
 
@@ -42,23 +39,30 @@ const start = async (moveDays: number = 0, enableLogs = true) => {
 }
 
 let move = 0
+let samePeriod = 7
 
-start(move)
+start(move, samePeriod)
 
 if (isBrowser) {
     const backBtn = document.querySelector('#back_btn')
     const frontBrn = document.querySelector('#front_btn')
-    console.log(backBtn, frontBrn)
+    const periodInput = document.querySelector('#period')
     //@ts-ignore
     frontBrn.addEventListener('click', () => {
-        (move <= 0) ? (move = 0) : (move--)
-        if (!!move)
-            start(move)
+        if ((move - 1) < 0) return
+        move--
+        start(move, samePeriod)
     })
     //@ts-ignore
     backBtn.addEventListener('click', () => {
         move++
         console.log(move, 'click')
-        start(move)
+        start(move, samePeriod)
+    })
+    periodInput.addEventListener('input', (e) => {
+        //@ts-ignore
+        const value = parseInt(e?.target?.value) || 0
+        const newSamePeriod = (value < 7) ? 7 : value
+        start(move, newSamePeriod)
     })
 }

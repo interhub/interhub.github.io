@@ -5,10 +5,10 @@ import {SAME_PERIOD, TOP} from './config'
 import getHistoryAsync from './getHistoryAsync'
 import moment from 'moment'
 
-const getPredicts = async (moveDays: number): Promise<PredictType[]> => {
+const getPredicts = async (moveDays: number, samePeriod: number): Promise<PredictType[]> => {
     const history = await getHistoryAsync()
     const TEST_MOVE = moveDays //of days
-    const LAST_PERIOD = history.slice(-(SAME_PERIOD + TEST_MOVE), -TEST_MOVE || undefined)
+    const LAST_PERIOD = history.slice(-(samePeriod + TEST_MOVE), -TEST_MOVE || undefined)
     console.log(moment(LAST_PERIOD[LAST_PERIOD.length - 1].DATE, 'DD/MM/YY').add(1, 'day').format('DD MMMM YYYY'), 'date predict 📅')
 
     type CheckedPeriodType = { diffSumKoef: number, period: HistoryItem[], dates: string, index: number, nextDayChange: number }
@@ -17,15 +17,15 @@ const getPredicts = async (moveDays: number): Promise<PredictType[]> => {
         const CHECKED_PERIODS: CheckedPeriodType[] = []
         history.map((obj, i, arr) => {
             try {
-                const period: HistoryItem[] = arr.slice(i, i + 7)
-                if (period.length < SAME_PERIOD) return
+                const period: HistoryItem[] = arr.slice(i, i + samePeriod)
+                if (period.length < samePeriod) return
                 //check periods to different to last period and add to array
                 const diffKoefsPeriod = period.map((item, i, day) => {
                     return getDiffItemsKoef(day[i], LAST_PERIOD[i])
                 })
                 const diffSumKoef = getSumNumbers(...diffKoefsPeriod)
                 const dates = period.map(({DATE}) => DATE).join('   ')
-                const nextDayChange = arr[i + 7] ? arr[i + 7].CHANGE_PERCENT_REAL : 0
+                const nextDayChange = arr[i + samePeriod] ? arr[i + samePeriod].CHANGE_PERCENT_REAL : 0
                 CHECKED_PERIODS.push({period, diffSumKoef, dates, index: i, nextDayChange})
             } catch (e) {
                 console.log(e, 'errs with', obj)
