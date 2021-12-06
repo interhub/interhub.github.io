@@ -10,7 +10,7 @@ const getHistoryAsync = async (): Promise<HistoryItem[]> => {
     return arr.map(({time, high, low, open, close}): HistoryItem => {
         return {
             TICKER: '',
-            DATE: moment(time * 1000).format('DD/MM/YY'),
+            DATE: moment(time * 1000).format('DD MMMM YYYY'),
             LOW: low,
             HIGH: high,
             OPEN: open,

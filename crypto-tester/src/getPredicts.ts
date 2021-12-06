@@ -1,6 +1,6 @@
 import {HistoryItem, PredictType} from './types'
 import {getDiffItemsKoef, getSumNumbers} from './utils'
-import {sortBy} from 'lodash'
+import {head, last, sortBy} from 'lodash'
 import {TOP} from './config'
 import getHistoryAsync from './getHistoryAsync'
 import moment from 'moment'
@@ -26,7 +26,7 @@ const getPredicts = async (moveDays: number, samePeriod: number): Promise<Predic
                     return getDiffItemsKoef(day[i], LAST_PERIOD[i])
                 })
                 const diffSumKoef = getSumNumbers(...diffKoefsPeriod)
-                const dates = period.map(({DATE}) => DATE).join('   ')
+                const dates = `${head(period)?.DATE} ➡️ ${last(period)?.DATE}`//period.map(({DATE}) => DATE).join(' ')
                 const nextDayChange = arr[i + samePeriod] ? arr[i + samePeriod].CHANGE_PERCENT_REAL : 0
                 CHECKED_PERIODS.push({period, diffSumKoef, dates, index: i, nextDayChange})
             } catch (e) {
