@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add repo 2">
+      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,6 +134,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/crypto-tester/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="upload" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/crypto-tester/package.json" />
       <command value="run" />
@@ -146,6 +157,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev:watch" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.build (1)" />
         <item itemvalue="npm.upload" />
         <item itemvalue="npm.build" />
@@ -183,7 +195,8 @@
       <workItem from="1634834159418" duration="1891000" />
       <workItem from="1638799739667" duration="280000" />
       <workItem from="1638800070547" duration="1482000" />
-      <workItem from="1638801894348" duration="16000" />
+      <workItem from="1638801894348" duration="36000" />
+      <workItem from="1638802029317" duration="352000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
