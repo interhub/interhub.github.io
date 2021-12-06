@@ -1,12 +1,14 @@
 import {HistoryItem, PredictType} from './types'
 import {getDiffItemsKoef, getSumNumbers} from './utils'
 import {sortBy} from 'lodash'
-import {SAME_PERIOD, TOP} from './config'
+import {TOP} from './config'
 import getHistoryAsync from './getHistoryAsync'
 import moment from 'moment'
 
+const historyPromise = getHistoryAsync()
+
 const getPredicts = async (moveDays: number, samePeriod: number): Promise<PredictType[]> => {
-    const history = await getHistoryAsync()
+    const history = await historyPromise
     const TEST_MOVE = moveDays //of days
     const LAST_PERIOD = history.slice(-(samePeriod + TEST_MOVE), -TEST_MOVE || undefined)
     console.log(moment(LAST_PERIOD[LAST_PERIOD.length - 1].DATE, 'DD/MM/YY').add(1, 'day').format('DD MMMM YYYY'), 'date predict 📅')
