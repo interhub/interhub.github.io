@@ -6,7 +6,7 @@ import {getDiffPercent} from './src/utils'
 import getPredicts from './src/getPredicts'
 import printChart from './src/printChart'
 import moment from 'moment'
-import  'moment/locale/ru'
+import 'moment/locale/ru'
 
 const start = async (moveDays: number = 0, samePeriod = 7) => {
     const pogrs: number[] = []
@@ -61,13 +61,13 @@ if (isBrowser) {
     //@ts-ignore
     backBtn.addEventListener('click', () => {
         move++
-        console.log(move, 'click')
         start(move, samePeriod)
     })
     periodInput.addEventListener('input', (e) => {
         //@ts-ignore
         const value = parseInt(e?.target?.value) || 0
         const newSamePeriod = (value < 2) ? 2 : value
+        samePeriod = newSamePeriod
         start(move, newSamePeriod)
     })
 }

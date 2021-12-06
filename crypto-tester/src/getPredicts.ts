@@ -3,7 +3,6 @@ import {getDiffItemsKoef, getSumNumbers} from './utils'
 import {head, last, sortBy} from 'lodash'
 import {TOP} from './config'
 import getHistoryAsync from './getHistoryAsync'
-import moment from 'moment'
 
 const historyPromise = getHistoryAsync()
 
@@ -11,7 +10,6 @@ const getPredicts = async (moveDays: number, samePeriod: number): Promise<Predic
     const history = await historyPromise
     const TEST_MOVE = moveDays //of days
     const LAST_PERIOD = history.slice(-(samePeriod + TEST_MOVE), -TEST_MOVE || undefined)
-    console.log(moment(LAST_PERIOD[LAST_PERIOD.length - 1].DATE, 'DD/MM/YY').add(1, 'day').format('DD MMMM YYYY'), 'date predict 📅')
 
     type CheckedPeriodType = { diffSumKoef: number, period: HistoryItem[], dates: string, index: number, nextDayChange: number }
 
