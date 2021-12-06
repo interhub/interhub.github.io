@@ -38,7 +38,7 @@ const start = async (moveDays: number = 0, samePeriod = 7) => {
     testPeriods(PREDICTES)
     if (isBrowser) {
         const title = document.querySelector('#title')
-        title.innerHTML = `Прогнозы для изменения цены на ${moment().subtract(moveDays, 'day').format('DD MMMM YYYY')}`
+        title.innerHTML = `Прогнозы для изменения цены на ${moment().add(1, 'day').subtract(moveDays, 'day').format('DD MMMM YYYY')}`
     }
 
 }
