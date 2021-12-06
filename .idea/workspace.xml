@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add fix title">
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add fix flex grid">
+      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryptorg_calc/calc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cryptorg_calc/calc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryptorg_calc/dist/calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/cryptorg_calc/dist/calc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryptorg_calc/dist/calc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/cryptorg_calc/dist/calc.js.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +52,7 @@
     <option name="height" value="961" />
   </component>
   <component name="ProjectId" id="1qB3WNoLLzmR6xhLz0aM0Ap6006" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -94,17 +94,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/source" />
       <recent name="$PROJECT_DIR$/stayfitt" />
       <recent name="$PROJECT_DIR$/mary_cosmos/img" />
       <recent name="$PROJECT_DIR$/mary_cosmos" />
-      <recent name="$PROJECT_DIR$/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/phonebase" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.upload">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/cryptorg_calc/package.json" />
       <command value="run" />
@@ -115,8 +115,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="upload" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/crypto-tester/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="upload" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.upload" />
         <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
@@ -149,7 +160,8 @@
       <workItem from="1633515203329" duration="64000" />
       <workItem from="1634658404229" duration="2635000" />
       <workItem from="1634748207338" duration="1979000" />
-      <workItem from="1634834159418" duration="1029000" />
+      <workItem from="1634834159418" duration="1891000" />
+      <workItem from="1638799739667" duration="201000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -319,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634847526853</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="add fix flex grid">
+      <created>1634848067648</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1634848067648</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -394,7 +413,8 @@
     <MESSAGE value="add number fixes" />
     <MESSAGE value="add fix numbers more" />
     <MESSAGE value="add fix title" />
-    <option name="LAST_COMMIT_MESSAGE" value="add fix title" />
+    <MESSAGE value="add fix flex grid" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fix flex grid" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">
