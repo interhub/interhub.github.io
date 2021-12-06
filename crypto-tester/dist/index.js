@@ -30792,6 +30792,8 @@ var getPredicts_1 = __importDefault(require("./src/getPredicts"));
 
 var printChart_1 = __importDefault(require("./src/printChart"));
 
+var moment_1 = __importDefault(require("moment"));
+
 var start = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
     var moveDays,
@@ -30799,6 +30801,7 @@ var start = /*#__PURE__*/function () {
         pogrs,
         PREDICTES,
         testPeriods,
+        title,
         _args = arguments;
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
@@ -30848,7 +30851,12 @@ var start = /*#__PURE__*/function () {
 
             testPeriods(PREDICTES);
 
-          case 9:
+            if (browser_or_node_1.isBrowser) {
+              title = document.querySelector('#title');
+              title.innerHTML = "\u041F\u0440\u043E\u0433\u043D\u043E\u0437\u044B \u0434\u043B\u044F \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u044F \u0446\u0435\u043D\u044B \u043D\u0430 ".concat((0, moment_1.default)().subtract(moveDays, 'day').format('DD MMMM YYYY'));
+            }
+
+          case 10:
           case "end":
             return _context.stop();
         }
@@ -30890,7 +30898,7 @@ if (browser_or_node_1.isBrowser) {
     start(move, newSamePeriod);
   });
 }
-},{"regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js","lodash":"node_modules/lodash/lodash.js","browser-or-node":"node_modules/browser-or-node/lib/index.js","./src/utils":"src/utils.ts","./src/getPredicts":"src/getPredicts.ts","./src/printChart":"src/printChart.ts"}],"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js","lodash":"node_modules/lodash/lodash.js","browser-or-node":"node_modules/browser-or-node/lib/index.js","./src/utils":"src/utils.ts","./src/getPredicts":"src/getPredicts.ts","./src/printChart":"src/printChart.ts","moment":"node_modules/moment/moment.js"}],"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

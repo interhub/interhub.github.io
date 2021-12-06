@@ -5,6 +5,7 @@ import {PredictType} from './src/types'
 import {getDiffPercent} from './src/utils'
 import getPredicts from './src/getPredicts'
 import printChart from './src/printChart'
+import moment from 'moment'
 
 
 const start = async (moveDays: number = 0, samePeriod = 7) => {
@@ -35,6 +36,10 @@ const start = async (moveDays: number = 0, samePeriod = 7) => {
     }
 
     testPeriods(PREDICTES)
+    if (isBrowser) {
+        const title = document.querySelector('#title')
+        title.innerHTML = `Прогнозы для изменения цены на ${moment().subtract(moveDays, 'day').format('DD MMMM YYYY')}`
+    }
 
 }
 
