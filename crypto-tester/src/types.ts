@@ -2,7 +2,7 @@ export type HistoryItem = {
     TICKER: string
     PER: string
     DATE: string //DD.MM.YY
-    TIME: string //HH.MM.SS
+    TIME: number //HH.MM.SS
     OPEN: number
     HIGH: number
     LOW: number

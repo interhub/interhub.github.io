@@ -1,9 +1,9 @@
 import 'regenerator-runtime/runtime'
-import {head, map} from 'lodash'
+import {head, last, map} from 'lodash'
 import {isBrowser} from 'browser-or-node'
 import {PredictType} from './src/types'
 import {getDiffPercent} from './src/utils'
-import getPredicts from './src/getPredicts'
+import getPredicts, {historyPromise} from './src/getPredicts'
 import printChart from './src/printChart'
 import moment from 'moment'
 import 'moment/locale/ru'
@@ -36,9 +36,14 @@ const start = async (moveDays: number = 0, samePeriod = 7) => {
     }
 
     testPeriods(PREDICTES)
+    const lastPrice = last(await historyPromise).CLOSE
+    const lastTime = last(await historyPromise).TIME
     if (isBrowser) {
         const title = document.querySelector('#title')
-        title.innerHTML = `Прогнозы для изменения цены на ${moment().add(1, 'day').subtract(moveDays, 'day').format('DD MMMM YYYY')}`
+        title.innerHTML = `Прогнозы для изменения цены на ${moment().add(1, 'day').subtract(moveDays, 'day').format('DD MMMM YYYY')}
+<br/><br/>
+Последняя известная цена BTC = ${lastPrice}. Обновлено ${moment(lastTime).format('DD MMMM YYYY HH:mm:ss')}
+`
     }
 
 }

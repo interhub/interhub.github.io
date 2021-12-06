@@ -2,12 +2,20 @@ import axios from 'axios'
 import moment from 'moment'
 import {HistoryItem} from './types'
 import {getDiffPercent} from './utils'
+import {last} from 'lodash'
 
 const getHistoryAsync = async (): Promise<HistoryItem[]> => {
-    const url = 'https://min-api.cryptocompare.com/data/v2/histoday?fsym=BTC&tsym=USD&limit=2000&toTs=-1&api_key=YOURKEYHERE'
-    const {data: dataServer} = await axios.get(url)
-    const arr = dataServer?.Data?.Data || []
-    return arr.map(({time, high, low, open, close}): HistoryItem => {
+    const urlDays = `https://min-api.cryptocompare.com/data/v2/histoday?fsym=BTC&tsym=USD&limit=2000&toTs=-1`
+    const urlHour = `https://min-api.cryptocompare.com/data/v2/histohour?fsym=BTC&tsym=USD&limit=1`
+
+    const {data: dataDaysServer} = await axios.get(urlDays)
+    const {data: dataHoursServer} = await axios.get(urlHour)
+    const arrDays: any[] = dataDaysServer?.Data?.Data || []
+    const arrHours: any[] = dataHoursServer?.Data?.Data || []
+    if (arrDays?.length && arrHours?.length) {
+        arrDays.splice(-1, 1, last(arrHours))
+    }
+    return arrDays.map(({time, high, low, open, close}): HistoryItem => {
         return {
             TICKER: '',
             DATE: moment(time * 1000).format('DD MMMM YYYY'),
@@ -17,7 +25,7 @@ const getHistoryAsync = async (): Promise<HistoryItem[]> => {
             CLOSE: close,
             PER: '',
             VOL: 0,
-            TIME: time,
+            TIME: time * 1000,
             TOP_SHADOW_PERCENT: getDiffPercent(Math.max(open, close), high),
             LOW_SHADOW_PERCENT: getDiffPercent(low, Math.min(open, close)),
             CHANGE_PERCENT_REAL: getDiffPercent(open, close),

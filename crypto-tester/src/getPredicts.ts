@@ -4,7 +4,7 @@ import {head, last, sortBy} from 'lodash'
 import {TOP} from './config'
 import getHistoryAsync from './getHistoryAsync'
 
-const historyPromise = getHistoryAsync()
+export const historyPromise = getHistoryAsync()
 
 const getPredicts = async (moveDays: number, samePeriod: number): Promise<PredictType[]> => {
     const history = await historyPromise
@@ -23,7 +23,7 @@ const getPredicts = async (moveDays: number, samePeriod: number): Promise<Predic
                 const diffKoefsPeriod = period.map((item, i, day) => {
                     return getDiffItemsKoef(day[i], LAST_PERIOD[i])
                 })
-                const diffSumKoef = getSumNumbers(...diffKoefsPeriod)
+                const diffSumKoef = getSumNumbers(diffKoefsPeriod)
                 const dates = `${head(period)?.DATE} ➡️ ${last(period)?.DATE}`//period.map(({DATE}) => DATE).join(' ')
                 const nextDayChange = arr[i + samePeriod] ? arr[i + samePeriod].CHANGE_PERCENT_REAL : 0
                 CHECKED_PERIODS.push({period, diffSumKoef, dates, index: i, nextDayChange})
