@@ -8,11 +8,19 @@ import printChart from './src/printChart'
 import moment from 'moment'
 import 'moment/locale/ru'
 
+const POSITIVES_PARAMS = []
+
 const start = async (moveDays: number = 0, samePeriod = 7) => {
     const pogrs: number[] = []
 
     const PREDICTES = await getPredicts(moveDays, samePeriod)
     printChart(PREDICTES)
+
+    //tests
+    const isPositiveAll = PREDICTES.slice(0, 7).every(({nextChangePercent}) => nextChangePercent >= 0)
+    if (isPositiveAll) {
+        POSITIVES_PARAMS.push({samePeriod, moveDays, dates: head(PREDICTES).dates})
+    }
 
     const testPeriods = (predicts: PredictType[]) => {
 
@@ -58,9 +66,22 @@ const start = async (moveDays: number = 0, samePeriod = 7) => {
 let move = 0
 let samePeriod = 7
 
-start(move, samePeriod)
+// start(move, samePeriod)
+
+const test = async () => {
+    const MAX_PERIOD = 20
+    const MAX_DAYS_MOVE = 300
+    for (let mo = 0; mo < MAX_DAYS_MOVE; mo++) {
+        for (let per = 2; per < MAX_PERIOD; per++) {
+            await start(mo, per)
+        }
+    }
+    console.log({POSITIVES_PARAMS}, POSITIVES_PARAMS.length)
+}
 
 if (isBrowser) {
+    //@ts-ignore
+    window.test = test
     const backBtn = document.querySelector('#back_btn')
     const frontBrn = document.querySelector('#front_btn')
     const periodInput = document.querySelector('#period')
@@ -83,3 +104,6 @@ if (isBrowser) {
         start(move, newSamePeriod)
     })
 }
+
+
+

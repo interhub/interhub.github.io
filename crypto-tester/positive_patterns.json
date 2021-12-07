@@ -1,0 +1,317 @@
+[
+  {
+    "samePeriod": 5,
+    "moveDays": 15,
+    "dates": "18 ноября 2021 ➡️ 22 ноября 2021"
+  },
+  {
+    "samePeriod": 6,
+    "moveDays": 15,
+    "dates": "17 ноября 2021 ➡️ 22 ноября 2021"
+  },
+  {
+    "samePeriod": 4,
+    "moveDays": 21,
+    "dates": "13 ноября 2021 ➡️ 16 ноября 2021"
+  },
+  {
+    "samePeriod": 11,
+    "moveDays": 21,
+    "dates": "06 ноября 2021 ➡️ 16 ноября 2021"
+  },
+  {
+    "samePeriod": 13,
+    "moveDays": 21,
+    "dates": "04 ноября 2021 ➡️ 16 ноября 2021"
+  },
+  {
+    "samePeriod": 17,
+    "moveDays": 24,
+    "dates": "28 октября 2021 ➡️ 13 ноября 2021"
+  },
+  {
+    "samePeriod": 2,
+    "moveDays": 32,
+    "dates": "04 ноября 2021 ➡️ 05 ноября 2021"
+  },
+  {
+    "samePeriod": 3,
+    "moveDays": 40,
+    "dates": "26 октября 2021 ➡️ 28 октября 2021"
+  },
+  {
+    "samePeriod": 5,
+    "moveDays": 44,
+    "dates": "20 октября 2021 ➡️ 24 октября 2021"
+  },
+  {
+    "samePeriod": 12,
+    "moveDays": 49,
+    "dates": "08 октября 2021 ➡️ 19 октября 2021"
+  },
+  {
+    "samePeriod": 13,
+    "moveDays": 49,
+    "dates": "07 октября 2021 ➡️ 19 октября 2021"
+  },
+  {
+    "samePeriod": 10,
+    "moveDays": 51,
+    "dates": "08 октября 2021 ➡️ 17 октября 2021"
+  },
+  {
+    "samePeriod": 11,
+    "moveDays": 51,
+    "dates": "07 октября 2021 ➡️ 17 октября 2021"
+  },
+  {
+    "samePeriod": 12,
+    "moveDays": 51,
+    "dates": "06 октября 2021 ➡️ 17 октября 2021"
+  },
+  {
+    "samePeriod": 13,
+    "moveDays": 51,
+    "dates": "05 октября 2021 ➡️ 17 октября 2021"
+  },
+  {
+    "samePeriod": 14,
+    "moveDays": 51,
+    "dates": "04 октября 2021 ➡️ 17 октября 2021"
+  },
+  {
+    "samePeriod": 11,
+    "moveDays": 54,
+    "dates": "04 октября 2021 ➡️ 14 октября 2021"
+  },
+  {
+    "samePeriod": 13,
+    "moveDays": 54,
+    "dates": "02 октября 2021 ➡️ 14 октября 2021"
+  },
+  {
+    "samePeriod": 16,
+    "moveDays": 54,
+    "dates": "29 сентября 2021 ➡️ 14 октября 2021"
+  },
+  {
+    "samePeriod": 18,
+    "moveDays": 54,
+    "dates": "27 сентября 2021 ➡️ 14 октября 2021"
+  },
+  {
+    "samePeriod": 14,
+    "moveDays": 61,
+    "dates": "24 сентября 2021 ➡️ 07 октября 2021"
+  },
+  {
+    "samePeriod": 15,
+    "moveDays": 61,
+    "dates": "23 сентября 2021 ➡️ 07 октября 2021"
+  },
+  {
+    "samePeriod": 17,
+    "moveDays": 61,
+    "dates": "21 сентября 2021 ➡️ 07 октября 2021"
+  },
+  {
+    "samePeriod": 18,
+    "moveDays": 61,
+    "dates": "20 сентября 2021 ➡️ 07 октября 2021"
+  },
+  {
+    "samePeriod": 19,
+    "moveDays": 61,
+    "dates": "19 сентября 2021 ➡️ 07 октября 2021"
+  },
+  {
+    "samePeriod": 6,
+    "moveDays": 93,
+    "dates": "31 августа 2021 ➡️ 05 сентября 2021"
+  },
+  {
+    "samePeriod": 12,
+    "moveDays": 93,
+    "dates": "25 августа 2021 ➡️ 05 сентября 2021"
+  },
+  {
+    "samePeriod": 13,
+    "moveDays": 93,
+    "dates": "24 августа 2021 ➡️ 05 сентября 2021"
+  },
+  {
+    "samePeriod": 14,
+    "moveDays": 93,
+    "dates": "23 августа 2021 ➡️ 05 сентября 2021"
+  },
+  {
+    "samePeriod": 15,
+    "moveDays": 93,
+    "dates": "22 августа 2021 ➡️ 05 сентября 2021"
+  },
+  {
+    "samePeriod": 16,
+    "moveDays": 93,
+    "dates": "21 августа 2021 ➡️ 05 сентября 2021"
+  },
+  {
+    "samePeriod": 2,
+    "moveDays": 126,
+    "dates": "02 августа 2021 ➡️ 03 августа 2021"
+  },
+  {
+    "samePeriod": 7,
+    "moveDays": 138,
+    "dates": "16 июля 2021 ➡️ 22 июля 2021"
+  },
+  {
+    "samePeriod": 8,
+    "moveDays": 138,
+    "dates": "15 июля 2021 ➡️ 22 июля 2021"
+  },
+  {
+    "samePeriod": 10,
+    "moveDays": 171,
+    "dates": "10 июня 2021 ➡️ 19 июня 2021"
+  },
+  {
+    "samePeriod": 13,
+    "moveDays": 171,
+    "dates": "07 июня 2021 ➡️ 19 июня 2021"
+  },
+  {
+    "samePeriod": 13,
+    "moveDays": 182,
+    "dates": "27 мая 2021 ➡️ 08 июня 2021"
+  },
+  {
+    "samePeriod": 3,
+    "moveDays": 189,
+    "dates": "30 мая 2021 ➡️ 01 июня 2021"
+  },
+  {
+    "samePeriod": 16,
+    "moveDays": 189,
+    "dates": "17 мая 2021 ➡️ 01 июня 2021"
+  },
+  {
+    "samePeriod": 19,
+    "moveDays": 202,
+    "dates": "01 мая 2021 ➡️ 19 мая 2021"
+  },
+  {
+    "samePeriod": 2,
+    "moveDays": 208,
+    "dates": "12 мая 2021 ➡️ 13 мая 2021"
+  },
+  {
+    "samePeriod": 3,
+    "moveDays": 208,
+    "dates": "11 мая 2021 ➡️ 13 мая 2021"
+  },
+  {
+    "samePeriod": 3,
+    "moveDays": 211,
+    "dates": "08 мая 2021 ➡️ 10 мая 2021"
+  },
+  {
+    "samePeriod": 11,
+    "moveDays": 211,
+    "dates": "30 апреля 2021 ➡️ 10 мая 2021"
+  },
+  {
+    "samePeriod": 10,
+    "moveDays": 214,
+    "dates": "28 апреля 2021 ➡️ 07 мая 2021"
+  },
+  {
+    "samePeriod": 5,
+    "moveDays": 226,
+    "dates": "21 апреля 2021 ➡️ 25 апреля 2021"
+  },
+  {
+    "samePeriod": 16,
+    "moveDays": 226,
+    "dates": "10 апреля 2021 ➡️ 25 апреля 2021"
+  },
+  {
+    "samePeriod": 17,
+    "moveDays": 226,
+    "dates": "09 апреля 2021 ➡️ 25 апреля 2021"
+  },
+  {
+    "samePeriod": 4,
+    "moveDays": 244,
+    "dates": "04 апреля 2021 ➡️ 07 апреля 2021"
+  },
+  {
+    "samePeriod": 12,
+    "moveDays": 244,
+    "dates": "27 марта 2021 ➡️ 07 апреля 2021"
+  },
+  {
+    "samePeriod": 14,
+    "moveDays": 248,
+    "dates": "21 марта 2021 ➡️ 03 апреля 2021"
+  },
+  {
+    "samePeriod": 8,
+    "moveDays": 253,
+    "dates": "22 марта 2021 ➡️ 29 марта 2021"
+  },
+  {
+    "samePeriod": 9,
+    "moveDays": 254,
+    "dates": "20 марта 2021 ➡️ 28 марта 2021"
+  },
+  {
+    "samePeriod": 4,
+    "moveDays": 263,
+    "dates": "16 марта 2021 ➡️ 19 марта 2021"
+  },
+  {
+    "samePeriod": 5,
+    "moveDays": 263,
+    "dates": "15 марта 2021 ➡️ 19 марта 2021"
+  },
+  {
+    "samePeriod": 13,
+    "moveDays": 270,
+    "dates": "28 февраля 2021 ➡️ 12 марта 2021"
+  },
+  {
+    "samePeriod": 3,
+    "moveDays": 273,
+    "dates": "07 марта 2021 ➡️ 09 марта 2021"
+  },
+  {
+    "samePeriod": 15,
+    "moveDays": 273,
+    "dates": "23 февраля 2021 ➡️ 09 марта 2021"
+  },
+  {
+    "samePeriod": 11,
+    "moveDays": 280,
+    "dates": "20 февраля 2021 ➡️ 02 марта 2021"
+  },
+  {
+    "samePeriod": 10,
+    "moveDays": 295,
+    "dates": "06 февраля 2021 ➡️ 15 февраля 2021"
+  },
+  {
+    "samePeriod": 11,
+    "moveDays": 295,
+    "dates": "05 февраля 2021 ➡️ 15 февраля 2021"
+  },
+  {
+    "samePeriod": 15,
+    "moveDays": 295,
+    "dates": "01 февраля 2021 ➡️ 15 февраля 2021"
+  },
+  {
+    "samePeriod": 16,
+    "moveDays": 297,
+    "dates": "29 января 2021 ➡️ 13 февраля 2021"
+  }
+]
