@@ -6,14 +6,19 @@ import {last} from 'lodash'
 
 const getHistoryAsync = async (): Promise<HistoryItem[]> => {
     const urlDays = `https://min-api.cryptocompare.com/data/v2/histoday?fsym=BTC&tsym=USD&limit=2000&toTs=-1`
-    const urlHour = `https://min-api.cryptocompare.com/data/v2/histohour?fsym=BTC&tsym=USD&limit=1&aggregate=6`
+    const urlHour = `https://min-api.cryptocompare.com/data/v2/histohour?fsym=BTC&tsym=USD&limit=1&aggregate=4`
 
     const {data: dataDaysServer} = await axios.get(urlDays)
     const {data: dataHoursServer} = await axios.get(urlHour)
     const arrDays: any[] = dataDaysServer?.Data?.Data || []
     const arrHours: any[] = dataHoursServer?.Data?.Data || []
     if (arrDays?.length && arrHours?.length) {
-        arrDays.splice(-1, 1, last(arrHours))
+        let lastDay = last(arrDays)
+        const lastHour = last(arrHours)
+        lastDay.high = lastHour.high
+        lastDay.close = lastHour.close
+        arrDays.splice(-1, 1, lastDay)
+        console.log(lastDay)
     }
     return arrDays.map(({time, high, low, open, close}): HistoryItem => {
         return {
