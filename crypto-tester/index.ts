@@ -49,9 +49,10 @@ const start = async (moveDays: number = 0, samePeriod = 7) => {
     if (isBrowser) {
         const title = document.querySelector('#title')
         const info = document.querySelector('#info')
+        const displayPeriod = document.querySelector('#displayPeriod')
         title.innerHTML = `Прогнозы для изменения цены на ${moment().add(1, 'day').subtract(moveDays, 'day').format('DD MMMM YYYY')}
 <br/><br/>
-Последняя известная цена BTC = ${lastPrice}. Обновлено ${moment(lastTime).format('DD MMMM YYYY HH:mm:ss')}, обновляется каждые 4ч
+Последняя известная цена BTC = ${lastPrice}. Обновлено ${moment(lastTime).format('DD MMMM YYYY HH:mm:ss')}, обновляется раз в час.
 `
         info.innerHTML = `* Изменение цены историческое (%) - изменение цены на ${samePeriod + 1}-й день периода
 <br/>
@@ -59,6 +60,7 @@ const start = async (moveDays: number = 0, samePeriod = 7) => {
 <br/>
 * Схожий период изменения цены - период который имеет схожее колебание цены с периодом (${PREDICTES[0].dates})
         `
+        displayPeriod.innerHTML = `период = ${samePeriod} дней`
     }
 
 }
@@ -94,7 +96,9 @@ if (isBrowser) {
         move++
         start(move, samePeriod)
     })
-    periodInput.addEventListener('input', (e) => {
+    //@ts-ignore
+    periodInput.value = samePeriod
+    periodInput.addEventListener('change', (e) => {
         //@ts-ignore
         const value = parseInt(e?.target?.value) || 0
         const newSamePeriod = (value < 2) ? 2 : value

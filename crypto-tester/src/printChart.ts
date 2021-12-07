@@ -31,11 +31,17 @@ const printChart = (predicts: PredictType[]) => {
             data: percents,
             style: {
                 td: {
-                    border: '1px solid #ccc'
+                    'border': '1px solid #ccc',
+                    'background-color': '#1d1d1d',
+                    'color': '#cccccc'
+                },
+                th: {
+                    'border': '1px solid #ccc',
+                    'background-color': '#1d1d1d',
                 },
                 table: {
-                    'font-size': '15px'
-                }
+                    'font-size': '15px',
+                },
             },
             sort: true
         }).render(mainDiv)

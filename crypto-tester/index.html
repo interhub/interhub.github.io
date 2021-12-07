@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://faviconka.ru/ico/1/faviconka.ru_1_102373.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="https://faviconka.ru/ico/1/faviconka.ru_1_102373.ico" type="image/x-icon" />
+    <link rel="icon" href="https://faviconka.ru/ico/1/faviconka.ru_1_102373.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://faviconka.ru/ico/1/faviconka.ru_1_102373.ico" type="image/x-icon"/>
     <style>
         body {
             font-family: 'Ubuntu', sans-serif;
@@ -21,8 +21,10 @@
 <body>
 <h4>✅ Инструмент анализа рынка BTC</h4>
 <div></div>
-<label for="period">Период дней/свечей. Целое число больше 1 (по умолчанию 7)</label>
-<input type="number" placeholder="Число дней" id="period"><br/><br/>
+<label for="period">Период дней/свечей </label><br/>
+<input type="range" id="period" name="period" style="width: 100%"
+       min="1" max="100" step="1"><br/>
+<p id="displayPeriod" ></p><br/>
 <button style="width: 140px; min-height: 50px; border-radius: 5px" id="back_btn">Один день назад</button>
 <button style="width: 140px; min-height: 50px; border-radius: 5px" id="front_btn">Один день вперед</button>
 <br/><br/>
