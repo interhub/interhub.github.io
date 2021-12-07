@@ -66,8 +66,6 @@ const start = async (moveDays: number = 0, samePeriod = 7) => {
 let move = 0
 let samePeriod = 7
 
-// start(move, samePeriod)
-
 const test = async () => {
     const MAX_PERIOD = 20
     const MAX_DAYS_MOVE = 300
@@ -105,5 +103,4 @@ if (isBrowser) {
     })
 }
 
-
-
+start(move, samePeriod)

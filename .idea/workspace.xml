@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add repo 2">
+      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,10 +166,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.upload" />
         <item itemvalue="npm.build (1)" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.dev:watch" />
-        <item itemvalue="npm.upload" />
         <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
@@ -213,7 +214,7 @@
       <workItem from="1638878023113" duration="724000" />
       <workItem from="1638878791094" duration="48000" />
       <workItem from="1638887396594" duration="4192000" />
-      <workItem from="1638892592477" duration="2179000" />
+      <workItem from="1638892592477" duration="2578000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
