@@ -29,7 +29,7 @@
 <br/>
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
-    <div id="tradingview_2dc3b"></div>
+    <div style="height: 700px" id="tradingview_2dc3b"></div>
     <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE"
                                                  rel="noopener" target="_blank"><span
             class="blue-text">График BTCUSDT</span></a> от TradingView
@@ -38,6 +38,7 @@
     <script type="text/javascript">
         new TradingView.widget(
             {
+                'autosize': true,
                 'symbol': 'BINANCE:BTCUSDT',
                 'interval': 'D',
                 'timezone': 'Etc/UTC',
