@@ -17,12 +17,13 @@ const getHistoryAsync = async (): Promise<HistoryItem[]> => {
         const lastHour = last(arrHours)
         lastDay.high = lastHour.high
         lastDay.close = lastHour.close
+        lastDay.time = lastHour.time
         arrDays.splice(-1, 1, lastDay)
         console.log(lastDay)
     }
     return arrDays.map(({time, high, low, open, close}): HistoryItem => {
         return {
-            TICKER: '',
+            TICKER: 'BTC',
             DATE: moment(time * 1000).format('DD MMMM YYYY'),
             LOW: low,
             HIGH: high,
