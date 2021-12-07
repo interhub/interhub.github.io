@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <style>
-        body{
+        body {
             font-family: 'Ubuntu', sans-serif;
+            background-color: #191818;
+            color: #e7f1ff;
         }
     </style>
 </head>
@@ -18,42 +20,42 @@
 <div></div>
 <label for="period">Период дней/свечей. Целое число больше 1 (по умолчанию 7)</label>
 <input type="number" placeholder="Число дней" id="period"><br/><br/>
-<button style="width: 100px; min-height: 50px;" id="back_btn">Один день назад</button>
-<button style="width: 100px; min-height: 50px;" id="front_btn">Один день вперед</button><br/><br/>
+<button style="width: 140px; min-height: 50px; border-radius: 5px" id="back_btn">Один день назад</button>
+<button style="width: 140px; min-height: 50px; border-radius: 5px" id="front_btn">Один день вперед</button>
+<br/><br/>
 <p id="title"></p>
 <p id="info" style="font-size: 10px; margin-top: 50px"></p>
 <br/>
 <br/>
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
-    <div id="tradingview_4a9d5"></div>
-    <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">График BTCUSDT</span></a> от TradingView</div>
+    <div id="tradingview_2dc3b"></div>
+    <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE"
+                                                 rel="noopener" target="_blank"><span
+            class="blue-text">График BTCUSDT</span></a> от TradingView
+    </div>
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
     <script type="text/javascript">
         new TradingView.widget(
             {
-                "width": 980,
-                "height": 610,
-                "symbol": "BINANCE:BTCUSDT",
-                "interval": "D",
-                "timezone": "Etc/UTC",
-                "theme": "light",
-                "style": "1",
-                "locale": "ru",
-                "toolbar_bg": "#f1f3f6",
-                "enable_publishing": false,
-                "withdateranges": true,
-                "hide_side_toolbar": false,
-                "allow_symbol_change": true,
-                "studies": [
-                    "BB@tv-basicstudies"
-                ],
-                "show_popup_button": true,
-                "popup_width": "1000",
-                "popup_height": "650",
-                "container_id": "tradingview_4a9d5"
+                'width': 980,
+                'height': 610,
+                'symbol': 'BINANCE:BTCUSDT',
+                'interval': 'D',
+                'timezone': 'Etc/UTC',
+                'theme': 'dark',
+                'style': '1',
+                'locale': 'ru',
+                'toolbar_bg': '#f1f3f6',
+                'enable_publishing': false,
+                'withdateranges': true,
+                'hide_side_toolbar': false,
+                'show_popup_button': true,
+                'popup_width': '1000',
+                'popup_height': '650',
+                'container_id': 'tradingview_2dc3b',
             }
-        );
+        )
     </script>
 </div>
 <!-- TradingView Widget END -->
