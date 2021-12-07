@@ -5,7 +5,7 @@ import {Grid, h} from 'gridjs'
 import {TColumn} from 'gridjs/dist/src/types'
 
 const changeCol: TColumn = {
-    name: 'Изменение цены  историческое (%)',
+    name: 'Изменение цены историческое (%)',
     formatter: (cell) => {
         return h('b', {
             style: {

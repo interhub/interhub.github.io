@@ -40,10 +40,17 @@ const start = async (moveDays: number = 0, samePeriod = 7) => {
     const lastTime = last(await historyPromise).TIME
     if (isBrowser) {
         const title = document.querySelector('#title')
+        const info = document.querySelector('#info')
         title.innerHTML = `Прогнозы для изменения цены на ${moment().add(1, 'day').subtract(moveDays, 'day').format('DD MMMM YYYY')}
 <br/><br/>
 Последняя известная цена BTC = ${lastPrice}. Обновлено ${moment(lastTime).format('DD MMMM YYYY HH:mm:ss')}
 `
+        info.innerHTML = `* Изменение цены историческое (%) - изменение цены на ${samePeriod}-й день периода
+<br/>
+* Коэффициент разницы периодов - показатель различия периода (${PREDICTES[0].dates}) от периода из правого столбика. Чем меньше - тем больше совпадение. ( ноль - значит это и есть последний искомый период )
+<br/>
+* Схожий период изменения цены - период который имеет схожее колебание цены с периодом (${PREDICTES[0].dates})
+        `
     }
 
 }
