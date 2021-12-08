@@ -19,19 +19,25 @@
     </style>
 </head>
 <body>
-<h4>✅ Инструмент анализа рынка BTC</h4>
+<h4>✅ Инструмент исторического анализа рынка BTC</h4>
 <div></div>
 <label for="period">Период дней/свечей </label><br/>
 <input type="range" id="period" name="period" style="width: 100%"
        min="1" max="100" step="1"><br/><br/>
-<button style="width: 50px" id="subPeriod">➖</button><button style="width: 50px" id="addPeriod">➕</button>
-<p id="displayPeriod" ></p><br/>
-<button style="width: 140px; min-height: 50px; border-radius: 5px" id="back_btn">⬅️ Один день назад</button>
-<button style="width: 140px; min-height: 50px; border-radius: 5px" id="front_btn">Один день вперед ➡️</button>
-<br/><br/>
+<button style="width: 50px" id="subPeriod">➖</button>
+<button style="width: 50px" id="addPeriod">➕</button>
+<p id="displayPeriod"></p><br/>
+<div style="display: flex; flex-direction: row">
+    <button style="flex: 1; min-height: 50px; border-radius: 5px" id="back_btn">⬅️ Один день назад</button>
+    <button style="flex: 1; min-height: 50px; border-radius: 5px" id="front_btn">Один день вперед ➡️</button>
+</div>
+<br/>
+<hr>
+<br/>
 <p id="title"></p>
 <p id="info" style="font-size: 10px; margin-top: 50px"></p>
 <br/>
+<hr>
 <br/>
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
@@ -63,7 +69,9 @@
         )
     </script>
 </div>
-<a target="_blank" rel="noopener noreferrer" style="color: #b8ccff" href="http://www.interhub.ml">Связаться с разработчиком ✅</a>
+    <a target="_blank" rel="noopener noreferrer" style="color: #b8ccff" href="http://www.interhub.ml">
+        Связаться с разработчиком ✅
+    </a>
 <!-- TradingView Widget END -->
 <script src="./dist/index.js"></script>
 </body>

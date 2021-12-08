@@ -56,7 +56,7 @@ export const addHandlersDom = (samePeriod: number, move: number, start: (move: n
     })
     //@ts-ignore
     periodInput.value = samePeriod
-    periodInput.addEventListener('change', (e) => {
+    periodInput.addEventListener('input', (e) => {
         //@ts-ignore
         const value = parseInt(e?.target?.value) || 0
         const newSamePeriod = (value < 2) ? 2 : value
