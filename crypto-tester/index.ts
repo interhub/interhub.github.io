@@ -7,8 +7,9 @@ import getPredicts, {historyPromise} from './src/getPredicts'
 import printChart from './src/printChart'
 import moment from 'moment'
 import 'moment/locale/ru'
+import {addHandlersDom, initDom} from './src/initDom'
 
-const POSITIVES_PARAMS = []
+export const POSITIVES_PARAMS = []
 
 const start = async (moveDays: number = 0, samePeriod = 7) => {
     const pogrs: number[] = []
@@ -44,23 +45,10 @@ const start = async (moveDays: number = 0, samePeriod = 7) => {
     }
 
     testPeriods(PREDICTES)
-    const lastPrice = last(await historyPromise).CLOSE
-    const lastTime = last(await historyPromise).TIME
+    const lastTargetPeriod = PREDICTES[0].dates
+
     if (isBrowser) {
-        const title = document.querySelector('#title')
-        const info = document.querySelector('#info')
-        const displayPeriod = document.querySelector('#displayPeriod')
-        title.innerHTML = `Прогнозы для изменения цены на ${moment().add(1, 'day').subtract(moveDays, 'day').format('DD MMMM YYYY')}
-<br/><br/>
-Последняя известная цена BTC = ${lastPrice}. Обновлено ${moment(lastTime).format('DD MMMM YYYY HH:mm:ss')}, обновляется раз в час.
-`
-        info.innerHTML = `* Изменение цены историческое (%) - изменение цены на ${samePeriod + 1}-й день периода
-<br/>
-* Коэффициент разницы периодов - показатель различия периода (${PREDICTES[0].dates}) от периода из правого столбика. Чем меньше - тем больше совпадение. ( ноль - значит это и есть последний искомый период )
-<br/>
-* Схожий период изменения цены - период который имеет схожее колебание цены с периодом (${PREDICTES[0].dates})
-        `
-        displayPeriod.innerHTML = `период = ${samePeriod} дней`
+        await initDom({samePeriod, moveDays, lastTargetPeriod})
     }
 
 }
@@ -68,43 +56,8 @@ const start = async (moveDays: number = 0, samePeriod = 7) => {
 let move = 0
 let samePeriod = 7
 
-const test = async () => {
-    const MAX_PERIOD = 20
-    const MAX_DAYS_MOVE = 300
-    for (let mo = 0; mo < MAX_DAYS_MOVE; mo++) {
-        for (let per = 2; per < MAX_PERIOD; per++) {
-            await start(mo, per)
-        }
-    }
-    console.log({POSITIVES_PARAMS}, POSITIVES_PARAMS.length)
-}
-
 if (isBrowser) {
-    //@ts-ignore
-    window.test = test
-    const backBtn = document.querySelector('#back_btn')
-    const frontBrn = document.querySelector('#front_btn')
-    const periodInput = document.querySelector('#period')
-    //@ts-ignore
-    frontBrn.addEventListener('click', () => {
-        if ((move - 1) < 0) return
-        move--
-        start(move, samePeriod)
-    })
-    //@ts-ignore
-    backBtn.addEventListener('click', () => {
-        move++
-        start(move, samePeriod)
-    })
-    //@ts-ignore
-    periodInput.value = samePeriod
-    periodInput.addEventListener('change', (e) => {
-        //@ts-ignore
-        const value = parseInt(e?.target?.value) || 0
-        const newSamePeriod = (value < 2) ? 2 : value
-        samePeriod = newSamePeriod
-        start(move, newSamePeriod)
-    })
+    addHandlersDom(samePeriod, move, start)
 }
 
 start(move, samePeriod)
