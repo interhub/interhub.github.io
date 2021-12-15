@@ -17,13 +17,14 @@ const getChangeCol = (index: number = 0): TColumn => ({
 })
 
 const getChartChangeCol = (title: string = ''): TColumn => {
-
+    const MIN_HEIGHT = 50
+    const MIN_WIDTH = 100
     return ({
         name: title,
-        width: '100px',
+        width: MIN_WIDTH + 'px',
         formatter: (cell) => {
             const opts: Chartist.ILineChartOptions = {
-                height: '50px',
+                height: MIN_HEIGHT + 'px',
                 chartPadding: {right: 10, bottom: -20, left: 10},
                 showPoint: true,
                 axisX: {
@@ -40,7 +41,7 @@ const getChartChangeCol = (title: string = ''): TColumn => {
             const ref = gCreateRef()
             const chart = h('div', {
                 ref,
-                style: {minWidth: 200,}
+                style: {minWidth: 200, minHeight: MIN_HEIGHT + 10}
             })
             setTimeout(() => {
                 ref.current && new Chartist.Line(ref.current, {
