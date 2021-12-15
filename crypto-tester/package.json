@@ -10,6 +10,7 @@
     "upload": "yarn build && cd .. && git add . && git commit -m \"autocommit upload\" && git push origin master"
   },
   "dependencies": {
+    "@types/chartist": "^0.11.1",
     "@types/lodash": "^4.14.177",
     "@types/table": "^6.3.2",
     "asciichart": "^1.5.25",

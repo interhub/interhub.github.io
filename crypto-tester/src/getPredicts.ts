@@ -11,7 +11,7 @@ const getPredicts = async (moveDays: number, samePeriod: number): Promise<Predic
     const TEST_MOVE = moveDays //of days
     const LAST_PERIOD = history.slice(-(samePeriod + TEST_MOVE), -TEST_MOVE || undefined)
 
-    type CheckedPeriodType = { diffSumKoef: number, period: HistoryItem[], dates: string, index: number, nextDayChange: number, nextDayChanges: number[] }
+    type CheckedPeriodType = { diffSumKoef: number, period: HistoryItem[], dates: string, index: number, nextDayChange: number, nextDayValues: number[], prevDayValues: number[], periodDayValues: number[] }
 
     const getCheckedPeriods = (): CheckedPeriodType[] => {
         const CHECKED_PERIODS: CheckedPeriodType[] = []
@@ -24,10 +24,21 @@ const getPredicts = async (moveDays: number, samePeriod: number): Promise<Predic
                     return getDiffItemsKoef(day[i], LAST_PERIOD[i])
                 })
                 const diffSumKoef = getSumNumbers(diffKoefsPeriod)
-                const dates = `${head(period)?.DATE} ➡️ ${last(period)?.DATE}`//period.map(({DATE}) => DATE).join(' ')
+                const dates = `${head(period)?.DATE} ➡️ ${last(period)?.DATE}`
                 const nextDayChange = arr[i + samePeriod] ? arr[i + samePeriod].CHANGE_PERCENT_REAL : 0
-                const nextDayChanges = new Array(3).fill(1).map((_, key) => arr[key + i + samePeriod] ? arr[key + i + samePeriod].CHANGE_PERCENT_REAL : 0)
-                CHECKED_PERIODS.push({period, diffSumKoef, dates, index: i, nextDayChange, nextDayChanges})
+                const nextDayValues = new Array(samePeriod).fill(1).map((_, key) => arr[i + samePeriod + key] ? arr[i + samePeriod + key].CLOSE : 0)
+                const periodDayValues = new Array(samePeriod).fill(1).map((_, key) => arr[i + key] ? arr[i + key].CLOSE : 0)
+                const prevDayValues = new Array(samePeriod).fill(1).map((_, key) => arr[i + key - samePeriod] ? arr[i + key - samePeriod].CLOSE : 0)
+                CHECKED_PERIODS.push({
+                    period,
+                    diffSumKoef,
+                    dates,
+                    index: i,
+                    nextDayChange,
+                    nextDayValues,
+                    prevDayValues,
+                    periodDayValues
+                })
                 // console.log(JSON.stringify(CHECKED_PERIODS, null, ' '))
             } catch (e) {
                 console.log(e, 'errs with', obj)
@@ -50,9 +61,10 @@ const getPredicts = async (moveDays: number, samePeriod: number): Promise<Predic
         const targetItem = CHECKED_PERIODS[index]
         if (!targetItem) return null
         const nextChangePercent = targetItem.nextDayChange
-        const nextDayChanges = targetItem.nextDayChanges
-
-        return {dates, diffSumKoef, nextChangePercent, nextDayChanges}
+        const nextDayValues = targetItem.nextDayValues
+        const prevDayValues = targetItem.prevDayValues
+        const periodDayValues = targetItem.periodDayValues
+        return {dates, diffSumKoef, nextChangePercent, nextDayValues, prevDayValues, periodDayValues}
     })
         .filter(Boolean)
 

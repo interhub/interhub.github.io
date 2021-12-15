@@ -10,12 +10,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="icon" href="https://faviconka.ru/ico/1/faviconka.ru_1_102373.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="https://faviconka.ru/ico/1/faviconka.ru_1_102373.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
     <style>
         body {
             font-family: 'Ubuntu', sans-serif;
             background-color: #191818;
             color: #e7f1ff;
         }
+
+        /*label titles Y*/
+        .ct-label {
+            color: #969696;
+            font-size: 10px;
+        }
+
+        /*line of chart*/
+        .ct-series-a .ct-line, .ct-series-a .ct-point {
+            stroke: #a6a6a6;
+        }
+
+        .ct-horizontal {
+            display: none;
+        }
+
+        .ct-grid {
+            stroke: #1e2e72;
+        }
+
+        /*Points of chart*/
+        /*.ct-series-a .ct-point {*/
+        /*    stroke: #d7ff51;*/
+        /*}*/
+
     </style>
 </head>
 <body>

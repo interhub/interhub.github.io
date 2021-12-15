@@ -1,11 +1,10 @@
 import 'regenerator-runtime/runtime'
-import {head, last, map} from 'lodash'
+import {head, map} from 'lodash'
 import {isBrowser} from 'browser-or-node'
 import {PredictType} from './src/types'
 import {getDiffPercent} from './src/utils'
-import getPredicts, {historyPromise} from './src/getPredicts'
+import getPredicts from './src/getPredicts'
 import printChart from './src/printChart'
-import moment from 'moment'
 import 'moment/locale/ru'
 import {addHandlersDom, initDom} from './src/initDom'
 
