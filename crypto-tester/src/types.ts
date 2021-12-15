@@ -13,5 +13,5 @@ export type HistoryItem = {
     LOW_SHADOW_PERCENT: number
 }
 
-export type PredictType = { diffSumKoef: number, dates: string, nextChangePercent: number }
+export type PredictType = { diffSumKoef: number, dates: string, nextChangePercent: number, nextDayChanges: number[] }
 

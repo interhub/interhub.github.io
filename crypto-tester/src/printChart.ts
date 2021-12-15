@@ -4,8 +4,8 @@ import {isBrowser} from 'browser-or-node'
 import {Grid, h} from 'gridjs'
 import {TColumn} from 'gridjs/dist/src/types'
 
-const changeCol: TColumn = {
-    name: 'Изменение цены историческое (%)',
+const getChangeCol = (index: number = 0): TColumn => ({
+    name: `Изменение цены +${index + 1} день (%)`,
     formatter: (cell) => {
         return h('b', {
             style: {
@@ -13,21 +13,22 @@ const changeCol: TColumn = {
             }
         }, cell)
     }
-}
+})
 
 const printChart = (predicts: PredictType[]) => {
     const sortedPredicts = sortBy([...predicts], (p) => p.diffSumKoef)
     const percents = sortedPredicts.map(({
                                              nextChangePercent,
+                                             nextDayChanges,
                                              diffSumKoef,
                                              dates
-                                         }, index) => ([index + 1, nextChangePercent, diffSumKoef, dates]))
+                                         }, index) => ([index + 1, diffSumKoef, dates, nextDayChanges[0], nextDayChanges[1], nextDayChanges[2]]))
     if (isBrowser) {
         const mainDiv = document.querySelector('div')
         mainDiv.innerHTML = ''
         mainDiv.innerText = ''
         const grid = new Grid({
-            columns: ['№', changeCol, 'Коэффициент разницы периодов', 'Схожий период изменения цены (даты)'],
+            columns: ['№', 'Коэффициент разницы периодов', 'Схожий период изменения цены (даты)', getChangeCol(0), getChangeCol(1), getChangeCol(2)],
             data: percents,
             style: {
                 td: {
