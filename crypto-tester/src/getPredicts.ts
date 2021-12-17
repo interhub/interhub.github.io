@@ -28,7 +28,8 @@ const getPredicts = async (moveDays: number, samePeriod: number): Promise<Predic
             const patternPeriod: HistoryItem[] = history.slice(-(pattern.moveDays + pattern.samePeriod), (-pattern.moveDays) || undefined)
             if (patternPeriod.length === LAST_PERIOD.length) {
                 const sumDiffPattern = getPeriodsSumKoef(patternPeriod, LAST_PERIOD)
-                if (!patternsExists.some(({diffKoef}) => diffKoef)) {
+                const isExistAlready = patternsExists.map(({diffKoef}) => diffKoef).includes(sumDiffPattern)
+                if (!isExistAlready) {
                     patternsExists.push({pattern, diffKoef: sumDiffPattern})
                 }
             }
