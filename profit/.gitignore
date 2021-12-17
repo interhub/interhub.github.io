@@ -1,0 +1,11 @@
+/cache/
+/node_modules/
+/yarn-error.log
+/yarn.lock
+/.idea
+/index.zip
+/tmp/*
+/logs.txt
+/logs.json
+/tokens/
+/.cache/

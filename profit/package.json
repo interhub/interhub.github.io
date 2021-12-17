@@ -1,0 +1,28 @@
+{
+  "name": "crypto-tester",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev:watch": "parcel index.ts",
+    "start": "ts-node index.ts",
+    "build": "parcel build index.ts",
+    "upload": "yarn build && cd .. && git add . && git commit -m \"autocommit upload\" && git push origin master"
+  },
+  "dependencies": {
+    "@types/dat.gui": "^0.7.7",
+    "@types/lodash": "^4.14.177",
+    "axios": "^0.24.0",
+    "browser-or-node": "^2.0.0",
+    "chartist": "^0.11.4",
+    "dat.gui": "^0.7.7",
+    "gridjs": "^5.0.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "regenerator-runtime": "^0.13.9",
+    "typescript": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.11"
+  }
+}
