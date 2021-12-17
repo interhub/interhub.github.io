@@ -1,7 +1,7 @@
 import moment from 'moment'
 import {last, sortBy} from 'lodash'
 import {historyPromise, patternsExists} from './getPredicts'
-import {POSITIVES_PARAMS} from '../index'
+import {POSITIVES_PARAMS, start} from '../index'
 import {TOP} from './config'
 
 export const initDom = async ({samePeriod, moveDays, lastTargetPeriod}) => {
@@ -32,18 +32,21 @@ ${!!patternsExists.length ? `✅ ✅ ✅ Схожие положительные
 `
 }
 
-export const addHandlersDom = (samePeriod: number, move: number, start: (move: number, samePeriod: number) => Promise<any>) => {
-    const test = async () => {
-        console.log('Loading ⏳')
-        const MAX_PERIOD = 20
-        const MAX_DAYS_MOVE = 365
-        for (let mo = 0; mo < MAX_DAYS_MOVE; mo++) {
-            for (let per = 2; per < MAX_PERIOD; per++) {
-                await start(mo, per)
-            }
+const test = async () => {
+    console.log('Loading ⏳')
+    const MAX_PERIOD = 20
+    const MAX_DAYS_MOVE = 730
+    for (let mo = 0; mo < MAX_DAYS_MOVE; mo++) {
+        for (let per = 2; per < MAX_PERIOD; per++) {
+            await start(mo, per)
         }
-        console.log({POSITIVES_PARAMS}, POSITIVES_PARAMS.length, 'DONE ✅')
     }
+    console.log({POSITIVES_PARAMS}, POSITIVES_PARAMS.length, 'DONE ✅')
+}
+global.test = test
+
+export const addHandlersDom = (samePeriod: number, move: number) => {
+
 
     const addPeriod = document.querySelector('#addPeriod')
     const subPeriod = document.querySelector('#subPeriod')

@@ -10,7 +10,7 @@ import {addHandlersDom, initDom} from './src/initDom'
 
 export const POSITIVES_PARAMS = []
 
-const start = async (moveDays: number = 0, samePeriod = 7) => {
+export const start = async (moveDays: number = 0, samePeriod = 7) => {
     const pogrs: number[] = []
 
     const PREDICTES = await getPredicts(moveDays, samePeriod)
@@ -53,7 +53,8 @@ let move = 0
 let samePeriod = 7
 
 if (isBrowser) {
-    addHandlersDom(samePeriod, move, start)
+    addHandlersDom(samePeriod, move)
 }
 
 start(move, samePeriod)
+
