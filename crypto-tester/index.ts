@@ -8,9 +8,12 @@ import printChart from './src/printChart'
 import 'moment/locale/ru'
 import {addHandlersDom, initDom} from './src/initDom'
 
+declare const isAccess: boolean
+
 export const POSITIVES_PARAMS = []
 
 export const start = async (moveDays: number = 0, samePeriod = 7) => {
+    if (!isAccess) return
     const pogrs: number[] = []
 
     const PREDICTES = await getPredicts(moveDays, samePeriod)

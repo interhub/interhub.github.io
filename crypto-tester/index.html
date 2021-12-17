@@ -77,12 +77,16 @@
         //Password secure
         const passwordKey = 'password'
         const passwordValue = 'admin1'
+        let isAccess = false
         const checkPass = () => {
             const password = localStorage.getItem(passwordKey)
-            if (password === passwordValue) return
+            if (password === passwordValue) {
+                isAccess = true
+                return
+            }
             const inputResult = prompt('Enter the Password:', '')
-            console.log({inputResult})
             if (inputResult === passwordValue) {
+                isAccess = true
                 localStorage.setItem(passwordKey, passwordValue)
                 return
             } else checkPass()
@@ -90,6 +94,7 @@
         const logout = () => {
             localStorage.setItem(passwordKey, '')
             window.location.reload()
+            isAccess = false
         }
         checkPass()
 

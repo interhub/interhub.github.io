@@ -18,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="TypeScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -168,8 +168,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.upload" />
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.dev:watch" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.build (1)" />
         <item itemvalue="npm.build" />
       </list>
@@ -224,7 +224,7 @@
       <workItem from="1639729939692" duration="3662000" />
       <workItem from="1639734116439" duration="1252000" />
       <workItem from="1639737076454" duration="317000" />
-      <workItem from="1639737536546" duration="307000" />
+      <workItem from="1639737536546" duration="1648000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
