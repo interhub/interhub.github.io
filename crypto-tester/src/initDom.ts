@@ -2,6 +2,7 @@ import moment from 'moment'
 import {last, sortBy} from 'lodash'
 import {historyPromise, patternsExists} from './getPredicts'
 import {POSITIVES_PARAMS} from '../index'
+import {TOP} from './config'
 
 export const initDom = async ({samePeriod, moveDays, lastTargetPeriod}) => {
     const lastPrice = last(await historyPromise).CLOSE
@@ -22,8 +23,9 @@ export const initDom = async ({samePeriod, moveDays, lastTargetPeriod}) => {
         `
     const samePatterns = sortBy(patternsExists, 'diffKoef').map(({
                                                                      pattern: {dates},
-                                                                     diffKoef
-                                                                 }, i) => (i + 1) + ') ' + dates + '. С коеффициентом разницы = ' + diffKoef)
+                                                                     diffKoef,
+                                                                     isIncludeToTop
+                                                                 }, i) => `${i + 1}) ${dates}. С коеффициентом разницы = ${diffKoef}. ${isIncludeToTop ? `❤️ Входит в топ ${TOP}` : ''}`)
     const patternsLink = 'https://docs.google.com/spreadsheets/d/1fve-2mCMg6XHWNUyg0wIwBxywzm3-pAJ4XhhoBm0JA4/edit?usp=sharing'
     displayPeriod.innerHTML = `период = ${samePeriod} дней <br/>
 ${!!patternsExists.length ? `✅ ✅ ✅ Схожие положительные паттерны с текущим периодом -  <br/>${samePatterns.join('<br/> ')} <br/><a target="_blank" rel="noopener noreferrer" style="color: #454545; font-size: 12px" href="${patternsLink}">Список паттернов</a>` : ``}

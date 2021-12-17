@@ -5,7 +5,7 @@ import {TOP} from './config'
 import getHistoryAsync from './getHistoryAsync'
 import positive_patterns from '../positive_patterns.json'
 
-export let patternsExists: { pattern: any, diffKoef: number }[] = []
+export let patternsExists: { pattern: any, diffKoef: number, isIncludeToTop: boolean }[] = []
 
 export const historyPromise = getHistoryAsync()
 
@@ -22,20 +22,6 @@ const getPredicts = async (moveDays: number, samePeriod: number): Promise<Predic
         })
         return getSumNumbers(diffKoefsPeriod)
     }
-    const fillPattensCheck = () => {
-        patternsExists = []
-        positive_patterns.forEach((pattern, i) => {
-            const patternPeriod: HistoryItem[] = history.slice(-(pattern.moveDays + pattern.samePeriod), (-pattern.moveDays) || undefined)
-            if (patternPeriod.length === LAST_PERIOD.length) {
-                const sumDiffPattern = getPeriodsSumKoef(patternPeriod, LAST_PERIOD)
-                const isExistAlready = patternsExists.map(({diffKoef}) => diffKoef).includes(sumDiffPattern)
-                if (!isExistAlready) {
-                    patternsExists.push({pattern, diffKoef: sumDiffPattern})
-                }
-            }
-        })
-    }
-    fillPattensCheck()
 
     const getCheckedPeriods = (): CheckedPeriodType[] => {
         const CHECKED_PERIODS: CheckedPeriodType[] = []
@@ -78,6 +64,22 @@ const getPredicts = async (moveDays: number, samePeriod: number): Promise<Predic
     const SORTED_CHECKED_PERIODS: CheckedPeriodType[] = sortBy(CHECKED_PERIODS, 'diffSumKoef')
 
     const MAX_SAMES_PERIODS = SORTED_CHECKED_PERIODS.slice(0, TOP)
+
+    const fillPattensCheck = () => {
+        patternsExists = []
+        positive_patterns.forEach((pattern, i) => {
+            const patternPeriod: HistoryItem[] = history.slice(-(pattern.moveDays + pattern.samePeriod), (-pattern.moveDays) || undefined)
+            if (patternPeriod.length === LAST_PERIOD.length) {
+                const sumDiffPattern = getPeriodsSumKoef(patternPeriod, LAST_PERIOD)
+                const isExistAlready = patternsExists.map(({diffKoef}) => diffKoef).includes(sumDiffPattern)
+                const isIncludedToTopSameList = MAX_SAMES_PERIODS.some(({dates}) => dates === pattern.dates)
+                if (!isExistAlready) {
+                    patternsExists.push({pattern, diffKoef: sumDiffPattern, isIncludeToTop: isIncludedToTopSameList})
+                }
+            }
+        })
+    }
+    fillPattensCheck()
 
     return MAX_SAMES_PERIODS.map(({
                                       diffSumKoef,
