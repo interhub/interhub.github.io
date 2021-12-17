@@ -1,5 +1,5 @@
 import moment from 'moment'
-import {last} from 'lodash'
+import {last, sortBy} from 'lodash'
 import {historyPromise, patternsExists} from './getPredicts'
 import {POSITIVES_PARAMS} from '../index'
 
@@ -20,13 +20,13 @@ export const initDom = async ({samePeriod, moveDays, lastTargetPeriod}) => {
 <br/>
 * Схожий период изменения цены - период который имеет схожее колебание цены с периодом (${lastTargetPeriod})
         `
-    const samePatterns = patternsExists.map(({
-                                                 pattern: {dates},
-                                                 diffKoef
-                                             }) => dates + '. С коеффициентом разницы = ' + diffKoef).join(' ')
+    const samePatterns = sortBy(patternsExists, 'diffKoef').map(({
+                                                                     pattern: {dates},
+                                                                     diffKoef
+                                                                 }, i) => (i + 1) + ') ' + dates + '. С коеффициентом разницы = ' + diffKoef)
     const patternsLink = 'https://docs.google.com/spreadsheets/d/1fve-2mCMg6XHWNUyg0wIwBxywzm3-pAJ4XhhoBm0JA4/edit?usp=sharing'
     displayPeriod.innerHTML = `период = ${samePeriod} дней <br/>
-${!!patternsExists.length ? `✅ ✅ ✅ Схожие положительные паттерны с текущим периодом -  ${samePatterns} <br/><a target="_blank" rel="noopener noreferrer" style="color: #454545; font-size: 12px" href="${patternsLink}">Список паттернов</a>` : ``}
+${!!patternsExists.length ? `✅ ✅ ✅ Схожие положительные паттерны с текущим периодом -  <br/>${samePatterns.join('<br/> ')} <br/><a target="_blank" rel="noopener noreferrer" style="color: #454545; font-size: 12px" href="${patternsLink}">Список паттернов</a>` : ``}
 `
 }
 
