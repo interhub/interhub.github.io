@@ -17,7 +17,7 @@ const getChangeCol = (index: number = 0): TColumn => ({
 })
 
 const getChartChangeCol = (title: string = ''): TColumn => {
-    const MIN_HEIGHT = 50
+    const MIN_HEIGHT = 60
     const MIN_WIDTH = 100
     return ({
         name: title,
@@ -25,7 +25,7 @@ const getChartChangeCol = (title: string = ''): TColumn => {
         formatter: (cell) => {
             const opts: Chartist.ILineChartOptions = {
                 height: MIN_HEIGHT + 'px',
-                chartPadding: {right: 10, bottom: -20, left: 10},
+                chartPadding: {right: 10, bottom: -20, left: 10, top: 10},
                 showPoint: true,
                 axisX: {
                     showGrid: true,
