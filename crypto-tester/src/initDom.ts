@@ -34,6 +34,7 @@ ${!!patternsExists.length ? `✅ ✅ ✅ Схожие положительные
 
 export const addHandlersDom = (samePeriod: number, move: number, start: (move: number, samePeriod: number) => Promise<any>) => {
     const test = async () => {
+        console.log('Loading ⏳')
         const MAX_PERIOD = 20
         const MAX_DAYS_MOVE = 365
         for (let mo = 0; mo < MAX_DAYS_MOVE; mo++) {
@@ -41,7 +42,7 @@ export const addHandlersDom = (samePeriod: number, move: number, start: (move: n
                 await start(mo, per)
             }
         }
-        console.log({POSITIVES_PARAMS}, POSITIVES_PARAMS.length)
+        console.log({POSITIVES_PARAMS}, POSITIVES_PARAMS.length, 'DONE ✅')
     }
 
     const addPeriod = document.querySelector('#addPeriod')
