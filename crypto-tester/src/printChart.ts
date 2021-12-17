@@ -35,13 +35,13 @@ const getChartChangeCol = (title: string = ''): TColumn => {
                     showGrid: true,
                     labelInterpolationFnc: function (value) {
                         return '$' + value
-                    }
-                }
+                    },
+                },
             }
             const ref = gCreateRef()
             const chart = h('div', {
                 ref,
-                style: {minWidth: 200, minHeight: MIN_HEIGHT + 10}
+                style: {minWidth: 200, minHeight: MIN_HEIGHT + 10,}
             })
             setTimeout(() => {
                 ref.current && new Chartist.Line(ref.current, {

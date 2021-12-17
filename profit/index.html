@@ -8,20 +8,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="icon" href="https://faviconka.ru/ico/1/faviconka.ru_1_102373.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="https://faviconka.ru/ico/1/faviconka.ru_1_102373.ico" type="image/x-icon"/>
+    <!--    chart js-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <!--    chart js-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             font-family: 'Ubuntu', sans-serif;
-            background-color: #191818;
-            color: #e7f1ff;
+            background-color: #e6e6c1;
+            color: #505050;
             padding-top: 150px;
         }
+
+        /*label titles Y*/
+        .ct-label {
+            color: #307730;
+            font-size: 10px;
+        }
+
+        /*line of chart*/
+        .ct-series-a .ct-line, .ct-series-a .ct-point {
+            stroke: #307730;
+        }
+
     </style>
 </head>
 <body>
 <h4>✅ Инструмент расчета дохода</h4>
-<div></div>
-<a target="_blank" rel="noopener noreferrer" style="color: #b8ccff; position:absolute; bottom: 0"
+<div id="chart"></div>
+<div id="info"></div>
+<a target="_blank" rel="noopener noreferrer" style="color: #011e72; position: fixed; bottom: 0; right: 0"
    href="http://www.interhub.ml">
     Связаться с разработчиком ✅
 </a>
