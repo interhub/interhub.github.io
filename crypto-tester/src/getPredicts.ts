@@ -3,6 +3,9 @@ import {getDiffItemsKoef, getSumNumbers} from './utils'
 import {head, last, sortBy} from 'lodash'
 import {TOP} from './config'
 import getHistoryAsync from './getHistoryAsync'
+import positive_patterns from '../positive_patterns.json'
+
+export let patternsExists: { pattern: any, diffKoef: number }[] = []
 
 export const historyPromise = getHistoryAsync()
 
@@ -13,6 +16,26 @@ const getPredicts = async (moveDays: number, samePeriod: number): Promise<Predic
 
     type CheckedPeriodType = { diffSumKoef: number, period: HistoryItem[], dates: string, index: number, nextDayChange: number, nextDayValues: number[], prevDayValues: number[], periodDayValues: number[] }
 
+    const getPeriodsSumKoef = (period1: HistoryItem[], period2: HistoryItem[]): number => {
+        const diffKoefsPeriod = period1.map((item, i, days) => {
+            return getDiffItemsKoef(days[i], period2[i])
+        })
+        return getSumNumbers(diffKoefsPeriod)
+    }
+    const fillPattensCheck = () => {
+        patternsExists = []
+        positive_patterns.forEach((pattern, i) => {
+            const patternPeriod: HistoryItem[] = history.slice(-(pattern.moveDays + pattern.samePeriod), (-pattern.moveDays) || undefined)
+            if (patternPeriod.length === LAST_PERIOD.length) {
+                const sumDiffPattern = getPeriodsSumKoef(patternPeriod, LAST_PERIOD)
+                if (!patternsExists.some(({diffKoef}) => diffKoef)) {
+                    patternsExists.push({pattern, diffKoef: sumDiffPattern})
+                }
+            }
+        })
+    }
+    fillPattensCheck()
+
     const getCheckedPeriods = (): CheckedPeriodType[] => {
         const CHECKED_PERIODS: CheckedPeriodType[] = []
         history.map((obj, i, arr) => {
@@ -20,15 +43,17 @@ const getPredicts = async (moveDays: number, samePeriod: number): Promise<Predic
                 const period: HistoryItem[] = arr.slice(i, i + samePeriod)
                 if (period.length < samePeriod) return
                 //check periods to different to last period and add to array
-                const diffKoefsPeriod = period.map((item, i, day) => {
-                    return getDiffItemsKoef(day[i], LAST_PERIOD[i])
-                })
-                const diffSumKoef = getSumNumbers(diffKoefsPeriod)
+                const diffSumKoef = getPeriodsSumKoef(period, LAST_PERIOD)
                 const dates = `${head(period)?.DATE} ➡️ ${last(period)?.DATE}`
                 const nextDayChange = arr[i + samePeriod] ? arr[i + samePeriod].CHANGE_PERCENT_REAL : 0
                 const nextDayValues = new Array(samePeriod).fill(1).map((_, key) => arr[i + samePeriod + key] ? arr[i + samePeriod + key].CLOSE : 0)
                 const periodDayValues = new Array(samePeriod).fill(1).map((_, key) => arr[i + key] ? arr[i + key].CLOSE : 0)
                 const prevDayValues = new Array(samePeriod).fill(1).map((_, key) => arr[i + key - samePeriod] ? arr[i + key - samePeriod].CLOSE : 0)
+
+                //Finding pattern sames
+
+                //end calc of patterns
+
                 CHECKED_PERIODS.push({
                     period,
                     diffSumKoef,

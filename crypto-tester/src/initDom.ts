@@ -1,6 +1,6 @@
 import moment from 'moment'
 import {last} from 'lodash'
-import {historyPromise} from './getPredicts'
+import {historyPromise, patternsExists} from './getPredicts'
 import {POSITIVES_PARAMS} from '../index'
 
 export const initDom = async ({samePeriod, moveDays, lastTargetPeriod}) => {
@@ -20,7 +20,14 @@ export const initDom = async ({samePeriod, moveDays, lastTargetPeriod}) => {
 <br/>
 * Схожий период изменения цены - период который имеет схожее колебание цены с периодом (${lastTargetPeriod})
         `
-    displayPeriod.innerHTML = `период = ${samePeriod} дней`
+    const samePatterns = patternsExists.map(({
+                                                 pattern: {dates},
+                                                 diffKoef
+                                             }) => dates + '. С коеффициентом разницы = ' + diffKoef).join(' ')
+    const patternsLink = 'https://docs.google.com/spreadsheets/d/1fve-2mCMg6XHWNUyg0wIwBxywzm3-pAJ4XhhoBm0JA4/edit?usp=sharing'
+    displayPeriod.innerHTML = `период = ${samePeriod} дней <br/>
+${!!patternsExists.length ? `✅ ✅ ✅ Схожие положительные паттерны с текущим периодом -  ${samePatterns} <br/><a target="_blank" rel="noopener noreferrer" style="color: #454545; font-size: 12px" href="${patternsLink}">Список паттернов</a>` : ``}
+`
 }
 
 export const addHandlersDom = (samePeriod: number, move: number, start: (move: number, samePeriod: number) => Promise<any>) => {

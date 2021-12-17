@@ -99,7 +99,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/cryptorg_calc/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/crypto-tester/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -220,7 +220,8 @@
       <workItem from="1638962964273" duration="1938000" />
       <workItem from="1639589205507" duration="676000" />
       <workItem from="1639593163164" duration="7151000" />
-      <workItem from="1639601568266" duration="181000" />
+      <workItem from="1639601568266" duration="322000" />
+      <workItem from="1639729939692" duration="2762000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>

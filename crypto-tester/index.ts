@@ -26,7 +26,6 @@ const start = async (moveDays: number = 0, samePeriod = 7) => {
 
         const isExistRealData = head(predicts)?.diffSumKoef === 0
         const isExistFuture = head(predicts)?.nextChangePercent !== 0
-        console.log({isExistRealData})
         const otherPredicts = isExistRealData ? predicts.slice(1) : predicts
         if (!isExistRealData) {
             console.log('test impossible so have no data for future')
@@ -39,7 +38,6 @@ const start = async (moveDays: number = 0, samePeriod = 7) => {
         if (isExistRealData && typeof realChange === 'number') {
             const pogrPercent = getDiffPercent(realChange, mainChange) / 100
             pogrs.push(pogrPercent)
-            console.log({pogrPercent})
         }
     }
 

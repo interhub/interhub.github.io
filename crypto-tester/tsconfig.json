@@ -8,7 +8,8 @@
     "allowJs": true,
     "outDir": "./build",
     "declarationMap": false,
-    "inlineSourceMap": false
+    "inlineSourceMap": false,
+    "resolveJsonModule": true
   },
   "exclude": [
     "node_modules",
