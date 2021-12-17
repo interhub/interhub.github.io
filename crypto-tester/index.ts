@@ -34,7 +34,6 @@ const start = async (moveDays: number = 0, samePeriod = 7) => {
         const otherChangesPercents = map(otherPredicts, 'nextChangePercent')
         const realChange = isExistRealData && isExistFuture ? realItem.nextChangePercent : 'not exist'
         const mainChange = head(otherChangesPercents)
-        console.log({mainChange, realChange})
         if (isExistRealData && typeof realChange === 'number') {
             const pogrPercent = getDiffPercent(realChange, mainChange) / 100
             pogrs.push(pogrPercent)
