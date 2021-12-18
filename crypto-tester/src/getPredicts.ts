@@ -24,14 +24,14 @@ const getPredicts = async (moveDays: number, samePeriod: number): Promise<Predic
         return getSumNumbers(diffKoefsPeriod)
     }
 
-    const getCheckedPeriods = (): CheckedPeriodType[] => {
+    const getCheckedPeriods = (lastPeriod: HistoryItem[]): CheckedPeriodType[] => {
         const CHECKED_PERIODS: CheckedPeriodType[] = []
         history.map((obj, i, arr) => {
             try {
-                const period: HistoryItem[] = arr.slice(i, i + samePeriod)
+                const period: HistoryItem[] = arr.slice(i, i + lastPeriod.length)
                 if (period.length < samePeriod) return
                 //check periods to different to last period and add to array
-                const diffSumKoef = getPeriodsSumKoef(period, LAST_PERIOD)
+                const diffSumKoef = getPeriodsSumKoef(period, lastPeriod)
                 const dates = `${head(period)?.DATE} ➡️ ${last(period)?.DATE}`
                 const nextDayChange = arr[i + samePeriod] ? arr[i + samePeriod].CHANGE_PERCENT_REAL : 0
                 const nextDayValues = new Array(samePeriod).fill(1).map((_, key) => arr[i + samePeriod + key] ? arr[i + samePeriod + key].CLOSE : 0)
@@ -60,10 +60,8 @@ const getPredicts = async (moveDays: number, samePeriod: number): Promise<Predic
         return CHECKED_PERIODS
     }
 
-    const CHECKED_PERIODS = getCheckedPeriods()
-
+    const CHECKED_PERIODS = getCheckedPeriods(LAST_PERIOD)
     const SORTED_CHECKED_PERIODS: CheckedPeriodType[] = sortBy(CHECKED_PERIODS, 'diffSumKoef')
-
     const MAX_SAMES_PERIODS = SORTED_CHECKED_PERIODS.slice(0, TOP)
 
     const fillPattensCheck = () => {
@@ -75,15 +73,17 @@ const getPredicts = async (moveDays: number, samePeriod: number): Promise<Predic
             isPositive: true
         })).concat(negative_patterns.map((p) => ({...p, isPositive: false})))
 
-        patternsAllTimeExists=[]
+        patternsAllTimeExists = []
         findPeriod.map((period, i, arr) => {
             const currentPeriod = arr.slice(-i)
             const sameLenPatternsPos = allPatterns.filter((p) => p.samePeriod === currentPeriod.length)
+            const currentCheckedPeriods = getCheckedPeriods(currentPeriod)
+            const currentTopSortedChecked: CheckedPeriodType[] = sortBy(currentCheckedPeriods, 'diffSumKoef').slice(0, TOP)
+            const maxCurrentListPeriodsKoef = max(map(currentTopSortedChecked, 'diffSumKoef'))
             sameLenPatternsPos.forEach((pattern) => {
                 const patternPeriod: HistoryItem[] = history.slice(-(pattern.moveDays + pattern.samePeriod), (-pattern.moveDays) || undefined)
                 const sumDiffPattern = getPeriodsSumKoef(patternPeriod, currentPeriod)
                 const isExistAlready = map(patternsAllTimeExists, 'dates').includes(pattern.dates)
-                const maxCurrentListPeriodsKoef = max(map(MAX_SAMES_PERIODS, 'diffSumKoef'))
                 const isIncludedToTopSameList = sumDiffPattern <= maxCurrentListPeriodsKoef
                 if (!isExistAlready && isIncludedToTopSameList) {
                     patternsAllTimeExists.push({

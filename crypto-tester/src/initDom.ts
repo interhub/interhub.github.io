@@ -2,7 +2,6 @@ import moment from 'moment'
 import {last, sortBy} from 'lodash'
 import {historyPromise, patternsAllTimeExists} from './getPredicts'
 import {POSITIVES_PARAMS, NEGATIVE_PARAMS, start} from '../index'
-import {TOP} from './config'
 
 export const initDom = async ({samePeriod, moveDays, lastTargetPeriod}) => {
     const lastPrice = last(await historyPromise).CLOSE
@@ -31,7 +30,7 @@ export const initDom = async ({samePeriod, moveDays, lastTargetPeriod}) => {
     const patternsLink = 'https://docs.google.com/spreadsheets/d/1fve-2mCMg6XHWNUyg0wIwBxywzm3-pAJ4XhhoBm0JA4/edit?usp=sharing'
     displayPeriod.innerHTML = `период = ${samePeriod} дней <br/>`
     patterns.innerHTML = `
-${!!samePatternsList.length ? `✅ Схожие по времени паттерны -  <br/>${samePatternsList.join('<br/> ')} <br/>` : ``}
+${!!samePatternsList.length ? `🍀 Схожие по времени паттерны -  <br/>${samePatternsList.join('<br/> ')} <br/>` : `🍀 Паттернов не найдено<br/>`}
 <a target="_blank" rel="noopener noreferrer" style="color: #454545; font-size: 12px" href="${patternsLink}">Список паттернов</a>
 `
 }
@@ -54,6 +53,7 @@ export const addHandlersDom = (samePeriod: number, move: number) => {
 
     const addPeriod = document.querySelector('#addPeriod')
     const subPeriod = document.querySelector('#subPeriod')
+    const datePeriod = document.querySelector('#date-input')
 
     //@ts-ignore
     window.test = test
@@ -93,5 +93,17 @@ export const addHandlersDom = (samePeriod: number, move: number) => {
         //@ts-ignore
         periodInput.value = samePeriod
         start(move, samePeriod)
+    })
+    const currentPredictDate = moment().subtract(move, 'days').add(1, 'days').toDate()
+    //@ts-ignore
+    datePeriod.value = currentPredictDate
+    datePeriod.addEventListener('blur', (e) => {
+        //@ts-ignore
+        const value = e.target?.valueAsNumber
+        const newMove = moment().diff(moment(value), 'days')+1
+        if (newMove >= 0) {
+            move = newMove
+            start(move, samePeriod)
+        }
     })
 }
