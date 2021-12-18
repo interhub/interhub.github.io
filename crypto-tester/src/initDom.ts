@@ -1,7 +1,7 @@
 import moment from 'moment'
 import {last, sortBy} from 'lodash'
-import {historyPromise, patternsExists} from './getPredicts'
-import {POSITIVES_PARAMS, start} from '../index'
+import {historyPromise, patternsAllTimeExists} from './getPredicts'
+import {POSITIVES_PARAMS, NEGATIVE_PARAMS, start} from '../index'
 import {TOP} from './config'
 
 export const initDom = async ({samePeriod, moveDays, lastTargetPeriod}) => {
@@ -9,6 +9,7 @@ export const initDom = async ({samePeriod, moveDays, lastTargetPeriod}) => {
     const lastTime = last(await historyPromise).TIME
 
     const title = document.querySelector('#title')
+    const patterns = document.querySelector('#patterns')
     const info = document.querySelector('#info')
     const displayPeriod = document.querySelector('#displayPeriod')
     title.innerHTML = `Прогнозы для изменения цены на ${moment().add(1, 'day').subtract(moveDays, 'day').format('DD MMMM YYYY')}
@@ -21,14 +22,17 @@ export const initDom = async ({samePeriod, moveDays, lastTargetPeriod}) => {
 <br/>
 * Схожий период изменения цены - период который имеет схожее колебание цены с периодом (${lastTargetPeriod})
         `
-    const samePatterns = sortBy(patternsExists, 'diffKoef').map(({
-                                                                     pattern: {dates},
-                                                                     diffKoef,
-                                                                     isIncludeToTop
-                                                                 }, i) => `${i + 1}) ${dates}. С коеффициентом разницы = ${diffKoef}. ${isIncludeToTop ? `❤️ Входит в топ ${TOP}` : ''}`)
+    const samePatternsList = sortBy(patternsAllTimeExists, ['isPositive', 'samePeriod', 'diffKoef',],).map(({
+                                                                                                                dates,
+                                                                                                                diffKoef,
+                                                                                                                isPositive,
+                                                                                                                samePeriod
+                                                                                                            }, i) => `${i + 1}) ${dates}. С коеффициентом разницы = ${diffKoef}. ${isPositive ? `❤️❤️❤️ Положительный` : '⚠️⚠️⚠️ Отрицательный'}. Период ${samePeriod} дней`).reverse()
     const patternsLink = 'https://docs.google.com/spreadsheets/d/1fve-2mCMg6XHWNUyg0wIwBxywzm3-pAJ4XhhoBm0JA4/edit?usp=sharing'
-    displayPeriod.innerHTML = `период = ${samePeriod} дней <br/>
-${!!patternsExists.length ? `✅ ✅ ✅ Схожие по времени положительные паттерны -  <br/>${samePatterns.join('<br/> ')} <br/><a target="_blank" rel="noopener noreferrer" style="color: #454545; font-size: 12px" href="${patternsLink}">Список паттернов</a>` : ``}
+    displayPeriod.innerHTML = `период = ${samePeriod} дней <br/>`
+    patterns.innerHTML = `
+${!!samePatternsList.length ? `✅ Схожие по времени паттерны -  <br/>${samePatternsList.join('<br/> ')} <br/>` : ``}
+<a target="_blank" rel="noopener noreferrer" style="color: #454545; font-size: 12px" href="${patternsLink}">Список паттернов</a>
 `
 }
 
@@ -41,7 +45,7 @@ const test = async () => {
             await start(mo, per)
         }
     }
-    console.log({POSITIVES_PARAMS}, POSITIVES_PARAMS.length, 'DONE ✅')
+    console.log({POSITIVES_PARAMS}, {NEGATIVE_PARAMS}, 'DONE ✅')
 }
 global.test = test
 

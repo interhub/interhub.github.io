@@ -11,6 +11,7 @@ import {addHandlersDom, initDom} from './src/initDom'
 declare const isAccess: boolean
 
 export const POSITIVES_PARAMS = []
+export const NEGATIVE_PARAMS = []
 
 export const start = async (moveDays: number = 0, samePeriod = 7) => {
     if (!isAccess) return
@@ -20,9 +21,14 @@ export const start = async (moveDays: number = 0, samePeriod = 7) => {
     printChart(PREDICTES)
 
     //tests
-    const isPositiveAll = PREDICTES.slice(0, 7).every(({nextChangePercent}) => nextChangePercent >= 0)
+    const testPatternCount = 7
+    const isPositiveAll = PREDICTES.slice(0, testPatternCount).every(({nextChangePercent}) => nextChangePercent >= 0)
+    const isNegativeAll = PREDICTES.slice(0, testPatternCount).every(({nextChangePercent}) => nextChangePercent <= 0)
     if (isPositiveAll) {
         POSITIVES_PARAMS.push({samePeriod, moveDays, dates: head(PREDICTES).dates})
+    }
+    if (isNegativeAll) {
+        NEGATIVE_PARAMS.push({samePeriod, moveDays, dates: head(PREDICTES).dates})
     }
 
     const testPeriods = (predicts: PredictType[]) => {

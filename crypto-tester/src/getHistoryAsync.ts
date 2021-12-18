@@ -19,7 +19,6 @@ const getHistoryAsync = async (): Promise<HistoryItem[]> => {
         lastDay.close = lastHour.close
         lastDay.time = lastHour.time
         arrDays.splice(-1, 1, lastDay)
-        console.log(lastDay)
     }
     return arrDays.map(({time, high, low, open, close}): HistoryItem => {
         return {
