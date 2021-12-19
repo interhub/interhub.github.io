@@ -3,7 +3,6 @@ import moment from 'moment'
 import Chartist from 'chartist'
 import 'moment/locale/ru'
 
-
 const gui = new dat.GUI({width: innerWidth / 2})
 //params
 const storageData = JSON.parse(localStorage.getItem('data'))
@@ -82,7 +81,9 @@ const updateDisplay = () => {
                 return moment(value).format('MMM D')
             }
         },
-        chartPadding: {left: (params.weekPercent.weekPercent) + (params.month.month * 1.5),},
+        chartPadding: {
+            left: resultSum.toFixed().length * 4
+        },
     })
 }
 updateDisplay()
