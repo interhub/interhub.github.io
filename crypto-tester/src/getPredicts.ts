@@ -1,16 +1,17 @@
 import {HistoryItem, PredictType} from './types'
 import {getDiffItemsKoef, getSumNumbers} from './utils'
-import {head, last, map, max, sortBy} from 'lodash'
+import {findIndex, head, last, map, max, sortBy} from 'lodash'
 import {TOP} from './config'
 import getHistoryAsync from './getHistoryAsync'
 import positive_patterns from '../positive_patterns.json'
 import negative_patterns from '../negative_patterns.json'
+import moment from 'moment'
 
 export let patternsAllTimeExists: { dates: string, isPositive: boolean, diffKoef: number, samePeriod: number }[] = []
 
 export const historyPromise = getHistoryAsync()
 
-const getPredicts = async (moveDays: number, samePeriod: number): Promise<PredictType[]> => {
+const getPredicts = async (moveDays: number, samePeriod: number, isTest?: boolean): Promise<PredictType[]> => {
     const history = await historyPromise
     const TEST_MOVE = moveDays //of days
     const LAST_PERIOD = history.slice(-(samePeriod + TEST_MOVE), -TEST_MOVE || undefined)
@@ -37,8 +38,6 @@ const getPredicts = async (moveDays: number, samePeriod: number): Promise<Predic
                 const nextDayValues = new Array(samePeriod).fill(1).map((_, key) => arr[i + samePeriod + key] ? arr[i + samePeriod + key].CLOSE : 0)
                 const periodDayValues = new Array(samePeriod).fill(1).map((_, key) => arr[i + key] ? arr[i + key].CLOSE : 0)
                 const prevDayValues = new Array(samePeriod).fill(1).map((_, key) => arr[i + key - samePeriod] ? arr[i + key - samePeriod].CLOSE : 0)
-
-                //Finding pattern sames
 
                 //end calc of patterns
 
@@ -81,7 +80,9 @@ const getPredicts = async (moveDays: number, samePeriod: number): Promise<Predic
             const currentTopSortedChecked: CheckedPeriodType[] = sortBy(currentCheckedPeriods, 'diffSumKoef').slice(0, TOP)
             const maxCurrentListPeriodsKoef = max(map(currentTopSortedChecked, 'diffSumKoef'))
             sameLenPatternsPos.forEach((pattern) => {
-                const patternPeriod: HistoryItem[] = history.slice(-(pattern.moveDays + pattern.samePeriod), (-pattern.moveDays) || undefined)
+                const patternDayIndex = findIndex(history, (i) => moment(i.TIME).isSame(pattern.dateFrom, 'days'))
+                const patternPeriod: HistoryItem[] = history.slice(patternDayIndex, patternDayIndex + pattern.samePeriod)
+                if (patternPeriod.length !== currentPeriod.length) return
                 const sumDiffPattern = getPeriodsSumKoef(patternPeriod, currentPeriod)
                 const isExistAlready = map(patternsAllTimeExists, 'dates').includes(pattern.dates)
                 const isIncludedToTopSameList = sumDiffPattern <= maxCurrentListPeriodsKoef
@@ -97,7 +98,9 @@ const getPredicts = async (moveDays: number, samePeriod: number): Promise<Predic
         })
 
     }
-    fillPattensCheck()
+    if (!isTest) {
+        fillPattensCheck()
+    }
 
     return MAX_SAMES_PERIODS.map(({
                                       diffSumKoef,

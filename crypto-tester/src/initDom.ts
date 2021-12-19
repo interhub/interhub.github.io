@@ -2,6 +2,8 @@ import moment from 'moment'
 import {last, sortBy} from 'lodash'
 import {historyPromise, patternsAllTimeExists} from './getPredicts'
 import {POSITIVES_PARAMS, NEGATIVE_PARAMS, start} from '../index'
+import fs from 'fs'
+import {isBrowser} from 'browser-or-node'
 
 export const initDom = async ({samePeriod, moveDays, lastTargetPeriod}) => {
     const lastPrice = last(await historyPromise).CLOSE
@@ -35,7 +37,7 @@ ${!!samePatternsList.length ? `🍀 Схожие по времени патте�
 `
 }
 
-const test = async () => {
+export const test = async () => {
     console.log('Loading ⏳')
     const MAX_PERIOD = 20
     const MAX_DAYS_MOVE = 730
@@ -45,6 +47,10 @@ const test = async () => {
         }
     }
     console.log({POSITIVES_PARAMS}, {NEGATIVE_PARAMS}, 'DONE ✅')
+    if (!isBrowser) {
+        fs.writeFileSync('positive_patterns.json', JSON.stringify(POSITIVES_PARAMS, null, ' '))
+        fs.writeFileSync('negative_patterns.json', JSON.stringify(NEGATIVE_PARAMS, null, ' '))
+    }
 }
 global.test = test
 
@@ -94,13 +100,13 @@ export const addHandlersDom = (samePeriod: number, move: number) => {
         periodInput.value = samePeriod
         start(move, samePeriod)
     })
-    const currentPredictDate = moment().subtract(move, 'days').add(1, 'days').toDate()
+    const currentPredictDate = moment().subtract(move, 'days').add(1, 'days').format('YYYY-MM-DD')
     //@ts-ignore
     datePeriod.value = currentPredictDate
     datePeriod.addEventListener('blur', (e) => {
         //@ts-ignore
         const value = e.target?.valueAsNumber
-        const newMove = moment().diff(moment(value), 'days')+1
+        const newMove = moment().diff(moment(value), 'days') + 1
         if (newMove >= 0) {
             move = newMove
             start(move, samePeriod)

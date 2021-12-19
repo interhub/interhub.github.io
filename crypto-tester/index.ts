@@ -7,28 +7,31 @@ import getPredicts from './src/getPredicts'
 import printChart from './src/printChart'
 import 'moment/locale/ru'
 import {addHandlersDom, initDom} from './src/initDom'
+import moment from 'moment'
 
-declare const isAccess: boolean
+declare let isAccess: boolean
 
 export const POSITIVES_PARAMS = []
 export const NEGATIVE_PARAMS = []
 
-export const start = async (moveDays: number = 0, samePeriod = 7) => {
+export const start = async (moveDays: number = 0, samePeriod = 7, isTest?: boolean) => {
     if (!isAccess) return
     const pogrs: number[] = []
 
-    const PREDICTES = await getPredicts(moveDays, samePeriod)
+    const PREDICTES = await getPredicts(moveDays, samePeriod, isTest)
     printChart(PREDICTES)
 
     //tests
     const testPatternCount = 7
     const isPositiveAll = PREDICTES.slice(0, testPatternCount).every(({nextChangePercent}) => nextChangePercent >= 0)
     const isNegativeAll = PREDICTES.slice(0, testPatternCount).every(({nextChangePercent}) => nextChangePercent <= 0)
+    const dateFrom = moment().subtract(moveDays + samePeriod, 'days').valueOf()
+    const dateTo = moment().subtract(moveDays, 'days').add(1, 'day').valueOf()
     if (isPositiveAll) {
-        POSITIVES_PARAMS.push({samePeriod, moveDays, dates: head(PREDICTES).dates})
+        POSITIVES_PARAMS.push({samePeriod, dateFrom, dateTo, dates: head(PREDICTES).dates})
     }
     if (isNegativeAll) {
-        NEGATIVE_PARAMS.push({samePeriod, moveDays, dates: head(PREDICTES).dates})
+        NEGATIVE_PARAMS.push({samePeriod, dateFrom, dateTo, dates: head(PREDICTES).dates})
     }
 
     const testPeriods = (predicts: PredictType[]) => {
@@ -66,4 +69,5 @@ if (isBrowser) {
 }
 
 start(move, samePeriod)
-
+//@ts-ignore
+// test()
