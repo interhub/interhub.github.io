@@ -167,9 +167,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.upload" />
         <item itemvalue="npm.dev:watch" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.upload" />
         <item itemvalue="npm.upload (1)" />
         <item itemvalue="npm.dev:watch (1)" />
       </list>
@@ -227,7 +227,8 @@
       <workItem from="1639737536546" duration="1679000" />
       <workItem from="1639771476272" duration="6531000" />
       <workItem from="1639832145733" duration="6014000" />
-      <workItem from="1639872689842" duration="2960000" />
+      <workItem from="1639872689842" duration="2986000" />
+      <workItem from="1639907922391" duration="579000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>

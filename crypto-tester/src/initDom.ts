@@ -1,7 +1,7 @@
 import moment from 'moment'
 import {last, sortBy} from 'lodash'
 import {historyPromise, patternsAllTimeExists} from './getPredicts'
-import {POSITIVES_PARAMS, NEGATIVE_PARAMS, start} from '../index'
+import {NEGATIVE_PARAMS, POSITIVES_PARAMS, start} from '../index'
 import fs from 'fs'
 import {isBrowser} from 'browser-or-node'
 
@@ -71,11 +71,13 @@ export const addHandlersDom = (samePeriod: number, move: number) => {
         if ((move - 1) < 0) return
         move--
         start(move, samePeriod)
+        setMoveToCalendar(move)
     })
     //@ts-ignore
     backBtn.addEventListener('click', () => {
         move++
         start(move, samePeriod)
+        setMoveToCalendar(move)
     })
     //@ts-ignore
     periodInput.value = samePeriod
@@ -100,9 +102,11 @@ export const addHandlersDom = (samePeriod: number, move: number) => {
         periodInput.value = samePeriod
         start(move, samePeriod)
     })
-    const currentPredictDate = moment().subtract(move, 'days').add(1, 'days').format('YYYY-MM-DD')
-    //@ts-ignore
-    datePeriod.value = currentPredictDate
+    const setMoveToCalendar = (newMove: number) => {
+        //@ts-ignore
+        datePeriod.value = moment().subtract(newMove, 'days').add(1, 'days').format('YYYY-MM-DD')
+    }
+    setMoveToCalendar(move)
     datePeriod.addEventListener('blur', (e) => {
         //@ts-ignore
         const value = e.target?.valueAsNumber
