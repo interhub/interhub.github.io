@@ -86,12 +86,14 @@ const updateDisplay = () => {
     })
 }
 updateDisplay()
-const addObjectToGui = (obj: any, min: number = 0, max: number = 100, step: number = 1) => {
+const addObjectToGui = (obj: any, min: number = 0, max: number = 100, step: number = 1, name: string) => {
     const keyName = Object.keys(obj)[0]
-    gui.add(obj, keyName, min, max, step).onChange(() => updateDisplay())
+    const folder = gui.addFolder(name)
+    folder.open()
+    folder.add(obj, keyName, min, max, step).onChange(() => updateDisplay())
 }
 //add handlers gui
-addObjectToGui(params.month, 0, 60, 1) //10 years
-addObjectToGui(params.startSum, 500, 500000, 500) //half of million dollars
-addObjectToGui(params.weekPercent, 0.1, 20, 0.1) //half of million dollars
+addObjectToGui(params.month, 0, 60, 1, 'Число месяцев') //10 years
+addObjectToGui(params.startSum, 500, 500000, 500, 'Стартовая сумма') //half of million dollars
+addObjectToGui(params.weekPercent, 0.1, 20, 0.1, 'Процент роста в неделю') //half of million dollars
 
