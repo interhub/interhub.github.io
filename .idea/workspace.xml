@@ -4,6 +4,9 @@
     <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add repo 2">
       <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profit/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/profit/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profit/dist/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/profit/dist/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profit/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/profit/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +102,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/profit/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/cryptorg_calc/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -167,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev:watch (1)" />
         <item itemvalue="npm.upload" />
         <item itemvalue="npm.dev:watch" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.upload (1)" />
-        <item itemvalue="npm.dev:watch (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +231,8 @@
       <workItem from="1639771476272" duration="6531000" />
       <workItem from="1639832145733" duration="6014000" />
       <workItem from="1639872689842" duration="2986000" />
-      <workItem from="1639907922391" duration="579000" />
+      <workItem from="1639907922391" duration="659000" />
+      <workItem from="1639925802865" duration="306000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>

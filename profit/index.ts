@@ -82,7 +82,7 @@ const updateDisplay = () => {
                 return moment(value).format('MMM D')
             }
         },
-        chartPadding: {left: 100,},
+        chartPadding: {left: (params.weekPercent.weekPercent) + (params.month.month * 1.5),},
     })
 }
 updateDisplay()
