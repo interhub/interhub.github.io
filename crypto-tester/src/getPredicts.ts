@@ -11,6 +11,8 @@ export let patternsAllTimeExists: { dates: string, isPositive: boolean, diffKoef
 
 export const historyPromise = getHistoryAsync()
 
+let lastMovePeriod = undefined
+
 const getPredicts = async (moveDays: number, samePeriod: number, isTest?: boolean): Promise<PredictType[]> => {
     const history = await historyPromise
     const TEST_MOVE = moveDays //of days
@@ -80,7 +82,7 @@ const getPredicts = async (moveDays: number, samePeriod: number, isTest?: boolea
             const currentTopSortedChecked: CheckedPeriodType[] = sortBy(currentCheckedPeriods, 'diffSumKoef').slice(0, TOP)
             const maxCurrentListPeriodsKoef = max(map(currentTopSortedChecked, 'diffSumKoef'))
             sameLenPatternsPos.forEach((pattern) => {
-                const patternDayIndex = findIndex(history, (i) => moment(i.TIME).isSame(pattern.dateFrom, 'days'))+1
+                const patternDayIndex = findIndex(history, (i) => moment(i.TIME).isSame(pattern.dateFrom, 'days')) + 1
                 const patternPeriod: HistoryItem[] = history.slice(patternDayIndex, patternDayIndex + pattern.samePeriod)
                 if (patternPeriod.length !== currentPeriod.length) return
                 const sumDiffPattern = getPeriodsSumKoef(patternPeriod, currentPeriod)
@@ -98,8 +100,10 @@ const getPredicts = async (moveDays: number, samePeriod: number, isTest?: boolea
         })
 
     }
-    if (!isTest) {
+    const isChangeMovePeriod = lastMovePeriod !== moveDays
+    if (!isTest && isChangeMovePeriod) {
         fillPattensCheck()
+        lastMovePeriod = moveDays
     }
 
     return MAX_SAMES_PERIODS.map(({
