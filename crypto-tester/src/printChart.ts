@@ -10,7 +10,7 @@ const getChangeCol = (index: number = 0): TColumn => ({
     formatter: (cell) => {
         return h('b', {
             style: {
-                'color': cell === 0 ? 'yellow' : (cell > 0 ? 'green' : 'red')
+                'color': (cell === 0) ? 'yellow' : (cell > 0 ? 'green' : 'red')
             }
         }, cell)
     }
