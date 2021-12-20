@@ -56,7 +56,7 @@ export const start = async (moveDays: number = 0, samePeriod = 7, isTest?: boole
     const lastTargetPeriod = PREDICTES[0].dates
 
     if (isBrowser) {
-        await initDom({samePeriod, moveDays, lastTargetPeriod})
+        await initDom({samePeriod, moveDays, lastTargetPeriod, predicts: PREDICTES})
     }
 
 }

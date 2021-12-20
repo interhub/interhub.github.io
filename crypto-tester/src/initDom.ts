@@ -1,18 +1,22 @@
 import moment from 'moment'
-import {last, sortBy} from 'lodash'
+import {filter, last, sortBy, sum, sumBy} from 'lodash'
 import {historyPromise, patternsAllTimeExists} from './getPredicts'
 import {NEGATIVE_PARAMS, POSITIVES_PARAMS, start} from '../index'
 import fs from 'fs'
 import {isBrowser} from 'browser-or-node'
+import {PredictType} from './types'
+import {toFixed} from './utils'
 
-export const initDom = async ({samePeriod, moveDays, lastTargetPeriod}) => {
+export const initDom = async ({samePeriod, moveDays, lastTargetPeriod, predicts}) => {
     const lastPrice = last(await historyPromise).CLOSE
     const lastTime = last(await historyPromise).TIME
 
     const title = document.querySelector('#title')
+    const koefs = document.querySelector('#koefs')
     const patterns = document.querySelector('#patterns')
     const info = document.querySelector('#info')
     const displayPeriod = document.querySelector('#displayPeriod')
+
     title.innerHTML = `Прогнозы для изменения цены на ${moment().add(1, 'day').subtract(moveDays, 'day').format('DD MMMM YYYY')}
 <br/><br/>
 Последняя известная цена BTC = ${lastPrice}. Обновлено ${moment(lastTime).format('DD MMMM YYYY HH:mm:ss')}, обновляется раз в час.
@@ -35,6 +39,13 @@ export const initDom = async ({samePeriod, moveDays, lastTargetPeriod}) => {
 ${!!samePatternsList.length ? `🍀 Схожие по времени паттерны -  <br/>${samePatternsList.join('<br/> ')} <br/>` : `🍀 Паттернов не найдено<br/>`}
 <a target="_blank" rel="noopener noreferrer" style="color: #454545; font-size: 12px" href="${patternsLink}">Список паттернов</a>
 `
+    const positiveSumKoef = toFixed(sumBy(filter(predicts as PredictType[], (p) => p.nextChangePercent > 0), 'diffSumKoef'))
+    const negativeSumKoef = toFixed(sumBy(filter(predicts as PredictType[], (p) => p.nextChangePercent < 0), 'diffSumKoef'))
+    const resultSumKoef = toFixed(positiveSumKoef / negativeSumKoef)
+    koefs.innerHTML = `
+<br/>
+Соотношение вероятности рост/падение = (<span style="color: green">${positiveSumKoef}</span>/<span style="color: red">${negativeSumKoef}</span>) = <span style="color: ${resultSumKoef > 1 ? 'green' : 'red'}; font-size: 22px">${resultSumKoef}</span>
+    `
 }
 
 export const test = async () => {

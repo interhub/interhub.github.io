@@ -1,18 +1,21 @@
 import {PredictType} from './types'
-import {head, sortBy} from 'lodash'
+import {filter, head, map, sortBy, sum} from 'lodash'
 import {isBrowser} from 'browser-or-node'
 import {createRef as gCreateRef, Grid, h} from 'gridjs'
 import {TColumn} from 'gridjs/dist/src/types'
 import Chartist from 'chartist'
+import moment from 'moment'
 
 const getChangeCol = (index: number = 0): TColumn => ({
     name: `Изменение цены +${index + 1} день (%)`,
     formatter: (cell) => {
+        const isUp = cell > 0
+        const isStop = cell == 0
         return h('b', {
             style: {
-                'color': (cell === 0) ? 'yellow' : (cell > 0 ? 'green' : 'red')
+                'color': isStop ? 'yellow' : (isUp ? 'green' : 'red')
             }
-        }, cell)
+        }, (isUp ? '+' : '') + cell + ' %')
     }
 })
 
@@ -25,17 +28,25 @@ const getChartChangeCol = (title: string = ''): TColumn => {
         formatter: (cell) => {
             const opts: Chartist.ILineChartOptions = {
                 height: MIN_HEIGHT + 'px',
-                chartPadding: {right: 10, bottom: -20, left: 10, top: 10},
+                chartPadding: {right: 10, bottom: -28, left: 10, top: 10},
                 showPoint: true,
-                axisX: {
-                    showGrid: true,
-                    showLabel: true,
-                },
+                // lineSmooth: Chartist.Interpolation.cardinal({
+                //     tension: 0.2,
+                // }),
                 axisY: {
+                    onlyInteger: true,
+                    divisor: 5,
+                    labelInterpolationFnc: (value) => {
+                        return value + '$'
+                    }
+                },
+                axisX: {
+                    // type: Chartist.FixedScaleAxis,
+                    divisor: 5,
                     showGrid: true,
-                    labelInterpolationFnc: function (value) {
-                        return '$' + value
-                    },
+                    // labelInterpolationFnc: function (value) {
+                    //     return moment(value).format('D/MMM/YYYY').replace(/\//g, '\n')
+                    // }
                 },
             }
             const ref = gCreateRef()
@@ -47,6 +58,16 @@ const getChartChangeCol = (title: string = ''): TColumn => {
                 ref.current && new Chartist.Line(ref.current, {
                     //@ts-ignore
                     series: [cell],
+                    // series: [
+                    //     {
+                    //         name: 'series-1',
+                    //         //@ts-ignore
+                    //         data: cell?.map(({x = 0, y = 0}) => ({
+                    //             x: moment().add(x, 'week').toDate(),
+                    //             y: y
+                    //         }))
+                    //     },
+                    // ],
                 }, opts,)
             }, 0)
             return chart
