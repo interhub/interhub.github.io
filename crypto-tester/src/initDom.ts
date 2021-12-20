@@ -1,5 +1,5 @@
 import moment from 'moment'
-import {filter, last, sortBy, sum, sumBy} from 'lodash'
+import {filter, inRange, last, sortBy, sum, sumBy} from 'lodash'
 import {historyPromise, patternsAllTimeExists} from './getPredicts'
 import {NEGATIVE_PARAMS, POSITIVES_PARAMS, start} from '../index'
 import fs from 'fs'
@@ -42,9 +42,10 @@ ${!!samePatternsList.length ? `🍀 Схожие по времени патте�
     const positiveSumKoef = toFixed(sumBy(filter(predicts as PredictType[], (p) => p.nextChangePercent > 0), 'diffSumKoef'))
     const negativeSumKoef = toFixed(sumBy(filter(predicts as PredictType[], (p) => p.nextChangePercent < 0), 'diffSumKoef'))
     const resultSumKoef = toFixed(positiveSumKoef / negativeSumKoef)
+    const resultColorKoef = inRange(resultSumKoef, 0.95, 1.05) ? 'yellow' : resultSumKoef > 1 ? 'green' : 'red'
     koefs.innerHTML = `
 <br/>
-Соотношение вероятности рост/падение = (<span style="color: green">${positiveSumKoef}</span>/<span style="color: red">${negativeSumKoef}</span>) = <span style="color: ${resultSumKoef > 1 ? 'green' : 'red'}; font-size: 22px">${resultSumKoef}</span>
+Соотношение вероятности рост/падение = (<span style="color: green">${positiveSumKoef}</span>/<span style="color: red">${negativeSumKoef}</span>) = <span style="color: ${resultColorKoef}; font-size: 22px">${resultSumKoef}</span>
     `
 }
 
