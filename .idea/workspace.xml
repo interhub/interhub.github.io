@@ -4,11 +4,6 @@
     <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add repo 2">
       <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profit/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/profit/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profit/dist/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/profit/dist/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profit/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/profit/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profit/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/profit/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/profit/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,9 +167,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.upload" />
         <item itemvalue="npm.upload (1)" />
         <item itemvalue="npm.dev:watch (1)" />
-        <item itemvalue="npm.upload" />
         <item itemvalue="npm.dev:watch" />
         <item itemvalue="npm.start" />
       </list>
@@ -234,7 +229,8 @@
       <workItem from="1639832145733" duration="6014000" />
       <workItem from="1639872689842" duration="2986000" />
       <workItem from="1639907922391" duration="659000" />
-      <workItem from="1639925802865" duration="2770000" />
+      <workItem from="1639925802865" duration="2985000" />
+      <workItem from="1639992652238" duration="131000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
