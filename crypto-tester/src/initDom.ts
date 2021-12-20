@@ -45,7 +45,7 @@ ${!!samePatternsList.length ? `🍀 Схожие по времени патте�
     const resultColorKoef = inRange(resultSumKoef, 0.95, 1.05) ? 'yellow' : resultSumKoef > 1 ? 'green' : 'red'
     koefs.innerHTML = `
 <br/>
-Соотношение вероятности рост/падение = (<span style="color: green">${positiveSumKoef}</span>/<span style="color: red">${negativeSumKoef}</span>) = <span style="color: ${resultColorKoef}; font-size: 22px">${resultSumKoef}</span>
+Соотношение вероятности рост/падение = (<span style="color: green">${positiveSumKoef}%</span>/<span style="color: red">${negativeSumKoef}%</span>) = <span style="color: ${resultColorKoef}; font-size: 22px">${resultSumKoef}</span>
     `
 }
 
