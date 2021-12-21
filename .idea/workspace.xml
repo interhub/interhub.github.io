@@ -4,8 +4,6 @@
     <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add repo 2">
       <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profit/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/profit/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profit/dist/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/profit/dist/index.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profit/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/profit/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -238,7 +236,7 @@
       <workItem from="1640079714935" duration="10000" />
       <workItem from="1640101838075" duration="3289000" />
       <workItem from="1640127516861" duration="634000" />
-      <workItem from="1640128610344" duration="1449000" />
+      <workItem from="1640128610344" duration="1560000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
