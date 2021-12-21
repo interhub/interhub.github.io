@@ -34,7 +34,9 @@ const updateDisplay = () => {
         if (isAddMonth) {
             resultSum += params.everyMonth.everyMonth
         }
-        points += `Неделя: ${i + 1} 🍀<br/>День: ${(i + 1) * 7} 🌞<br/>Сумма: ${resultSum.toFixed(2)}$ 🍗<br/>Процент роста: ${getDiffPercent(params.startSum.startSum, resultSum).toFixed(2)}% 📈 ${isAddMonth ? `<br/>Пополнение мес. = ${params.everyMonth.everyMonth}$ 💸<br/>` : ''}<hr/>`
+        points += `Неделя: ${i + 1} 🍀<br/>День: ${(i + 1) * 7} 🌞<br/>Сумма: ${resultSum.toFixed(2)}$ 🍗<br/>Процент роста: ${getDiffPercent(params.startSum.startSum, resultSum).toFixed(2)}% 📈<hr/>`
+        if (isAddMonth)
+            points += `Пополнение мес. ${i / 4} = ${params.everyMonth.everyMonth}$ 💸<br/><hr/>`
         chartInfo.push({value: resultSum, week: i})
     }
     const growTotalPercent = getDiffPercent(params.startSum.startSum, resultSum)
