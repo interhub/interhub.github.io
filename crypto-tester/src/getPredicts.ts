@@ -1,5 +1,5 @@
 import {HistoryItem, PredictType} from './types'
-import {getDiffItemsKoef, getSumNumbers} from './utils'
+import {getDiffItemsKoef, getPeriodsSumKoef, getSumNumbers} from './utils'
 import {findIndex, head, last, map, max, sortBy} from 'lodash'
 import {TOP} from './config'
 import getHistoryAsync from './getHistoryAsync'
@@ -19,13 +19,6 @@ const getPredicts = async (moveDays: number, samePeriod: number, isTest?: boolea
     const LAST_PERIOD = history.slice(-(samePeriod + TEST_MOVE), -TEST_MOVE || undefined)
 
     type CheckedPeriodType = { diffSumKoef: number, period: HistoryItem[], dates: string, index: number, nextDayChange: number, nextDayValues: number[], prevDayValues: number[], periodDayValues: number[] }
-
-    const getPeriodsSumKoef = (period1: HistoryItem[], period2: HistoryItem[]): number => {
-        const diffKoefsPeriod = period1.map((item, i, days) => {
-            return getDiffItemsKoef(days[i], period2[i])
-        })
-        return getSumNumbers(diffKoefsPeriod)
-    }
 
     const getCheckedPeriods = (lastPeriod: HistoryItem[]): CheckedPeriodType[] => {
         const CHECKED_PERIODS: CheckedPeriodType[] = []

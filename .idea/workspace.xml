@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add repo 2">
+      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +99,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/cryptorg_calc/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/profit/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -167,10 +168,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.upload" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.dev:watch" />
         <item itemvalue="npm.upload (1)" />
         <item itemvalue="npm.dev:watch (1)" />
-        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -229,7 +230,10 @@
       <workItem from="1639872689842" duration="2986000" />
       <workItem from="1639907922391" duration="659000" />
       <workItem from="1639925802865" duration="2985000" />
-      <workItem from="1639992652238" duration="5818000" />
+      <workItem from="1639992652238" duration="6090000" />
+      <workItem from="1640026698083" duration="844000" />
+      <workItem from="1640079714935" duration="10000" />
+      <workItem from="1640101838075" duration="1632000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>

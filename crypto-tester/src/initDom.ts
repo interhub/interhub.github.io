@@ -39,8 +39,9 @@ export const initDom = async ({samePeriod, moveDays, lastTargetPeriod, predicts}
 ${!!samePatternsList.length ? `🍀 Схожие по времени паттерны -  <br/>${samePatternsList.join('<br/> ')} <br/>` : `🍀 Паттернов не найдено<br/>`}
 <a target="_blank" rel="noopener noreferrer" style="color: #454545; font-size: 12px" href="${patternsLink}">Список паттернов</a>
 `
-    const positiveSumKoef = toFixed(sumBy(filter(predicts as PredictType[], (p) => p.nextChangePercent > 0), 'diffSumKoef'))
-    const negativeSumKoef = toFixed(sumBy(filter(predicts as PredictType[], (p) => p.nextChangePercent < 0), 'diffSumKoef'))
+    const getPredictKoef = (isPositive: boolean) => filter(predicts as PredictType[], (p) => isPositive ? (p.nextChangePercent > 0) : (p.nextChangePercent < 0)).length
+    const positiveSumKoef = getPredictKoef(true)
+    const negativeSumKoef = getPredictKoef(false)
     const resultSumKoef = toFixed(positiveSumKoef / negativeSumKoef)
     const resultColorKoef = inRange(resultSumKoef, 0.95, 1.05) ? 'yellow' : resultSumKoef > 1 ? 'green' : 'red'
     koefs.innerHTML = `
