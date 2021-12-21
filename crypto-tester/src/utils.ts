@@ -11,7 +11,7 @@ export const getDiffItemsKoef = (item1: HistoryItem, item2: HistoryItem) => {
     const BODY_DIFF = Math.abs((item1.CHANGE_PERCENT_REAL - item2.CHANGE_PERCENT_REAL) || 0)
     const TOP_SHADOW_DIFF = Math.abs((item1.TOP_SHADOW_PERCENT - item2.TOP_SHADOW_PERCENT) || 0)
     const LOW_SHADOW_DIFF = Math.abs((item1.LOW_SHADOW_PERCENT - item2.LOW_SHADOW_PERCENT) || 0)
-    const diffKoef = getSumNumbers([BODY_DIFF, TOP_SHADOW_DIFF, LOW_SHADOW_DIFF])
+    const diffKoef = Math.hypot(BODY_DIFF, TOP_SHADOW_DIFF, LOW_SHADOW_DIFF)//getSumNumbers([BODY_DIFF, TOP_SHADOW_DIFF, LOW_SHADOW_DIFF])
     return toFixed(diffKoef)
 }
 export const getPeriodsSumKoef = (period1: HistoryItem[], period2: HistoryItem[]): number => {
