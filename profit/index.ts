@@ -33,6 +33,8 @@ const updateDisplay = () => {
         chartInfo.push({value: resultSum, week: i})
     }
     const growTotalPercent = getDiffPercent(params.startSum.startSum, resultSum)
+    const ordersPercents = [11.1, 22.2, 66.6]
+    const ordersPrices = ordersPercents.map((p,i) => `${i+1}) ${(params.startSum.startSum * p / 100).toFixed(2)}$ ~ ${p}%`)
     const displayTitles = `
         Число месяцев: ${params.month.month}<br/>
         Сумма входа: ${params.startSum.startSum}$<br/>
@@ -42,7 +44,8 @@ const updateDisplay = () => {
         Число лет: ${yearCount}<br/>
         Число недель: ${weeksCount}<br/>
         Число дней: ${daysCount}<br/>
-        Процент роста за все время: ${growTotalPercent}%<br/>
+        Стоимоти оредеров усреднения: <br/><br/>${ordersPrices.join('<br/>')}<br/><br/>
+        Процент роста за все время: ${growTotalPercent}%<br/> 
         Итог сумма: ${resultSum.toFixed(2)}$<br/>
         <hr/>
         <br/><br/><br/><br/><br/>
@@ -95,6 +98,6 @@ const addObjectToGui = (obj: any, min: number = 0, max: number = 100, step: numb
 }
 //add handlers gui
 addObjectToGui(params.month, 0, 60, 1, 'Число месяцев') //10 years
-addObjectToGui(params.startSum, 500, 500000, 500, 'Стартовая сумма') //half of million dollars
+addObjectToGui(params.startSum, 500, 200000, 1, 'Стартовая сумма') //half of million dollars
 addObjectToGui(params.weekPercent, 0.1, 20, 0.1, 'Процент роста в неделю') //half of million dollars
 
