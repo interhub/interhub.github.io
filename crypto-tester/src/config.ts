@@ -1,1 +1,1 @@
-export const TOP = 10 //first of more same count show
+export const TOP = 8 //first of more same count show

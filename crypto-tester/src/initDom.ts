@@ -6,6 +6,7 @@ import fs from 'fs'
 import {isBrowser} from 'browser-or-node'
 import {PredictType} from './types'
 import {toFixed} from './utils'
+import {TOP} from './config'
 
 export const initDom = async ({samePeriod, moveDays, lastTargetPeriod, predicts}) => {
     const lastPrice = last(await historyPromise).CLOSE
@@ -39,7 +40,7 @@ export const initDom = async ({samePeriod, moveDays, lastTargetPeriod, predicts}
 ${!!samePatternsList.length ? `🍀 Схожие по времени паттерны -  <br/>${samePatternsList.join('<br/> ')} <br/>` : `🍀 Паттернов не найдено<br/>`}
 <a target="_blank" rel="noopener noreferrer" style="color: #454545; font-size: 12px" href="${patternsLink}">Список паттернов</a>
 `
-    const getPredictKoef = (isPositive: boolean) => filter(predicts as PredictType[], (p) => isPositive ? (p.nextChangePercent > 0) : (p.nextChangePercent < 0)).length || 0.1
+    const getPredictKoef = (isPositive: boolean) => toFixed(((filter(predicts as PredictType[], (p) => isPositive ? (p.nextChangePercent > 0) : (p.nextChangePercent < 0)).length || 0.1) / (TOP - 1)) * 100, 3)
     const positiveSumKoef = getPredictKoef(true)
     const negativeSumKoef = getPredictKoef(false)
     const resultSumKoef = toFixed(positiveSumKoef / negativeSumKoef)
