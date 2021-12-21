@@ -6,10 +6,11 @@ import 'moment/locale/ru'
 const gui = new dat.GUI({width: innerWidth / 2})
 //params
 const storageData = JSON.parse(localStorage.getItem('data'))
-const params = storageData || {
-    month: {month: 6},
-    startSum: {startSum: 1000},
-    weekPercent: {weekPercent: 3},
+const params = {
+    month: {month: storageData?.month?.month || 6},
+    startSum: {startSum: storageData?.startSum?.startSum || 1000},
+    everyMonth: {everyMonth: storageData?.everyMonth?.everyMonth || 1000},
+    weekPercent: {weekPercent: storageData?.weekPercent?.weekPercent || 3},
 }
 
 //tools
@@ -28,25 +29,30 @@ const updateDisplay = () => {
     let points: string = ''
     const chartInfo: { week: number, value: number }[] = []
     for (let i = 0; i < weeksCount; i++) {
+        const isAddMonth = (i % 4 === 0) && i > 0
         resultSum = resultSum * (1 + (params.weekPercent.weekPercent / 100))
-        points += `Неделя: ${i + 1}<br/>День: ${(i + 1) * 7}<br/>Сумма: ${resultSum.toFixed(2)}$<br/>Процент роста: ${getDiffPercent(params.startSum.startSum, resultSum).toFixed(2)}%<hr/>`
+        if (isAddMonth) {
+            resultSum += params.everyMonth.everyMonth
+        }
+        points += `Неделя: ${i + 1} 🍀<br/>День: ${(i + 1) * 7} 🌞<br/>Сумма: ${resultSum.toFixed(2)}$ 🍗<br/>Процент роста: ${getDiffPercent(params.startSum.startSum, resultSum).toFixed(2)}% 📈 ${isAddMonth ? `<br/>Пополнение мес. = ${params.everyMonth.everyMonth}$ 💸<br/>` : ''}<hr/>`
         chartInfo.push({value: resultSum, week: i})
     }
     const growTotalPercent = getDiffPercent(params.startSum.startSum, resultSum)
     const ordersPercents = [11.1, 22.2, 66.6]
-    const ordersPrices = ordersPercents.map((p,i) => `${i+1}) ${(params.startSum.startSum * p / 100).toFixed(2)}$ ~ ${p}%`)
+    const ordersPrices = ordersPercents.map((p, i) => `${i + 1}) ${(params.startSum.startSum * p / 100).toFixed(2)}$ ~ ${p}% ⚙️`)
     const displayTitles = `
         Число месяцев: ${params.month.month}<br/>
         Сумма входа: ${params.startSum.startSum}$<br/>
+        Пополнение в месяц : ${params.everyMonth.everyMonth}$<br/>
         Процент роста в неделю: ${params.weekPercent.weekPercent}%<br/>
         <hr/>
         <br/><br/><br/><br/>
-        Число лет: ${yearCount}<br/>
-        Число недель: ${weeksCount}<br/>
-        Число дней: ${daysCount}<br/>
+        Число лет: ${yearCount} ⏳<br/>
+        Число недель: ${weeksCount} 🍀<br/>
+        Число дней: ${daysCount} ☀️<br/>
         Стоимоти оредеров усреднения: <br/><br/>${ordersPrices.join('<br/>')}<br/><br/>
-        Процент роста за все время: ${growTotalPercent}%<br/> 
-        Итог сумма: ${resultSum.toFixed(2)}$<br/>
+        Процент роста за все время: ${growTotalPercent}% 📈<br/> 
+        Итог сумма: ${resultSum.toFixed(2)}$ 🍔<br/>
         <hr/>
         <br/><br/><br/><br/><br/>
         ${points}
@@ -98,6 +104,7 @@ const addObjectToGui = (obj: any, min: number = 0, max: number = 100, step: numb
 }
 //add handlers gui
 addObjectToGui(params.month, 0, 60, 1, 'Число месяцев') //10 years
-addObjectToGui(params.startSum, 500, 200000, 1, 'Стартовая сумма') //half of million dollars
-addObjectToGui(params.weekPercent, 0.1, 20, 0.1, 'Процент роста в неделю') //half of million dollars
+addObjectToGui(params.startSum, 500, 200000, 1, 'Стартовая сумма')
+addObjectToGui(params.everyMonth, 0, 50000, 1, 'Пополнение в месяц')
+addObjectToGui(params.weekPercent, 0.1, 20, 0.1, 'Процент роста в неделю')
 
