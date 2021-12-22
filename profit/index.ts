@@ -24,7 +24,7 @@ const updateDisplay = () => {
     //calc values show
     const daysCount: number = moment().add(params.month.month, 'month').diff(moment(), 'days')
     const yearCount: number = daysCount / 365
-    const weeksCount: number = Math.abs(daysCount / 7)
+    const weeksCount: number = Math.round(daysCount / 7)
     let resultSum: number = params.startSum.startSum
     let points: string = ''
     const chartInfo: { week: number, value: number }[] = []
