@@ -72,40 +72,15 @@
 <br/>
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
-    <div style="height: 700px" id="tradingview_2dc3b"></div>
+    <div style="height: 700px; padding: 30px" id="tradingview_2dc3b"></div>
+    <div style="height: 700px; padding: 30px" id="tradingview_2dc3b_2"></div>
     <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE"
                                                  rel="noopener" target="_blank"><span
             class="blue-text">График BTCUSDT</span></a> от TradingView
     </div>
-    <script>
-        //Password secure
-        const passwordKey = 'password'
-        const passwordValue = 'admin1'
-        let isAccess = false
-        const checkPass = () => {
-            const password = localStorage.getItem(passwordKey)
-            if (password === passwordValue) {
-                isAccess = true
-                return
-            }
-            const inputResult = prompt('Enter the Password:', '')
-            if (inputResult === passwordValue) {
-                isAccess = true
-                localStorage.setItem(passwordKey, passwordValue)
-                return
-            } else checkPass()
-        }
-        const logout = () => {
-            localStorage.setItem(passwordKey, '')
-            window.location.reload()
-            isAccess = false
-        }
-        checkPass()
-
-    </script>
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
     <script type="text/javascript">
-        new TradingView.widget(
+        const initWidget = (containerId) => new TradingView.widget(
             {
                 'autosize': true,
                 'symbol': 'BINANCE:BTCUSDT',
@@ -121,17 +96,45 @@
                 'show_popup_button': true,
                 'popup_width': '1000',
                 'popup_height': '650',
-                'container_id': 'tradingview_2dc3b',
+                'container_id': containerId,
             }
         )
+        initWidget('tradingview_2dc3b')
+        initWidget('tradingview_2dc3b_2')
     </script>
 </div>
-<a target="_blank" rel="noopener noreferrer" style="color: #b8ccff; padding-bottom: 50px" href="http://www.interhub.ml">
+<a target="_blank" rel="noopener noreferrer" style="color: #b8ccff" href="http://www.interhub.ml">
     Связаться с разработчиком ✅
 </a>
 <br/>
-<button onclick="logout()">Log Out</button>
+<button style="margin-top: 50px; margin-bottom: 50px" onclick="logout()">Log Out</button>
 <!-- TradingView Widget END -->
+<script>
+    //Password secure
+    const passwordKey = 'password'
+    const passwordValue = 'admin1'
+    let isAccess = false
+    const checkPass = () => {
+        const password = localStorage.getItem(passwordKey)
+        if (password === passwordValue) {
+            isAccess = true
+            return
+        }
+        const inputResult = prompt('Enter the Password:', '')
+        if (inputResult === passwordValue) {
+            isAccess = true
+            localStorage.setItem(passwordKey, passwordValue)
+            return
+        } else checkPass()
+    }
+    const logout = () => {
+        localStorage.setItem(passwordKey, '')
+        window.location.reload()
+        isAccess = false
+    }
+    checkPass()
+
+</script>
 <script src="./dist/index.js"></script>
 </body>
 </html>
