@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add repo 2" />
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add repo 2">
+      <change beforePath="$PROJECT_DIR$/profit/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/profit/index.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -232,7 +234,7 @@
       <workItem from="1640079714935" duration="10000" />
       <workItem from="1640101838075" duration="3289000" />
       <workItem from="1640127516861" duration="634000" />
-      <workItem from="1640128610344" duration="1814000" />
+      <workItem from="1640128610344" duration="2063000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
