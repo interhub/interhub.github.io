@@ -3,7 +3,7 @@ import moment from 'moment'
 import Chartist from 'chartist'
 import 'moment/locale/ru'
 
-const gui = new dat.GUI({width: innerWidth / 2})
+const gui = new dat.GUI({width: innerWidth / 2, autoPlace: true})
 //params
 const storageData = JSON.parse(localStorage.getItem('data'))
 const params = {
