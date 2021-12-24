@@ -1,0 +1,3770 @@
+[
+ {
+  "group": [
+   {
+    "dates": "05 декабря 2021 ➡️ 22 декабря 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 18
+   },
+   {
+    "dates": "04 декабря 2021 ➡️ 22 декабря 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1640192170060,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "10 декабря 2021 ➡️ 20 декабря 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 11
+   }
+  ],
+  "toDate": 1640019374937,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "06 декабря 2021 ➡️ 17 декабря 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 12
+   },
+   {
+    "dates": "27 марта 2021 ➡️ 07 апреля 2021",
+    "isPositive": true,
+    "diffKoef": 37.06999999999999,
+    "samePeriod": 12
+   },
+   {
+    "dates": "05 декабря 2021 ➡️ 17 декабря 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 13
+   },
+   {
+    "dates": "04 декабря 2021 ➡️ 17 декабря 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 14
+   }
+  ],
+  "toDate": 1639760182253,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "19 мая 2020 ➡️ 25 мая 2020",
+    "isPositive": false,
+    "diffKoef": 20.42,
+    "samePeriod": 7
+   },
+   {
+    "dates": "18 мая 2020 ➡️ 25 мая 2020",
+    "isPositive": false,
+    "diffKoef": 21.64,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1639500989507,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "05 декабря 2021 ➡️ 13 декабря 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1639414591941,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "25 ноября 2021 ➡️ 11 декабря 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1639241796778,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "24 ноября 2021 ➡️ 09 декабря 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 16
+   },
+   {
+    "dates": "23 ноября 2021 ➡️ 09 декабря 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1639069001689,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "18 ноября 2021 ➡️ 04 декабря 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1638637014020,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "23 ноября 2021 ➡️ 03 декабря 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 11
+   },
+   {
+    "dates": "16 ноября 2021 ➡️ 03 декабря 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 18
+   },
+   {
+    "dates": "15 ноября 2021 ➡️ 03 декабря 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1638550616568,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "03 апреля 2021 ➡️ 15 апреля 2021",
+    "isPositive": false,
+    "diffKoef": 32.120000000000005,
+    "samePeriod": 13
+   },
+   {
+    "dates": "02 апреля 2021 ➡️ 15 апреля 2021",
+    "isPositive": false,
+    "diffKoef": 34.519999999999996,
+    "samePeriod": 14
+   },
+   {
+    "dates": "29 марта 2021 ➡️ 15 апреля 2021",
+    "isPositive": false,
+    "diffKoef": 48.46,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1638291424195,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "15 февраля 2020 ➡️ 22 февраля 2020",
+    "isPositive": true,
+    "diffKoef": 19.94,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1638205026660,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "28 марта 2021 ➡️ 07 апреля 2021",
+    "isPositive": true,
+    "diffKoef": 24.770000000000003,
+    "samePeriod": 11
+   },
+   {
+    "dates": "27 марта 2021 ➡️ 07 апреля 2021",
+    "isPositive": true,
+    "diffKoef": 26.650000000000002,
+    "samePeriod": 12
+   }
+  ],
+  "toDate": 1637600244277,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "28 марта 2021 ➡️ 07 апреля 2021",
+    "isPositive": true,
+    "diffKoef": 26.44,
+    "samePeriod": 11
+   },
+   {
+    "dates": "04 ноября 2021 ➡️ 16 ноября 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 13
+   },
+   {
+    "dates": "03 ноября 2021 ➡️ 16 ноября 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 14
+   },
+   {
+    "dates": "31 октября 2021 ➡️ 16 ноября 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 17
+   },
+   {
+    "dates": "29 октября 2021 ➡️ 16 ноября 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1637081858840,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "19 июня 2020 ➡️ 27 июня 2020",
+    "isPositive": true,
+    "diffKoef": 18.11,
+    "samePeriod": 9
+   },
+   {
+    "dates": "18 июня 2020 ➡️ 27 июня 2020",
+    "isPositive": true,
+    "diffKoef": 19.630000000000003,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1636822666114,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "09 ноября 2020 ➡️ 16 ноября 2020",
+    "isPositive": true,
+    "diffKoef": 16.28,
+    "samePeriod": 8
+   },
+   {
+    "dates": "17 октября 2021 ➡️ 02 ноября 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1635872292591,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "18 июня 2020 ➡️ 27 июня 2020",
+    "isPositive": true,
+    "diffKoef": 26.39,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1635613099845,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "23 сентября 2020 ➡️ 08 октября 2020",
+    "isPositive": true,
+    "diffKoef": 44.540000000000006,
+    "samePeriod": 16
+   }
+  ],
+  "toDate": 1635526702287,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "16 февраля 2020 ➡️ 23 февраля 2020",
+    "isPositive": false,
+    "diffKoef": 18.23,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1635181111914,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "19 июня 2020 ➡️ 27 июня 2020",
+    "isPositive": true,
+    "diffKoef": 19.28,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1635094714346,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "07 октября 2021 ➡️ 19 октября 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 13
+   },
+   {
+    "dates": "17 октября 2021 ➡️ 02 ноября 2021",
+    "isPositive": false,
+    "diffKoef": 47.14,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1634662726438,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "07 октября 2021 ➡️ 17 октября 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 11
+   },
+   {
+    "dates": "06 октября 2021 ➡️ 17 октября 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 12
+   },
+   {
+    "dates": "21 июля 2020 ➡️ 07 августа 2020",
+    "isPositive": true,
+    "diffKoef": 53.92,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1634489931278,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "29 сентября 2021 ➡️ 14 октября 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 16
+   },
+   {
+    "dates": "27 сентября 2021 ➡️ 14 октября 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 18
+   },
+   {
+    "dates": "26 сентября 2021 ➡️ 14 октября 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1634230738542,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "05 октября 2021 ➡️ 11 октября 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 7
+   },
+   {
+    "dates": "04 октября 2021 ➡️ 11 октября 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1633971545786,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "22 июля 2020 ➡️ 04 августа 2020",
+    "isPositive": true,
+    "diffKoef": 40.94,
+    "samePeriod": 14
+   }
+  ],
+  "toDate": 1633798750663,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "22 сентября 2021 ➡️ 07 октября 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 16
+   },
+   {
+    "dates": "21 сентября 2021 ➡️ 07 октября 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 17
+   },
+   {
+    "dates": "20 сентября 2021 ➡️ 07 октября 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 18
+   },
+   {
+    "dates": "19 сентября 2021 ➡️ 07 октября 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1633625955559,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "05 октября 2021 ➡️ 11 октября 2021",
+    "isPositive": false,
+    "diffKoef": 18.37,
+    "samePeriod": 7
+   },
+   {
+    "dates": "04 октября 2021 ➡️ 11 октября 2021",
+    "isPositive": false,
+    "diffKoef": 21.5,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1633539557967,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "18 июля 2020 ➡️ 31 июля 2020",
+    "isPositive": true,
+    "diffKoef": 46.72,
+    "samePeriod": 14
+   },
+   {
+    "dates": "13 июля 2020 ➡️ 31 июля 2020",
+    "isPositive": true,
+    "diffKoef": 65.88,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1633453160393,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "17 апреля 2020 ➡️ 24 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 21.830000000000002,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1633193967634,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "10 декабря 2021 ➡️ 20 декабря 2021",
+    "isPositive": true,
+    "diffKoef": 39.61,
+    "samePeriod": 11
+   },
+   {
+    "dates": "14 сентября 2021 ➡️ 01 октября 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1633107570079,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "11 сентября 2021 ➡️ 29 сентября 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1632934774920,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "06 декабря 2021 ➡️ 17 декабря 2021",
+    "isPositive": true,
+    "diffKoef": 36.410000000000004,
+    "samePeriod": 12
+   },
+   {
+    "dates": "05 декабря 2021 ➡️ 17 декабря 2021",
+    "isPositive": true,
+    "diffKoef": 38.300000000000004,
+    "samePeriod": 13
+   }
+  ],
+  "toDate": 1632848377319,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "17 сентября 2021 ➡️ 27 сентября 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 11
+   }
+  ],
+  "toDate": 1632761979737,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "19 августа 2021 ➡️ 31 августа 2021",
+    "isPositive": true,
+    "diffKoef": 44.11000000000001,
+    "samePeriod": 13
+   }
+  ],
+  "toDate": 1632675582162,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "17 апреля 2020 ➡️ 24 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 26.009999999999998,
+    "samePeriod": 8
+   },
+   {
+    "dates": "22 февраля 2020 ➡️ 29 февраля 2020",
+    "isPositive": true,
+    "diffKoef": 28.159999999999997,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1632502787019,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "15 июля 2021 ➡️ 22 июля 2021",
+    "isPositive": true,
+    "diffKoef": 20.65,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1632416389420,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "29 декабря 2019 ➡️ 04 января 2020",
+    "isPositive": true,
+    "diffKoef": 13.030000000000001,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1631725208674,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "27 марта 2021 ➡️ 07 апреля 2021",
+    "isPositive": true,
+    "diffKoef": 35.4,
+    "samePeriod": 12
+   }
+  ],
+  "toDate": 1631638811108,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "03 сентября 2021 ➡️ 12 сентября 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1631466015966,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "19 июня 2020 ➡️ 27 июня 2020",
+    "isPositive": true,
+    "diffKoef": 24.659999999999997,
+    "samePeriod": 9
+   },
+   {
+    "dates": "18 июня 2020 ➡️ 27 июня 2020",
+    "isPositive": true,
+    "diffKoef": 29.06,
+    "samePeriod": 10
+   },
+   {
+    "dates": "07 сентября 2020 ➡️ 23 сентября 2020",
+    "isPositive": true,
+    "diffKoef": 46.72,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1631293220820,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "14 октября 2020 ➡️ 20 октября 2020",
+    "isPositive": true,
+    "diffKoef": 12.55,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1630688437654,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "19 августа 2021 ➡️ 31 августа 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 13
+   },
+   {
+    "dates": "12 сентября 2020 ➡️ 28 сентября 2020",
+    "isPositive": true,
+    "diffKoef": 39.370000000000005,
+    "samePeriod": 17
+   },
+   {
+    "dates": "11 сентября 2020 ➡️ 28 сентября 2020",
+    "isPositive": true,
+    "diffKoef": 41.7,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1630429244954,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "17 декабря 2019 ➡️ 04 января 2020",
+    "isPositive": true,
+    "diffKoef": 49.809999999999995,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1629997257042,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "17 апреля 2020 ➡️ 24 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 18.16,
+    "samePeriod": 8
+   },
+   {
+    "dates": "16 апреля 2020 ➡️ 24 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 20.37,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1629565269079,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "04 августа 2021 ➡️ 19 августа 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 16
+   }
+  ],
+  "toDate": 1629392473991,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "28 апреля 2021 ➡️ 04 мая 2021",
+    "isPositive": true,
+    "diffKoef": 16.560000000000002,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1629219678845,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "07 октября 2021 ➡️ 17 октября 2021",
+    "isPositive": true,
+    "diffKoef": 33.00000000000001,
+    "samePeriod": 11
+   },
+   {
+    "dates": "06 октября 2021 ➡️ 17 октября 2021",
+    "isPositive": true,
+    "diffKoef": 36.42,
+    "samePeriod": 12
+   }
+  ],
+  "toDate": 1629046883628,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "31 июля 2021 ➡️ 09 августа 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 10
+   },
+   {
+    "dates": "29 июля 2021 ➡️ 09 августа 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 12
+   }
+  ],
+  "toDate": 1628528498136,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "12 сентября 2020 ➡️ 28 сентября 2020",
+    "isPositive": true,
+    "diffKoef": 55.339999999999996,
+    "samePeriod": 17
+   },
+   {
+    "dates": "11 сентября 2020 ➡️ 28 сентября 2020",
+    "isPositive": true,
+    "diffKoef": 56.13999999999999,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1628442100560,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "29 июля 2021 ➡️ 05 августа 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 8
+   },
+   {
+    "dates": "27 июля 2021 ➡️ 05 августа 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1628182907798,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "07 сентября 2020 ➡️ 23 сентября 2020",
+    "isPositive": true,
+    "diffKoef": 54.14,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1628010112675,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "18 июля 2021 ➡️ 28 июля 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 11
+   },
+   {
+    "dates": "03 апреля 2021 ➡️ 15 апреля 2021",
+    "isPositive": false,
+    "diffKoef": 39.31,
+    "samePeriod": 13
+   },
+   {
+    "dates": "02 апреля 2021 ➡️ 15 апреля 2021",
+    "isPositive": false,
+    "diffKoef": 43.209999999999994,
+    "samePeriod": 14
+   }
+  ],
+  "toDate": 1627491727138,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "19 июля 2021 ➡️ 27 июля 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 9
+   },
+   {
+    "dates": "18 июля 2021 ➡️ 27 июля 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1627405329575,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "29 декабря 2019 ➡️ 04 января 2020",
+    "isPositive": true,
+    "diffKoef": 15.709999999999999,
+    "samePeriod": 7
+   },
+   {
+    "dates": "15 июля 2021 ➡️ 22 июля 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1626973341715,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "18 июня 2020 ➡️ 27 июня 2020",
+    "isPositive": true,
+    "diffKoef": 21.23,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1626454956236,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "05 июля 2020 ➡️ 11 июля 2020",
+    "isPositive": true,
+    "diffKoef": 13.150000000000002,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1626282161043,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "28 марта 2021 ➡️ 07 апреля 2021",
+    "isPositive": true,
+    "diffKoef": 23.36,
+    "samePeriod": 11
+   }
+  ],
+  "toDate": 1626109365885,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "04 июля 2021 ➡️ 10 июля 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 7
+   },
+   {
+    "dates": "29 декабря 2019 ➡️ 04 января 2020",
+    "isPositive": true,
+    "diffKoef": 14.09,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1625936570769,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "16 апреля 2020 ➡️ 24 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 21.650000000000002,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1625504582726,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "21 июня 2021 ➡️ 27 июня 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 7
+   },
+   {
+    "dates": "20 июня 2021 ➡️ 27 июня 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 8
+   },
+   {
+    "dates": "19 июня 2021 ➡️ 27 июня 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1624813402120,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "05 декабря 2021 ➡️ 13 декабря 2021",
+    "isPositive": true,
+    "diffKoef": 41.54,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1624640607021,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "10 июня 2021 ➡️ 24 июня 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 15
+   }
+  ],
+  "toDate": 1624554209882,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "09 июня 2021 ➡️ 20 июня 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 12
+   },
+   {
+    "dates": "08 июня 2021 ➡️ 20 июня 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 13
+   }
+  ],
+  "toDate": 1624208620333,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "07 июня 2021 ➡️ 14 июня 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1623690235069,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "04 июня 2021 ➡️ 12 июня 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1623517440644,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "04 декабря 2021 ➡️ 22 декабря 2021",
+    "isPositive": false,
+    "diffKoef": 79.61,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1623344647011,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "18 декабря 2020 ➡️ 25 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 32.67,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1623258249829,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "06 декабря 2021 ➡️ 17 декабря 2021",
+    "isPositive": true,
+    "diffKoef": 41.98,
+    "samePeriod": 12
+   },
+   {
+    "dates": "04 декабря 2021 ➡️ 17 декабря 2021",
+    "isPositive": true,
+    "diffKoef": 56.38,
+    "samePeriod": 14
+   }
+  ],
+  "toDate": 1622912660705,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "06 апреля 2020 ➡️ 17 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 48.96000000000001,
+    "samePeriod": 12
+   }
+  ],
+  "toDate": 1622826263312,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "20 мая 2021 ➡️ 02 июня 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 14
+   }
+  ],
+  "toDate": 1622653468523,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "16 апреля 2020 ➡️ 24 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 36.71000000000001,
+    "samePeriod": 9
+   },
+   {
+    "dates": "16 мая 2021 ➡️ 01 июня 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1622567071132,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "02 апреля 2020 ➡️ 13 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 69.35,
+    "samePeriod": 12
+   },
+   {
+    "dates": "08 июня 2021 ➡️ 20 июня 2021",
+    "isPositive": false,
+    "diffKoef": 90.81,
+    "samePeriod": 13
+   }
+  ],
+  "toDate": 1622480673669,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "16 марта 2020 ➡️ 29 марта 2020",
+    "isPositive": true,
+    "diffKoef": 100.80999999999997,
+    "samePeriod": 14
+   },
+   {
+    "dates": "15 марта 2020 ➡️ 29 марта 2020",
+    "isPositive": true,
+    "diffKoef": 108.52999999999997,
+    "samePeriod": 15
+   },
+   {
+    "dates": "14 марта 2020 ➡️ 29 марта 2020",
+    "isPositive": true,
+    "diffKoef": 111.29999999999998,
+    "samePeriod": 16
+   }
+  ],
+  "toDate": 1622394276239,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "07 июня 2021 ➡️ 14 июня 2021",
+    "isPositive": false,
+    "diffKoef": 66.21000000000001,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1621962289429,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "04 июня 2021 ➡️ 12 июня 2021",
+    "isPositive": true,
+    "diffKoef": 73.39999999999999,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1621789494728,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "03 апреля 2021 ➡️ 15 апреля 2021",
+    "isPositive": false,
+    "diffKoef": 42.54,
+    "samePeriod": 13
+   },
+   {
+    "dates": "02 апреля 2021 ➡️ 15 апреля 2021",
+    "isPositive": false,
+    "diffKoef": 46.36,
+    "samePeriod": 14
+   }
+  ],
+  "toDate": 1620407137346,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "08 апреля 2020 ➡️ 17 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 29.96,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1620320739835,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "29 апреля 2021 ➡️ 05 мая 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1620234342388,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "28 апреля 2021 ➡️ 04 мая 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 7
+   },
+   {
+    "dates": "18 марта 2021 ➡️ 03 апреля 2021",
+    "isPositive": true,
+    "diffKoef": 61.61000000000001,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1620147944965,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "15 июля 2021 ➡️ 22 июля 2021",
+    "isPositive": true,
+    "diffKoef": 22.749999999999996,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1619888752566,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "15 июля 2021 ➡️ 22 июля 2021",
+    "isPositive": true,
+    "diffKoef": 29.01,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1619543162347,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "12 апреля 2021 ➡️ 23 апреля 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 12
+   }
+  ],
+  "toDate": 1619197572047,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "27 марта 2021 ➡️ 07 апреля 2021",
+    "isPositive": true,
+    "diffKoef": 36.15,
+    "samePeriod": 12
+   }
+  ],
+  "toDate": 1619111174529,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "22 февраля 2020 ➡️ 29 февраля 2020",
+    "isPositive": true,
+    "diffKoef": 20.68,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1619024777001,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "02 октября 2020 ➡️ 17 октября 2020",
+    "isPositive": true,
+    "diffKoef": 35.15,
+    "samePeriod": 16
+   },
+   {
+    "dates": "30 сентября 2020 ➡️ 17 октября 2020",
+    "isPositive": true,
+    "diffKoef": 39.36,
+    "samePeriod": 18
+   },
+   {
+    "dates": "29 сентября 2020 ➡️ 17 октября 2020",
+    "isPositive": true,
+    "diffKoef": 40.55,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1618679186664,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "03 апреля 2021 ➡️ 15 апреля 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 13
+   },
+   {
+    "dates": "02 апреля 2021 ➡️ 15 апреля 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 14
+   },
+   {
+    "dates": "29 марта 2021 ➡️ 15 апреля 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1618506391543,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "11 августа 2020 ➡️ 28 августа 2020",
+    "isPositive": false,
+    "diffKoef": 44.91,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1618074403611,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "28 марта 2021 ➡️ 07 апреля 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 11
+   },
+   {
+    "dates": "27 марта 2021 ➡️ 07 апреля 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 12
+   }
+  ],
+  "toDate": 1617815210943,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "18 марта 2021 ➡️ 03 апреля 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1617469620621,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "15 июля 2021 ➡️ 22 июля 2021",
+    "isPositive": true,
+    "diffKoef": 23.820000000000004,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1616864837602,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "10 марта 2021 ➡️ 21 марта 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 12
+   },
+   {
+    "dates": "09 марта 2021 ➡️ 21 марта 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 13
+   },
+   {
+    "dates": "17 октября 2021 ➡️ 02 ноября 2021",
+    "isPositive": false,
+    "diffKoef": 57.08000000000001,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1616346452223,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "27 марта 2021 ➡️ 07 апреля 2021",
+    "isPositive": true,
+    "diffKoef": 41.67999999999999,
+    "samePeriod": 12
+   }
+  ],
+  "toDate": 1616173657097,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "29 октября 2020 ➡️ 07 ноября 2020",
+    "isPositive": true,
+    "diffKoef": 31.810000000000002,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1615828066824,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "04 марта 2021 ➡️ 12 марта 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1615568874134,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "01 марта 2021 ➡️ 09 марта 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 9
+   },
+   {
+    "dates": "16 апреля 2020 ➡️ 24 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 31.880000000000006,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1615309681450,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "18 февраля 2021 ➡️ 07 марта 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1615136886301,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "08 апреля 2020 ➡️ 17 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 47.01,
+    "samePeriod": 10
+   },
+   {
+    "dates": "07 апреля 2020 ➡️ 17 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 49.81999999999999,
+    "samePeriod": 11
+   },
+   {
+    "dates": "06 апреля 2020 ➡️ 17 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 51.49999999999999,
+    "samePeriod": 12
+   },
+   {
+    "dates": "05 апреля 2020 ➡️ 17 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 51.88999999999999,
+    "samePeriod": 13
+   },
+   {
+    "dates": "03 апреля 2020 ➡️ 17 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 59.71999999999999,
+    "samePeriod": 15
+   },
+   {
+    "dates": "14 февраля 2021 ➡️ 02 марта 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 17
+   },
+   {
+    "dates": "31 марта 2020 ➡️ 17 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 72.72999999999999,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1614704898444,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "03 сентября 2021 ➡️ 12 сентября 2021",
+    "isPositive": false,
+    "diffKoef": 51.53,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1614532103320,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "12 апреля 2021 ➡️ 23 апреля 2021",
+    "isPositive": false,
+    "diffKoef": 55.56,
+    "samePeriod": 12
+   }
+  ],
+  "toDate": 1614445705791,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "02 апреля 2020 ➡️ 13 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 52.959999999999994,
+    "samePeriod": 12
+   }
+  ],
+  "toDate": 1614359308249,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "18 декабря 2020 ➡️ 25 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 23.130000000000003,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1613581730132,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "16 февраля 2020 ➡️ 23 февраля 2020",
+    "isPositive": false,
+    "diffKoef": 21.52,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1613495332595,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "06 февраля 2021 ➡️ 15 февраля 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 10
+   },
+   {
+    "dates": "05 февраля 2021 ➡️ 15 февраля 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 11
+   },
+   {
+    "dates": "04 февраля 2021 ➡️ 15 февраля 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 12
+   },
+   {
+    "dates": "03 февраля 2021 ➡️ 15 февраля 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 13
+   },
+   {
+    "dates": "02 февраля 2021 ➡️ 15 февраля 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 14
+   },
+   {
+    "dates": "01 февраля 2021 ➡️ 15 февраля 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 15
+   },
+   {
+    "dates": "22 апреля 2020 ➡️ 06 мая 2020",
+    "isPositive": true,
+    "diffKoef": 57.86000000000001,
+    "samePeriod": 15
+   },
+   {
+    "dates": "31 января 2021 ➡️ 15 февраля 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 16
+   },
+   {
+    "dates": "21 апреля 2020 ➡️ 06 мая 2020",
+    "isPositive": true,
+    "diffKoef": 62.13000000000001,
+    "samePeriod": 16
+   },
+   {
+    "dates": "29 января 2021 ➡️ 15 февраля 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1613408935025,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "28 апреля 2020 ➡️ 04 мая 2020",
+    "isPositive": true,
+    "diffKoef": 29.120000000000005,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1613236139919,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "01 февраля 2021 ➡️ 10 февраля 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 10
+   },
+   {
+    "dates": "29 октября 2020 ➡️ 07 ноября 2020",
+    "isPositive": true,
+    "diffKoef": 39.89,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1612976947229,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "12 ноября 2020 ➡️ 18 ноября 2020",
+    "isPositive": true,
+    "diffKoef": 26.160000000000004,
+    "samePeriod": 7
+   },
+   {
+    "dates": "10 ноября 2020 ➡️ 18 ноября 2020",
+    "isPositive": true,
+    "diffKoef": 40.57,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1612458561851,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "15 января 2021 ➡️ 31 января 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1612112971607,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "01 сентября 2020 ➡️ 10 сентября 2020",
+    "isPositive": true,
+    "diffKoef": 52.43000000000001,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1611853778858,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "21 января 2021 ➡️ 27 января 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1611767381308,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "10 июня 2021 ➡️ 24 июня 2021",
+    "isPositive": false,
+    "diffKoef": 76.84,
+    "samePeriod": 15
+   }
+  ],
+  "toDate": 1611508188673,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "17 сентября 2021 ➡️ 27 сентября 2021",
+    "isPositive": false,
+    "diffKoef": 62.39000000000001,
+    "samePeriod": 11
+   }
+  ],
+  "toDate": 1610989803279,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "05 мая 2020 ➡️ 16 мая 2020",
+    "isPositive": true,
+    "diffKoef": 74.85000000000001,
+    "samePeriod": 12
+   },
+   {
+    "dates": "03 мая 2020 ➡️ 16 мая 2020",
+    "isPositive": true,
+    "diffKoef": 88.43000000000002,
+    "samePeriod": 14
+   }
+  ],
+  "toDate": 1610817008177,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "05 декабря 2021 ➡️ 13 декабря 2021",
+    "isPositive": true,
+    "diffKoef": 58.74,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1610730610633,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "08 января 2021 ➡️ 14 января 2021",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1610644213051,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "10 ноября 2020 ➡️ 18 ноября 2020",
+    "isPositive": true,
+    "diffKoef": 46.269999999999996,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1610125827540,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "25 декабря 2020 ➡️ 05 января 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 12
+   },
+   {
+    "dates": "23 декабря 2020 ➡️ 05 января 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 14
+   },
+   {
+    "dates": "22 декабря 2020 ➡️ 05 января 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 15
+   },
+   {
+    "dates": "21 декабря 2020 ➡️ 05 января 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 16
+   },
+   {
+    "dates": "20 декабря 2020 ➡️ 05 января 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1609866634803,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "20 декабря 2020 ➡️ 04 января 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 16
+   },
+   {
+    "dates": "19 декабря 2020 ➡️ 04 января 2021",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1609780237395,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "07 октября 2021 ➡️ 19 октября 2021",
+    "isPositive": true,
+    "diffKoef": 38.59,
+    "samePeriod": 13
+   },
+   {
+    "dates": "17 декабря 2020 ➡️ 30 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 14
+   },
+   {
+    "dates": "16 декабря 2020 ➡️ 30 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 15
+   },
+   {
+    "dates": "15 декабря 2020 ➡️ 30 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 16
+   },
+   {
+    "dates": "13 декабря 2020 ➡️ 30 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1609348251676,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "16 декабря 2020 ➡️ 29 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 14
+   },
+   {
+    "dates": "15 декабря 2020 ➡️ 29 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 15
+   }
+  ],
+  "toDate": 1609261854525,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "22 декабря 2020 ➡️ 28 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 7
+   },
+   {
+    "dates": "06 октября 2021 ➡️ 17 октября 2021",
+    "isPositive": true,
+    "diffKoef": 37.93000000000001,
+    "samePeriod": 12
+   }
+  ],
+  "toDate": 1609175457261,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "18 декабря 2020 ➡️ 25 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 8
+   },
+   {
+    "dates": "12 декабря 2020 ➡️ 25 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 14
+   }
+  ],
+  "toDate": 1608916264671,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "12 октября 2020 ➡️ 29 октября 2020",
+    "isPositive": true,
+    "diffKoef": 43.51,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1608829867117,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "17 апреля 2020 ➡️ 24 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 22.450000000000003,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1608311482021,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "28 марта 2021 ➡️ 07 апреля 2021",
+    "isPositive": true,
+    "diffKoef": 25.1,
+    "samePeriod": 11
+   },
+   {
+    "dates": "27 марта 2021 ➡️ 07 апреля 2021",
+    "isPositive": true,
+    "diffKoef": 27.870000000000005,
+    "samePeriod": 12
+   },
+   {
+    "dates": "04 ноября 2021 ➡️ 16 ноября 2021",
+    "isPositive": true,
+    "diffKoef": 40.13999999999999,
+    "samePeriod": 13
+   },
+   {
+    "dates": "03 ноября 2021 ➡️ 16 ноября 2021",
+    "isPositive": true,
+    "diffKoef": 43.050000000000004,
+    "samePeriod": 14
+   },
+   {
+    "dates": "31 октября 2021 ➡️ 16 ноября 2021",
+    "isPositive": true,
+    "diffKoef": 47.09999999999999,
+    "samePeriod": 17
+   },
+   {
+    "dates": "21 ноября 2020 ➡️ 08 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 18
+   },
+   {
+    "dates": "29 октября 2021 ➡️ 16 ноября 2021",
+    "isPositive": true,
+    "diffKoef": 50.63999999999999,
+    "samePeriod": 19
+   },
+   {
+    "dates": "20 ноября 2020 ➡️ 08 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1607447507811,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "30 мая 2020 ➡️ 08 июня 2020",
+    "isPositive": false,
+    "diffKoef": 18.860000000000003,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1607361110268,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "22 ноября 2020 ➡️ 06 декабря 2020",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 15
+   }
+  ],
+  "toDate": 1607274712736,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "30 мая 2020 ➡️ 05 июня 2020",
+    "isPositive": true,
+    "diffKoef": 13.8,
+    "samePeriod": 7
+   },
+   {
+    "dates": "26 ноября 2020 ➡️ 04 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 9
+   },
+   {
+    "dates": "24 ноября 2020 ➡️ 04 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 11
+   },
+   {
+    "dates": "17 ноября 2020 ➡️ 04 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1607101917655,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "19 мая 2020 ➡️ 30 мая 2020",
+    "isPositive": false,
+    "diffKoef": 40.150000000000006,
+    "samePeriod": 12
+   }
+  ],
+  "toDate": 1606929122548,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "08 мая 2020 ➡️ 15 мая 2020",
+    "isPositive": true,
+    "diffKoef": 21.76,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1606842724996,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "12 ноября 2020 ➡️ 18 ноября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 7
+   },
+   {
+    "dates": "17 апреля 2020 ➡️ 24 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 18.25,
+    "samePeriod": 8
+   },
+   {
+    "dates": "10 ноября 2020 ➡️ 18 ноября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1605719556917,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "09 ноября 2020 ➡️ 16 ноября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1605546761798,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "11 января 2020 ➡️ 23 января 2020",
+    "isPositive": true,
+    "diffKoef": 33.44,
+    "samePeriod": 13
+   }
+  ],
+  "toDate": 1605373966748,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "18 декабря 2020 ➡️ 25 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 21.139999999999997,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1605114774101,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "29 октября 2020 ➡️ 07 ноября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 10
+   },
+   {
+    "dates": "09 октября 2020 ➡️ 23 октября 2020",
+    "isPositive": true,
+    "diffKoef": 38.17999999999999,
+    "samePeriod": 15
+   }
+  ],
+  "toDate": 1604769183935,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "12 октября 2020 ➡️ 29 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1603991606168,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "02 октября 2020 ➡️ 17 октября 2020",
+    "isPositive": true,
+    "diffKoef": 29.279999999999998,
+    "samePeriod": 16
+   }
+  ],
+  "toDate": 1603818811094,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "06 октября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 13.21,
+    "samePeriod": 8
+   },
+   {
+    "dates": "05 октября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 14.55,
+    "samePeriod": 9
+   },
+   {
+    "dates": "04 октября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 16.27,
+    "samePeriod": 10
+   },
+   {
+    "dates": "03 октября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 17.21,
+    "samePeriod": 11
+   },
+   {
+    "dates": "02 октября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 19.47,
+    "samePeriod": 12
+   },
+   {
+    "dates": "09 октября 2020 ➡️ 23 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 15
+   },
+   {
+    "dates": "29 сентября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 25.92,
+    "samePeriod": 15
+   }
+  ],
+  "toDate": 1603473222841,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "14 октября 2020 ➡️ 20 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1603214030668,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "02 октября 2020 ➡️ 17 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 16
+   },
+   {
+    "dates": "30 сентября 2020 ➡️ 17 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 18
+   },
+   {
+    "dates": "29 сентября 2020 ➡️ 17 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1602954838100,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "06 октября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 8
+   },
+   {
+    "dates": "05 октября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 9
+   },
+   {
+    "dates": "04 октября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 10
+   },
+   {
+    "dates": "03 октября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 11
+   },
+   {
+    "dates": "02 октября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 12
+   },
+   {
+    "dates": "01 октября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 13
+   },
+   {
+    "dates": "30 сентября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 14
+   },
+   {
+    "dates": "29 сентября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 15
+   },
+   {
+    "dates": "28 сентября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 16
+   },
+   {
+    "dates": "27 сентября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1602609248007,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "24 сентября 2020 ➡️ 11 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 18
+   },
+   {
+    "dates": "23 сентября 2020 ➡️ 11 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1602436452929,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "14 октября 2020 ➡️ 20 октября 2020",
+    "isPositive": true,
+    "diffKoef": 7.589999999999999,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1602350055451,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "23 сентября 2020 ➡️ 08 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 16
+   },
+   {
+    "dates": "20 сентября 2020 ➡️ 08 октября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1602177260422,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "12 сентября 2020 ➡️ 28 сентября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 17
+   },
+   {
+    "dates": "11 сентября 2020 ➡️ 28 сентября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1601313284903,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "29 декабря 2019 ➡️ 04 января 2020",
+    "isPositive": true,
+    "diffKoef": 10.57,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1601054092335,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "07 сентября 2020 ➡️ 23 сентября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 17
+   },
+   {
+    "dates": "05 сентября 2020 ➡️ 23 сентября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1600881297351,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "24 июня 2020 ➡️ 09 июля 2020",
+    "isPositive": true,
+    "diffKoef": 27.779999999999998,
+    "samePeriod": 16
+   }
+  ],
+  "toDate": 1600622105105,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "24 июня 2020 ➡️ 09 июля 2020",
+    "isPositive": true,
+    "diffKoef": 38.61,
+    "samePeriod": 16
+   }
+  ],
+  "toDate": 1600362912736,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "14 октября 2020 ➡️ 20 октября 2020",
+    "isPositive": true,
+    "diffKoef": 11.22,
+    "samePeriod": 7
+   },
+   {
+    "dates": "03 сентября 2020 ➡️ 12 сентября 2020",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1599930925066,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "01 сентября 2020 ➡️ 10 сентября 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1599758129976,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "24 июня 2020 ➡️ 09 июля 2020",
+    "isPositive": true,
+    "diffKoef": 26.61,
+    "samePeriod": 16
+   }
+  ],
+  "toDate": 1599066949958,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "11 августа 2020 ➡️ 28 августа 2020",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1598634962484,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "02 октября 2020 ➡️ 17 октября 2020",
+    "isPositive": true,
+    "diffKoef": 26.32,
+    "samePeriod": 16
+   }
+  ],
+  "toDate": 1598116577210,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "06 октября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 14.129999999999999,
+    "samePeriod": 8
+   },
+   {
+    "dates": "05 октября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 15.74,
+    "samePeriod": 9
+   },
+   {
+    "dates": "03 октября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 19.63,
+    "samePeriod": 11
+   },
+   {
+    "dates": "02 октября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 20.950000000000003,
+    "samePeriod": 12
+   },
+   {
+    "dates": "01 октября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 22.57,
+    "samePeriod": 13
+   }
+  ],
+  "toDate": 1597770987118,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "05 июля 2020 ➡️ 11 июля 2020",
+    "isPositive": true,
+    "diffKoef": 12.05,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1597338999387,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "02 августа 2020 ➡️ 09 августа 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 8
+   },
+   {
+    "dates": "11 сентября 2020 ➡️ 28 сентября 2020",
+    "isPositive": true,
+    "diffKoef": 46.2,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1596993409311,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "06 октября 2021 ➡️ 17 октября 2021",
+    "isPositive": true,
+    "diffKoef": 32.99,
+    "samePeriod": 12
+   },
+   {
+    "dates": "21 июля 2020 ➡️ 07 августа 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 18
+   },
+   {
+    "dates": "20 июля 2020 ➡️ 07 августа 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1596820614227,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "22 июля 2020 ➡️ 04 августа 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 14
+   }
+  ],
+  "toDate": 1596561421611,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "02 октября 2020 ➡️ 17 октября 2020",
+    "isPositive": true,
+    "diffKoef": 40.1,
+    "samePeriod": 16
+   }
+  ],
+  "toDate": 1596475024097,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "18 июля 2020 ➡️ 31 июля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 14
+   },
+   {
+    "dates": "17 июля 2020 ➡️ 31 июля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 15
+   },
+   {
+    "dates": "16 июля 2020 ➡️ 31 июля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 16
+   },
+   {
+    "dates": "13 июля 2020 ➡️ 31 июля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1596215831434,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "03 октября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 25.099999999999998,
+    "samePeriod": 11
+   }
+  ],
+  "toDate": 1596129433887,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "17 июля 2020 ➡️ 29 июля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 13
+   },
+   {
+    "dates": "16 июля 2020 ➡️ 29 июля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 14
+   }
+  ],
+  "toDate": 1596043036341,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "05 июля 2020 ➡️ 11 июля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1594487880507,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "24 июня 2020 ➡️ 09 июля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 16
+   },
+   {
+    "dates": "23 июня 2020 ➡️ 09 июля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 17
+   },
+   {
+    "dates": "21 июня 2020 ➡️ 09 июля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1594315085420,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "19 июня 2020 ➡️ 27 июня 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 9
+   },
+   {
+    "dates": "18 июня 2020 ➡️ 27 июня 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1593278314792,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "23 сентября 2020 ➡️ 08 октября 2020",
+    "isPositive": true,
+    "diffKoef": 39.18,
+    "samePeriod": 16
+   }
+  ],
+  "toDate": 1592241545700,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "30 мая 2020 ➡️ 08 июня 2020",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1591636763632,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "16 февраля 2020 ➡️ 23 февраля 2020",
+    "isPositive": false,
+    "diffKoef": 18.41,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1591463968997,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "30 мая 2020 ➡️ 05 июня 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 7
+   },
+   {
+    "dates": "15 февраля 2020 ➡️ 22 февраля 2020",
+    "isPositive": true,
+    "diffKoef": 18.4,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1591377571985,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "24 июня 2020 ➡️ 09 июля 2020",
+    "isPositive": true,
+    "diffKoef": 42.449999999999996,
+    "samePeriod": 16
+   }
+  ],
+  "toDate": 1591118381173,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "02 августа 2020 ➡️ 09 августа 2020",
+    "isPositive": true,
+    "diffKoef": 15.99,
+    "samePeriod": 8
+   },
+   {
+    "dates": "12 сентября 2020 ➡️ 28 сентября 2020",
+    "isPositive": true,
+    "diffKoef": 41.18,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1590945587025,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "19 мая 2020 ➡️ 30 мая 2020",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 12
+   }
+  ],
+  "toDate": 1590859189824,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "04 июля 2021 ➡️ 10 июля 2021",
+    "isPositive": true,
+    "diffKoef": 14.419999999999998,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1590513599955,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "19 мая 2020 ➡️ 25 мая 2020",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 7
+   },
+   {
+    "dates": "18 мая 2020 ➡️ 25 мая 2020",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1590427202952,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "04 ноября 2021 ➡️ 16 ноября 2021",
+    "isPositive": true,
+    "diffKoef": 42.73,
+    "samePeriod": 13
+   },
+   {
+    "dates": "03 ноября 2021 ➡️ 16 ноября 2021",
+    "isPositive": true,
+    "diffKoef": 45.379999999999995,
+    "samePeriod": 14
+   }
+  ],
+  "toDate": 1590081615082,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "05 октября 2021 ➡️ 11 октября 2021",
+    "isPositive": false,
+    "diffKoef": 16.79,
+    "samePeriod": 7
+   },
+   {
+    "dates": "04 октября 2021 ➡️ 11 октября 2021",
+    "isPositive": false,
+    "diffKoef": 19.65,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1589908820321,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "26 ноября 2020 ➡️ 04 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 24.7,
+    "samePeriod": 9
+   },
+   {
+    "dates": "24 ноября 2020 ➡️ 04 декабря 2020",
+    "isPositive": true,
+    "diffKoef": 32.18,
+    "samePeriod": 11
+   }
+  ],
+  "toDate": 1589822422993,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "05 мая 2020 ➡️ 16 мая 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 12
+   },
+   {
+    "dates": "03 мая 2020 ➡️ 16 мая 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 14
+   }
+  ],
+  "toDate": 1589649628152,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "08 мая 2020 ➡️ 15 мая 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1589563230680,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "29 октября 2020 ➡️ 07 ноября 2020",
+    "isPositive": true,
+    "diffKoef": 28.950000000000003,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1589044845819,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "01 марта 2021 ➡️ 09 марта 2021",
+    "isPositive": true,
+    "diffKoef": 34.160000000000004,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1588872050824,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "22 апреля 2020 ➡️ 06 мая 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 15
+   },
+   {
+    "dates": "21 апреля 2020 ➡️ 06 мая 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 16
+   },
+   {
+    "dates": "20 апреля 2020 ➡️ 06 мая 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 17
+   },
+   {
+    "dates": "19 апреля 2020 ➡️ 06 мая 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1588785653417,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "28 апреля 2020 ➡️ 04 мая 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1588612859906,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "18 июля 2020 ➡️ 31 июля 2020",
+    "isPositive": true,
+    "diffKoef": 39.7,
+    "samePeriod": 14
+   },
+   {
+    "dates": "17 июля 2020 ➡️ 31 июля 2020",
+    "isPositive": true,
+    "diffKoef": 41.790000000000006,
+    "samePeriod": 15
+   },
+   {
+    "dates": "16 июля 2020 ➡️ 31 июля 2020",
+    "isPositive": true,
+    "diffKoef": 45.82000000000001,
+    "samePeriod": 16
+   }
+  ],
+  "toDate": 1588526462776,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "17 июля 2020 ➡️ 29 июля 2020",
+    "isPositive": true,
+    "diffKoef": 36.09,
+    "samePeriod": 13
+   },
+   {
+    "dates": "16 июля 2020 ➡️ 29 июля 2020",
+    "isPositive": true,
+    "diffKoef": 40.120000000000005,
+    "samePeriod": 14
+   },
+   {
+    "dates": "17 апреля 2020 ➡️ 01 мая 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 15
+   }
+  ],
+  "toDate": 1588353668454,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "12 ноября 2020 ➡️ 18 ноября 2020",
+    "isPositive": true,
+    "diffKoef": 14.39,
+    "samePeriod": 7
+   },
+   {
+    "dates": "17 апреля 2020 ➡️ 24 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 8
+   },
+   {
+    "dates": "16 апреля 2020 ➡️ 24 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1587748886645,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "12 сентября 2020 ➡️ 28 сентября 2020",
+    "isPositive": true,
+    "diffKoef": 45.830000000000005,
+    "samePeriod": 17
+   },
+   {
+    "dates": "11 сентября 2020 ➡️ 28 сентября 2020",
+    "isPositive": true,
+    "diffKoef": 49.54,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1587403296572,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "29 декабря 2019 ➡️ 04 января 2020",
+    "isPositive": true,
+    "diffKoef": 15.39,
+    "samePeriod": 7
+   },
+   {
+    "dates": "15 июля 2021 ➡️ 22 июля 2021",
+    "isPositive": true,
+    "diffKoef": 19.449999999999996,
+    "samePeriod": 8
+   },
+   {
+    "dates": "08 апреля 2020 ➡️ 17 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 10
+   },
+   {
+    "dates": "07 апреля 2020 ➡️ 17 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 11
+   },
+   {
+    "dates": "06 апреля 2020 ➡️ 17 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 12
+   },
+   {
+    "dates": "05 апреля 2020 ➡️ 17 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 13
+   },
+   {
+    "dates": "03 апреля 2020 ➡️ 17 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 15
+   },
+   {
+    "dates": "31 марта 2020 ➡️ 17 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1587144104563,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "11 января 2020 ➡️ 23 января 2020",
+    "isPositive": true,
+    "diffKoef": 34.69,
+    "samePeriod": 13
+   }
+  ],
+  "toDate": 1586971309878,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "16 апреля 2020 ➡️ 24 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 22.599999999999998,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1586884912568,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "30 мая 2020 ➡️ 08 июня 2020",
+    "isPositive": false,
+    "diffKoef": 25.39,
+    "samePeriod": 10
+   },
+   {
+    "dates": "02 апреля 2020 ➡️ 13 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 12
+   }
+  ],
+  "toDate": 1586798515242,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "24 марта 2020 ➡️ 10 апреля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1586539323690,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "29 марта 2020 ➡️ 09 апреля 2020",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 12
+   },
+   {
+    "dates": "28 марта 2020 ➡️ 09 апреля 2020",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 13
+   },
+   {
+    "dates": "27 марта 2020 ➡️ 09 апреля 2020",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 14
+   },
+   {
+    "dates": "25 марта 2020 ➡️ 09 апреля 2020",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 16
+   }
+  ],
+  "toDate": 1586452926741,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "02 августа 2020 ➡️ 09 августа 2020",
+    "isPositive": true,
+    "diffKoef": 26.48,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1586107337430,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "20 мая 2021 ➡️ 02 июня 2021",
+    "isPositive": true,
+    "diffKoef": 72.44,
+    "samePeriod": 14
+   }
+  ],
+  "toDate": 1585761747599,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "15 июля 2021 ➡️ 22 июля 2021",
+    "isPositive": true,
+    "diffKoef": 26.209999999999997,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1585675350121,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "09 июня 2021 ➡️ 20 июня 2021",
+    "isPositive": false,
+    "diffKoef": 60.36000000000001,
+    "samePeriod": 12
+   },
+   {
+    "dates": "08 июня 2021 ➡️ 20 июня 2021",
+    "isPositive": false,
+    "diffKoef": 62.86000000000001,
+    "samePeriod": 13
+   }
+  ],
+  "toDate": 1585588952710,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "04 декабря 2021 ➡️ 17 декабря 2021",
+    "isPositive": true,
+    "diffKoef": 83.30999999999997,
+    "samePeriod": 14
+   },
+   {
+    "dates": "16 марта 2020 ➡️ 29 марта 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 14
+   },
+   {
+    "dates": "15 марта 2020 ➡️ 29 марта 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 15
+   },
+   {
+    "dates": "14 марта 2020 ➡️ 29 марта 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 16
+   },
+   {
+    "dates": "13 марта 2020 ➡️ 29 марта 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1585502555243,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "28 апреля 2021 ➡️ 04 мая 2021",
+    "isPositive": true,
+    "diffKoef": 26.360000000000003,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1585329760260,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "20 мая 2021 ➡️ 02 июня 2021",
+    "isPositive": true,
+    "diffKoef": 101.45,
+    "samePeriod": 14
+   }
+  ],
+  "toDate": 1585243362784,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "07 июня 2021 ➡️ 14 июня 2021",
+    "isPositive": false,
+    "diffKoef": 41.63999999999999,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1585070567872,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "04 июня 2021 ➡️ 12 июня 2021",
+    "isPositive": true,
+    "diffKoef": 66.34,
+    "samePeriod": 9
+   },
+   {
+    "dates": "14 марта 2020 ➡️ 22 марта 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 9
+   },
+   {
+    "dates": "15 января 2021 ➡️ 31 января 2021",
+    "isPositive": true,
+    "diffKoef": 138.55,
+    "samePeriod": 17
+   }
+  ],
+  "toDate": 1584897773307,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "10 марта 2020 ➡️ 21 марта 2020",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 12
+   },
+   {
+    "dates": "09 марта 2020 ➡️ 21 марта 2020",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 13
+   },
+   {
+    "dates": "08 марта 2020 ➡️ 21 марта 2020",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 14
+   },
+   {
+    "dates": "07 марта 2020 ➡️ 21 марта 2020",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 15
+   }
+  ],
+  "toDate": 1584811376070,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "21 января 2021 ➡️ 27 января 2021",
+    "isPositive": true,
+    "diffKoef": 89.50999999999999,
+    "samePeriod": 7
+   },
+   {
+    "dates": "19 июня 2021 ➡️ 27 июня 2021",
+    "isPositive": false,
+    "diffKoef": 98.74,
+    "samePeriod": 9
+   },
+   {
+    "dates": "08 марта 2020 ➡️ 18 марта 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 11
+   }
+  ],
+  "toDate": 1584552183592,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "22 февраля 2020 ➡️ 29 февраля 2020",
+    "isPositive": true,
+    "diffKoef": 19.889999999999997,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1583947401776,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "19 февраля 2020 ➡️ 07 марта 2020",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 18
+   }
+  ],
+  "toDate": 1583601813534,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "19 мая 2020 ➡️ 25 мая 2020",
+    "isPositive": false,
+    "diffKoef": 17.65,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1583083429865,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "22 февраля 2020 ➡️ 29 февраля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1582997032915,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "19 июня 2020 ➡️ 27 июня 2020",
+    "isPositive": true,
+    "diffKoef": 17.84,
+    "samePeriod": 9
+   },
+   {
+    "dates": "18 июня 2020 ➡️ 27 июня 2020",
+    "isPositive": true,
+    "diffKoef": 23.069999999999997,
+    "samePeriod": 10
+   }
+  ],
+  "toDate": 1582910635622,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "16 февраля 2020 ➡️ 23 февраля 2020",
+    "isPositive": false,
+    "diffKoef": 0,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1582478649774,
+  "isAllPositive": false
+ },
+ {
+  "group": [
+   {
+    "dates": "02 августа 2020 ➡️ 09 августа 2020",
+    "isPositive": true,
+    "diffKoef": 17.88,
+    "samePeriod": 8
+   },
+   {
+    "dates": "15 февраля 2020 ➡️ 22 февраля 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 8
+   }
+  ],
+  "toDate": 1582392252352,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "05 июля 2020 ➡️ 11 июля 2020",
+    "isPositive": true,
+    "diffKoef": 11.41,
+    "samePeriod": 7
+   }
+  ],
+  "toDate": 1580664305352,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "29 сентября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 28.76,
+    "samePeriod": 15
+   },
+   {
+    "dates": "28 сентября 2020 ➡️ 13 октября 2020",
+    "isPositive": true,
+    "diffKoef": 30.400000000000002,
+    "samePeriod": 16
+   },
+   {
+    "dates": "15 января 2020 ➡️ 31 января 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 17
+   },
+   {
+    "dates": "21 июня 2020 ➡️ 09 июля 2020",
+    "isPositive": true,
+    "diffKoef": 40.42,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1580491510896,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "09 января 2020 ➡️ 27 января 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1580145921231,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "08 января 2020 ➡️ 26 января 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 19
+   }
+  ],
+  "toDate": 1580059523997,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "11 января 2020 ➡️ 23 января 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 13
+   }
+  ],
+  "toDate": 1579800332776,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "19 июня 2020 ➡️ 27 июня 2020",
+    "isPositive": true,
+    "diffKoef": 20.6,
+    "samePeriod": 9
+   }
+  ],
+  "toDate": 1579454743403,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "19 августа 2021 ➡️ 31 августа 2021",
+    "isPositive": true,
+    "diffKoef": 35.519999999999996,
+    "samePeriod": 13
+   }
+  ],
+  "toDate": 1579368346006,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "01 января 2020 ➡️ 16 января 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 16
+   }
+  ],
+  "toDate": 1579195551121,
+  "isAllPositive": true
+ },
+ {
+  "group": [
+   {
+    "dates": "30 декабря 2019 ➡️ 11 января 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 13
+   },
+   {
+    "dates": "29 декабря 2019 ➡️ 11 января 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 14
+   },
+   {
+    "dates": "28 декабря 2019 ➡️ 11 января 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 15
+   },
+   {
+    "dates": "27 декабря 2019 ➡️ 11 января 2020",
+    "isPositive": true,
+    "diffKoef": 0,
+    "samePeriod": 16
+   }
+  ],
+  "toDate": 1578763563719,
+  "isAllPositive": true
+ }
+]

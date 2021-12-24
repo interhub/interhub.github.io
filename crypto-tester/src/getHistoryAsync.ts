@@ -5,8 +5,9 @@ import {getDiffPercent} from './utils'
 import {last} from 'lodash'
 
 const getHistoryAsync = async (): Promise<HistoryItem[]> => {
-    const urlDays = `https://min-api.cryptocompare.com/data/v2/histoday?fsym=BTC&tsym=USD&limit=2000&toTs=-1`
-    const urlHour = `https://min-api.cryptocompare.com/data/v2/histohour?fsym=BTC&tsym=USD&limit=1&aggregate=1`
+    const ticker = `BTC`
+    const urlDays = `https://min-api.cryptocompare.com/data/v2/histoday?fsym=${ticker}&tsym=USD&limit=2000&toTs=-1`
+    const urlHour = `https://min-api.cryptocompare.com/data/v2/histohour?fsym=${ticker}&tsym=USD&limit=1&aggregate=1`
 
     const {data: dataDaysServer} = await axios.get(urlDays)
     const {data: dataHoursServer} = await axios.get(urlHour)

@@ -32,4 +32,10 @@ export const getSamePercentNumbersByDiffKoef = (diffKoefs: number[]) => {
     const samePercentsEqual = diffPercents.reverse()
     return samePercentsEqual
 }
+export const subPercent = (num: number, percent) => {
+    return num - (num * (percent / 100))
+}
+export const addPercent = (num: number, percent) => {
+    return num + (num * (percent / 100))
+}
 

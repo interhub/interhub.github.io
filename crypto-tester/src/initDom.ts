@@ -1,12 +1,13 @@
 import moment from 'moment'
 import {filter, inRange, last, sortBy, sum, sumBy} from 'lodash'
-import {historyPromise, patternsAllTimeExists} from './getPredicts'
+import {historyPromise} from './getPredicts'
 import {NEGATIVE_PARAMS, POSITIVES_PARAMS, start} from '../index'
 import fs from 'fs'
 import {isBrowser} from 'browser-or-node'
 import {PredictType} from './types'
 import {toFixed} from './utils'
-import {TOP} from './config'
+import {TEST_PERIOD_MOVE, TOP} from './config'
+import {patternsAllTimeExists} from './fillPattensCheck'
 
 export const initDom = async ({samePeriod, moveDays, lastTargetPeriod, predicts}) => {
     const lastPrice = last(await historyPromise).CLOSE
@@ -54,10 +55,10 @@ ${!!samePatternsList.length ? `🍀 Схожие по времени патте�
 export const test = async () => {
     console.log('Loading ⏳')
     const MAX_PERIOD = 20
-    const MAX_DAYS_MOVE = 730
-    for (let mo = 0; mo < MAX_DAYS_MOVE; mo++) {
-        for (let per = 2; per < MAX_PERIOD; per++) {
-            await start(mo, per)
+    for (let mo = 0; mo < TEST_PERIOD_MOVE; mo++) {
+        console.log(`check move ${mo}/${TEST_PERIOD_MOVE}`)
+        for (let per = 2; per < TEST_PERIOD_MOVE; per++) {
+            await start(mo, per, true)
         }
     }
     console.log({POSITIVES_PARAMS}, {NEGATIVE_PARAMS}, 'DONE ✅')

@@ -9,13 +9,12 @@ import 'moment/locale/ru'
 import {addHandlersDom, initDom} from './src/initDom'
 import moment from 'moment'
 
-declare let isAccess: boolean
-
 export const POSITIVES_PARAMS = []
 export const NEGATIVE_PARAMS = []
 
 export const start = async (moveDays: number = 0, samePeriod = 7, isTest?: boolean) => {
-    if (!isAccess) return
+    //@ts-ignore
+    if (isBrowser && !isAccess) return
     const pogrs: number[] = []
 
     const PREDICTES = await getPredicts(moveDays, samePeriod, isTest)
