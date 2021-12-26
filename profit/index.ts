@@ -9,6 +9,7 @@ const storageData = JSON.parse(localStorage.getItem('data'))
 const params = {
     month: {month: storageData?.month?.month || 6},
     startSum: {startSum: storageData?.startSum?.startSum || 1000},
+    currentSum: {currentSum: storageData?.currentSum?.currentSum || 1000},
     everyMonth: {everyMonth: storageData?.everyMonth?.everyMonth || 1000},
     weekPercent: {weekPercent: storageData?.weekPercent?.weekPercent || 3},
 }
@@ -29,20 +30,23 @@ const updateDisplay = () => {
     let points: string = ''
     const chartInfo: { week: number, value: number }[] = []
     for (let i = 0; i < weeksCount; i++) {
-        const isAddMonth = (i % 4 === 0) && i > 0
+        const isAddMonth = ((i % 4 === 0) && i > 0) && !!params.everyMonth.everyMonth
         resultSum = resultSum * (1 + (params.weekPercent.weekPercent / 100))
         if (isAddMonth) {
             resultSum += params.everyMonth.everyMonth
         }
-        points += `Неделя: ${i + 1} из ${weeksCount} 🍀<br/>День: ${(i + 1) * 7} 🌞<br/>Сумма: ${resultSum.toFixed(2)}$ 🍗<br/>Процент роста: ${getDiffPercent(params.startSum.startSum, resultSum).toFixed(2)}% 📈<hr/>`
+        const isDoneLevel = params.currentSum.currentSum >= resultSum
+        const doneBgColor = `rgba(52, 136, 15, 0.09)`
+        points += `<div style="background-color: ${isDoneLevel ? doneBgColor : ''}">Неделя: ${i + 1} из ${weeksCount} 🍀<br/>День: ${(i + 1) * 7} 🌞<br/>Сумма: ${resultSum.toFixed(2)}$ 🍗<br/>Процент роста: ${getDiffPercent(params.startSum.startSum, resultSum).toFixed(2)}% 📈${isDoneLevel ? '<br/><label style="font-weight: bold; color: #fff">Done 🏆 🎉 🎊</label>' : ''}</div><hr/>`
         if (isAddMonth) {
             points += `Пополнение мес. ${i / 4} = ${params.everyMonth.everyMonth}$ 💸<br/><hr/>`
         }
         chartInfo.push({value: resultSum, week: i})
     }
     const growTotalPercent = getDiffPercent(params.startSum.startSum, resultSum)
+    const currentGrowPercent = getDiffPercent(params.startSum.startSum, params.currentSum.currentSum)
     const ordersPercents = [11.1, 22.2, 66.6]
-    const ordersPrices = ordersPercents.map((p, i) => `${i + 1}) ${(params.startSum.startSum * p / 100).toFixed(2)}$ ~ ${p}% ⚙️`)
+    const ordersPrices = ordersPercents.map((p, i) => `${i + 1}) ${(params.currentSum.currentSum * p / 100).toFixed(2)}$ ~ ${p}% ⚙️`)
     const displayTitles = `
         Число месяцев: ${params.month.month}<br/>
         Сумма входа: ${params.startSum.startSum}$<br/>
@@ -53,14 +57,15 @@ const updateDisplay = () => {
         Число лет: ${yearCount} ⏳<br/>
         Число недель: ${weeksCount} 🍀<br/>
         Число дней: ${daysCount} ☀️<br/>
-        Стоимоти оредеров усреднения: <br/><br/>${ordersPrices.join('<br/>')}<br/><br/>
+        Стоимоти оредеров усреднения для текущей суммы: <br/><br/>${ordersPrices.join('<br/>')}<br/><br/>
+        Процент роста текущий: ${currentGrowPercent.toFixed(2)}% 📈<br/> 
         Процент роста за все время: ${growTotalPercent.toFixed(2)}% 📈<br/> 
         Итог сумма: ${resultSum.toFixed(2)}$ 🍔<br/>
         <hr/>
         <br/><br/><br/><br/><br/>
         ${points}
         <hr/>
-        
+         
     `
     mainDiv.innerHTML = displayTitles
     new Chartist.Line('#chart', {
@@ -108,6 +113,7 @@ const addObjectToGui = (obj: any, min: number = 0, max: number = 100, step: numb
 //add handlers gui
 addObjectToGui(params.month, 0, 60, 1, 'Число месяцев') //10 years
 addObjectToGui(params.startSum, 500, 200000, 1, 'Стартовая сумма')
+addObjectToGui(params.currentSum, 500, 1000000, 1, 'Текущая сумма (результат)')
 addObjectToGui(params.everyMonth, 0, 50000, 1, 'Пополнение в месяц')
 addObjectToGui(params.weekPercent, 0.1, 20, 0.1, 'Процент роста в неделю')
 
