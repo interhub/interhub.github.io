@@ -114,6 +114,6 @@ const addObjectToGui = (obj: any, min: number = 0, max: number = 100, step: numb
 addObjectToGui(params.month, 0, 60, 1, 'Число месяцев') //10 years
 addObjectToGui(params.startSum, 500, 200000, 1, 'Стартовая сумма')
 addObjectToGui(params.currentSum, 500, 1000000, 1, 'Текущая сумма (результат)')
-addObjectToGui(params.everyMonth, 0, 50000, 1, 'Пополнение в месяц')
+addObjectToGui(params.everyMonth, -5000, 50000, 1, 'Пополнение/списание в месяц')
 addObjectToGui(params.weekPercent, 0.1, 20, 0.1, 'Процент роста в неделю')
 

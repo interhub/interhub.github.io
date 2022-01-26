@@ -4,8 +4,6 @@
     <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add repo 2">
       <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profit/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/profit/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profit/dist/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/profit/dist/index.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profit/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/profit/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,32 +115,42 @@
       <recent name="$PROJECT_DIR$/phonebase" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.upload">
+  <component name="RunManager">
+    <configuration name="build (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/profit/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/cryptorg_calc/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/cryptorg_calc/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev:watch (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/profit/package.json" />
       <command value="run" />
       <scripts>
         <script value="dev:watch" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="dev:watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/crypto-tester/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev:watch" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="tester" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/crypto-tester/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="tester" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -158,23 +166,13 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="upload" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/crypto-tester/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="upload" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.upload (1)" />
+        <item itemvalue="npm.build (1)" />
         <item itemvalue="npm.dev:watch (1)" />
-        <item itemvalue="npm.upload" />
-        <item itemvalue="npm.dev:watch" />
-        <item itemvalue="npm.tester" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.upload (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +237,9 @@
       <workItem from="1640101838075" duration="3289000" />
       <workItem from="1640127516861" duration="634000" />
       <workItem from="1640128610344" duration="18043000" />
-      <workItem from="1640521381767" duration="1375000" />
+      <workItem from="1640521381767" duration="1660000" />
+      <workItem from="1641467379851" duration="577000" />
+      <workItem from="1643203059227" duration="45000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
