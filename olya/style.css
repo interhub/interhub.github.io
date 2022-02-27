@@ -40,6 +40,7 @@ img {
     /*border-width: 2px;*/
     /*border-color: #000b40;*/
     border: 1px solid #00d4ff;
+    background-color: #fff;
     transition: all 0.1s ease;
     margin-left: 8px;
     margin-right: 8px;
@@ -108,4 +109,13 @@ h2 {
     color: #00d4ff;
     font-size: 40px;
     font-family: 'Dancing Script', cursive;
+}
+
+#tg {
+    padding: 10px;
+}
+
+#tgimg {
+    height: 50px;
+    margin: 5px;
 }
