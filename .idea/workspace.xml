@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add new model site">
+      <change afterPath="$PROJECT_DIR$/public/music/bg-mobile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/song.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/olya/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/olya/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="TypeScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -35,7 +43,7 @@
     </file-type-list>
   </component>
   <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="4" />
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -95,7 +103,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lesyaonecat/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/music" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -104,11 +116,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/music" />
       <recent name="$PROJECT_DIR$/lesyaonecat/img" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/crypto-tester" />
       <recent name="$PROJECT_DIR$/source" />
-      <recent name="$PROJECT_DIR$/stayfitt" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/phonebase" />
@@ -241,7 +253,8 @@
       <workItem from="1643203059227" duration="278000" />
       <workItem from="1644173195411" duration="374000" />
       <workItem from="1644173576548" duration="702000" />
-      <workItem from="1645999839070" duration="506000" />
+      <workItem from="1645999839070" duration="675000" />
+      <workItem from="1648831316090" duration="1697000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
