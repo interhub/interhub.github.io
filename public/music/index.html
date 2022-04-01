@@ -29,21 +29,22 @@
     <img id="man" style="position: fixed; z-index: 10; height: 100%" src="./man.png" alt="man">
 </div>
 <script>
-    const btn = document.querySelector('#man')
-    const audio = new Audio('song.mp3')
-    let isPlay = false
-    const toggleSongPlay = () => {
-        if (isPlay) {
-            isPlay=false
-            audio.pause()
+    window.onload=()=>{
+        const btn = document.querySelector('#man')
+        const audio = new Audio('song.mp3')
+        let isPlay = false
+        const toggleSongPlay = () => {
+            if (isPlay) {
+                isPlay=false
+                audio.pause()
+            }
+            else {
+                isPlay=true
+                audio.play()
+            }
         }
-        else {
-            isPlay=true
-            audio.play()
-        }
+        btn.onclick = toggleSongPlay
     }
-    btn.onclick = toggleSongPlay
-
-</script>
+ </script>
 </body>
 </html>
