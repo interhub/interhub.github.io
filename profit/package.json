@@ -20,7 +20,7 @@
     "gridjs": "^5.0.2",
     "js-datepicker": "^5.18.0",
     "lodash": "^4.17.21",
-    "moment": "^2.29.1",
+    "moment": "^2.29.2",
     "react": "*",
     "react-native": "*",
     "react-native-gesture-handler": "*",
