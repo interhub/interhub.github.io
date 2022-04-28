@@ -4,11 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add full music cite">
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add on load music">
+      <change afterPath="$PROJECT_DIR$/public/music/list/files/1. New Orlean Jazz. .mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/list/files/10. Ray_Charles - Hit the Road Jack.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/list/files/11. Nina_Simone - I Put a Spell on You.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/list/files/12. Louis Armstrong - What A Wonderful World.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/list/files/2. Louis Armstrong - La Vie En Rose.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/list/files/3. Glenn Miller - In The Mood (feat. his Orchestra, Glenn Miller).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/list/files/4. Frank Sinatra - Fly Me To The Moon (feat. Count Basie).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/list/files/5. Charlie Parker Septet - Moose the Mooche.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/list/files/6. Doris-Day-Lets-Keep-Smiling.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/list/files/7. Miles Davis - Orchestra_Rouge.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/list/files/8. Tako - Puttin' On The Ritz.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/list/files/9. Bobby Darin - Beyond the Sea.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/list/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/list/images/full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/list/images/img_bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/list/images/img_top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/music/list/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/music/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/music/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +115,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/music" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/music/list/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -113,13 +128,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/music/list/images" />
+      <recent name="$PROJECT_DIR$/public/music/list/files" />
       <recent name="$PROJECT_DIR$/public/music" />
       <recent name="$PROJECT_DIR$/lesyaonecat/img" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/crypto-tester" />
-      <recent name="$PROJECT_DIR$/source" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/music/list" />
       <recent name="$PROJECT_DIR$/phonebase" />
     </key>
   </component>
@@ -251,7 +267,8 @@
       <workItem from="1644173195411" duration="374000" />
       <workItem from="1644173576548" duration="702000" />
       <workItem from="1645999839070" duration="675000" />
-      <workItem from="1648831316090" duration="1887000" />
+      <workItem from="1648831316090" duration="2134000" />
+      <workItem from="1651140420827" duration="2455000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -456,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648834021481</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="add on load music">
+      <created>1648834207703</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1648834207703</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -507,7 +531,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add rename file" />
     <MESSAGE value="add save video" />
     <MESSAGE value="add save gif 3" />
     <MESSAGE value="publish file" />
@@ -532,7 +555,8 @@
     <MESSAGE value="add repo 2" />
     <MESSAGE value="add new model site" />
     <MESSAGE value="add full music cite" />
-    <option name="LAST_COMMIT_MESSAGE" value="add full music cite" />
+    <MESSAGE value="add on load music" />
+    <option name="LAST_COMMIT_MESSAGE" value="add on load music" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">

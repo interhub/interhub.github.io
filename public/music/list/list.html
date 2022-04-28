@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://faviconka.ru/ico/61/faviconka.ru_61_9738.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://faviconka.ru/ico/61/faviconka.ru_61_9738.ico" type="image/x-icon"/>
+    <title>Playing</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+    </style>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
+            background-color: #e9c9c9;
+        }
+
+        .title {
+            margin-top: 30px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 10px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #d5d5d5;
+        }
+
+        .audio-box {
+            display: flex;
+            flex: 1;
+            justify-content: center
+        }
+
+        .center-box {
+            display: flex;
+            justify-content: center
+        }
+    </style>
+</head>
+<body>
+<!--BG-->
+<!--CONTENT BOX-->
+<div style="width: 100%; min-height: 100vh">
+    <img style="width: 100%; height: 100%; position: fixed; z-index: -2" src="./images/bg.png" alt="bg">
+    <div class="center-box">
+        <img id="top" style="width: 100%; max-width: 500px;" src="./images/img_top.png" alt="top">
+    </div>
+    <!--  AUDIO LIST  -->
+
+    <p class="title">1. New Orlean Jazz.</p>
+    <div class="audio-box">
+        <audio controls src="./files/1.%20New%20Orlean%20Jazz.%20.mp3"></audio>
+    </div>
+
+    <p class="title">2. Louis Armstrong - La Vie En Rose.</p>
+    <div class="audio-box">
+        <audio controls src="./files/2.%20Louis%20Armstrong%20-%20La%20Vie%20En%20Rose.mp3"></audio>
+    </div>
+
+    <p class="title">3. Glenn Miller - In The Mood (feat. his Orchestra, Glenn Miller)</p>
+    <div class="audio-box">
+        <audio controls
+               src="./files/3.%20Glenn%20Miller%20-%20In%20The%20Mood%20(feat.%20his%20Orchestra,%20Glenn%20Miller).mp3"></audio>
+    </div>
+
+    <p class="title">4. Frank Sinatra - Fly Me To The Moon (feat. Count Basie).</p>
+    <div class="audio-box">
+        <audio controls
+               src="./files/4.%20Frank%20Sinatra%20-%20Fly%20Me%20To%20The%20Moon%20(feat.%20Count%20Basie).mp3"></audio>
+    </div>
+
+    <p class="title">5. Charlie Parker Septet - Moose the Mooche.</p>
+    <div class="audio-box">
+        <audio controls src="./files/5.%20Charlie%20Parker%20Septet%20-%20Moose%20the%20Mooche.mp3"></audio>
+    </div>
+
+    <p class="title">6. Doris-Day-Lets-Keep-Smiling.</p>
+    <div class="audio-box">
+        <audio controls src="./files/6.%20Doris-Day-Lets-Keep-Smiling.mp3"></audio>
+    </div>
+
+    <p class="title">7. Miles Davis - Orchestra_Rouge.</p>
+    <div class="audio-box">
+        <audio controls src="./files/7.%20Miles%20Davis%20-%20Orchestra_Rouge.mp3"></audio>
+    </div>
+
+    <p class="title">8. Tako - Puttin' On The Ritz.</p>
+    <div class="audio-box">
+        <audio controls src="./files/8.%20Tako%20-%20Puttin'%20On%20The%20Ritz.mp3"></audio>
+    </div>
+
+    <p class="title">9. Bobby Darin - Beyond the Sea.</p>
+    <div class="audio-box">
+        <audio controls src="./files/9.%20Bobby%20Darin%20-%20Beyond%20the%20Sea.mp3"></audio>
+    </div>
+
+    <p class="title">10. Ray_Charles - Hit the Road Jack.</p>
+    <div class="audio-box">
+        <audio controls src="./files/10.%20Ray_Charles%20-%20Hit%20the%20Road%20Jack.mp3"></audio>
+    </div>
+
+    <p class="title">11. Nina_Simone - I Put a Spell on You.</p>
+    <div class="audio-box">
+        <audio controls src="./files/11.%20Nina_Simone%20-%20I%20Put%20a%20Spell%20on%20You.mp3"></audio>
+    </div>
+
+    <p class="title">12. Louis Armstrong - What A Wonderful World.mp3</p>
+    <div class="audio-box">
+        <audio controls src="./files/12.%20Louis%20Armstrong%20-%20What%20A%20Wonderful%20World.mp3"></audio>
+    </div>
+
+    <div class="center-box">
+        <img id="bottom" style="width: 100%; margin-top: 40px; max-width: 500px" src="./images/img_bottom.png" alt="bottom">
+    </div>
+</div>
+<!--SCRIPTS OF AUDIO-->
+<script>
+    // window.onload = () => {
+    //     const btn = document.querySelector('#man')
+    //     const audio = new Audio('song.mp3')
+    //     let isPlay = false
+    //     const toggleSongPlay = () => {
+    //         if (isPlay) {
+    //             isPlay = false
+    //             audio.pause()
+    //         } else {
+    //             isPlay = true
+    //             audio.play()
+    //         }
+    //     }
+    //     btn.onclick = toggleSongPlay
+    // }
+</script>
+</body>
+</html>
