@@ -4,26 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add on load music">
-      <change afterPath="$PROJECT_DIR$/public/music/list/files/1. New Orlean Jazz. .mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/music/list/files/10. Ray_Charles - Hit the Road Jack.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/music/list/files/11. Nina_Simone - I Put a Spell on You.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/music/list/files/12. Louis Armstrong - What A Wonderful World.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/music/list/files/2. Louis Armstrong - La Vie En Rose.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/music/list/files/3. Glenn Miller - In The Mood (feat. his Orchestra, Glenn Miller).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/music/list/files/4. Frank Sinatra - Fly Me To The Moon (feat. Count Basie).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/music/list/files/5. Charlie Parker Septet - Moose the Mooche.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/music/list/files/6. Doris-Day-Lets-Keep-Smiling.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/music/list/files/7. Miles Davis - Orchestra_Rouge.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/music/list/files/8. Tako - Puttin' On The Ritz.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/music/list/files/9. Bobby Darin - Beyond the Sea.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/music/list/images/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/music/list/images/full.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/music/list/images/img_bottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/music/list/images/img_top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/music/list/list.html" afterDir="false" />
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add remove excess code">
       <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kisa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kisa/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/music/list/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/music/list/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redirect/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/redirect/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +254,8 @@
       <workItem from="1644173576548" duration="702000" />
       <workItem from="1645999839070" duration="675000" />
       <workItem from="1648831316090" duration="2134000" />
-      <workItem from="1651140420827" duration="2455000" />
+      <workItem from="1651140420827" duration="3362000" />
+      <workItem from="1651752144060" duration="517000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -480,7 +467,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648834207703</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="add fix list upload">
+      <created>1651143120926</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1651143120926</updated>
+    </task>
+    <task id="LOCAL-00032" summary="add rename index list rita">
+      <created>1651143148255</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1651143148255</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -531,8 +532,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add save video" />
-    <MESSAGE value="add save gif 3" />
     <MESSAGE value="publish file" />
     <MESSAGE value="add publish parallax-lib-2.gif" />
     <MESSAGE value="add video" />
@@ -556,7 +555,9 @@
     <MESSAGE value="add new model site" />
     <MESSAGE value="add full music cite" />
     <MESSAGE value="add on load music" />
-    <option name="LAST_COMMIT_MESSAGE" value="add on load music" />
+    <MESSAGE value="add fix list upload" />
+    <MESSAGE value="add rename index list rita" />
+    <option name="LAST_COMMIT_MESSAGE" value="add rename index list rita" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">
