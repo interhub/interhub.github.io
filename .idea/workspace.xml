@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add remove excess code">
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add fix">
+      <change afterPath="$PROJECT_DIR$/kisa/img/fancly.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kisa/img/inst.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redirect/fancly.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redirect/inst.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redirect/new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redirect/only.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redirect/patreon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kisa/img/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/kisa/img/only.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kisa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kisa/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/music/list/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/music/list/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redirect/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/redirect/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +108,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/music/list/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/kisa/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -114,11 +121,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/kisa/img" />
+      <recent name="$PROJECT_DIR$/redirect" />
       <recent name="$PROJECT_DIR$/public/music/list/images" />
       <recent name="$PROJECT_DIR$/public/music/list/files" />
       <recent name="$PROJECT_DIR$/public/music" />
-      <recent name="$PROJECT_DIR$/lesyaonecat/img" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/music/list" />
@@ -255,7 +262,8 @@
       <workItem from="1645999839070" duration="675000" />
       <workItem from="1648831316090" duration="2134000" />
       <workItem from="1651140420827" duration="3362000" />
-      <workItem from="1651752144060" duration="517000" />
+      <workItem from="1651752144060" duration="1100000" />
+      <workItem from="1654189389613" duration="2180000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -481,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651143148255</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="add fix">
+      <created>1651754086157</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1651754086157</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -532,7 +547,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="publish file" />
     <MESSAGE value="add publish parallax-lib-2.gif" />
     <MESSAGE value="add video" />
     <MESSAGE value="add update image old first" />
@@ -557,7 +571,8 @@
     <MESSAGE value="add on load music" />
     <MESSAGE value="add fix list upload" />
     <MESSAGE value="add rename index list rita" />
-    <option name="LAST_COMMIT_MESSAGE" value="add rename index list rita" />
+    <MESSAGE value="add fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fix" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">
