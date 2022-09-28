@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add fix">
-      <change afterPath="$PROJECT_DIR$/kisa/img/fancly.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kisa/img/inst.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redirect/fancly.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redirect/inst.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redirect/new.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redirect/only.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redirect/patreon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/olya/img/fancly.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kisa/img/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/kisa/img/only.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kisa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kisa/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redirect/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/redirect/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/olya/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/olya/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/olya/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/olya/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +49,9 @@
         <option value="$PROJECT_DIR$/kisa/index.html" />
       </list>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -102,30 +98,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/kisa/img" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/profit/node_modules/typescript/lib" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/macbook/Desktop/PROJECTS/2020/interhub.github.io/olya/img",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/olya/img" />
       <recent name="$PROJECT_DIR$/kisa/img" />
       <recent name="$PROJECT_DIR$/redirect" />
       <recent name="$PROJECT_DIR$/public/music/list/images" />
       <recent name="$PROJECT_DIR$/public/music/list/files" />
-      <recent name="$PROJECT_DIR$/public/music" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/music/list" />
@@ -264,6 +254,7 @@
       <workItem from="1651140420827" duration="3362000" />
       <workItem from="1651752144060" duration="1100000" />
       <workItem from="1654189389613" duration="2180000" />
+      <workItem from="1664385625602" duration="265000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -542,7 +533,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
