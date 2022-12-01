@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add fix">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/olya/img/fancly.png" afterDir="false" />
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add fix 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/olya/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/olya/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/olya/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/olya/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kisa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kisa/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +101,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/macbook/Desktop/PROJECTS/2020/interhub.github.io/olya/img",
+    "last_opened_file_path": "/Users/macbook/Desktop/PROJECTS/2020/interhub.github.io",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -254,7 +251,8 @@
       <workItem from="1651140420827" duration="3362000" />
       <workItem from="1651752144060" duration="1100000" />
       <workItem from="1654189389613" duration="2180000" />
-      <workItem from="1664385625602" duration="265000" />
+      <workItem from="1664385625602" duration="629000" />
+      <workItem from="1669903508916" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -487,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651754086157</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="add fix 2">
+      <created>1664385911543</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1664385911543</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -537,7 +542,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add publish parallax-lib-2.gif" />
     <MESSAGE value="add video" />
     <MESSAGE value="add update image old first" />
     <MESSAGE value="add push" />
@@ -562,7 +566,8 @@
     <MESSAGE value="add fix list upload" />
     <MESSAGE value="add rename index list rita" />
     <MESSAGE value="add fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="add fix" />
+    <MESSAGE value="add fix 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fix 2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">
