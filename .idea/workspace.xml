@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add fix 2">
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="change gelya link tg">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kisa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kisa/index.html" afterDir="false" />
     </list>
@@ -252,7 +252,7 @@
       <workItem from="1651752144060" duration="1100000" />
       <workItem from="1654189389613" duration="2180000" />
       <workItem from="1664385625602" duration="629000" />
-      <workItem from="1669903508916" duration="18000" />
+      <workItem from="1669903508916" duration="798000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -492,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664385911543</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="change gelya link tg">
+      <created>1669903557756</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1669903557756</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -542,7 +549,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add video" />
     <MESSAGE value="add update image old first" />
     <MESSAGE value="add push" />
     <MESSAGE value="add fix linter" />
@@ -567,7 +573,8 @@
     <MESSAGE value="add rename index list rita" />
     <MESSAGE value="add fix" />
     <MESSAGE value="add fix 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="add fix 2" />
+    <MESSAGE value="change gelya link tg" />
+    <option name="LAST_COMMIT_MESSAGE" value="change gelya link tg" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">
