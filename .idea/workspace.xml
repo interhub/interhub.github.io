@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="change gelya link tg">
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="only removed">
+      <change afterPath="$PROJECT_DIR$/redirect/reddit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redirect/tw.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kisa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kisa/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redirect/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/redirect/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,16 +104,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/macbook/Desktop/PROJECTS/2020/interhub.github.io",
+    "last_opened_file_path": "/Users/macbook/Desktop/PROJECTS/2020/interhub.github.io/redirect",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/redirect" />
       <recent name="$PROJECT_DIR$/olya/img" />
       <recent name="$PROJECT_DIR$/kisa/img" />
-      <recent name="$PROJECT_DIR$/redirect" />
       <recent name="$PROJECT_DIR$/public/music/list/images" />
       <recent name="$PROJECT_DIR$/public/music/list/files" />
     </key>
@@ -252,7 +259,10 @@
       <workItem from="1651752144060" duration="1100000" />
       <workItem from="1654189389613" duration="2180000" />
       <workItem from="1664385625602" duration="629000" />
-      <workItem from="1669903508916" duration="798000" />
+      <workItem from="1669903508916" duration="811000" />
+      <workItem from="1669911023022" duration="51000" />
+      <workItem from="1673781364004" duration="28000" />
+      <workItem from="1675762010850" duration="447000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -499,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669903557756</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="only removed">
+      <created>1669911008622</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1669911008622</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -549,7 +566,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add update image old first" />
     <MESSAGE value="add push" />
     <MESSAGE value="add fix linter" />
     <MESSAGE value="add save stayfitt" />
@@ -574,7 +590,8 @@
     <MESSAGE value="add fix" />
     <MESSAGE value="add fix 2" />
     <MESSAGE value="change gelya link tg" />
-    <option name="LAST_COMMIT_MESSAGE" value="change gelya link tg" />
+    <MESSAGE value="only removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="only removed" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">
