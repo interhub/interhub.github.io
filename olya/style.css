@@ -83,7 +83,7 @@ div:nth-child(5) > img {
     margin: 11px;
 }
 
-#only {
+.only {
     height: 130%;
     margin-top: -8px;
 }
