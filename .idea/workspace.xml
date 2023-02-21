@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="remove all old codes">
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add new links only + redirects + olya">
       <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/olya/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/olya/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/olya/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/olya/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redirect/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/redirect/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +264,8 @@
       <workItem from="1675949838746" duration="650000" />
       <workItem from="1675966227694" duration="1862000" />
       <workItem from="1676037813159" duration="846000" />
-      <workItem from="1676933562971" duration="291000" />
+      <workItem from="1676933562971" duration="404000" />
+      <workItem from="1677017181115" duration="369000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -534,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675966608761</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="add new links only + redirects + olya">
+      <created>1676933886494</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1676933886494</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -584,7 +590,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add save stayfitt" />
     <MESSAGE value="change image" />
     <MESSAGE value="add publish" />
     <MESSAGE value="add flubber example video" />
@@ -609,7 +614,8 @@
     <MESSAGE value="only removed" />
     <MESSAGE value="add new redirects nekit" />
     <MESSAGE value="remove all old codes" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove all old codes" />
+    <MESSAGE value="add new links only + redirects + olya" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new links only + redirects + olya" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">
