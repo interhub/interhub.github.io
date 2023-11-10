@@ -13,7 +13,7 @@
     "@types/chartist": "^0.11.1",
     "@types/dat.gui": "^0.7.7",
     "@types/lodash": "^4.14.178",
-    "axios": "^0.24.0",
+    "axios": "^1.6.0",
     "browser-or-node": "^2.0.0",
     "chartist": "^0.11.4",
     "dat.gui": "^0.7.7",
