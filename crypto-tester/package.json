@@ -15,7 +15,7 @@
     "@types/lodash": "^4.14.177",
     "@types/table": "^6.3.2",
     "asciichart": "^1.5.25",
-    "axios": "^0.24.0",
+    "axios": "^1.6.0",
     "browser-or-node": "^2.0.0",
     "chartist": "^0.11.4",
     "console.table": "^0.10.0",
