@@ -5,8 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add new main page stepan">
+      <change afterPath="$PROJECT_DIR$/yoursonya/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/interhub.github.io.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kisa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kisa/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/links/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/links/.idea/links.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/links/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/links/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/links/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/olya/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/olya/.idea/links.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/olya/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/olya/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/olya/.idea/vcs.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +69,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
       <list>
@@ -97,26 +119,28 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/macbook/Desktop/PROJECTS/2020/interhub.github.io",
+    "last_opened_file_path": "/Users/macbook/Desktop/PROJECTS/2021/interhub.github.io/yoursonya",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/macbook/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/yoursonya" />
       <recent name="$PROJECT_DIR$/redirect" />
       <recent name="$PROJECT_DIR$/olya/img" />
       <recent name="$PROJECT_DIR$/kisa/img" />
       <recent name="$PROJECT_DIR$/public/music/list/images" />
-      <recent name="$PROJECT_DIR$/public/music/list/files" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/music/list" />
