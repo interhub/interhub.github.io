@@ -4,28 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add new main page stepan">
-      <change afterPath="$PROJECT_DIR$/yoursonya/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/interhub.github.io.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add new sonya links">
+      <change afterPath="$PROJECT_DIR$/redirect/tg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/links/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/links/.idea/links.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/links/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/links/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/links/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/olya/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/olya/.idea/links.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/olya/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/olya/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/olya/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redirect/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/redirect/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +106,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/macbook/Desktop/PROJECTS/2021/interhub.github.io/yoursonya",
+    "last_opened_file_path": "/Users/macbook/Desktop/PROJECTS/2021/interhub.github.io/redirect",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -136,8 +118,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/yoursonya" />
       <recent name="$PROJECT_DIR$/redirect" />
+      <recent name="$PROJECT_DIR$/yoursonya" />
       <recent name="$PROJECT_DIR$/olya/img" />
       <recent name="$PROJECT_DIR$/kisa/img" />
       <recent name="$PROJECT_DIR$/public/music/list/images" />
@@ -621,7 +603,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add publish" />
     <MESSAGE value="add flubber example video" />
     <MESSAGE value="create new library" />
     <MESSAGE value="add address redirect" />
@@ -646,7 +627,8 @@
     <MESSAGE value="remove all old codes" />
     <MESSAGE value="add new links only + redirects + olya" />
     <MESSAGE value="add new main page stepan" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new main page stepan" />
+    <MESSAGE value="add new sonya links" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new sonya links" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">
