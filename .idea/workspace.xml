@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add wedding cite template">
-      <change afterPath="$PROJECT_DIR$/wedding/Макет 3 с фото_files/main_photo.JPG" afterDir="false" />
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add wedding site">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wedding/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/index.html" afterDir="false" />
     </list>
@@ -603,7 +602,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add fix ram save" />
     <MESSAGE value="add low lines differents" />
     <MESSAGE value="add number fixes" />
     <MESSAGE value="add fix numbers more" />
@@ -628,7 +626,8 @@
     <MESSAGE value="add new redirect tg link" />
     <MESSAGE value="add olya links" />
     <MESSAGE value="add wedding cite template" />
-    <option name="LAST_COMMIT_MESSAGE" value="add wedding cite template" />
+    <MESSAGE value="add wedding site" />
+    <option name="LAST_COMMIT_MESSAGE" value="add wedding site" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">
