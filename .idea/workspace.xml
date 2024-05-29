@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add olya links">
-      <change afterPath="$PROJECT_DIR$/wedding/index.html" afterDir="false" />
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="add wedding cite template">
+      <change afterPath="$PROJECT_DIR$/wedding/Макет 3 с фото_files/main_photo.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wedding/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,31 +99,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/macbook/Desktop/PROJECTS/2021/interhub.github.io&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/macbook/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/macbook/Desktop/PROJECTS/2021/interhub.github.io/wedding/Макет 3 с фото_files",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/macbook/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wedding/Макет 3 с фото_files" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/olya/img" />
       <recent name="$PROJECT_DIR$/redirect" />
       <recent name="$PROJECT_DIR$/yoursonya" />
-      <recent name="$PROJECT_DIR$/kisa/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wedding" />
       <recent name="$PROJECT_DIR$/public/music/list" />
       <recent name="$PROJECT_DIR$/phonebase" />
     </key>
@@ -601,7 +603,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add address redirect" />
     <MESSAGE value="add fix ram save" />
     <MESSAGE value="add low lines differents" />
     <MESSAGE value="add number fixes" />
@@ -626,7 +627,8 @@
     <MESSAGE value="add new sonya links" />
     <MESSAGE value="add new redirect tg link" />
     <MESSAGE value="add olya links" />
-    <option name="LAST_COMMIT_MESSAGE" value="add olya links" />
+    <MESSAGE value="add wedding cite template" />
+    <option name="LAST_COMMIT_MESSAGE" value="add wedding cite template" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">
