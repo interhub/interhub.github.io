@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="fix wedding">
-      <change afterPath="$PROJECT_DIR$/wedding/Макет 3 с фото_files/wedding_top_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wedding/Макет 3 с фото_files/wedding_top_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wedding/Макет 3 с фото_files/main_photo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wedding/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
