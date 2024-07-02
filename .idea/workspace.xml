@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="fix wedding">
-      <change afterPath="$PROJECT_DIR$/wedding/Макет 3 с фото_files/main_photo.png" afterDir="false" />
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="fix wedding 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wedding/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -610,7 +610,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add fix title" />
     <MESSAGE value="add fix flex grid" />
     <MESSAGE value="add repo" />
     <MESSAGE value="add repo 2" />
@@ -635,7 +634,8 @@
     <MESSAGE value="change nekit link inst" />
     <MESSAGE value="fix ton olya link" />
     <MESSAGE value="fix wedding" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix wedding" />
+    <MESSAGE value="fix wedding 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix wedding 2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">
