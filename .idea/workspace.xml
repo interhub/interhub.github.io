@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="fix wedding 2">
-      <change afterPath="$PROJECT_DIR$/shawty_katty/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shawty_katty/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shawty_katty/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shawty_katty/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shawty_katty/img/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shawty_katty/img/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shawty_katty/img/avatar.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shawty_katty/img/boosty.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shawty_katty/img/inst.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shawty_katty/img/new.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shawty_katty/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shawty_katty/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kisa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kisa/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +68,6 @@
     <option name="height" value="961" />
   </component>
   <component name="ProjectId" id="1qB3WNoLLzmR6xhLz0aM0Ap6006" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -114,13 +101,18 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "/Users/macbook/Desktop/PROJECTS/2021/interhub.github.io/shawty_katty/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
     "ts.external.directory.path": "/Users/macbook/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -205,7 +197,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17890.13" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
       </set>
     </attachedChunks>
   </component>
