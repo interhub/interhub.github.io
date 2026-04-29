@@ -52,34 +52,38 @@
     .lead { margin-top: 20px; font-size: clamp(22px, 3vw, 34px); max-width: 760px; font-weight: 850; letter-spacing: -.035em; }
     .badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
     .badge { border: 2px solid var(--ink); border-radius: 999px; background: var(--cream); padding: 9px 13px; font-weight: 950; box-shadow: 4px 4px 0 var(--ink); }
-    .cat-wall { position: relative; min-height: 590px; }
-    .cat-card { position: absolute; border: 3px solid var(--ink); border-radius: 32px; overflow: hidden; background: var(--cream); box-shadow: 12px 12px 0 var(--ink); }
+    .cat-wall { position: relative; min-height: 590px; animation: wallDrift 9s ease-in-out infinite; will-change: transform; }
+    .cat-card { position: absolute; border: 3px solid var(--ink); border-radius: 32px; overflow: hidden; background: var(--cream); box-shadow: 12px 12px 0 var(--ink); will-change: transform; transform-origin: center; }
     .cat-card img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(1.08) contrast(1.02); }
-    .cat-card.one { width: 62%; height: 350px; right: 5%; top: 20px; transform: rotate(4deg); animation: levitateOne 7s ease-in-out infinite; }
-    .cat-card.two { width: 52%; height: 260px; left: 0; top: 250px; transform: rotate(-7deg); animation: levitateTwo 8.5s ease-in-out infinite; }
-    .cat-card.three { width: 42%; height: 210px; right: 0; top: 390px; transform: rotate(8deg); animation: levitateThree 7.8s ease-in-out infinite; }
-    .sticker { position: absolute; z-index: 2; border: 3px solid var(--ink); border-radius: 24px; background: var(--pink); padding: 16px 18px; font-weight: 1000; box-shadow: 8px 8px 0 var(--ink); transform: rotate(-6deg); }
-    .sticker.top { left: 22px; top: 70px; animation: stickerFloatTop 6.4s ease-in-out infinite; }
-    .sticker.bottom { right: 44px; bottom: 34px; background: var(--blue); transform: rotate(5deg); animation: stickerFloatBottom 7.2s ease-in-out infinite; }
+    .cat-card.one { width: 62%; height: 350px; right: 5%; top: 20px; transform: rotate(4deg); animation: levitateOne 4.8s ease-in-out infinite; animation-delay: -1.2s; }
+    .cat-card.two { width: 52%; height: 260px; left: 0; top: 250px; transform: rotate(-7deg); animation: levitateTwo 5.6s ease-in-out infinite; animation-delay: -2.1s; }
+    .cat-card.three { width: 42%; height: 210px; right: 0; top: 390px; transform: rotate(8deg); animation: levitateThree 5.2s ease-in-out infinite; animation-delay: -3s; }
+    .sticker { position: absolute; z-index: 2; border: 3px solid var(--ink); border-radius: 24px; background: var(--pink); padding: 16px 18px; font-weight: 1000; box-shadow: 8px 8px 0 var(--ink); transform: rotate(-6deg); will-change: transform; transform-origin: center; }
+    .sticker.top { left: 22px; top: 70px; animation: stickerFloatTop 4.2s ease-in-out infinite; animation-delay: -.8s; }
+    .sticker.bottom { right: 44px; bottom: 34px; background: var(--blue); transform: rotate(5deg); animation: stickerFloatBottom 4.7s ease-in-out infinite; animation-delay: -1.6s; }
+    @keyframes wallDrift {
+      0%, 100% { transform: translate3d(0, 0, 0); }
+      50% { transform: translate3d(0, -10px, 0); }
+    }
     @keyframes levitateOne {
       0%, 100% { transform: translate3d(0, 0, 0) rotate(4deg); }
-      50% { transform: translate3d(-10px, -16px, 0) rotate(2.5deg); }
+      50% { transform: translate3d(-24px, -30px, 0) rotate(1deg); }
     }
     @keyframes levitateTwo {
       0%, 100% { transform: translate3d(0, 0, 0) rotate(-7deg); }
-      50% { transform: translate3d(12px, -12px, 0) rotate(-5deg); }
+      50% { transform: translate3d(26px, -24px, 0) rotate(-3deg); }
     }
     @keyframes levitateThree {
       0%, 100% { transform: translate3d(0, 0, 0) rotate(8deg); }
-      50% { transform: translate3d(-8px, 14px, 0) rotate(10deg); }
+      50% { transform: translate3d(-22px, 24px, 0) rotate(13deg); }
     }
     @keyframes stickerFloatTop {
       0%, 100% { transform: translate3d(0, 0, 0) rotate(-6deg); }
-      50% { transform: translate3d(8px, -10px, 0) rotate(-3deg); }
+      50% { transform: translate3d(18px, -20px, 0) rotate(-1deg); }
     }
     @keyframes stickerFloatBottom {
       0%, 100% { transform: translate3d(0, 0, 0) rotate(5deg); }
-      50% { transform: translate3d(-10px, 8px, 0) rotate(8deg); }
+      50% { transform: translate3d(-20px, 18px, 0) rotate(10deg); }
     }
     section { padding: 54px 0; }
     .panel { border: 3px solid var(--ink); border-radius: 38px; background: rgba(255,250,240,.84); box-shadow: var(--shadow); padding: clamp(22px, 4vw, 42px); }
@@ -131,10 +135,6 @@
       .case.placeholder { grid-column: auto; min-height: 330px; }
       .vibe-card { transform: none; }
       section { padding: 34px 0; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .cat-card,
-      .sticker { animation: none !important; }
     }
   </style>
 </head>
