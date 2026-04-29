@@ -74,6 +74,10 @@
     .case { position: relative; min-height: 410px; display: flex; flex-direction: column; border: 3px solid var(--ink); border-radius: 34px; overflow: hidden; background: var(--cream); box-shadow: 9px 9px 0 var(--ink); }
     .case img { height: 142px; width: 100%; object-fit: cover; border-bottom: 3px solid var(--ink); }
     .case-body { padding: 18px; display: flex; flex: 1; flex-direction: column; }
+    .case.placeholder { grid-column: span 2; min-height: 410px; justify-content: center; padding: clamp(24px, 4vw, 44px); background: radial-gradient(circle at 20% 20%, var(--pink), transparent 120px), radial-gradient(circle at 86% 24%, var(--blue), transparent 150px), var(--dark); color: var(--cream); }
+    .case.placeholder h3 { max-width: 720px; font-size: clamp(36px, 5vw, 70px); line-height: .9; letter-spacing: -.07em; text-transform: uppercase; }
+    .case.placeholder p { max-width: 560px; margin-top: 18px; color: #e9decc; font-size: 20px; font-weight: 850; }
+    .case.placeholder .open { width: fit-content; background: var(--lime); color: var(--ink); }
     .kind { color: var(--muted); font-weight: 950; text-transform: lowercase; margin: 4px 0 12px; }
     .result { margin-top: 14px; border-radius: 18px; background: var(--lime); padding: 12px; font-weight: 1000; }
     .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 16px; }
@@ -104,6 +108,7 @@
       .cat-card.three { display: none; }
       .sticker { font-size: 14px; padding: 12px 14px; }
       .numbers, .vibe, .case-grid, .contacts { grid-template-columns: 1fr; }
+      .case.placeholder { grid-column: auto; min-height: 330px; }
       .vibe-card { transform: none; }
       section { padding: 34px 0; }
     }
@@ -165,6 +170,11 @@
                   <div class="chips">${chips(c.tags)}</div>
                 </div>
               </article>`).join('')}
+              <article class="case placeholder">
+                <h3>место для вашего супер крутого бизнес-продукта</h3>
+                <p>Сайт, приложение, автоматизация, личный кабинет или просто нормальная форма заявок - можно сделать красиво и без боли.</p>
+                <a class="open" href="#contact">обсудить идею ↘</a>
+              </article>
           </div>
         </section>
 
