@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "title": "Stepan - digital products for real business",
+    "description": "Короткий дружелюбный профиль: сайты, приложения, автоматизация бизнеса, простые цифровые решения и запуск продуктов.",
+    "language": "ru"
+  },
+  "hero": {
+    "name": "Степан Турченко",
+    "tag": "помогаю бизнесу с сайтами, приложениями и автоматизацией",
+    "headline": "Делаю простые сайты, приложения, AI-фичи и автоматизацию, чтобы бизнесу было легче продавать, обслуживать клиентов и меньше делать руками.",
+    "badges": [
+      "sites",
+      "apps",
+      "automation",
+      "AI",
+      "payments",
+      "analytics"
+    ],
+    "cats": [
+      "assets/generated-cats/stepan-cat-1.webp",
+      "assets/generated-cats/stepan-cat-2.webp",
+      "assets/generated-cats/stepan-cat-3.webp",
+      "assets/generated-cats/stepan-cat-4.webp",
+      "assets/generated-cats/stepan-cat-5.webp"
+    ]
+  },
+  "numbers": [
+    {
+      "value": "7+",
+      "label": "лет делаю продукты"
+    },
+    {
+      "value": "10+",
+      "label": "бизнес-кейсов"
+    },
+    {
+      "value": "100k+",
+      "label": "скачиваний у приложения"
+    },
+    {
+      "value": "99.9%",
+      "label": "стабильность продукта"
+    }
+  ],
+  "vibe": [
+    {
+      "title": "Сделать сайт",
+      "text": "Лендинг, сайт услуг, страница продукта, форма заявки, базовая аналитика."
+    },
+    {
+      "title": "Автоматизировать",
+      "text": "Заявки, оплаты, уведомления, CRM, таблицы, админки, меньше ручной работы."
+    },
+    {
+      "title": "Запустить продукт",
+      "text": "Приложение, личный кабинет, оплата, публикация, понятная поддержка."
+    },
+    {
+      "title": "Починить",
+      "text": "Когда сайт или приложение зависли, подрядчик пропал, а бизнесу надо работать."
+    }
+  ],
+  "cases": [
+    {
+      "title": "Painta",
+      "kind": "AI art coach",
+      "text": "Собрали AI-продукт: приложение, сайтовая логика, админка, платежи и автоматизации.",
+      "result": "Продукт работает, растет и помогает продавать.",
+      "url": "https://painta.io",
+      "cat": 0,
+      "tags": [
+        "AI",
+        "mobile",
+        "payments"
+      ]
+    },
+    {
+      "title": "Aspect Health",
+      "kind": "women health startup",
+      "text": "Помогал развивать сервисы для здоровья: приложение, серверная часть, аналитика и стабильная работа.",
+      "result": "99.9% стабильности, +40% вовлеченности.",
+      "url": "https://www.aspect-health.com",
+      "cat": 1,
+      "tags": [
+        "health",
+        "scale",
+        "analytics"
+      ]
+    },
+    {
+      "title": "Московский спорт",
+      "kind": "recovery mode",
+      "text": "Приложение было сломано после подрядчика. Разобрали, починили, выпустили обновление.",
+      "result": "Сервис снова стабильно работает.",
+      "url": "https://sport.mos.ru/",
+      "cat": 2,
+      "tags": [
+        "fix",
+        "QA",
+        "release"
+      ]
+    },
+    {
+      "title": "Bigam",
+      "kind": "retail app",
+      "text": "Приложение для магазина: каталог, заказы, доставка, цены, интеграции и публикация.",
+      "result": "100k+ скачиваний и 5.0 рейтинг.",
+      "url": "https://www.bigam.ru/",
+      "cat": 3,
+      "tags": [
+        "retail",
+        "1C",
+        "mobile"
+      ]
+    },
+    {
+      "title": "Bismap",
+      "kind": "B2B service",
+      "text": "Приложение для компаний и тендеров: регистрация бизнеса, заявки, backend и управление без постоянной команды разработки.",
+      "result": "Проект запустили и передали заказчику под самостоятельное управление.",
+      "url": "https://bismap.net/",
+      "cat": 4,
+      "tags": [
+        "B2B",
+        "mobile",
+        "backend"
+      ]
+    },
+    {
+      "title": "Stayfit",
+      "kind": "corporate wellbeing",
+      "text": "Корпоративный спорт-сервис: приложение, рассылки, внутренние процессы и поддержка команды.",
+      "result": "Награды в well-being 2022.",
+      "url": "https://stayfitt.ru/",
+      "cat": 0,
+      "tags": [
+        "sport",
+        "B2B",
+        "team"
+      ]
+    },
+    {
+      "title": "GroupQ",
+      "kind": "АЗС loyalty",
+      "text": "Мобильное приложение для АЗС: бонусы, акции, цены топлива, карты и интеграции с внутренними системами.",
+      "result": "10k+ скачиваний, продукт работает.",
+      "url": "https://ggroup-ural.ru/",
+      "cat": 1,
+      "tags": [
+        "loyalty",
+        "maps",
+        "API"
+      ]
+    }
+  ],
+  "stack": [
+    "React Native",
+    "Node.js",
+    "TypeScript",
+    "Nest.js",
+    "Supabase",
+    "Directus",
+    "Postgres",
+    "N8N",
+    "Amplitude",
+    "Datadog",
+    "Adapty",
+    "Stripe",
+    "CI/CD"
+  ],
+  "contacts": [
+    {
+      "label": "Telegram",
+      "value": "t.me/Stepan_Turchenko",
+      "href": "https://t.me/Stepan_Turchenko"
+    },
+    {
+      "label": "Email",
+      "value": "stepanstepan4@gmail.com",
+      "href": "mailto:stepanstepan4@gmail.com"
+    },
+    {
+      "label": "Phone",
+      "value": "+7 962 263 98 09",
+      "href": "tel:+79622639809"
+    },
+    {
+      "label": "LinkedIn",
+      "value": "linkedin.com/in/stepanturchenko",
+      "href": "https://www.linkedin.com/in/stepanturchenko"
+    }
+  ]
+}
