@@ -140,7 +140,7 @@
     .case.small p { font-size: 10px; line-height: 1.25; }
     .case.small .kind { font-size: 9px; margin-bottom: 5px; }
     .case.small .result { margin-top: 6px; border-radius: 10px; padding: 6px; font-size: 9px; }
-    .case.small .open { margin-top: 7px; padding: 6px 8px; font-size: 9px; }
+    .case.small .open { margin-top: auto; padding: 6px 8px; font-size: 9px; }
     .case.small .chips { gap: 4px; padding-top: 7px; }
     .case.small .chip { border-width: 1px; padding: 3px 5px; font-size: 8px; }
     .case.placeholder { min-height: 334px; justify-content: center; padding: 20px; background: radial-gradient(circle at 20% 20%, var(--pink), transparent 120px), radial-gradient(circle at 86% 24%, var(--blue), transparent 150px), var(--dark); color: var(--cream); }
@@ -149,9 +149,9 @@
     .case.placeholder .open { width: fit-content; background: var(--lime); color: var(--ink); }
     .kind { color: var(--muted); font-size: 12px; font-weight: 950; text-transform: lowercase; margin: 3px 0 8px; }
     .result { margin-top: 10px; border-radius: 14px; background: var(--lime); padding: 8px; font-size: 12px; font-weight: 1000; }
-    .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 12px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 12px; }
     .chip { border: 2px solid var(--ink); border-radius: 999px; background: var(--blue); padding: 5px 8px; font-size: 11px; font-weight: 1000; }
-    .open { display: inline-flex; align-items: center; justify-content: center; margin-top: 10px; border: 2px solid var(--ink); border-radius: 999px; background: var(--ink); color: var(--cream); padding: 8px 10px; font-size: 12px; font-weight: 1000; }
+    .open { display: inline-flex; align-items: center; justify-content: center; margin-top: auto; border: 2px solid var(--ink); border-radius: 999px; background: var(--ink); color: var(--cream); padding: 8px 10px; font-size: 12px; font-weight: 1000; }
     .stack { display: flex; flex-wrap: wrap; gap: 10px; }
     .stack .chip { background: var(--cream); font-size: 15px; padding: 9px 12px; box-shadow: 4px 4px 0 var(--ink); }
     .contacts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
@@ -206,8 +206,8 @@
           <div class="kind">${esc(c.kind)}</div>
           <p>${esc(c.text)}</p>
           <div class="result">${esc(c.result)}</div>
-          <a class="open" href="${esc(c.url)}" target="_blank" rel="noreferrer">посмотреть продукт ↗</a>
           <div class="chips">${chips(c.tags)}</div>
+          <a class="open" href="${esc(c.url)}" target="_blank" rel="noreferrer">посмотреть продукт ↗</a>
         </div>
       </article>`;
 
