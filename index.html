@@ -125,8 +125,12 @@
     .audience h3 { font-size: 20px; }
     .audience p { margin-top: 8px; color: var(--muted); font-weight: 850; }
     .case-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; align-items: stretch; }
-    .case { position: relative; min-height: 334px; height: 100%; display: flex; flex-direction: column; border: 3px solid var(--ink); border-radius: 26px; overflow: hidden; background: var(--cream); box-shadow: 6px 6px 0 var(--ink); }
-    .case img { aspect-ratio: 16 / 9; width: 100%; height: auto; object-fit: cover; object-position: top center; border-bottom: 3px solid var(--ink); }
+    .case { position: relative; min-height: 334px; height: 100%; display: flex; flex-direction: column; border: 3px solid var(--ink); border-radius: 26px; overflow: hidden; background: var(--cream); box-shadow: 6px 6px 0 var(--ink); transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .case img { aspect-ratio: 16 / 9; width: 100%; height: auto; object-fit: cover; object-position: top center; border-bottom: 3px solid var(--ink); filter: brightness(0.8); transition: transform 0.25s ease, filter 0.25s ease; }
+    @media (hover: hover) and (pointer: fine) {
+      .case:hover { transform: scale(1.03) translateY(-4px); box-shadow: 8px 12px 0 var(--ink); z-index: 10; }
+      .case:hover img { transform: scale(1.08); filter: brightness(0.9); }
+    }
     .case-body { padding: 12px; display: flex; flex: 1; flex-direction: column; }
     .case h3 { font-size: 19px; }
     .case p { font-size: 13px; }
