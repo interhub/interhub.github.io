@@ -76,6 +76,7 @@
   ],
   "cases": [
     {
+      "small": false,
       "title": "Painta",
       "kind": "AI art coach",
       "text": "Собрали AI-продукт: приложение, сайтовая логика, админка, платежи и автоматизации.",
@@ -86,9 +87,11 @@
         "AI",
         "mobile",
         "payments"
-      ]
+      ],
+      "image": "assets/project-screenshots/painta.png"
     },
     {
+      "small": false,
       "title": "Aspect Health",
       "kind": "women health startup",
       "text": "Помогал развивать сервисы для здоровья: приложение, серверная часть, аналитика и стабильная работа.",
@@ -99,9 +102,11 @@
         "health",
         "scale",
         "analytics"
-      ]
+      ],
+      "image": "assets/project-screenshots/aspect-health.png"
     },
     {
+      "small": false,
       "title": "Московский спорт",
       "kind": "recovery mode",
       "text": "Приложение было сломано после подрядчика. Разобрали, починили, выпустили обновление.",
@@ -112,9 +117,11 @@
         "fix",
         "QA",
         "release"
-      ]
+      ],
+      "image": "assets/project-screenshots/mos-sport.png"
     },
     {
+      "small": false,
       "title": "Bigam",
       "kind": "retail app",
       "text": "Приложение для магазина: каталог, заказы, доставка, цены, интеграции и публикация.",
@@ -125,9 +132,11 @@
         "retail",
         "1C",
         "mobile"
-      ]
+      ],
+      "image": "assets/project-screenshots/bigam.png"
     },
     {
+      "small": false,
       "title": "Bismap",
       "kind": "B2B service",
       "text": "Приложение для компаний и тендеров: регистрация бизнеса, заявки, backend и управление без постоянной команды разработки.",
@@ -138,9 +147,11 @@
         "B2B",
         "mobile",
         "backend"
-      ]
+      ],
+      "image": "assets/project-screenshots/bismap.png"
     },
     {
+      "small": false,
       "title": "Stayfit",
       "kind": "corporate wellbeing",
       "text": "Корпоративный спорт-сервис: приложение, рассылки, внутренние процессы и поддержка команды.",
@@ -151,9 +162,11 @@
         "sport",
         "B2B",
         "team"
-      ]
+      ],
+      "image": "assets/project-screenshots/stayfit.png"
     },
     {
+      "small": false,
       "title": "GroupQ",
       "kind": "АЗС loyalty",
       "text": "Мобильное приложение для АЗС: бонусы, акции, цены топлива, карты и интеграции с внутренними системами.",
@@ -164,7 +177,68 @@
         "loyalty",
         "maps",
         "API"
-      ]
+      ],
+      "image": "assets/project-screenshots/groupq.png"
+    },
+    {
+      "small": true,
+      "title": "Ageeva Stom",
+      "kind": "dental clinic",
+      "text": "Сайт частной стоматологии в Калининграде: доверие к врачу, услуги, запись и маршрут.",
+      "result": "Клиника понятнее выглядит онлайн.",
+      "url": "https://ageevastom.ru",
+      "cat": 2,
+      "tags": [
+        "site",
+        "clinic",
+        "booking"
+      ],
+      "image": "assets/project-screenshots/ageeva-stom.png"
+    },
+    {
+      "small": true,
+      "title": "Солнечная Арка",
+      "kind": "greenhouse store",
+      "text": "Витрина теплиц и садовых конструкций: каталог, преимущества, доставка и заявки.",
+      "result": "Товары проще выбрать и заказать.",
+      "url": "http://solnechnayaarka.ru",
+      "cat": 3,
+      "tags": [
+        "catalog",
+        "leads",
+        "retail"
+      ],
+      "image": "assets/project-screenshots/solnechnaya-arka.png"
+    },
+    {
+      "small": true,
+      "title": "Nana800",
+      "kind": "low-code platform",
+      "text": "Платформа автоматизации: визуальные сценарии, интеграции, AI-блоки и запуск без инфраструктуры.",
+      "result": "Идеи быстрее превращаются в рабочие процессы.",
+      "url": "http://nana800.io",
+      "cat": 4,
+      "tags": [
+        "AI",
+        "low-code",
+        "automation"
+      ],
+      "image": "assets/project-screenshots/nana800.png"
+    },
+    {
+      "small": true,
+      "title": "ProFitness",
+      "kind": "fitness chain",
+      "text": "Сайт сети фитнес-клубов: услуги, 4 локации, заявки и первый контакт с клиентом.",
+      "result": "Клубы и абонемент видно сразу.",
+      "url": "https://pro-fitness-39.ru",
+      "cat": 0,
+      "tags": [
+        "fitness",
+        "landing",
+        "leads"
+      ],
+      "image": "assets/project-screenshots/profitness.png"
     }
   ],
   "stack": [
