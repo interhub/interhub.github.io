@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="fix kist fancly 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/olya/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/olya/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/olya/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/olya/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,7 +299,8 @@
       <workItem from="1689193166399" duration="50000" />
       <workItem from="1777486780615" duration="823000" />
       <workItem from="1778499330791" duration="293000" />
-      <workItem from="1778520775528" duration="1001000" />
+      <workItem from="1778520775528" duration="1012000" />
+      <workItem from="1778522801094" duration="1372000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -580,7 +582,15 @@
       <option name="project" value="LOCAL" />
       <updated>1677017583783</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="fix kist fancly 1">
+      <option name="closed" value="true" />
+      <created>1778521785195</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1778521785195</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

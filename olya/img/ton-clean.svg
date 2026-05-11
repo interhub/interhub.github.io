@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" role="img" aria-label="Ton.Place">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#37AEE2" d="M32 7 56 19.4 32 57 8 19.4 32 7Z"/>
+    <path fill="#BDEBFF" d="M12.9 21.2h38.2L32 51.1 12.9 21.2Z"/>
+    <path fill="#fff" d="M18.8 22.3 32 50.1l13.2-27.8H18.8Z" opacity=".75"/>
+    <path fill="#fff" d="M32 12.5 18.8 22.3h26.4L32 12.5Z" opacity=".92"/>
+    <text x="74" y="42" fill="#fff" font-family="Manrope, Arial, sans-serif" font-size="30" font-weight="800">Ton.Place</text>
+  </g>
+</svg>
