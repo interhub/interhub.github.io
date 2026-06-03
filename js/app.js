@@ -1435,6 +1435,7 @@
     renderAll();
     initGrain();
     initNavScroll();
+    initBackToTop();
   }
 
   if (document.readyState === "loading") {

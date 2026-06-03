@@ -173,6 +173,7 @@ window.SITE_CONTENT = {
     },
     nav: {
       wordmark: "Stepan Turchenko",
+      tagline: "instead of a whole engineering team",
       links: [
         { id: "work", label: "Work" },
         { id: "approach", label: "Approach" },
@@ -327,6 +328,7 @@ window.SITE_CONTENT = {
     },
     nav: {
       wordmark: "斯捷潘·图尔琴科",
+      tagline: "一人顶一支工程团队",
       links: [
         { id: "work", label: "作品" },
         { id: "approach", label: "方法" },
