@@ -1,298 +1,138 @@
 <!doctype html>
-<html lang="ru">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#fff4df" />
-  <title>Сайты, приложения и автоматизация для бизнеса</title>
-  <meta name="description" content="Степан Турченко помогает бизнесу запускать сайты, приложения, CRM, платежи, заявки, аналитику и админки без лишней сложности." />
-  <meta name="keywords" content="сайты для бизнеса, разработка сайтов, приложения для бизнеса, автоматизация бизнеса, CRM для малого бизнеса, прием заявок, онлайн платежи, бизнес аналитика, админки, лендинги, разработка MVP, Степан Турченко" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta name="author" content="Степан Турченко" />
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-  <link rel="canonical" href="https://interhub.github.io/" />
-  <link rel="sitemap" type="application/xml" href="./sitemap.xml" />
-  <link rel="alternate" type="text/plain" href="./llms.txt" title="LLM content summary" />
-  <link rel="icon" href="./favicon.ico" sizes="any" />
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="ru_RU" />
-  <meta property="og:site_name" content="Степан Турченко" />
-  <meta property="og:title" content="Сайты, приложения и автоматизация для бизнеса" />
-  <meta property="og:description" content="Сайты, приложения, CRM, платежи, заявки, аналитика и админки для малого и среднего бизнеса." />
-  <meta property="og:url" content="https://interhub.github.io/" />
-  <meta property="og:image" content="https://interhub.github.io/assets/generated-cats/stepan-cat-1.webp" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Сайты, приложения и автоматизация для бизнеса" />
-  <meta name="twitter:description" content="Простые цифровые решения для бизнеса: сайты, заявки, CRM, платежи и автоматизация." />
-  <meta name="twitter:image" content="https://interhub.github.io/assets/generated-cats/stepan-cat-1.webp" />
-  <script type="application/ld+json">
-    {"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://interhub.github.io/#person","name":"Степан Турченко","url":"https://interhub.github.io/","jobTitle":"Технологический партнер для бизнеса","knowsAbout":["разработка сайтов","мобильные приложения","автоматизация бизнеса","CRM","онлайн платежи","аналитика","админки","AI продукты"],"sameAs":["https://t.me/Stepan_Turchenko","https://www.linkedin.com/in/stepanturchenko"]},{"@type":"ProfessionalService","@id":"https://interhub.github.io/#service","name":"Сайты, приложения и автоматизация для бизнеса","url":"https://interhub.github.io/","description":"Степан Турченко помогает бизнесу запускать сайты, приложения, CRM, платежи, заявки, аналитику и админки без лишней сложности.","provider":{"@id":"https://interhub.github.io/#person"},"areaServed":"RU","serviceType":["Разработка сайтов","Разработка приложений","Автоматизация бизнеса","CRM и заявки","Онлайн платежи","Бизнес аналитика"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Цифровые услуги для бизнеса","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Сайты и лендинги для бизнеса"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Автоматизация заявок, CRM и оплат"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Мобильные приложения и личные кабинеты"}}]}},{"@type":"WebSite","@id":"https://interhub.github.io/#website","url":"https://interhub.github.io/","name":"Степан Турченко - сайты и автоматизация для бизнеса","inLanguage":"ru-RU"}]}
-  </script>
-  <style>
-    :root {
-      --milk: #fff4df;
-      --cream: #fffaf0;
-      --ink: #171717;
-      --muted: #6e655b;
-      --pink: #ff7aa8;
-      --lime: #c8ff63;
-      --blue: #9ee9ff;
-      --dark: #20201d;
-      --line: rgba(23,23,23,.14);
-      --shadow: 0 24px 80px rgba(23, 23, 23, .12);
-      --max: 1120px;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: ui-rounded, "SF Pro Rounded", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      color: var(--ink);
-      background:
-        radial-gradient(circle at 12% 8%, rgba(255,122,168,.34), transparent 230px),
-        radial-gradient(circle at 88% 12%, rgba(158,233,255,.48), transparent 260px),
-        radial-gradient(circle at 60% 95%, rgba(200,255,99,.42), transparent 280px),
-        repeating-linear-gradient(-8deg, rgba(23,23,23,.04) 0 1px, transparent 1px 18px),
-        var(--milk);
-      line-height: 1.35;
-      overflow-x: hidden;
-    }
-    a { color: inherit; text-decoration: none; }
-    .wrap { width: min(var(--max), calc(100% - 28px)); margin: 0 auto; }
-    .nav { position: sticky; top: 12px; z-index: 10; margin: 12px auto 0; width: min(var(--max), calc(100% - 28px)); border: 2px solid var(--ink); border-radius: 999px; background: rgba(255,250,240,.78); backdrop-filter: blur(18px); box-shadow: 8px 8px 0 var(--ink); }
-    .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 10px 14px 10px 18px; }
-    .logo { font-weight: 1000; letter-spacing: -.04em; text-transform: uppercase; }
-    .links { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
-    .links a { padding: 8px 12px; border-radius: 999px; font-weight: 900; color: var(--muted); }
-    .links a:hover { background: var(--ink); color: var(--cream); }
-    .hero { min-height: 86vh; display: grid; grid-template-columns: 1.05fr .95fr; gap: 30px; align-items: center; padding: 64px 0 44px; }
-    h1 { margin: 0; font-size: clamp(54px, 10vw, 132px); line-height: .82; letter-spacing: -.09em; text-transform: uppercase; }
-    h2 { margin: 0 0 18px; font-size: clamp(34px, 6vw, 74px); line-height: .9; letter-spacing: -.07em; }
-    h3 { margin: 0; font-size: 24px; letter-spacing: -.04em; }
-    p { margin: 0; }
-    .tag { display: inline-flex; width: fit-content; transform: rotate(-2deg); margin-bottom: 18px; border: 2px solid var(--ink); border-radius: 999px; background: var(--lime); padding: 10px 14px; font-weight: 1000; box-shadow: 5px 5px 0 var(--ink); }
-    .lead { margin-top: 20px; font-size: clamp(22px, 3vw, 34px); max-width: 760px; font-weight: 850; letter-spacing: -.035em; }
-    .badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
-    .badge { border: 2px solid var(--ink); border-radius: 999px; background: var(--cream); padding: 9px 13px; font-weight: 950; box-shadow: 4px 4px 0 var(--ink); }
-    .cat-wall { position: relative; min-height: 590px; animation: wallDrift 9s ease-in-out infinite; will-change: transform; }
-    .cat-card { position: absolute; border: 3px solid var(--ink); border-radius: 32px; overflow: hidden; background: var(--cream); box-shadow: 12px 12px 0 var(--ink); will-change: transform; transform-origin: center; }
-    .cat-card img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(1.08) contrast(1.02); }
-    .cat-card.one { width: 62%; height: 350px; right: 5%; top: 20px; transform: rotate(4deg); animation: levitateOne 4.8s ease-in-out infinite; animation-delay: -1.2s; }
-    .cat-card.two { width: 52%; height: 260px; left: 0; top: 250px; transform: rotate(-7deg); animation: levitateTwo 5.6s ease-in-out infinite; animation-delay: -2.1s; }
-    .cat-card.three { width: 42%; height: 210px; right: 0; top: 390px; transform: rotate(8deg); animation: levitateThree 5.2s ease-in-out infinite; animation-delay: -3s; }
-    .sticker { position: absolute; z-index: 2; border: 3px solid var(--ink); border-radius: 24px; background: var(--pink); padding: 16px 18px; font-weight: 1000; box-shadow: 8px 8px 0 var(--ink); transform: rotate(-6deg); will-change: transform; transform-origin: center; }
-    .sticker.top { left: 22px; top: 70px; animation: stickerFloatTop 4.2s ease-in-out infinite; animation-delay: -.8s; }
-    .sticker.bottom { right: 44px; bottom: 34px; background: var(--blue); transform: rotate(5deg); animation: stickerFloatBottom 4.7s ease-in-out infinite; animation-delay: -1.6s; }
-    @keyframes wallDrift {
-      0%, 100% { transform: translate3d(0, 0, 0); }
-      50% { transform: translate3d(0, -10px, 0); }
-    }
-    @keyframes levitateOne {
-      0%, 100% { transform: translate3d(0, 0, 0) rotate(4deg); }
-      50% { transform: translate3d(-24px, -30px, 0) rotate(1deg); }
-    }
-    @keyframes levitateTwo {
-      0%, 100% { transform: translate3d(0, 0, 0) rotate(-7deg); }
-      50% { transform: translate3d(26px, -24px, 0) rotate(-3deg); }
-    }
-    @keyframes levitateThree {
-      0%, 100% { transform: translate3d(0, 0, 0) rotate(8deg); }
-      50% { transform: translate3d(-22px, 24px, 0) rotate(13deg); }
-    }
-    @keyframes stickerFloatTop {
-      0%, 100% { transform: translate3d(0, 0, 0) rotate(-6deg); }
-      50% { transform: translate3d(18px, -20px, 0) rotate(-1deg); }
-    }
-    @keyframes stickerFloatBottom {
-      0%, 100% { transform: translate3d(0, 0, 0) rotate(5deg); }
-      50% { transform: translate3d(-20px, 18px, 0) rotate(10deg); }
-    }
-    section { padding: 54px 0; }
-    .panel { border: 3px solid var(--ink); border-radius: 38px; background: rgba(255,250,240,.84); box-shadow: var(--shadow); padding: clamp(22px, 4vw, 42px); }
-    .numbers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-    .num { min-height: 150px; border: 3px solid var(--ink); border-radius: 28px; background: var(--cream); padding: 20px; box-shadow: 7px 7px 0 var(--ink); }
-    .num strong { display: block; font-size: clamp(42px, 5vw, 70px); line-height: .85; letter-spacing: -.07em; }
-    .num span { display: block; margin-top: 14px; color: var(--muted); font-weight: 900; }
-    .vibe { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 22px; }
-    .vibe-card { border-radius: 28px; background: var(--dark); color: var(--cream); padding: 22px; min-height: 190px; transform: rotate(var(--r)); }
-    .vibe-card p { margin-top: 10px; color: #e9decc; font-weight: 700; }
-    .audience-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 22px; }
-    .audience { border: 3px solid var(--ink); border-radius: 24px; background: var(--cream); padding: 18px; box-shadow: 6px 6px 0 var(--ink); }
-    .audience h3 { font-size: 20px; }
-    .audience p { margin-top: 8px; color: var(--muted); font-weight: 850; }
-    .case-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; align-items: stretch; }
-    .case { position: relative; min-height: 334px; height: 100%; display: flex; flex-direction: column; border: 3px solid var(--ink); border-radius: 26px; overflow: hidden; background: var(--cream); box-shadow: 6px 6px 0 var(--ink); transition: transform 0.25s ease, box-shadow 0.25s ease; }
-    .case img { aspect-ratio: 16 / 9; width: 100%; height: auto; object-fit: cover; object-position: top center; border-bottom: 3px solid var(--ink); filter: brightness(0.8); transition: transform 0.25s ease, filter 0.25s ease; }
-    @media (hover: hover) and (pointer: fine) {
-      .case:hover { transform: scale(1.03) translateY(-4px); box-shadow: 8px 12px 0 var(--ink); z-index: 10; }
-      .case:hover img { transform: scale(1.08); filter: brightness(0.9); }
-    }
-    .case-body { padding: 12px; display: flex; flex: 1; flex-direction: column; }
-    .case h3 { font-size: 19px; }
-    .case p { font-size: 13px; }
-    .small-cases { margin-top: 28px; }
-    .small-cases-title { margin: 0 0 12px; font-size: clamp(22px, 3vw, 34px); letter-spacing: -.06em; }
-    .small-case-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; align-items: stretch; }
-    .case.small { min-height: 280px; border-width: 2px; border-radius: 18px; box-shadow: 4px 4px 0 var(--ink); }
-    .case.small img { border-bottom-width: 2px; }
-    .case.small .case-body { padding: 12px; }
-    .case.small h3 { font-size: 16px; }
-    .case.small p { font-size: 12px; line-height: 1.3; }
-    .case.small .kind { font-size: 11px; margin-bottom: 6px; }
-    .case.small .result { margin-top: 8px; border-radius: 12px; padding: 8px; font-size: 11px; }
-    .case.small .open { margin-top: auto; padding: 8px 12px; font-size: 11px; }
-    .case.small .chips { gap: 6px; padding-top: 10px; margin-bottom: 12px; }
-    .case.small .chip { border-width: 2px; padding: 4px 8px; font-size: 10px; }
-    .case.placeholder { min-height: 334px; justify-content: center; padding: 20px; background: radial-gradient(circle at 20% 20%, var(--pink), transparent 120px), radial-gradient(circle at 86% 24%, var(--blue), transparent 150px), var(--dark); color: var(--cream); }
-    .case.placeholder h3 { max-width: 620px; font-size: clamp(24px, 3vw, 34px); line-height: .9; letter-spacing: -.07em; text-transform: uppercase; }
-    .case.placeholder p { max-width: 520px; margin-top: 14px; color: #e9decc; font-size: 14px; font-weight: 850; }
-    .case.placeholder .open { width: fit-content; background: var(--lime); color: var(--ink); }
-    .kind { color: var(--muted); font-size: 12px; font-weight: 950; text-transform: lowercase; margin: 3px 0 8px; }
-    .result { margin-top: 10px; border-radius: 14px; background: var(--lime); padding: 8px; font-size: 12px; font-weight: 1000; }
-    .chips { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 12px; margin-bottom: 16px; }
-    .chip { border: 2px solid var(--ink); border-radius: 999px; background: var(--blue); padding: 5px 8px; font-size: 11px; font-weight: 1000; }
-    .open { display: inline-flex; align-items: center; justify-content: center; margin-top: auto; border: 2px solid var(--ink); border-radius: 999px; background: var(--ink); color: var(--cream); padding: 8px 10px; font-size: 12px; font-weight: 1000; }
-    .stack { display: flex; flex-wrap: wrap; gap: 10px; }
-    .stack .chip { background: var(--cream); font-size: 15px; padding: 9px 12px; box-shadow: 4px 4px 0 var(--ink); }
-    .contacts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
-    .contact { border: 3px solid var(--ink); border-radius: 24px; background: var(--dark); color: var(--cream); padding: 18px; box-shadow: 6px 6px 0 var(--ink); overflow-wrap: anywhere; }
-    .contact b { display: block; color: var(--lime); margin-bottom: 6px; }
-    .tiny { color: var(--muted); font-weight: 800; margin-top: 18px; }
-    @media (max-width: 980px) {
-      .hero { grid-template-columns: 1fr; min-height: auto; }
-      .cat-wall { min-height: 520px; }
-      .numbers, .vibe, .audience-grid, .case-grid, .contacts { grid-template-columns: repeat(2, 1fr); }
-      .small-case-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    }
-    @media (max-width: 640px) {
-      .nav { top: 8px; border-radius: 999px; box-shadow: 5px 5px 0 var(--ink); overflow: hidden; }
-      .nav-inner { align-items: center; flex-direction: row; gap: 8px; padding: 8px 10px 8px 14px; }
-      .logo { flex: 0 0 auto; font-size: 14px; white-space: nowrap; }
-      .links { flex: 1 1 auto; justify-content: flex-start; flex-wrap: nowrap; gap: 4px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
-      .links::-webkit-scrollbar { display: none; }
-      .links a { flex: 0 0 auto; padding: 7px 8px; font-size: 13px; white-space: nowrap; }
-      .hero { padding-top: 34px; }
-      .cat-wall { min-height: 430px; }
-      .cat-card.one { width: 82%; height: 240px; right: 0; }
-      .cat-card.two { width: 68%; height: 190px; top: 205px; }
-      .cat-card.three { display: none; }
-      .sticker { font-size: 14px; padding: 12px 14px; }
-      .numbers, .vibe, .audience-grid, .case-grid, .contacts { grid-template-columns: 1fr; }
-      .small-case-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .case.placeholder { grid-column: auto; min-height: 330px; }
-      .vibe-card { transform: none; }
-      section { padding: 34px 0; }
-    }
-  </style>
-</head>
-<body>
-  <nav class="nav">
-    <div class="nav-inner">
-      <a class="logo" href="#top">stepan.exe</a>
-      <div class="links"><a href="#what">что делаю</a><a href="#cases">кейсы</a><a href="#stack">стек</a><a href="#contact">контакт</a></div>
-    </div>
-  </nav>
-  <main id="app"></main>
-  <script>
-    const DATA_URL = './stepan-business-profile-zoomer-data.json?t=' + Date.now();
-    const app = document.querySelector('#app');
-    const esc = (v = '') => String(v).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#039;');
-    const chips = (items = []) => items.map((x) => `<span class="chip">${esc(x)}</span>`).join('');
-    const caseCard = (c, data) => `
-      <article class="case ${c.small ? 'small' : ''}">
-        ${c.image ? `<img src="${esc(c.image)}" alt="${esc(c.title)} screenshot" loading="lazy">` : ''}
-        <div class="case-body">
-          <h3>${esc(c.title)}</h3>
-          <div class="kind">${esc(c.kind)}</div>
-          <p>${esc(c.text)}</p>
-          <div class="result">${esc(c.result)}</div>
-          <div class="chips">${chips(c.tags)}</div>
-          <a class="open" href="${esc(c.url)}" target="_blank" rel="noreferrer">посмотреть продукт ↗</a>
-        </div>
-      </article>`;
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1C1410" />
 
-    function render(data) {
-      document.title = data.meta.title;
-      const mainCases = data.cases.filter((c) => !c.small);
-      const smallCases = data.cases.filter((c) => c.small);
-      app.innerHTML = `
-        <header id="top" class="wrap hero">
-          <div>
-            <div class="tag">${esc(data.hero.tag)}</div>
-            <h1>${esc(data.hero.name)}</h1>
-            <p class="lead">${esc(data.hero.headline)}</p>
-            <div class="badges">${data.hero.badges.map((x) => `<span class="badge">${esc(x)}</span>`).join('')}</div>
-          </div>
-          <div class="cat-wall" aria-label="Котики для настроения">
-            <div class="sticker top">no boring decks</div>
-            <div class="cat-card one"><img src="${esc(data.hero.cats[0])}" alt="cat" loading="lazy"></div>
-            <div class="cat-card two"><img src="${esc(data.hero.cats[1])}" alt="cat" loading="lazy"></div>
-            <div class="cat-card three"><img src="${esc(data.hero.cats[2])}" alt="cat" loading="lazy"></div>
-            <div class="sticker bottom">ship it 🐾</div>
-          </div>
-        </header>
+    <title>Stepan Turchenko - AI Integration Specialist & Senior Fullstack</title>
+    <meta
+      name="description"
+      content="AI Integration Specialist, Senior Fullstack engineer and Tech Lead. I bring AI into real business processes and own the engineering that keeps products running in production across the US, UK and Russia."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Stepan Turchenko" />
 
-        <section id="what" class="wrap">
-          <div class="panel">
-            <h2>коротко: что за польза</h2>
-            <div class="numbers">${data.numbers.map((n) => `<div class="num"><strong>${esc(n.value)}</strong><span>${esc(n.label)}</span></div>`).join('')}</div>
-            <div class="vibe">${data.vibe.map((v, i) => `<article class="vibe-card" style="--r:${[-2,2,-1,1][i] || 0}deg"><h3>${esc(v.title)}</h3><p>${esc(v.text)}</p></article>`).join('')}</div>
-          </div>
-        </section>
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Stepan Turchenko" />
+    <meta
+      property="og:title"
+      content="Stepan Turchenko - AI Integration Specialist & Senior Fullstack"
+    />
+    <meta
+      property="og:description"
+      content="I bring AI into how companies actually work, and I own the engineering that makes it run in production."
+    />
+    <meta property="og:image" content="./assets/stepan-end-1.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Stepan Turchenko - AI Integration Specialist & Senior Fullstack"
+    />
+    <meta
+      name="twitter:description"
+      content="AI integration and senior fullstack engineering, shipped to production across the US, UK and Russia."
+    />
+    <meta name="twitter:image" content="./assets/stepan-end-1.png" />
 
-        <section class="wrap">
-          <div class="panel">
-            <h2>для какого бизнеса</h2>
-            <div class="audience-grid">${data.audiences.map((item) => `<article class="audience"><h3>${esc(item.title)}</h3><p>${esc(item.text)}</p></article>`).join('')}</div>
-          </div>
-        </section>
+    <link rel="icon" href="./favicon.ico" sizes="any" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
 
-        <section id="cases" class="wrap">
-          <h2>супер кейсы</h2>
-          <div class="case-grid">
-            ${mainCases.map((c) => caseCard(c, data)).join('')}
-              <article class="case placeholder">
-                <h3>место для вашего супер крутого бизнес-продукта</h3>
-                <p>Сайт, приложение, автоматизация, личный кабинет или просто нормальная форма заявок - можно сделать красиво и без боли.</p>
-                <a class="open" href="#contact">обсудить идею ↘</a>
-              </article>
-          </div>
-          <div class="small-cases">
-            <h3 class="small-cases-title">еще свежие работы</h3>
-            <div class="small-case-grid">
-              ${smallCases.map((c) => caseCard(c, data)).join('')}
-            </div>
-          </div>
-        </section>
+    <!-- Fonts: Wix Madefor Display (display), Lora (serif body), JetBrains Mono (technical voice),
+         Noto Sans/Serif SC (Chinese coverage). One Google Fonts request. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500;700;800&family=Lora:ital,wght@0,400..600;1,400&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@500;700&family=Noto+Serif+SC:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-        <section id="stack" class="wrap">
-          <div class="panel">
-            <h2>инструменты</h2>
-            <div class="stack">${chips(data.stack)}</div>
-            <p class="tiny">Без магии: выбираю то, что быстрее доведет бизнес до рабочего результата.</p>
-          </div>
-        </section>
+    <!-- Splitting.js css (headline char reveal) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splitting@1.1.0/dist/splitting.css" />
 
-        <section id="contact" class="wrap">
-          <div class="panel">
-            <h2>связаться</h2>
-            <div class="contacts">${data.contacts.map((c) => `<a class="contact" href="${esc(c.href)}" target="_blank" rel="noreferrer"><b>${esc(c.label)}</b>${esc(c.value)}</a>`).join('')}</div>
-          </div>
-        </section>
-      `;
-    }
+    <!-- progressive enhancement flag: set before paint so reveal styles only apply with JS -->
+    <script>
+      document.documentElement.classList.remove("no-js");
+      document.documentElement.classList.add("js");
+    </script>
 
-    fetch(DATA_URL).then((r) => {
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      return r.json();
-    }).then(render).catch((error) => {
-      console.error(error);
-      app.innerHTML = '<div class="wrap"><section class="panel"><h1>json не загрузился</h1><p>Положи html и json в одну папку на хостинге.</p></section></div>';
-    });
-  </script>
-</body>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Stepan Turchenko",
+        "alternateName": "Степан Турченко",
+        "jobTitle": "AI Integration Specialist, Senior Fullstack Engineer, Tech Lead",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kaliningrad",
+          "addressCountry": "RU"
+        },
+        "email": "stepanstepan4@gmail.com",
+        "knowsAbout": [
+          "AI integration",
+          "AI agents",
+          "Workflow automation",
+          "Fullstack development",
+          "React Native",
+          "Node.js",
+          "DevOps",
+          "Technical leadership"
+        ],
+        "knowsLanguage": ["en", "ru", "zh"],
+        "sameAs": [
+          "https://www.linkedin.com/in/stepanturchenko",
+          "https://t.me/Stepan_Turchenko",
+          "https://www.instagram.com/stepan_turchenko/"
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#hero-root">Skip to content</a>
+
+    <span id="top"></span>
+
+    <header class="nav" id="nav-root" data-scrolled="false" data-theme="dark"></header>
+    <div class="mobile-menu" id="mobile-menu" data-open="false"></div>
+
+    <main id="main">
+      <section class="section section--dark hero" id="hero-root" aria-label="Intro"></section>
+
+      <section class="section section--light proof" id="proof-root" aria-label="Credibility"></section>
+
+      <section class="section section--dark" id="approach"><div id="approach-root"></div></section>
+
+      <section class="section section--light" id="work"><div id="cases-root"></div></section>
+
+      <section class="section section--dark" id="more-work"><div id="work-root"></div></section>
+
+      <section class="section section--light" id="stack"><div id="stack-root"></div></section>
+
+      <section class="section section--dark" id="about"><div id="about-root"></div></section>
+
+      <section class="section section--light" id="photos"><div id="photos-root"></div></section>
+
+      <section class="section section--dark contact" id="contact"><div id="contact-root"></div></section>
+    </main>
+
+    <footer class="footer section--dark" id="footer-root"></footer>
+
+    <!-- single fixed full-page warm grain overlay (grained.js fills the absolute inner) -->
+    <div id="grain-overlay" aria-hidden="true"><div id="grain-inner"></div></div>
+
+    <!-- Effect libraries (dosed, reduced-motion aware in app.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/splitting@1.1.0/dist/splitting.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/rough-notation@0.5.1/lib/rough-notation.iife.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/powerglitch@2.5.0/dist/powerglitch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/grained@0.0.2/grained.min.js"></script>
+
+    <script src="./js/content.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>

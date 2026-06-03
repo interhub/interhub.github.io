@@ -1,26 +1,31 @@
-# Степан Турченко
+# Stepan Turchenko
 
-> Сайты, приложения и автоматизация для малого и среднего бизнеса.
+> AI Integration Specialist and Senior Fullstack engineer / Tech Lead.
 
-Степан Турченко помогает бизнесу запускать простые сайты, мобильные приложения, CRM, прием заявок, онлайн платежи, аналитику, админки и внутреннюю автоматизацию без лишней сложности.
+Stepan Turchenko brings AI into real business processes (Claude Code, AI agents, workflow automation) and owns the engineering that ships and runs production software end to end: mobile, backend, infrastructure, and the team around it. More than six years of production work across the US, UK and Russia.
 
-## Основные услуги
-- Сайты и лендинги для бизнеса
-- Мобильные приложения для клиентов и сотрудников
-- Автоматизация заявок, оплат, уведомлений и CRM
-- Админки, каталоги, личные кабинеты и простые внутренние сервисы
-- AI-фичи и аналитика для роста продаж
+## What he does
+- Bring AI into the business: map where AI agents and automation save time, then build and integrate them into existing processes and tools.
+- Build and ship the product end to end: mobile and backend, payments, analytics, release, and the team.
+- Lead the engineering: set standards, run interviews and reviews, keep heavy systems stable under load.
 
-## Для кого
-- Кафе и рестораны: меню, брони, заказы, оплата
-- Сервисы и услуги: заявки, расписание, CRM
-- Онлайн-школы: кабинеты, уроки, платежи
-- Магазины: каталог, заказы, аналитика
-- Стартапы: быстрый запуск без лишнего
-- Локальный бизнес: сайт, заявки, понятный рост
+## Selected work
+- Painta (https://painta.io): an AI art coach built as a full product - mobile app, backend, admin, payments, and automations.
+- Aspect Health (https://www.aspect-health.com): a Delaware women-health and wellness platform with an AI agentic app, run as a heavy production service.
+- Nana800 (http://nana800.io): his own low-code automation platform with visual scenarios, integrations, and AI blocks.
+- Moscow Sport (https://sport.mos.ru/): the Moscow government sport app, rescued and shipped after a state contractor failed.
 
-## Важные ссылки
-- Главная: https://interhub.github.io/
-- Полная версия для LLM: https://interhub.github.io/llms-full.txt
-- Telegram: https://t.me/Stepan_Turchenko
+## Stack
+AI & Automation: Claude Code, AI Agents, Prompt Engineering, N8N, Cursor.
+Frontend & Mobile: React, React Native, TypeScript, Zustand, Expo.
+Backend & Data: Node.js, Nest.js, PostgreSQL, Supabase, Redis, RabbitMQ, Microservices.
+DevOps & Cloud: Docker, CI/CD, Google Cloud, AWS, Grafana, Loki, Nginx, Traefik.
+W3-certified in TypeScript and React.
+
+## Important links
+- Home: https://interhub.github.io/
+- Full version for LLM: https://interhub.github.io/llms-full.txt
+- Email: stepanstepan4@gmail.com
 - LinkedIn: https://www.linkedin.com/in/stepanturchenko
+- Telegram: https://t.me/Stepan_Turchenko
+- Instagram: https://www.instagram.com/stepan_turchenko/
