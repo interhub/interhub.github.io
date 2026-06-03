@@ -33,8 +33,10 @@ window.SITE_CONTENT = {
       eyebrow: "Внедрение AI · Senior Fullstack · Tech Lead",
       headlineBefore: "Я ",
       headlineAccent: "внедряю",
+      headlineAccentMark: "underline",
       headlineMid: " AI в реальный бизнес и ",
       headlineAccent2: "отвечаю",
+      headlineAccent2Mark: "circle",
       headlineAfter: " за технические показатели компании.",
       subtext:
         "Более 6 лет строю и поддерживаю продакшен-продукты в США, Великобритании и России.",
@@ -82,8 +84,8 @@ window.SITE_CONTENT = {
       pillars: {
         title: "На чём держится этот переход",
         items: [
-          { title: "Общая память (gbrain)", body: "Личная и командная база знаний как общая память между сессиями и людьми: проекты, плейбуки и заметки дают всему парку агентов один источник контекста." },
-          { title: "Автоматизация процессов", body: "Агенты по расписанию сами собирают отчёты и кладут их в Slack без человека, а память копится между сессиями, так что контекст не вводится заново. Главный агент делегирует субагентам, каждый работает в изолированном контексте и возвращает результат." },
+          { title: "Общая память (gbrain)", icon: "graph", body: "Личная и командная база знаний как общая память между сессиями и людьми: проекты, плейбуки и заметки дают всему парку агентов один источник контекста." },
+          { title: "Автоматизация процессов", icon: "workflow", body: "Агенты по расписанию сами собирают отчёты и кладут их в Slack без человека, а память копится между сессиями, так что контекст не вводится заново. Главный агент делегирует субагентам, каждый работает в изолированном контексте и возвращает результат." },
           { title: "Единый слой ИИ", body: "Навык - это способность, описанная текстом, написанная один раз и переиспользуемая вместо переписывания того же промпта. Общие и расширяемые навыки, общий контекст, правила и форматы превращают разрозненный ИИ в повторяемые процессы компании." },
         ],
       },
@@ -183,9 +185,13 @@ window.SITE_CONTENT = {
     },
     hero: {
       eyebrow: "AI Integration · Senior Fullstack · Tech Lead",
-      headlineBefore: "I put AI to work inside ",
-      headlineAccent: "real",
-      headlineAfter: " businesses, and ship the engineering behind it.",
+      headlineBefore: "I ",
+      headlineAccent: "integrate",
+      headlineAccentMark: "underline",
+      headlineMid: " AI into real business and ",
+      headlineAccent2: "own",
+      headlineAccent2Mark: "circle",
+      headlineAfter: " the company's technical metrics.",
       subtext:
         "More than six years building and running production products across the US, UK and Russia.",
       ctaPrimary: "See selected work",
@@ -232,8 +238,8 @@ window.SITE_CONTENT = {
       pillars: {
         title: "What carries this shift",
         items: [
-          { title: "Shared memory (gbrain)", body: "A personal and shared knowledge base as memory across sessions and people: projects, playbooks, and notes give the whole fleet of agents one source of context." },
-          { title: "Process automation", body: "Scheduled agents assemble reports and drop them in Slack with no human, and memory accumulates across sessions so context is never re-entered. A main agent delegates to subagents, each working in isolated context and returning a result." },
+          { title: "Shared memory (gbrain)", icon: "graph", body: "A personal and shared knowledge base as memory across sessions and people: projects, playbooks, and notes give the whole fleet of agents one source of context." },
+          { title: "Process automation", icon: "workflow", body: "Scheduled agents assemble reports and drop them in Slack with no human, and memory accumulates across sessions so context is never re-entered. A main agent delegates to subagents, each working in isolated context and returning a result." },
           { title: "A unified AI layer", body: "A skill is a capability described in text, written once and reused instead of rewriting the same prompt. Shared, extendable skills plus shared context, rules, and formats turn ad-hoc AI into repeatable company processes." },
         ],
       },
@@ -334,8 +340,12 @@ window.SITE_CONTENT = {
     hero: {
       eyebrow: "AI 集成 · 高级全栈 · 技术负责人",
       headlineBefore: "把 AI ",
-      headlineAccent: "真正",
-      headlineAfter: "用进企业的业务里，并交付支撑它的整套工程。",
+      headlineAccent: "落地",
+      headlineAccentMark: "underline",
+      headlineMid: "到企业真实业务，并",
+      headlineAccent2: "负责",
+      headlineAccent2Mark: "circle",
+      headlineAfter: "公司的技术指标。",
       subtext: "六年多在美国、英国和俄罗斯打造并运维生产环境中的产品。",
       ctaPrimary: "查看作品",
       ctaSecondary: "联系我",
@@ -381,8 +391,8 @@ window.SITE_CONTENT = {
       pillars: {
         title: "支撑这次转变的根基",
         items: [
-          { title: "共享记忆 (gbrain)", body: "一个个人与团队共用的知识库，作为跨会话、跨成员的共享记忆：项目、操作手册与笔记，让整支智能体队伍拥有同一份上下文来源。" },
-          { title: "流程自动化", body: "按计划运行的智能体自行汇总报告并发布到 Slack，无需人工；记忆在会话之间不断累积，上下文无需重新输入。主智能体把任务委派给子智能体，每个子智能体在隔离的上下文中工作并返回结果。" },
+          { title: "共享记忆 (gbrain)", icon: "graph", body: "一个个人与团队共用的知识库，作为跨会话、跨成员的共享记忆：项目、操作手册与笔记，让整支智能体队伍拥有同一份上下文来源。" },
+          { title: "流程自动化", icon: "workflow", body: "按计划运行的智能体自行汇总报告并发布到 Slack，无需人工；记忆在会话之间不断累积，上下文无需重新输入。主智能体把任务委派给子智能体，每个子智能体在隔离的上下文中工作并返回结果。" },
           { title: "统一的 AI 层", body: "技能是用文字描述的一种能力，只写一次便可复用，无需每次重写相同的提示词。共享且可扩展的技能，加上共享的上下文、规则与格式，把临时拼凑的 AI 变成可重复的企业流程。" },
         ],
       },

@@ -199,24 +199,41 @@
     if (mid) mid.textContent = h.headlineMid || "";
     if (accents[1]) accents[1].textContent = h.headlineAccent2 || "";
     if (after) after.textContent = h.headlineAfter || "";
+    accents.forEach(lockHeroAccentLayout);
+  }
+
+  function buildHeroHeadlineChildren(hero) {
+    return [
+      el("span", { class: "hero__hl-before" }, [hero.headlineBefore || ""]),
+    ].concat(heroAccentSpans(hero), [
+      el("span", { class: "hero__hl-after" }, [hero.headlineAfter || ""]),
+    ]);
   }
 
   function heroAccentSpans(hero) {
+    var mark1 = hero.headlineAccentMark || "underline";
+    var mark2 = hero.headlineAccent2Mark || "circle";
     var nodes = [
-      el("span", { class: "accent-word hero__accent", "data-accent": "", "data-rn": "underline" }, [hero.headlineAccent]),
+      el("span", {
+        class: "accent-word hero__accent",
+        "data-accent": "",
+        "data-rn": mark1,
+      }, [hero.headlineAccent]),
     ];
     nodes.push(el("span", { class: "hero__hl-mid" }, [hero.headlineMid || ""]));
     if (hero.headlineAccent2) {
-      nodes.push(el("span", { class: "accent-word hero__accent", "data-accent": "", "data-rn": "underline" }, [hero.headlineAccent2]));
+      nodes.push(el("span", {
+        class: "accent-word hero__accent hero__accent--second",
+        "data-accent": "",
+        "data-rn": mark2,
+      }, [hero.headlineAccent2]));
     }
     return nodes;
   }
 
   function rebuildLiveHeadline(live, h) {
     while (live.firstChild) live.removeChild(live.firstChild);
-    live.appendChild(el("span", { class: "hero__hl-before" }, [h.headlineBefore || ""]));
-    heroAccentSpans(h).forEach(function (node) { live.appendChild(node); });
-    live.appendChild(el("span", { class: "hero__hl-after" }, [h.headlineAfter || ""]));
+    buildHeroHeadlineChildren(h).forEach(function (node) { live.appendChild(node); });
   }
 
   function heroContentFor(t) {
@@ -225,8 +242,10 @@
       eyebrow: C.zh.hero.eyebrow,
       headlineBefore: C.zh.hero.headlineBefore,
       headlineAccent: C.zh.hero.headlineAccent,
+      headlineAccentMark: C.zh.hero.headlineAccentMark,
       headlineMid: C.zh.hero.headlineMid || "",
       headlineAccent2: C.zh.hero.headlineAccent2 || "",
+      headlineAccent2Mark: C.zh.hero.headlineAccent2Mark,
       headlineAfter: C.zh.hero.headlineAfter,
       subtext: t.hero.subtext,
       ctaPrimary: C.zh.hero.ctaPrimary,
@@ -236,9 +255,7 @@
 
   function heroHeadlineMeasure(t, hero) {
     var m = heroIntroMode ? t.hero : hero;
-    return el("span", { class: "hero__headline-measure", "aria-hidden": "true" }, [
-      joinHeadline(m),
-    ]);
+    return el("span", { class: "hero__headline-measure", "aria-hidden": "true" }, buildHeroHeadlineChildren(m));
   }
 
   function morphUnifiedHeadline(target, charMs, done) {
@@ -298,11 +315,7 @@
       el("p", { class: "eyebrow hero__eyebrow hero__seq hero__seq--1" }, [hero.eyebrow]),
       el("h2", { class: "headline hero__headline hero__seq hero__seq--2" }, [
         heroHeadlineMeasure(t, hero),
-        el("span", { class: "hero__headline-live" }, [
-          el("span", { class: "hero__hl-before" }, [hero.headlineBefore]),
-        ].concat(heroAccentSpans(hero), [
-          el("span", { class: "hero__hl-after" }, [hero.headlineAfter]),
-        ])),
+        el("span", { class: "hero__headline-live" }, buildHeroHeadlineChildren(hero)),
       ]),
       el("p", { class: "lead-body hero__subtext hero__seq hero__seq--3" }, [hero.subtext]),
       el("div", { class: "hero__ctas hero__seq hero__seq--4" }, [
@@ -433,17 +446,116 @@
     ]);
     var pGrid = el("div", { class: "ai-pillars__grid" });
     a.pillars.items.forEach(function (it) {
-      pGrid.appendChild(
-        el("article", { class: "ai-pillar reveal" }, [
-          el("h4", { class: "ai-pillar__title" }, [it.title]),
-          el("p", { class: "ai-pillar__body" }, [it.body]),
-        ])
+      var parts = [];
+      if (it.icon) parts.push(createPillarCornerIcon(it.icon));
+      parts.push(
+        el("h4", { class: "ai-pillar__title" }, [it.title]),
+        el("p", { class: "ai-pillar__body" }, [it.body])
       );
+      pGrid.appendChild(el("article", { class: "ai-pillar reveal" }, parts));
     });
     pillars.appendChild(pGrid);
     inner.appendChild(pillars);
 
     host.appendChild(inner);
+  }
+
+  function createPillarCornerIcon(type) {
+    if (type === "graph") return createPillarGraphSvg();
+    if (type === "workflow") return createPillarWorkflowSvg();
+    return null;
+  }
+
+  function createPillarGraphSvg() {
+    var ns = "http://www.w3.org/2000/svg";
+    var svg = document.createElementNS(ns, "svg");
+    svg.setAttribute("class", "ai-pillar__corner-icon ai-pillar__corner-icon--graph");
+    svg.setAttribute("viewBox", "0 0 72 72");
+    svg.setAttribute("aria-hidden", "true");
+    svg.setAttribute("focusable", "false");
+
+    var edges = [
+      "M14 26 L32 14 L58 24",
+      "M14 26 L18 52",
+      "M58 24 L50 54",
+      "M18 52 L50 54",
+      "M32 14 L36 38",
+      "M36 38 L18 52",
+      "M36 38 L50 54",
+    ];
+    edges.forEach(function (d) {
+      var path = document.createElementNS(ns, "path");
+      path.setAttribute("d", d);
+      path.setAttribute("fill", "none");
+      path.setAttribute("stroke", "currentColor");
+      path.setAttribute("stroke-width", "1.4");
+      path.setAttribute("stroke-linecap", "round");
+      path.setAttribute("opacity", "0.72");
+      svg.appendChild(path);
+    });
+
+    [[14, 26], [32, 14], [58, 24], [18, 52], [50, 54], [36, 38]].forEach(function (pt) {
+      var dot = document.createElementNS(ns, "circle");
+      dot.setAttribute("cx", String(pt[0]));
+      dot.setAttribute("cy", String(pt[1]));
+      dot.setAttribute("r", "3.2");
+      dot.setAttribute("fill", "currentColor");
+      svg.appendChild(dot);
+    });
+    return svg;
+  }
+
+  function createPillarWorkflowSvg() {
+    var ns = "http://www.w3.org/2000/svg";
+    var svg = document.createElementNS(ns, "svg");
+    svg.setAttribute("class", "ai-pillar__corner-icon ai-pillar__corner-icon--workflow");
+    svg.setAttribute("viewBox", "0 0 92 36");
+    svg.setAttribute("aria-hidden", "true");
+    svg.setAttribute("focusable", "false");
+
+    function node(x, y) {
+      var rect = document.createElementNS(ns, "rect");
+      rect.setAttribute("x", String(x));
+      rect.setAttribute("y", String(y));
+      rect.setAttribute("width", "18");
+      rect.setAttribute("height", "16");
+      rect.setAttribute("rx", "4");
+      rect.setAttribute("fill", "none");
+      rect.setAttribute("stroke", "currentColor");
+      rect.setAttribute("stroke-width", "1.6");
+      svg.appendChild(rect);
+
+      var portIn = document.createElementNS(ns, "circle");
+      portIn.setAttribute("cx", String(x - 1));
+      portIn.setAttribute("cy", String(y + 8));
+      portIn.setAttribute("r", "1.8");
+      portIn.setAttribute("fill", "currentColor");
+      svg.appendChild(portIn);
+
+      var portOut = document.createElementNS(ns, "circle");
+      portOut.setAttribute("cx", String(x + 19));
+      portOut.setAttribute("cy", String(y + 8));
+      portOut.setAttribute("r", "1.8");
+      portOut.setAttribute("fill", "currentColor");
+      svg.appendChild(portOut);
+    }
+
+    [[4, 10], [37, 10], [70, 10]].forEach(function (pos) { node(pos[0], pos[1]); });
+
+    var links = [
+      "M23 18 H31",
+      "M56 18 H64",
+    ];
+    links.forEach(function (d) {
+      var path = document.createElementNS(ns, "path");
+      path.setAttribute("d", d);
+      path.setAttribute("fill", "none");
+      path.setAttribute("stroke", "currentColor");
+      path.setAttribute("stroke-width", "1.4");
+      path.setAttribute("stroke-linecap", "round");
+      svg.appendChild(path);
+    });
+    return svg;
   }
 
   function createMajorStarSvg() {
@@ -863,6 +975,42 @@
     annotateHeroAccent();
   }
 
+  function lockHeroAccentLayout(node) {
+    node.style.display = "inline";
+    node.style.padding = "0";
+    node.style.margin = "0";
+    node.style.border = "0";
+    node.style.fontWeight = "inherit";
+    node.style.lineHeight = "inherit";
+    node.style.letterSpacing = "inherit";
+    node.style.verticalAlign = "baseline";
+    node.style.boxSizing = "content-box";
+  }
+
+  function lockHeroAccentSvg(node) {
+    var mark = node.getAttribute("data-rn");
+    var svg = node.querySelector("svg");
+    if (!svg) return;
+    svg.style.position = "absolute";
+    svg.style.left = "0";
+    svg.style.top = "0";
+    svg.style.overflow = "visible";
+    svg.style.pointerEvents = "none";
+    if (mark === "underline") return;
+    svg.style.width = "100%";
+    svg.style.height = "100%";
+  }
+
+  function heroRoughNotationConf(mark) {
+    var map = {
+      underline: { type: "underline", color: "#C8552B", strokeWidth: 2.4, padding: 2, multiline: true },
+      circle: { type: "circle", color: "#E0A24E", strokeWidth: 2.2, padding: 0, multiline: false },
+      box: { type: "box", color: "#C8552B", strokeWidth: 2.4, padding: 8, multiline: false },
+      highlight: { type: "highlight", color: "#E0A24E", strokeWidth: 14, padding: 2, multiline: true },
+    };
+    return map[mark] || map.underline;
+  }
+
   function annotateHeroAccent() {
     if (heroIntroPending) return;
 
@@ -886,17 +1034,20 @@
         if (!node.textContent.trim()) return;
         if (!node.isConnected || node.hasAttribute("data-rn-done")) return;
         node.setAttribute("data-rn-done", "");
+        lockHeroAccentLayout(node);
+        var conf = heroRoughNotationConf(node.getAttribute("data-rn"));
         try {
           var ann = window.RoughNotation.annotate(node, {
-            type: "underline",
-            color: "#C8552B",
-            strokeWidth: 2.4,
-            padding: 2,
+            type: conf.type,
+            color: conf.color,
+            strokeWidth: conf.strokeWidth,
+            padding: conf.padding,
             iterations: 2,
             animationDuration: 700,
-            multiline: false,
+            multiline: conf.multiline,
           });
           ann.show();
+          lockHeroAccentSvg(node);
           heroAccentAnns.push(ann);
         } catch (err) {
           console.error("RoughNotation hero accent failed:", err);
