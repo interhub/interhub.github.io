@@ -37,12 +37,26 @@
   function clear(node) { while (node.firstChild) node.removeChild(node.firstChild); }
   function $(id) { return document.getElementById(id); }
 
-  /* Headline with one terracotta accent word (no <br> breaks). */
-  function accentHeadline(before, accent, after, extraClass) {
-    return el("h2", { class: "headline " + (extraClass || ""), "data-splitting": "" }, [
-      before,
-      el("span", { class: "accent-word", "data-accent": "" }, [accent]),
-      after,
+  /* Decorative full-color editorial side image (variety vs. duotone). */
+  function sideFigure(figClass, imgClass, src) {
+    return el("figure", { class: figClass + " reveal", "aria-hidden": "true" }, [
+      el("img", { class: imgClass, src: src, alt: "", loading: "lazy", decoding: "async" }),
+    ]);
+  }
+
+  /* A project title rendered as a tasteful external link when a real URL
+     exists, otherwise as plain heading text. */
+  function projectTitle(tag, cls, title, viewLabel) {
+    var url = S.projectUrls[title];
+    if (!url) return el(tag, { class: cls }, [title]);
+    return el(tag, { class: cls }, [
+      el("a", {
+        class: "project-link",
+        href: url,
+        target: "_blank",
+        rel: "noopener",
+        "aria-label": viewLabel + ": " + title,
+      }, [title]),
     ]);
   }
 
@@ -58,6 +72,16 @@
   }
 
   var current = detectLang();
+
+  /* Intro language flourish: first paint in zh, then auto-swap to ru.
+     Cancelled if the user picks a language manually within the window. */
+  var introTimer = null;
+  function cancelIntro() {
+    if (introTimer !== null) {
+      clearTimeout(introTimer);
+      introTimer = null;
+    }
+  }
 
   /* ============================================================
      SECTION RENDERERS
@@ -136,7 +160,11 @@
 
     host.appendChild(el("div", { class: "section__inner hero__inner" }, [
       el("p", { class: "eyebrow hero__eyebrow" }, [t.hero.eyebrow]),
-      accentHeadline(t.hero.headlineBefore, t.hero.headlineAccent, t.hero.headlineAfter, "hero__headline"),
+      el("h2", { class: "headline hero__headline", "data-splitting": "" }, [
+        t.hero.headlineBefore,
+        el("span", { class: "accent-word hero__accent", "data-accent": "", "data-rn": "underline" }, [t.hero.headlineAccent]),
+        t.hero.headlineAfter,
+      ]),
       el("p", { class: "lead-body hero__subtext" }, [t.hero.subtext]),
       el("div", { class: "hero__ctas" }, [
         ctaLink(t.hero.ctaPrimary, "#work", "btn btn--primary", true),
@@ -192,7 +220,10 @@
         el("span", { class: "approach__hl-mark", "data-rn": "underline" }, [a.headlineAccent]),
         a.headlineAfter,
       ]),
-      el("p", { class: "lead-body approach__lead reveal" }, [a.lead]),
+      el("div", { class: "approach__intro" }, [
+        el("p", { class: "lead-body approach__lead reveal" }, [a.lead]),
+        sideFigure("approach__figure", "approach__img", "./assets/stock/geometric-shapes-terracotta-01.jpg"),
+      ]),
     ]);
 
     /* The 5-level maturity ladder - the central model. */
@@ -260,63 +291,55 @@
     host.appendChild(inner);
   }
 
+  /* Minimalist 4-point spark/star marking a major project. */
+  function majorStar() {
+    var ns = "http://www.w3.org/2000/svg";
+    var svg = document.createElementNS(ns, "svg");
+    svg.setAttribute("class", "work-cell__star");
+    svg.setAttribute("viewBox", "0 0 24 24");
+    svg.setAttribute("aria-hidden", "true");
+    svg.setAttribute("focusable", "false");
+    var path = document.createElementNS(ns, "path");
+    path.setAttribute("d", "M12 1c.4 4.6 2.4 6.6 7 7-4.6.4-6.6 2.4-7 7-.4-4.6-2.4-6.6-7-7 4.6-.4 6.6-2.4 7-7z");
+    path.setAttribute("fill", "currentColor");
+    svg.appendChild(path);
+    return svg;
+  }
+
   function renderCases(t) {
     var host = $("cases-root");
     clear(host);
+    var c = t.cases;
+
     var inner = el("div", { class: "section__inner cases__inner" }, [
       el("span", { class: "section-index", "data-fill": "", "aria-hidden": "true" }, ["04"]),
-      el("p", { class: "eyebrow" }, [t.cases.sectionTitle]),
-      el("h2", { class: "headline", "data-splitting": "" }, [t.cases.headline]),
+      el("div", { class: "cases__intro" }, [
+        el("div", { class: "cases__intro-copy" }, [
+          el("p", { class: "eyebrow" }, [c.sectionTitle]),
+          el("h2", { class: "headline", "data-splitting": "" }, [c.headline]),
+          el("p", { class: "lead-body cases__lead" }, [c.lead]),
+        ]),
+        sideFigure("cases__figure", "cases__img", "./assets/stock/still-life-vase-orange-01.jpg"),
+      ]),
+      el("div", { class: "cases__legend" }, [
+        majorStar(),
+        el("span", { class: "mono" }, [c.legend]),
+      ]),
     ]);
 
     var grid = el("div", { class: "cases__grid" });
-    t.cases.items.forEach(function (c, i) {
-      var shot = S.caseShots[c.title];
-      var tile = el("article", { class: "case reveal case--" + (i === 0 || i === 1 ? "feature" : "side") });
-      if (shot) {
-        tile.appendChild(el("div", { class: "case__shot" }, [
-          el("img", { src: shot, alt: c.title, loading: "lazy", decoding: "async" }),
-        ]));
-      }
-      tile.appendChild(el("div", { class: "case__body" }, [
-        el("div", { class: "case__head" }, [
-          el("h3", { class: "case__title" }, [c.title]),
-          el("p", { class: "mono case__role" }, [c.role]),
-        ]),
-        el("p", { class: "lead-body case__oneline" }, [c.oneline]),
-        el("div", { class: "case__tags" }, c.tags.map(function (tag) {
-          return el("span", { class: "tag mono" }, [tag]);
-        })),
-      ]));
-      grid.appendChild(tile);
-    });
-    inner.appendChild(grid);
-    host.appendChild(inner);
-  }
-
-  function renderWork(t) {
-    var host = $("work-root");
-    clear(host);
-    host.appendChild(el("div", { class: "section__bg", "aria-hidden": "true" }, [el("div", { class: "section__bg-duotone" })]));
-
-    var inner = el("div", { class: "section__inner work__inner" }, [
-      el("span", { class: "section-index", "data-fill": "", "aria-hidden": "true" }, ["05"]),
-      el("p", { class: "eyebrow" }, [t.work.index]),
-      el("h2", { class: "headline", "data-splitting": "" }, [t.work.headline]),
-      el("p", { class: "lead-body work__lead" }, [t.work.lead]),
-    ]);
-
-    var grid = el("div", { class: "work__grid" });
-    t.work.items.forEach(function (w, i) {
+    c.items.forEach(function (p, i) {
       var num = i + 1 < 10 ? "0" + (i + 1) : String(i + 1);
-      grid.appendChild(el("article", { class: "work-cell reveal" }, [
-        el("div", { class: "work-cell__top" }, [
-          el("span", { class: "mono work-cell__num" }, [num]),
-          el("h3", { class: "work-cell__title" }, [w.title]),
-        ]),
-        el("p", { class: "mono work-cell__role" }, [w.role]),
-        el("p", { class: "lead-body work-cell__oneline" }, [w.oneline]),
-        el("div", { class: "work-cell__tags" }, w.tags.map(function (tag) {
+      var head = el("div", { class: "work-cell__top" }, [
+        el("span", { class: "mono work-cell__num" }, [num]),
+        projectTitle("h3", "work-cell__title", p.title, c.visit),
+      ]);
+      if (p.major) head.appendChild(majorStar());
+      grid.appendChild(el("article", { class: "work-cell reveal" + (p.major ? " work-cell--major" : "") }, [
+        head,
+        el("p", { class: "mono work-cell__role" }, [p.role]),
+        el("p", { class: "lead-body work-cell__oneline" }, [p.oneline]),
+        el("div", { class: "work-cell__tags" }, p.tags.map(function (tag) {
           return el("span", { class: "tag mono" }, [tag]);
         })),
       ]));
@@ -324,8 +347,8 @@
     inner.appendChild(grid);
 
     inner.appendChild(el("div", { class: "credential reveal" }, [
-      el("span", { class: "credential__badge mono" }, [t.work.credential.badge]),
-      el("p", { class: "credential__text" }, [t.work.credential.text]),
+      el("span", { class: "credential__badge mono" }, [c.credential.badge]),
+      el("p", { class: "credential__text" }, [c.credential.text]),
     ]));
     host.appendChild(inner);
   }
@@ -334,21 +357,30 @@
     var host = $("stack-root");
     clear(host);
     var inner = el("div", { class: "section__inner stack__inner" }, [
-      el("span", { class: "section-index", "data-fill": "", "aria-hidden": "true" }, ["06"]),
+      el("span", { class: "section-index", "data-fill": "", "aria-hidden": "true" }, ["05"]),
+      el("p", { class: "mono stack__note" }, [t.stack.note]),
       el("p", { class: "eyebrow" }, [t.stack.index]),
       el("h2", { class: "headline", "data-splitting": "" }, [t.stack.headline]),
     ]);
 
     var grid = el("div", { class: "stack__grid" });
     t.stack.clusters.forEach(function (cl) {
+      var titleAttrs = { class: "stack__cluster-title" };
+      if (cl.emphasis) titleAttrs["data-rn"] = "box";
       grid.appendChild(el("div", { class: "stack__cluster reveal" + (cl.emphasis ? " stack__cluster--emph" : "") }, [
-        el("h3", { class: "stack__cluster-title" }, [cl.title]),
+        el("h3", titleAttrs, [cl.title]),
         el("div", { class: "stack__chips" }, cl.chips.map(function (chip) {
           return el("span", { class: "chip mono" }, [chip]);
         })),
       ]));
     });
     inner.appendChild(grid);
+
+    inner.appendChild(el("div", { class: "stack__mgmt reveal" }, [
+      el("h3", { class: "stack__cluster-title stack__mgmt-title" }, [t.stack.management.title]),
+      el("p", { class: "lead-body stack__mgmt-body" }, [t.stack.management.body]),
+    ]));
+
     inner.appendChild(el("p", { class: "mono stack__cert" }, [t.stack.cert]));
     host.appendChild(inner);
   }
@@ -359,11 +391,14 @@
     host.appendChild(el("div", { class: "section__bg", "aria-hidden": "true" }, [el("div", { class: "section__bg-duotone" })]));
 
     host.appendChild(el("div", { class: "section__inner about__inner" }, [
-      el("span", { class: "section-index", "data-fill": "", "aria-hidden": "true" }, ["07"]),
+      el("span", { class: "section-index", "data-fill": "", "aria-hidden": "true" }, ["06"]),
       el("h2", { class: "headline about__headline", "data-splitting": "" }, [t.about.headline]),
-      el("div", { class: "about__col reveal" }, [
-        el("p", { class: "lead-body about__body" }, [t.about.body]),
-        el("p", { class: "mono about__facts" }, [t.about.facts]),
+      el("div", { class: "about__grid" }, [
+        sideFigure("about__figure", "about__img", "./assets/stock/warm-sand-dune-01.jpg"),
+        el("div", { class: "about__col reveal" }, [
+          el("p", { class: "lead-body about__body" }, [t.about.body]),
+          el("p", { class: "mono about__facts" }, [t.about.facts]),
+        ]),
       ]),
     ]));
   }
@@ -373,7 +408,7 @@
     if (!host) return;
     clear(host);
     var inner = el("div", { class: "section__inner photos__inner" }, [
-      el("span", { class: "section-index", "data-fill": "", "aria-hidden": "true" }, ["08"]),
+      el("span", { class: "section-index", "data-fill": "", "aria-hidden": "true" }, ["07"]),
       el("p", { class: "eyebrow" }, [t.photos.kicker]),
     ]);
 
@@ -413,7 +448,7 @@
     );
 
     host.appendChild(el("div", { class: "section__inner contact__inner" }, [
-      el("span", { class: "section-index", "data-fill": "", "aria-hidden": "true" }, ["09"]),
+      el("span", { class: "section-index", "data-fill": "", "aria-hidden": "true" }, ["08"]),
       el("h2", { class: "headline contact__headline", "data-splitting": "" }, [
         t.contact.headlineBefore,
         el("span", { class: "contact__hl-mark", "data-rn": "circle" }, [t.contact.headlineAccent]),
@@ -467,7 +502,6 @@
     renderProof(t);
     renderApproach(t);
     renderCases(t);
-    renderWork(t);
     renderStack(t);
     renderAbout(t);
     renderPhotos(t);
@@ -476,11 +510,54 @@
     initEffects();
   }
 
+  /* Manual switch (language buttons). Respects the user's choice by
+     cancelling any pending intro auto-swap, then persists + renders. */
   function setLang(code) {
+    cancelIntro();
+    switchLang(code, true);
+  }
+
+  /* Core switch path, reused by manual clicks and the intro auto-swap.
+     `persist` controls whether the choice is saved to localStorage. */
+  function switchLang(code, persist) {
     if (SUPPORTED.indexOf(code) === -1 || code === current) return;
     current = code;
-    try { localStorage.setItem(STORE_KEY, code); } catch (e) { console.warn("localStorage unavailable:", e); }
+    if (persist) {
+      try { localStorage.setItem(STORE_KEY, code); } catch (e) { console.warn("localStorage unavailable:", e); }
+    }
     renderAll();
+  }
+
+  /* Intro auto-swap zh -> ru with a short crossfade on the main content.
+     Under reduced motion the swap is instant. Not persisted: the visitor
+     made no manual choice, so we don't override saved/detected language. */
+  function introSwitch(code) {
+    introTimer = null;
+    var main = $("main");
+    if (REDUCED || !main) {
+      switchLang(code, false);
+      return;
+    }
+    main.classList.add("lang-swap");
+    /* force style flush so the transition runs from the current opacity */
+    void main.offsetWidth;
+    main.classList.add("lang-swap--out");
+    var done = false;
+    function finish() {
+      if (done) return;
+      done = true;
+      main.removeEventListener("transitionend", finish);
+      switchLang(code, false);
+      main.classList.remove("lang-swap--out");
+      void main.offsetWidth;
+      main.addEventListener("transitionend", function onIn() {
+        main.removeEventListener("transitionend", onIn);
+        main.classList.remove("lang-swap");
+      });
+    }
+    main.addEventListener("transitionend", finish);
+    /* safety fallback if transitionend never fires */
+    setTimeout(finish, 500);
   }
 
   /* ============================================================
@@ -569,6 +646,7 @@
       underline: { type: "underline", color: "#C8552B" },
       highlight: { type: "highlight", color: "#E0A24E" },
       circle: { type: "circle", color: "#C8552B" },
+      box: { type: "box", color: "#C8552B" },
     };
     var nodes = document.querySelectorAll("[data-rn]:not([data-rn-done])");
     if (!("IntersectionObserver" in window)) return;
@@ -583,7 +661,7 @@
           var ann = window.RoughNotation.annotate(n, {
             type: conf.type, color: conf.color,
             strokeWidth: conf.type === "highlight" ? 14 : 2.4,
-            padding: conf.type === "circle" ? 8 : 2,
+            padding: conf.type === "circle" || conf.type === "box" ? 8 : 2,
             iterations: 2, animationDuration: 700,
             multiline: conf.type === "underline" || conf.type === "highlight",
           });
@@ -638,7 +716,6 @@
       { id: "proof-root", theme: "light" },
       { id: "approach", theme: "dark" },
       { id: "work", theme: "light" },
-      { id: "more-work", theme: "dark" },
       { id: "stack", theme: "light" },
       { id: "about", theme: "dark" },
       { id: "photos", theme: "light" },
@@ -664,9 +741,13 @@
      BOOT
      ============================================================ */
   function boot() {
+    /* Intro flourish: force the first paint to Chinese regardless of
+       saved/detected language, then auto-swap to Russian after ~1s. */
+    current = "zh";
     renderAll();
     initGrain();
     initNavScroll();
+    introTimer = setTimeout(function () { introSwitch("ru"); }, 1000);
   }
 
   if (document.readyState === "loading") {
