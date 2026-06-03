@@ -1378,6 +1378,20 @@
     } catch (e) { console.error("grained failed:", e); }
   }
 
+  function initBackToTop() {
+    document.addEventListener("click", function (e) {
+      var link = e.target.closest('a[href="#top"]');
+      if (!link) return;
+      e.preventDefault();
+      closeMenu();
+      var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, left: 0, behavior: reduced ? "auto" : "smooth" });
+      if (window.location.hash === "#top") {
+        history.replaceState(null, "", window.location.pathname + window.location.search);
+      }
+    });
+  }
+
   /* ============================================================
      NAV SCROLL STATE + theme-under-nav
      ============================================================ */
