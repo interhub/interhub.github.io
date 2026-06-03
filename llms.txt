@@ -23,9 +23,28 @@ DevOps & Cloud: Docker, CI/CD, Google Cloud, AWS, Grafana, Loki, Nginx, Traefik.
 W3-certified in TypeScript and React.
 
 ## Important links
-- Home: https://interhub.github.io/
-- Full version for LLM: https://interhub.github.io/llms-full.txt
+- Home: https://personal-info.ru/
+- Full version for LLM: https://personal-info.ru/llms-full.txt
 - Email: stepanstepan4@gmail.com
 - LinkedIn: https://www.linkedin.com/in/stepanturchenko
-- Telegram: https://t.me/Stepan_Turchenko
+- Telegram (preferred contact): https://t.me/Stepan_Turchenko
+- GitHub: https://github.com/interhub
+- X (Twitter): https://x.com/interhubs
 - Instagram: https://www.instagram.com/stepan_turchenko/
+
+## FAQ
+
+Q: Who is Stepan Turchenko?
+A: AI Integration Specialist and Senior Fullstack Engineer / Tech Lead, 6+ years of production work across the US, UK and Russia; brings AI agents and automation into real business and owns the engineering end to end.
+
+Q: What can you hire him for?
+A: AI integration into business processes, building and shipping a product end to end (mobile, backend, infra), or leading an engineering team as tech lead. Available for full-time remote.
+
+Q: What is his stack?
+A: Claude Code, AI agents, prompt engineering, N8N, Cursor; React, React Native, TypeScript; Node.js, Nest.js, PostgreSQL, Supabase; Docker, CI/CD, Google Cloud, AWS.
+
+Q: What has he built?
+A: Painta (AI art coach), Aspect Health (women-health platform), Nana800 (his own low-code automation platform), Moscow Sport (city-scale government app).
+
+Q: How to contact him?
+A: Preferred: Telegram https://t.me/Stepan_Turchenko ; also email stepanstepan4@gmail.com and LinkedIn https://www.linkedin.com/in/stepanturchenko.

@@ -13,7 +13,10 @@
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="author" content="Stepan Turchenko" />
 
+    <link rel="canonical" href="https://personal-info.ru/" />
+
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://personal-info.ru/" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Stepan Turchenko" />
     <meta
@@ -24,7 +27,7 @@
       property="og:description"
       content="I bring AI into how companies actually work, and I own the engineering that makes it run in production."
     />
-    <meta property="og:image" content="./assets/stepan-end-1.png" />
+    <meta property="og:image" content="https://personal-info.ru/assets/stepan-end-1.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -34,7 +37,7 @@
       name="twitter:description"
       content="AI integration and senior fullstack engineering, shipped to production across the US, UK and Russia."
     />
-    <meta name="twitter:image" content="./assets/stepan-end-1.png" />
+    <meta name="twitter:image" content="https://personal-info.ru/assets/stepan-end-1.png" />
 
     <link rel="icon" href="./favicon.ico" sizes="any" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
@@ -63,31 +66,133 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Stepan Turchenko",
-        "alternateName": "Степан Турченко",
-        "jobTitle": "AI Integration Specialist, Senior Fullstack Engineer, Tech Lead",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Kaliningrad",
-          "addressCountry": "RU"
-        },
-        "email": "stepanstepan4@gmail.com",
-        "knowsAbout": [
-          "AI integration",
-          "AI agents",
-          "Workflow automation",
-          "Fullstack development",
-          "React Native",
-          "Node.js",
-          "DevOps",
-          "Technical leadership"
-        ],
-        "knowsLanguage": ["en", "ru", "zh"],
-        "sameAs": [
-          "https://www.linkedin.com/in/stepanturchenko",
-          "https://t.me/Stepan_Turchenko",
-          "https://www.instagram.com/stepan_turchenko/"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://personal-info.ru/#website",
+            "url": "https://personal-info.ru/",
+            "name": "Stepan Turchenko",
+            "inLanguage": ["en", "ru"],
+            "publisher": { "@id": "https://personal-info.ru/#stepan" }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://personal-info.ru/#profilepage",
+            "url": "https://personal-info.ru/",
+            "name": "Stepan Turchenko - AI Integration Specialist & Senior Fullstack",
+            "isPartOf": { "@id": "https://personal-info.ru/#website" },
+            "about": { "@id": "https://personal-info.ru/#stepan" },
+            "mainEntity": { "@id": "https://personal-info.ru/#stepan" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://personal-info.ru/#stepan",
+            "name": "Stepan Turchenko",
+            "alternateName": ["Степан Турченко"],
+            "jobTitle": "AI Integration Specialist, Senior Fullstack Engineer, Tech Lead",
+            "description": "Stepan Turchenko brings AI agents and automation into real business processes and owns the engineering end to end, with more than six years shipping production software across the US, UK and Russia.",
+            "url": "https://personal-info.ru/",
+            "image": "https://personal-info.ru/assets/stepan-end-1.png",
+            "email": "stepanstepan4@gmail.com",
+            "telephone": "+79622639809",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Kaliningrad",
+              "addressCountry": "RU"
+            },
+            "knowsLanguage": ["en", "ru", "zh"],
+            "hasOccupation": {
+              "@type": "Occupation",
+              "name": "AI Integration Specialist",
+              "occupationalCategory": "15-1252.00",
+              "skills": "AI integration, LLM apps, AI agents, RAG, workflow automation, fullstack development, React Native, Node.js, DevOps, technical leadership"
+            },
+            "knowsAbout": [
+              "AI integration",
+              "AI agents",
+              "LLM application development",
+              "RAG",
+              "Prompt engineering",
+              "Workflow automation",
+              "N8N",
+              "Claude Code",
+              "Fullstack development",
+              "React",
+              "React Native",
+              "Node.js",
+              "DevOps",
+              "Technical leadership"
+            ],
+            "sameAs": [
+              "https://www.linkedin.com/in/stepanturchenko",
+              "https://github.com/interhub",
+              "https://x.com/interhubs",
+              "https://t.me/Stepan_Turchenko",
+              "https://www.instagram.com/stepan_turchenko/"
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://personal-info.ru/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Who is Stepan Turchenko?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Stepan Turchenko is an AI Integration Specialist and Senior Fullstack Engineer / Tech Lead with more than six years shipping production software across the US, UK and Russia. He brings AI agents and automation into real business processes and owns the engineering end to end."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does an AI Integration Specialist do?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "He maps where AI agents and automation save a company time, then builds and integrates them into existing tools and workflows - moving the team from scattered prompts to one shared AI environment where agents, context, rules and skills are reused across the whole company."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What can you hire Stepan Turchenko for?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI integration into business processes, building and shipping a product end to end (mobile, backend, infrastructure), or leading an engineering team as a tech lead. He is available for full-time remote work."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Stepan Turchenko's tech stack?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI and automation with Claude Code, AI agents, prompt engineering, N8N and Cursor; React, React Native and TypeScript on the frontend; Node.js, Nest.js, PostgreSQL and Supabase on the backend; Docker, CI/CD, Google Cloud and AWS for DevOps."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What has Stepan Turchenko built?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Painta, an AI art coach; Aspect Health, a women-health platform; Nana800, his own low-code automation platform; and Moscow Sport, the city-scale Moscow government sport app, among other products."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is Stepan Turchenko based and what languages does he speak?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "He is based in Kaliningrad, Russia and works remotely worldwide. He is fluent in English and a native Russian speaker."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I contact or hire Stepan Turchenko?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The preferred way to reach him is Telegram at https://t.me/Stepan_Turchenko. He is also available by email at stepanstepan4@gmail.com and on LinkedIn at https://www.linkedin.com/in/stepanturchenko."
+                }
+              }
+            ]
+          }
         ]
       }
     </script>
@@ -102,6 +207,100 @@
     <div class="mobile-menu" id="mobile-menu" data-open="false"></div>
 
     <main id="main">
+      <!-- Static crawler fallback: visible content is rendered by app.js into the empty sections below.
+           This noscript block mirrors the full profile so non-JS AI crawlers (ClaudeBot, PerplexityBot,
+           GPTBot) get the complete copy. Telegram is the preferred contact channel. -->
+      <noscript>
+        <article>
+          <h1>Stepan Turchenko - AI Integration Specialist &amp; Senior Fullstack Engineer</h1>
+          <p>
+            Stepan Turchenko is an AI Integration Specialist and Senior Fullstack Engineer / Tech Lead
+            with more than six years shipping production software across the US, UK and Russia. He brings
+            AI agents and automation into real business processes and owns the engineering end to end.
+          </p>
+
+          <h2>What I do</h2>
+          <ul>
+            <li>Bring AI agents and automation into real business processes.</li>
+            <li>Build and ship product end to end - mobile and backend.</li>
+            <li>Lead engineering as a tech lead.</li>
+          </ul>
+
+          <h2>Selected work</h2>
+          <ul>
+            <li><a href="https://painta.io">Painta</a> - an AI art coach.</li>
+            <li><a href="https://www.aspect-health.com">Aspect Health</a> - a women-health platform.</li>
+            <li><a href="https://nana800.io">Nana800</a> - his own low-code automation platform.</li>
+            <li><a href="https://sport.mos.ru/">Moscow Sport</a> - the Moscow government sport app.</li>
+            <li>Bismap</li>
+            <li>Stayfit</li>
+          </ul>
+
+          <h2>Tech stack</h2>
+          <ul>
+            <li><strong>AI &amp; Automation:</strong> Claude Code, AI Agents, Prompt Engineering, N8N, Cursor.</li>
+            <li><strong>Frontend &amp; Mobile:</strong> React, React Native, TypeScript, Zustand, Expo.</li>
+            <li><strong>Backend &amp; Data:</strong> Node.js, Nest.js, PostgreSQL, Supabase, Redis, RabbitMQ.</li>
+            <li><strong>DevOps &amp; Cloud:</strong> Docker, CI/CD, Google Cloud, AWS, Grafana, Nginx, Traefik.</li>
+          </ul>
+
+          <h2>Frequently asked questions</h2>
+
+          <h3>Who is Stepan Turchenko?</h3>
+          <p>
+            Stepan Turchenko is an AI Integration Specialist and Senior Fullstack Engineer / Tech Lead with
+            more than six years shipping production software across the US, UK and Russia. He brings AI agents
+            and automation into real business processes and owns the engineering end to end.
+          </p>
+
+          <h3>What does an AI Integration Specialist do?</h3>
+          <p>
+            He maps where AI agents and automation save a company time, then builds and integrates them into
+            existing tools and workflows - moving the team from scattered prompts to one shared AI environment
+            where agents, context, rules and skills are reused across the whole company.
+          </p>
+
+          <h3>What can you hire Stepan Turchenko for?</h3>
+          <p>
+            AI integration into business processes, building and shipping a product end to end (mobile, backend,
+            infrastructure), or leading an engineering team as a tech lead. He is available for full-time remote work.
+          </p>
+
+          <h3>What is Stepan Turchenko's tech stack?</h3>
+          <p>
+            AI and automation with Claude Code, AI agents, prompt engineering, N8N and Cursor; React, React Native
+            and TypeScript on the frontend; Node.js, Nest.js, PostgreSQL and Supabase on the backend; Docker, CI/CD,
+            Google Cloud and AWS for DevOps.
+          </p>
+
+          <h3>What has Stepan Turchenko built?</h3>
+          <p>
+            Painta, an AI art coach; Aspect Health, a women-health platform; Nana800, his own low-code automation
+            platform; and Moscow Sport, the city-scale Moscow government sport app, among other products.
+          </p>
+
+          <h3>Where is Stepan Turchenko based and what languages does he speak?</h3>
+          <p>
+            He is based in Kaliningrad, Russia and works remotely worldwide. He is fluent in English and a native
+            Russian speaker.
+          </p>
+
+          <h3>How do I contact or hire Stepan Turchenko?</h3>
+          <p>
+            The preferred way to reach him is Telegram at https://t.me/Stepan_Turchenko. He is also available by
+            email at stepanstepan4@gmail.com and on LinkedIn at https://www.linkedin.com/in/stepanturchenko.
+          </p>
+
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="https://t.me/Stepan_Turchenko">Telegram (preferred)</a></li>
+            <li><a href="mailto:stepanstepan4@gmail.com">stepanstepan4@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/stepanturchenko">LinkedIn</a></li>
+            <li><a href="https://github.com/interhub">GitHub</a></li>
+          </ul>
+        </article>
+      </noscript>
+
       <section class="section section--dark hero" id="hero-root" aria-label="Intro"></section>
 
       <section class="section section--light proof" id="proof-root" aria-label="Credibility"></section>
