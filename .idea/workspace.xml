@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="fix kist fancly 1">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +18,7 @@
     </execution>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="302" />
+    <option name="cachedIndexableFilesCount" value="303" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -303,7 +302,8 @@
       <workItem from="1778524835742" duration="113000" />
       <workItem from="1780474322014" duration="3772000" />
       <workItem from="1780496709466" duration="9000" />
-      <workItem from="1780501355341" duration="661000" />
+      <workItem from="1780501355341" duration="1264000" />
+      <workItem from="1780564976239" duration="597000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -649,7 +649,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780501358701</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="fix kist fancly 1">
+      <option name="closed" value="true" />
+      <created>1780506256810</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1780506256810</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

@@ -68,7 +68,7 @@ window.SITE_CONTENT = {
           { label: "Только чат: спросить в окне" },
           { label: "Агенты, но хаотично: каждый сам по себе" },
           { label: "Агенты плюс обмен тем, что работает" },
-          { label: "Единая среда: общие агенты, контекст, правила, форматы и навыки" },
+          { label: "Общая среда: общие агенты, контекст, правила, форматы и навыки" },
         ],
       },
       examples: {
@@ -78,15 +78,15 @@ window.SITE_CONTENT = {
           { area: "Проджект", before: "Вручную читать тред в Slack, выбирать исполнителя и заводить задачу.", after: "Агент читает тред, выбирает исполнителя, находит доску и колонку, создаёт задачу и возвращает ссылку.", more: "и десятки других примеров оптимизации работы отдела продукта", glitchTag: "+×12" },
           { area: "Финансы", before: "Вручную собирать чеки, сверять доходы и сводить таблицу.", after: "Агент собирает чеки и списания, сверяет доходы, строит таблицу и по расписанию публикует в Slack.", more: "и десятки других примеров оптимизации финансов и отчётности", glitchTag: "~15 шт" },
           { area: "QA", before: "Вручную проходить фичу по инструкции и писать баг-репорт.", after: "Агент тестирует фичу по инструкции, двигает задачу по колонкам, пишет баг-репорт и спрашивает версию, если её нет.", more: "и десятки других примеров оптимизации работы отдела QA", glitchTag: "QA++" },
-          { area: "Аналитика", before: "Вручную выгружать цифры из всех источников и искать, что изменилось.", after: "Агент собирает сырые цифры из всех источников, находит рост и спад, строит график с короткими выводами и по расписанию публикует в Slack.", more: "и десятки других примеров для аналитики, разработки и смежных команд", glitchTag: "dev·data" },
+          { area: "Аналитика", before: "Вручную выгружать цифры из всех источников и искать, что изменилось.", after: "Агент собирает сырые цифры из всех источников, строит график и сразу пишет, что выросло и что упало, и по расписанию публикует в Slack.", more: "и десятки других примеров для аналитики, разработки и смежных команд", glitchTag: "dev·data" },
         ],
       },
       pillars: {
-        title: "На чём держится этот переход",
+        title: "Из чего это собрано",
         items: [
           { title: "Общая память (gbrain)", icon: "graph", body: "Личная и командная база знаний как общая память между сессиями и людьми: проекты, плейбуки и заметки дают всему парку агентов один источник контекста." },
           { title: "Автоматизация процессов", icon: "workflow", body: "Агенты по расписанию сами собирают отчёты и кладут их в Slack без человека, а память копится между сессиями, так что контекст не вводится заново. Главный агент делегирует субагентам, каждый работает в изолированном контексте и возвращает результат." },
-          { title: "Единый слой ИИ", body: "Навык - это способность, описанная текстом, написанная один раз и переиспользуемая вместо переписывания того же промпта. Общие и расширяемые навыки, общий контекст, правила и форматы превращают разрозненный ИИ в повторяемые процессы компании." },
+          { title: "Сведённый воедино слой ИИ", body: "Навык - это способность, описанная текстом, написанная один раз и переиспользуемая вместо переписывания того же промпта. Общие и расширяемые навыки, общий контекст, правила и форматы превращают разрозненный ИИ в повторяемые процессы компании." },
         ],
       },
     },
@@ -138,7 +138,7 @@ window.SITE_CONTENT = {
     about: {
       index: "О себе",
       headline: "Обо мне",
-      body: "Более 6 лет работаю над тяжёлыми приложениями и командами вокруг них: от women-health стартапа в Делавэре до ритейл- и B2B-продуктов в России и agentic-мобильной разработки в Великобритании. Веду всё целиком: архитектуру, релизы, DevOps, найм и ту работу по надёжности, без которой продукт не держит реальную нагрузку. Провожу собеседования, переговоры и релизы на английском, одинаково спокойно беру и весь роадмап, и одну сложную задачу. Сейчас большая часть внимания уходит на внедрение ИИ-агентов и автоматизации в реальную работу компаний.",
+      body: "Более 6 лет работаю над тяжёлыми приложениями и командами вокруг них: от women-health стартапа в Делавэре до ритейл- и B2B-продуктов в России и agentic-мобильной разработки в Великобритании. Веду всё целиком: архитектуру, релизы, DevOps, найм и ту работу по надёжности - мониторинг, алерты и разбор инцидентов, - без которой продукт не держит реальную нагрузку. Провожу собеседования, переговоры и релизы на английском, одинаково спокойно беру и весь роадмап, и одну сложную задачу. Сейчас большая часть внимания уходит на внедрение ИИ-агентов и автоматизации в реальную работу компаний.",
       facts: "База - Калининград, Россия. Английский свободный, русский родной. Доступен для полной удалённой занятости.",
     },
     photos: {
@@ -223,7 +223,7 @@ window.SITE_CONTENT = {
           { label: "Chat only: ask in a window" },
           { label: "Agents, but chaotic: everyone on their own" },
           { label: "Agents plus sharing what works" },
-          { label: "A unified environment: shared agents, context, rules, formats, and skills" },
+          { label: "A single environment: shared agents, context, rules, formats, and skills" },
         ],
       },
       examples: {
@@ -233,15 +233,15 @@ window.SITE_CONTENT = {
           { area: "PM", before: "Manually read a Slack thread, pick the assignee, and open a task.", after: "An agent reads the thread, picks the assignee, finds the board and column, creates the task, and posts the link back.", more: "and dozens more examples of product-team workflow optimization", glitchTag: "+×12" },
           { area: "Finance", before: "Manually collect receipts, reconcile income, and assemble the table.", after: "An agent collects receipts and charges, reconciles income, builds the table, and posts to Slack on a schedule.", more: "and dozens more examples in finance and reporting", glitchTag: "~15 more" },
           { area: "QA", before: "Manually walk a feature through its instructions and write the bug report.", after: "An agent tests the feature by the instructions, moves the task across columns, writes the bug report, and asks for the version if it is missing.", more: "and dozens more examples of QA workflow optimization", glitchTag: "QA++" },
-          { area: "Analytics", before: "Manually pull numbers from every source and hunt for what changed.", after: "An agent pulls raw numbers from all sources, finds what went up and down, builds a chart with a short takeaway, and posts to Slack on a schedule.", more: "and dozens more for analytics, engineering, and adjacent teams", glitchTag: "dev·data" },
+          { area: "Analytics", before: "Manually pull numbers from every source and hunt for what changed.", after: "An agent pulls raw numbers from all sources, builds a chart and flags what moved, and posts to Slack on a schedule.", more: "and dozens more for analytics, engineering, and adjacent teams", glitchTag: "dev·data" },
         ],
       },
       pillars: {
-        title: "What carries this shift",
+        title: "What it runs on",
         items: [
           { title: "Shared memory (gbrain)", icon: "graph", body: "A personal and shared knowledge base as memory across sessions and people: projects, playbooks, and notes give the whole fleet of agents one source of context." },
           { title: "Process automation", icon: "workflow", body: "Scheduled agents assemble reports and drop them in Slack with no human, and memory accumulates across sessions so context is never re-entered. A main agent delegates to subagents, each working in isolated context and returning a result." },
-          { title: "A unified AI layer", body: "A skill is a capability described in text, written once and reused instead of rewriting the same prompt. Shared, extendable skills plus shared context, rules, and formats turn ad-hoc AI into repeatable company processes." },
+          { title: "One coherent AI layer", body: "A skill is a capability described in text, written once and reused instead of rewriting the same prompt. Shared, extendable skills plus shared context, rules, and formats turn ad-hoc AI into repeatable company processes." },
         ],
       },
     },
@@ -293,7 +293,7 @@ window.SITE_CONTENT = {
     about: {
       index: "About",
       headline: "About",
-      body: "More than six years on heavy applications and the teams behind them, from a women-health startup in Delaware to retail and B2B products in Russia and agentic mobile work in the UK. I run things end to end: architecture, delivery, DevOps, hiring, and the reliability work that keeps a product up under real load. I interview, negotiate, and ship in English, and I am as comfortable owning a roadmap as I am taking on a single hard problem. Right now most of my attention goes to bringing AI agents and automation into how companies actually operate.",
+      body: "More than six years on heavy applications and the teams behind them, from a women-health startup in Delaware to retail and B2B products in Russia and agentic mobile work in the UK. I run things end to end: architecture, delivery, DevOps, hiring, and the reliability work - monitoring, alerts, and incident response - that keeps a product up under real load. I interview, negotiate, and ship in English, and I am as comfortable owning a roadmap as I am taking on a single hard problem. Right now most of my attention goes to bringing AI agents and automation into how companies actually operate.",
       facts: "Based in Kaliningrad, Russia. English proficient, Russian native. Available for full-time remote.",
     },
     photos: {
@@ -377,7 +377,7 @@ window.SITE_CONTENT = {
           { label: "仅用聊天：在窗口里提问" },
           { label: "用上了智能体，但很混乱：各做各的" },
           { label: "智能体加上对有效做法的共享" },
-          { label: "统一环境：共享的智能体、上下文、规则、格式与技能" },
+          { label: "共享环境：共享的智能体、上下文、规则、格式与技能" },
         ],
       },
       examples: {
@@ -387,15 +387,15 @@ window.SITE_CONTENT = {
           { area: "项目管理", before: "手动阅读 Slack 讨论串，挑选负责人并创建任务。", after: "智能体阅读讨论串，挑选负责人，找到看板和列，创建任务并把链接发回。", more: "还有几十个产品团队流程优化的类似例子", glitchTag: "+×12" },
           { area: "财务", before: "手动收集票据、核对收入并汇总表格。", after: "智能体收集票据与扣款，核对收入，生成表格，并按计划发布到 Slack。", more: "还有几十个财务与报表方向的类似例子", glitchTag: "~15条" },
           { area: "QA", before: "手动按说明走查功能并撰写缺陷报告。", after: "智能体按说明测试功能，在各列之间移动任务，撰写缺陷报告，缺少版本时主动询问。", more: "还有几十个 QA 流程优化的类似例子", glitchTag: "QA++" },
-          { area: "数据分析", before: "手动从各个来源导出数字，逐一排查变化。", after: "智能体从所有来源拉取原始数字，找出涨跌，生成带简短结论的图表，并按计划发布到 Slack。", more: "还有几十个面向分析、开发及相关团队的类似例子", glitchTag: "dev·data" },
+          { area: "数据分析", before: "手动从各个来源导出数字，逐一排查变化。", after: "智能体从所有来源拉取原始数字，生成图表并直接标出哪些涨了、哪些跌了，并按计划发布到 Slack。", more: "还有几十个面向分析、开发及相关团队的类似例子", glitchTag: "dev·data" },
         ],
       },
       pillars: {
-        title: "支撑这次转变的根基",
+        title: "它由什么构成",
         items: [
           { title: "共享记忆 (gbrain)", icon: "graph", body: "一个个人与团队共用的知识库，作为跨会话、跨成员的共享记忆：项目、操作手册与笔记，让整支智能体队伍拥有同一份上下文来源。" },
           { title: "流程自动化", icon: "workflow", body: "按计划运行的智能体自行汇总报告并发布到 Slack，无需人工；记忆在会话之间不断累积，上下文无需重新输入。主智能体把任务委派给子智能体，每个子智能体在隔离的上下文中工作并返回结果。" },
-          { title: "统一的 AI 层", body: "技能是用文字描述的一种能力，只写一次便可复用，无需每次重写相同的提示词。共享且可扩展的技能，加上共享的上下文、规则与格式，把临时拼凑的 AI 变成可重复的企业流程。" },
+          { title: "整合为一体的 AI 层", body: "技能是用文字描述的一种能力，只写一次便可复用，无需每次重写相同的提示词。共享且可扩展的技能，加上共享的上下文、规则与格式，把临时拼凑的 AI 变成可重复的企业流程。" },
         ],
       },
     },
@@ -447,7 +447,7 @@ window.SITE_CONTENT = {
     about: {
       index: "关于",
       headline: "关于",
-      body: "六年多专注于高负载应用以及支撑它们的团队，从特拉华州的一家女性健康初创公司，到俄罗斯的零售与 B2B 产品，再到英国的智能体移动端开发。我端到端地掌控一切：架构、交付、DevOps、招聘，以及让产品在真实负载下不宕机的可靠性工作。我用英语进行面试、谈判和发布，既能独立扛起整条路线图，也能专注解决单个棘手的难题。眼下，我的大部分精力都投入在把 AI 智能体和自动化真正带进企业的日常运转中。",
+      body: "六年多专注于高负载应用以及支撑它们的团队，从特拉华州的一家女性健康初创公司，到俄罗斯的零售与 B2B 产品，再到英国的智能体移动端开发。我端到端地掌控一切：架构、交付、DevOps、招聘，以及让产品在真实负载下不宕机的可靠性工作：监控、告警与故障排查。我用英语进行面试、谈判和发布，既能独立扛起整条路线图，也能专注解决单个棘手的难题。眼下，我的大部分精力都投入在把 AI 智能体和自动化真正带进企业的日常运转中。",
       facts: "常驻俄罗斯加里宁格勒。英语流利，俄语母语。可全职远程。",
     },
     photos: {
