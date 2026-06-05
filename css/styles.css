@@ -1595,3 +1595,126 @@ a { color: inherit; text-decoration: none; }
   .contact__channel { flex-direction: column; align-items: flex-start; gap: 6px; }
   .contact__ch-value { text-align: left; }
 }
+
+/* ====================================================================
+   HAND-DRAWN VISUAL-KIT ILLUSTRATIONS
+   One base class + size modifiers. Color is driven by `color` on the
+   container so the inlined SVG (stroke="currentColor") follows the
+   section: paper on dark sections, ink on light ones. Terracotta/clay
+   accents are baked into the source assets.
+   ==================================================================== */
+.kit-illu {
+  display: block;
+  height: auto;
+  pointer-events: none;
+}
+.kit-illu svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.kit-illu--sm { width: 23px; }
+.kit-illu--md { width: 76px; }
+.kit-illu--hero { width: clamp(120px, 12vw, 150px); }
+.kit-illu--divider { width: 100%; }
+.kit-illu--divider svg { height: 26px; }
+
+/* 1. Hero - coffee cup, paper, top-right corner of the hero inner. */
+.hero__inner { position: relative; }
+.hero__illu {
+  position: absolute;
+  top: calc(var(--nav-h) + clamp(8px, 3vh, 40px));
+  right: var(--gutter);
+  color: var(--paper);
+  opacity: 0.9;
+  z-index: 1;
+}
+
+/* 2. Approach pillars head - laptop, paper-soft. */
+.ai-block__head { position: relative; }
+.ai-block__illu {
+  color: var(--paper-soft);
+  opacity: 0.7;
+  margin-bottom: 14px;
+}
+
+/* 3. Approach light panel (examples head) - node fan, ink. */
+.ai-swap-strip__head { position: relative; }
+.ai-swap-strip__illu {
+  width: 70px;
+  color: var(--ink);
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+/* 4. Stack note - terminal, ink, small leading icon. */
+.stack__note { display: inline-flex; align-items: center; gap: 9px; }
+.stack__note-icon {
+  width: 23px;
+  flex: 0 0 auto;
+  color: var(--ink);
+}
+
+/* 5. Stack DevOps/infra cluster title - gear, ink-soft. */
+.stack__cluster-title { position: relative; }
+.stack__cluster-icon {
+  width: 22px;
+  display: inline-block;
+  vertical-align: -0.32em;
+  margin-right: 9px;
+  color: var(--ink-soft);
+  opacity: 0.75;
+}
+
+/* 6. Cases intro - storefront, ink. */
+.cases__intro-illu {
+  color: var(--ink);
+  width: 88px;
+  margin-bottom: 18px;
+}
+
+/* 7. About headline - mountain flag, paper. */
+.about__headline-row {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 3vw, 32px);
+  flex-wrap: wrap;
+}
+.about__headline-row .about__headline { margin: 0; }
+.about__headline-illu {
+  width: 80px;
+  flex: 0 0 auto;
+  color: var(--paper);
+}
+
+/* 8. About tiles - eucalyptus, paper-soft, quiet decor. */
+.about__tiles { position: relative; }
+.about__tiles-plant {
+  position: absolute;
+  top: -40px;
+  right: -8px;
+  width: clamp(90px, 8vw, 110px);
+  color: var(--paper-soft);
+  opacity: 0.55;
+  z-index: 0;
+}
+
+/* 9. Stack -> About seam - wave divider, muted terracotta. */
+.stack__divider {
+  margin-top: clamp(36px, 6vh, 64px);
+  color: var(--terracotta);
+  opacity: 0.3;
+}
+
+/* 10. Contact headline - chat bubbles, paper. */
+.contact__illu {
+  width: 88px;
+  color: var(--paper);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 640px) {
+  .hero__illu { width: 96px; top: calc(var(--nav-h) + 6px); opacity: 0.8; }
+  .about__tiles-plant { width: 72px; top: -28px; }
+  .about__headline-illu { width: 60px; }
+}

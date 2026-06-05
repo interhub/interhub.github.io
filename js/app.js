@@ -37,6 +37,20 @@
   function clear(node) { while (node.firstChild) node.removeChild(node.firstChild); }
   function $(id) { return document.getElementById(id); }
 
+  /* Decorative hand-drawn visual-kit illustration.
+     - Inlines the source SVG markup so stroke="currentColor" inherits the
+       container's text color (paper on dark sections, ink on light ones).
+     - One .kit-illu base class + size modifier; size lives only in CSS.
+     - key: name in window.KIT_ILLUS; size: "sm" | "md" | "hero" | "divider".
+     - extra: optional extra class names (e.g. "reveal"). */
+  function kitIllu(key, size, extra) {
+    var svg = (window.KIT_ILLUS || {})[key] || "";
+    var cls = "kit-illu kit-illu--" + (size || "md") + (extra ? " " + extra : "");
+    var span = el("span", { class: cls, "aria-hidden": "true" });
+    span.innerHTML = svg;
+    return span;
+  }
+
   /* Decorative full-color editorial side image (variety vs. duotone). */
   function sideFigure(figClass, imgClass, src) {
     return el("figure", { class: figClass + " reveal", "aria-hidden": "true" }, [
@@ -322,6 +336,7 @@
         ctaLink(hero.ctaPrimary, "#work", "btn btn--primary", true, "primary"),
         ctaLink(hero.ctaSecondary, "#contact", "btn btn--ghost", false, "secondary"),
       ]),
+      kitIllu("coffee", "hero", "hero__illu reveal"),
       el("div", { class: "hero__marker mono", "aria-hidden": "true" }, ["ST"]),
     ]));
   }
@@ -408,6 +423,7 @@
     var ex = el("div", { class: "ai-swap-strip" }, [
       el("div", { class: "ai-swap-strip__inner" }, [
         el("div", { class: "ai-swap-strip__head" }, [
+          kitIllu("nodeFan", "md", "ai-swap-strip__illu"),
           el("h3", { class: "ai-swap-strip__title" }, [a.examples.title]),
           el("p", { class: "ai-swap-strip__caption mono" }, [a.examples.caption]),
         ]),
@@ -441,6 +457,7 @@
     /* 3 pillars: gbrain, automation + memory, unified layer. */
     var pillars = el("div", { class: "ai-block ai-pillars" }, [
       el("div", { class: "ai-block__head reveal" }, [
+        kitIllu("laptop", "md", "ai-block__illu"),
         el("h3", { class: "ai-block__title" }, [a.pillars.title]),
       ]),
     ]);
@@ -599,6 +616,7 @@
       el("span", { class: "section-index", "data-fill": "", "aria-hidden": "true" }, ["04"]),
       el("div", { class: "cases__intro" }, [
         el("div", { class: "cases__intro-copy" }, [
+          kitIllu("storefront", "md", "cases__intro-illu reveal"),
           el("p", { class: "eyebrow" }, [c.sectionTitle]),
           el("h2", { class: "headline", "data-splitting": "" }, [c.headline]),
           el("p", { class: "lead-body cases__lead" }, [c.lead]),
@@ -650,7 +668,10 @@
     clear(host);
     var inner = el("div", { class: "section__inner stack__inner" }, [
       el("span", { class: "section-index", "data-fill": "", "aria-hidden": "true" }, ["05"]),
-      el("p", { class: "mono stack__note" }, [t.stack.note]),
+      el("p", { class: "mono stack__note" }, [
+        kitIllu("terminal", "sm", "stack__note-icon"),
+        t.stack.note,
+      ]),
       el("p", { class: "eyebrow" }, [t.stack.index]),
       el("h2", { class: "headline", "data-splitting": "" }, [t.stack.headline]),
     ]);
@@ -661,8 +682,12 @@
       if (cl.emphasis) titleAttrs["data-rn"] = "box";
       var clusterClass = "stack__cluster" + (cl.emphasis ? " stack__cluster--emph" : " reveal");
       var chipsWrapClass = "stack__chips" + (cl.emphasis ? " reveal" : "");
+      var isInfra = /DevOps|Cloud|облак|инфра/i.test(cl.title);
+      var titleChildren = isInfra
+        ? [kitIllu("gear", "sm", "stack__cluster-icon"), cl.title]
+        : [cl.title];
       grid.appendChild(el("div", { class: clusterClass }, [
-        el("h3", titleAttrs, [cl.title]),
+        el("h3", titleAttrs, titleChildren),
         el("div", { class: chipsWrapClass }, cl.chips.map(function (chip) {
           return el("span", { class: "chip mono" }, [chip]);
         })),
@@ -676,11 +701,13 @@
     ]));
 
     inner.appendChild(el("p", { class: "mono stack__cert" }, [t.stack.cert]));
+    inner.appendChild(kitIllu("waveDivider", "divider", "stack__divider"));
     host.appendChild(inner);
   }
 
   function renderAboutTiles(t) {
     var tiles = el("div", { class: "about__tiles reveal" });
+    tiles.appendChild(kitIllu("eucalyptus", "md", "about__tiles-plant"));
     S.photos.forEach(function (src, i) {
       tiles.appendChild(
         el("figure", { class: "about__tile" + (i === 0 ? " about__tile--lead" : "") }, [
@@ -706,7 +733,10 @@
 
     host.appendChild(el("div", { class: "section__inner about__inner" }, [
       el("span", { class: "section-index", "data-fill": "", "aria-hidden": "true" }, ["06"]),
-      el("h2", { class: "headline about__headline", "data-splitting": "" }, [t.about.headline]),
+      el("div", { class: "about__headline-row" }, [
+        el("h2", { class: "headline about__headline", "data-splitting": "" }, [t.about.headline]),
+        kitIllu("mountain", "md", "about__headline-illu reveal"),
+      ]),
       el("div", { class: "about__grid" }, [
         renderAboutTiles(t),
         el("div", { class: "about__col reveal" }, [
@@ -739,6 +769,7 @@
 
     host.appendChild(el("div", { class: "section__inner contact__inner" }, [
       el("span", { class: "section-index", "data-fill": "", "aria-hidden": "true" }, ["07"]),
+      kitIllu("chat", "md", "contact__illu reveal"),
       el("h2", { class: "headline contact__headline", "data-splitting": "" }, [
         t.contact.headlineBefore,
         el("span", { class: "contact__hl-mark", "data-rn": "circle" }, [t.contact.headlineAccent]),
