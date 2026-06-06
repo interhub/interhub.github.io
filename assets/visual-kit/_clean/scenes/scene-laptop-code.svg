@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- screen accent fill (clay) -->
+    <path d="M40 56 C42 50 48 48 56 47 C76 45 100 45 116 47 C124 48 128 52 129 58 C130 71 130 89 128 103 C127 109 122 111 115 112 C95 114 72 114 54 112 C46 111 41 108 40 102 C38 88 38 70 40 56 Z" fill="#E0A24E" stroke="none"/>
+    <!-- screen outline -->
+    <path d="M39 55 C41 49 47 47 55 46 C76 44 100 44 117 46 C125 47 130 52 131 59 C132 72 132 90 130 104 C129 110 123 112 116 113 C95 115 71 115 53 113 C45 112 40 109 39 103 C37 89 37 71 39 55 Z"/>
+    <!-- code on screen: </> bracket + text rows -->
+    <path d="M60 68 L53 78 L60 88"/>
+    <path d="M108 68 L115 78 L108 88"/>
+    <path d="M78 64 L90 92"/>
+    <path d="M55 100 C63 99 74 100 83 99"/>
+    <path d="M55 108 C66 107 80 108 104 107"/>
+    <!-- hinge: screen bottom meets the deck -->
+    <path d="M40 114 C70 116 102 116 130 114"/>
+    <!-- laptop base: solid slab in perspective (back edge slightly narrower, front wide) -->
+    <path d="M40 117 C70 119 102 119 130 117 C146 116 158 119 160 124 C162 129 152 133 138 134 C108 137 64 137 34 134 C20 133 10 129 12 124 C14 119 26 117 40 117 Z"/>
+    <!-- trackpad hint near front -->
+    <path d="M70 127 C78 126 94 126 100 127"/>
+
+    <!-- steaming mug, right side, the warm "writing code" companion -->
+    <path d="M150 118 C152 114 160 113 170 113 C180 113 187 114 189 118 C188 128 185 140 180 147 C177 151 172 153 169 153 C166 153 161 151 158 147 C153 140 150 128 150 118 Z"/>
+    <path d="M152 119 C155 122 162 124 169 124 C176 124 184 122 187 119"/>
+    <path d="M189 121 C196 120 201 124 200 130 C199 136 194 139 187 138"/>
+    <!-- steam wisps over mug -->
+    <path d="M165 106 C169 101 162 96 166 91"/>
+    <path d="M176 106 C180 101 173 96 177 91"/>
+  </g>
+</svg>

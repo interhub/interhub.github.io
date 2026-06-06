@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- the pen: held diagonally, descending toward the paper from upper right -->
+    <path d="M170 30 L90 122"/>
+    <!-- pen barrel second edge to give it body -->
+    <path d="M178 36 L98 128"/>
+    <!-- pen cap end -->
+    <path d="M170 30 C173 26 178 28 180 32 C182 36 180 40 178 36"/>
+    <!-- pen tip / nib meeting the paper -->
+    <path d="M90 122 L82 130 L94 128 Z" fill="currentColor"/>
+
+    <!-- BACK of hand + wrist: one confident contour from lower-left wrist, rising over the knuckles -->
+    <path d="M26 176
+             C24 164 30 156 42 154
+             C54 152 62 156 72 152
+             C82 148 88 140 100 140
+             C112 140 120 146 122 156
+             C123 164 118 170 110 170"/>
+
+    <!-- index finger: longest, curling down over the top of the pen barrel -->
+    <path d="M122 156 C124 144 120 134 110 130 C103 127 98 131 98 137" stroke-width="2.9"/>
+
+    <!-- middle finger tucked just behind, shorter curl -->
+    <path d="M112 162 C115 152 113 144 106 140" stroke-width="2.7"/>
+
+    <!-- thumb pressing up against the near side of the pen -->
+    <path d="M93 154 C92 146 95 140 102 137" stroke-width="2.9"/>
+
+    <!-- small crease where index meets knuckle for life -->
+    <path d="M104 148 C107 150 108 153 106 156" stroke-width="2.2"/>
+
+    <!-- wrist cuff line for grounding -->
+    <path d="M26 176 C32 181 41 183 48 181" stroke-width="2.4"/>
+
+  </g>
+
+  <!-- the flourish / handwritten squiggle flowing from the nib - the ONE accent, terracotta -->
+  <path d="M40 184
+           C52 176 58 184 52 188
+           C47 191 44 186 50 182
+           C60 176 70 186 64 190
+           C59 193 56 188 62 184
+           C72 178 84 188 94 183
+           C103 179 110 182 118 180"
+        stroke="#C8552B" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

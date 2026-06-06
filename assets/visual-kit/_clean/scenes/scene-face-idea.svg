@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Profile face as ONE continuous confident line:
+       hair crown -> forehead -> nose bridge -> nose tip -> lips -> chin ->
+       jaw/neck -> looping back up into wavy hair scribble at the back of the head -->
+  <path d="M70 48
+           C58 52 51 63 51 78
+           C51 88 55 96 60 103
+           C56 106 55 110 59 112
+           C63 114 69 113 71 116
+           C70 121 64 124 61 130
+           C66 131 73 130 78 133
+           C82 135 82 140 78 145
+           C72 151 62 153 58 162
+           C54 170 56 180 62 183
+           C66 185 70 182 70 178
+           C68 174 70 169 75 167
+           C82 164 90 166 94 161
+           C99 155 97 147 95 141
+           C107 143 116 137 119 127
+           C122 117 119 107 114 99
+           C123 95 127 85 125 75
+           C123 63 114 53 102 49
+           C91 45 79 45 70 48 Z"
+        stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- single closed eye, calm, part of the gesture -->
+  <path d="M70 90 C74 87 80 88 83 92" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- Idea = orbiting atom up-right, drawn as two crossing elliptical orbits, one continuous feel -->
+  <g transform="translate(150 56) rotate(-18)">
+    <ellipse cx="0" cy="0" rx="30" ry="13" stroke="currentColor" stroke-width="2.8"/>
+    <ellipse cx="0" cy="0" rx="13" ry="30" stroke="currentColor" stroke-width="2.8" transform="rotate(52)"/>
+    <!-- electron dots on the orbits -->
+    <circle cx="29" cy="-3" r="3.2" fill="currentColor"/>
+    <circle cx="-12" cy="24" r="2.8" fill="currentColor"/>
+    <circle cx="-22" cy="-15" r="2.6" fill="currentColor"/>
+    <!-- terracotta core -->
+    <circle cx="0" cy="0" r="5.4" fill="#C8552B"/>
+  </g>
+
+  <!-- tiny spark ticks linking the head's thought up to the atom -->
+  <path d="M122 70 q5 -4 11 -6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M126 80 q5 -3 9 -4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

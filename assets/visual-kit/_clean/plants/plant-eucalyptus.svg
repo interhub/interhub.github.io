@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 140" fill="none">
+  <g stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- main stem: gentle sway from base to tip -->
+    <path d="M60 134 C57 118 53 102 50 86 C47 70 44 54 43 38 C42 28 42 20 44 12"/>
+
+    <!-- ===== paired rounded leaves on short stalks, climbing the stem ===== -->
+
+    <!-- pair 1 (lowest, largest) -->
+    <path d="M56 122 C50 122 44 124 40 128"/>
+    <path d="M40 128 C33 127 27 122 28 116 C29 110 37 108 42 112 C46 115 45 124 40 128 Z"/>
+    <path d="M40 128 C38 124 35 120 31 118" stroke-width="1"/>
+    <path d="M55 120 C61 120 67 122 71 126"/>
+    <path d="M71 126 C78 125 84 120 83 114 C82 108 74 106 69 110 C65 113 66 122 71 126 Z"/>
+    <path d="M71 126 C73 122 76 118 80 116" stroke-width="1"/>
+
+    <!-- pair 2 -->
+    <path d="M52 106 C46 106 41 107 37 111"/>
+    <path d="M37 111 C31 110 26 105 27 100 C28 95 35 94 40 97 C44 100 42 108 37 111 Z"/>
+    <path d="M37 111 C35 107 32 104 29 102" stroke-width="1"/>
+    <path d="M51 104 C57 104 62 105 66 109"/>
+    <path d="M66 109 C72 108 77 103 76 98 C75 93 68 92 63 95 C59 98 61 106 66 109 Z"/>
+    <path d="M66 109 C68 105 71 102 74 100" stroke-width="1"/>
+
+    <!-- pair 3 -->
+    <path d="M48 90 C43 90 38 91 35 95"/>
+    <path d="M35 95 C29 94 25 89 26 84 C27 79 33 79 38 82 C41 85 39 92 35 95 Z"/>
+    <path d="M35 95 C33 91 31 88 28 86" stroke-width="1"/>
+    <path d="M48 88 C53 88 58 89 61 93"/>
+    <path d="M61 93 C67 92 71 87 70 82 C69 77 63 77 58 80 C55 83 57 90 61 93 Z"/>
+    <path d="M61 93 C63 89 66 86 69 84" stroke-width="1"/>
+
+    <!-- pair 4 -->
+    <path d="M45 74 C40 74 36 75 33 78"/>
+    <path d="M33 78 C28 77 24 73 25 68 C26 63 31 63 36 66 C39 69 37 75 33 78 Z"/>
+    <path d="M45 72 C50 72 54 73 57 76"/>
+    <path d="M57 76 C62 75 66 71 65 66 C64 61 59 61 54 64 C51 67 53 73 57 76 Z"/>
+
+    <!-- pair 5 -->
+    <path d="M44 58 C39 58 35 59 32 62"/>
+    <path d="M32 62 C28 61 24 57 26 53 C27 49 32 49 36 51 C39 54 36 60 32 62 Z"/>
+    <path d="M44 56 C49 56 53 57 55 60"/>
+    <path d="M55 60 C60 59 63 55 62 51 C61 47 56 47 52 49 C49 52 51 58 55 60 Z"/>
+
+    <!-- pair 6 (small, near tip) -->
+    <path d="M44 42 C40 42 36 43 34 46"/>
+    <path d="M34 46 C30 45 27 42 28 38 C29 35 33 35 36 37 C39 39 37 44 34 46 Z"/>
+    <path d="M44 40 C48 40 51 41 53 44"/>
+    <path d="M53 44 C57 43 60 40 59 36 C58 33 54 33 51 35 C48 37 50 42 53 44 Z"/>
+
+    <!-- tiny bud at tip -->
+    <path d="M44 12 C42 9 43 6 46 5 C48 4 50 6 49 8 C48 10 46 11 44 12 Z" stroke-width="1.2"/>
+
+    <!-- tiny clay seed-bud detail -->
+    <circle cx="44" cy="14" r="1.6" stroke="#E0A24E" stroke-width="1.1"/>
+  </g>
+</svg>

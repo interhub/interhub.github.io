@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- accent flame: the one filled shape, layered tongues -->
+  <path d="M84 150 C82 162 78 170 88 176 C90 170 92 168 94 164 C96 170 98 173 100 178 C103 172 106 170 108 164 C110 169 112 172 116 175 C122 168 118 161 116 150 Z" fill="#C8552B"/>
+
+  <g stroke="currentColor" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- rocket body: tall capsule with a rounded shoulder and tapered nose, leaning slightly -->
+    <path d="M100 24
+             C112 30 120 46 121 70
+             C122 92 122 116 117 138
+             C115 146 112 150 100 150
+             C88 150 85 146 83 138
+             C78 116 78 92 79 70
+             C80 46 88 30 100 24 Z"/>
+    <!-- nose seam ring -->
+    <path d="M86 56 C92 52 108 52 114 56"/>
+    <!-- lower body seam ring -->
+    <path d="M82 120 C92 124 108 124 118 120"/>
+    <!-- porthole: round window with inner ring -->
+    <circle cx="100" cy="84" r="13"/>
+    <circle cx="100" cy="84" r="6.5" stroke-width="2.4"/>
+    <!-- little shine tick in window -->
+    <path d="M95 80 C96 78 98 77 100 77" stroke-width="2.2"/>
+
+    <!-- left fin: bold swept blade -->
+    <path d="M83 118 C70 124 60 134 58 150 C66 148 76 146 84 140 Z"/>
+    <!-- right fin -->
+    <path d="M117 118 C130 124 140 134 142 150 C134 148 124 146 116 140 Z"/>
+
+    <!-- exhaust nozzle base -->
+    <path d="M86 148 C92 144 108 144 114 148"/>
+
+    <!-- motion lines streaming up past the rocket -->
+    <path d="M52 40 C56 52 56 64 52 78" stroke-width="2.4"/>
+    <path d="M66 28 C70 38 70 48 66 60" stroke-width="2.4"/>
+    <path d="M148 40 C144 52 144 64 148 78" stroke-width="2.4"/>
+    <path d="M134 28 C130 38 130 48 134 60" stroke-width="2.4"/>
+
+    <!-- small spark stars for energy -->
+    <path d="M44 96 l0 8 M40 100 l8 0" stroke-width="2.2"/>
+    <path d="M156 100 l0 7 M152.5 103.5 l7 0" stroke-width="2.2"/>
+  </g>
+</svg>

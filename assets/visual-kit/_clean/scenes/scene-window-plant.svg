@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- window outer frame, slightly hand-wobbled -->
+    <path d="M46 24 C45 22 47 21 49 21 L152 20 C155 20 156 22 155 25 L157 122 C157 125 155 126 152 126 L48 127 C45 127 44 125 44 122 Z"/>
+    <!-- mullions: vertical + horizontal cross, loose -->
+    <path d="M101 22 C102 50 101 90 100 125"/>
+    <path d="M45 74 C82 73 122 74 156 75"/>
+    <!-- distant calm hills behind glass -->
+    <path d="M50 60 C64 48 78 54 92 60" stroke-width="2.4"/>
+    <path d="M106 62 C122 50 138 56 152 61" stroke-width="2.4"/>
+    <!-- soft sun arc, low and quiet, upper-left pane -->
+    <path d="M58 44 C63 38 72 38 77 44" stroke-width="2.4"/>
+    <!-- a couple of drifting birds, distant -->
+    <path d="M120 42 C123 39 126 39 129 42 M129 42 C132 39 135 39 138 42" stroke-width="2.2"/>
+    <!-- windowsill / ledge, deep enough to hold a pot -->
+    <path d="M30 134 C82 132 134 133 172 134 C174 134 175 136 174 138 L172 150 C171 153 169 153 166 153 L36 154 C33 154 30 153 30 150 Z"/>
+  </g>
+
+  <!-- terracotta pot: the one accent fill, seated ON the sill -->
+  <path d="M86 134 C86 134 87 153 89 156 C91 159 109 159 111 156 C113 153 114 134 114 134 Z" fill="#C8552B"/>
+
+  <g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- pot rim -->
+    <path d="M82 134 C92 131 108 131 118 134"/>
+
+    <!-- plant: a fuller, upright bush of confident leaves rising from the pot -->
+    <!-- central stem -->
+    <path d="M100 134 C100 122 99 108 100 96 C100 90 101 86 102 80"/>
+    <!-- left arching stem -->
+    <path d="M97 133 C93 122 86 112 84 100 C83 94 84 89 88 85"/>
+    <!-- right arching stem -->
+    <path d="M103 133 C108 123 115 114 117 102 C118 96 117 91 113 87"/>
+
+    <!-- leaves: teardrop shapes along stems, alive and varied -->
+    <!-- center top leaves -->
+    <path d="M102 80 C97 74 97 66 102 62 C107 66 107 74 102 80 Z" stroke-width="2.6"/>
+    <path d="M100 96 C94 92 91 85 94 79 C100 81 103 88 100 96 Z" stroke-width="2.6"/>
+    <path d="M100 96 C106 92 110 86 108 79 C102 81 99 88 100 96 Z" stroke-width="2.6"/>
+    <!-- left stem leaves -->
+    <path d="M88 85 C81 84 75 86 73 92 C79 94 86 92 88 85 Z" stroke-width="2.6"/>
+    <path d="M85 102 C78 102 72 105 71 111 C78 112 84 109 85 102 Z" stroke-width="2.6"/>
+    <path d="M91 116 C84 116 79 120 78 126 C85 126 91 122 91 116 Z" stroke-width="2.6"/>
+    <!-- right stem leaves -->
+    <path d="M113 87 C120 86 126 88 128 94 C122 96 115 94 113 87 Z" stroke-width="2.6"/>
+    <path d="M116 103 C123 103 129 106 130 112 C123 113 117 110 116 103 Z" stroke-width="2.6"/>
+    <path d="M110 117 C117 117 122 121 123 127 C116 127 110 123 110 117 Z" stroke-width="2.6"/>
+  </g>
+</svg>

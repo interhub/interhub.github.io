@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 124" fill="none">
+  <!-- 10x5 square grid, neutral hairline cells -->
+  <g stroke="currentColor" stroke-width="1.5" fill="none">
+    <!-- row 0 -->
+    <rect x="4" y="4" width="20" height="20"/>
+    <rect x="26" y="4" width="20" height="20"/>
+    <rect x="48" y="4" width="20" height="20"/>
+    <rect x="70" y="4" width="20" height="20"/>
+    <rect x="92" y="4" width="20" height="20"/>
+    <rect x="114" y="4" width="20" height="20"/>
+    <rect x="136" y="4" width="20" height="20"/>
+    <rect x="158" y="4" width="20" height="20"/>
+    <rect x="180" y="4" width="20" height="20"/>
+    <rect x="202" y="4" width="20" height="20"/>
+    <!-- row 1 -->
+    <rect x="4" y="26" width="20" height="20"/>
+    <rect x="26" y="26" width="20" height="20"/>
+    <rect x="48" y="26" width="20" height="20"/>
+    <rect x="70" y="26" width="20" height="20"/>
+    <rect x="92" y="26" width="20" height="20"/>
+    <rect x="114" y="26" width="20" height="20"/>
+    <rect x="136" y="26" width="20" height="20"/>
+    <rect x="158" y="26" width="20" height="20"/>
+    <rect x="180" y="26" width="20" height="20"/>
+    <rect x="202" y="26" width="20" height="20"/>
+    <!-- row 2 -->
+    <rect x="4" y="48" width="20" height="20"/>
+    <rect x="26" y="48" width="20" height="20"/>
+    <rect x="48" y="48" width="20" height="20"/>
+    <rect x="70" y="48" width="20" height="20"/>
+    <rect x="92" y="48" width="20" height="20"/>
+    <rect x="114" y="48" width="20" height="20"/>
+    <rect x="136" y="48" width="20" height="20"/>
+    <rect x="158" y="48" width="20" height="20"/>
+    <rect x="180" y="48" width="20" height="20"/>
+    <rect x="202" y="48" width="20" height="20"/>
+    <!-- row 3 -->
+    <rect x="4" y="70" width="20" height="20"/>
+    <rect x="26" y="70" width="20" height="20"/>
+    <rect x="48" y="70" width="20" height="20"/>
+    <rect x="70" y="70" width="20" height="20"/>
+    <rect x="92" y="70" width="20" height="20"/>
+    <rect x="114" y="70" width="20" height="20"/>
+    <rect x="136" y="70" width="20" height="20"/>
+    <rect x="158" y="70" width="20" height="20"/>
+    <rect x="180" y="70" width="20" height="20"/>
+    <rect x="202" y="70" width="20" height="20"/>
+    <!-- row 4 -->
+    <rect x="4" y="92" width="20" height="20"/>
+    <rect x="26" y="92" width="20" height="20"/>
+    <rect x="48" y="92" width="20" height="20"/>
+    <rect x="70" y="92" width="20" height="20"/>
+    <rect x="92" y="92" width="20" height="20"/>
+    <rect x="114" y="92" width="20" height="20"/>
+    <rect x="136" y="92" width="20" height="20"/>
+    <rect x="158" y="92" width="20" height="20"/>
+    <rect x="180" y="92" width="20" height="20"/>
+    <rect x="202" y="92" width="20" height="20"/>
+  </g>
+  <!-- accent fill: 20% share (10 of 50), contiguous block bottom-left -->
+  <g fill="#C8552B" stroke="#C8552B" stroke-width="1.5">
+    <rect x="4" y="70" width="20" height="20"/>
+    <rect x="26" y="70" width="20" height="20"/>
+    <rect x="48" y="70" width="20" height="20"/>
+    <rect x="70" y="70" width="20" height="20"/>
+    <rect x="92" y="70" width="20" height="20"/>
+    <rect x="4" y="92" width="20" height="20"/>
+    <rect x="26" y="92" width="20" height="20"/>
+    <rect x="48" y="92" width="20" height="20"/>
+    <rect x="70" y="92" width="20" height="20"/>
+    <rect x="92" y="92" width="20" height="20"/>
+  </g>
+</svg>

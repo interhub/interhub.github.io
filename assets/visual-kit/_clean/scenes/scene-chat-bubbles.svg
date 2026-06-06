@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- ===== Big bubble (the AI voice), tilted, terracotta fill accent ===== -->
+  <g transform="rotate(-4 92 78)">
+    <!-- accent-filled body, drawn as a soft hand-wobbled rounded rect with a tail -->
+    <path d="M40 44
+             C36 44 33 47 33 52
+             L33 100
+             C33 105 36 108 41 108
+             L60 108
+             L50 126
+             C49 128 51 130 53 128
+             L74 108
+             L146 108
+             C151 108 154 105 154 100
+             L154 51
+             C154 46 151 44 146 44
+             Z"
+          fill="#C8552B"/>
+    <!-- ink outline over the fill, slightly offset/imperfect like a hand redraw -->
+    <path d="M41 43
+             C36 43 32 46 32 51
+             L32 99
+             C32 105 36 109 42 109
+             L59 109
+             L49 127
+             C47 130 51 132 54 129
+             L76 109
+             L145 108
+             C151 108 155 104 155 99
+             L155 50
+             C155 45 151 42 146 42
+             Z"
+          stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- 4-point Claude spark inside, large and confident (ink, reads on terracotta) -->
+    <g transform="translate(93 76) scale(2.55)">
+      <path d="M0 -7 C.6 -2.4 2.4 -.6 7 0 C2.4 .6 .6 2.4 0 7 C-.6 2.4 -2.4 .6 -7 0 C-2.4 -.6 -.6 -2.4 0 -7 Z"
+            stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" fill="none"/>
+    </g>
+    <!-- tiny seed sparks flanking the main one -->
+    <path d="M60 60 C60.5 62 61.5 63 64 63 C61.5 63.5 60.5 64.5 60 67 C59.5 64.5 58.5 63.5 56 63 C58.5 62.5 59.5 62 60 60 Z"
+          stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/>
+    <path d="M127 86 C127.4 87.6 128.4 88.4 130 88.8 C128.4 89.2 127.4 90 127 91.6 C126.6 90 125.6 89.2 124 88.8 C125.6 88.4 126.6 87.6 127 86 Z"
+          stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- ===== Small bubble (the human reply), opposite tail, two text lines ===== -->
+  <g transform="rotate(5 138 150)">
+    <path d="M96 128
+             C92 128 89 131 89 135
+             L89 162
+             C89 166 92 169 96 169
+             L168 169
+             C172 169 175 166 175 162
+             L175 135
+             C175 131 172 128 168 128
+             Z
+             M150 169
+             L160 184
+             C161 186 159 188 157 186
+             L142 169"
+          stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- two handwritten reply lines, uneven length -->
+    <path d="M101 143 C115 142 138 142.5 160 143" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M101 154 C112 153.5 126 153.5 138 154" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+  </g>
+</svg>

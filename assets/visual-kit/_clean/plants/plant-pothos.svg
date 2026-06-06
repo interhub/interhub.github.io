@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 140" fill="none">
+  <g stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- main trailing vine: enters top-left, drapes down with a gentle sag -->
+    <path d="M14 8 C20 18 30 24 40 30 C52 37 62 46 66 60 C70 74 66 90 58 104 C52 116 46 126 44 134"/>
+
+    <!-- ===== heart-shaped leaves =====
+         classic heart silhouette: petiole meets top notch, two rounded shoulders,
+         tapering down to a single pointed apex. midrib is a thin vein down the middle. -->
+
+    <!-- leaf 1 (upper-left), pointing down-left -->
+    <path d="M30 27 C27 28 24 29 22 31" stroke-width="1.1"/>
+    <path d="M22 31 C20 27 14 27 12 32 C10 37 13 42 18 45 C20 48 22 50 24 51 C25 49 25 46 25 43 C30 43 35 40 35 35 C35 30 28 28 24 33 C24 32 23 31 22 31 Z"/>
+    <path d="M22 31 C22 37 23 45 24 50" stroke-width="0.8"/>
+
+    <!-- leaf 2 (right of vine, mid-upper), pointing down-right -->
+    <path d="M48 35 C51 36 54 37 56 39" stroke-width="1.1"/>
+    <path d="M56 39 C58 35 64 35 66 40 C68 45 65 50 60 53 C58 56 56 58 54 59 C53 57 53 54 53 51 C48 51 43 48 43 43 C43 38 50 36 54 41 C54 40 55 39 56 39 Z"/>
+    <path d="M56 39 C56 45 55 53 54 58" stroke-width="0.8"/>
+
+    <!-- leaf 3 (left of vine, mid), pointing down-left -->
+    <path d="M64 62 C61 63 58 64 56 66" stroke-width="1.1"/>
+    <path d="M56 66 C54 62 48 62 46 67 C44 72 47 77 52 80 C54 83 56 85 58 86 C59 84 59 81 59 78 C64 78 69 75 69 70 C69 65 62 63 58 68 C58 67 57 66 56 66 Z"/>
+    <path d="M56 66 C56 72 57 80 58 85" stroke-width="0.8"/>
+
+    <!-- leaf 4 (right of vine, lower), pointing down-right -->
+    <path d="M62 90 C64 91 67 92 69 94" stroke-width="1.1"/>
+    <path d="M69 94 C71 90 77 90 79 95 C81 100 78 105 73 108 C71 111 69 113 67 114 C66 112 66 109 66 106 C61 106 56 103 56 98 C56 93 63 91 67 96 C67 95 68 94 69 94 Z"/>
+    <path d="M69 94 C69 100 68 108 67 113" stroke-width="0.8"/>
+
+    <!-- leaf 5 (bottom hanging tip), pointing down -->
+    <path d="M50 114 C48 116 46 118 44 120" stroke-width="1.1"/>
+    <path d="M44 120 C42 116 36 116 34 121 C32 126 35 131 40 134 C42 137 44 139 46 140 C47 138 47 135 47 132 C52 132 57 129 57 124 C57 119 50 117 46 122 C46 121 45 120 44 120 Z"/>
+    <path d="M44 120 C44 126 45 134 46 139" stroke-width="0.8"/>
+
+    <!-- tiny aerial node ticks on the vine -->
+    <path d="M44 31 l-2 2 M66 60 l2 1 M58 104 l-2 1" stroke-width="1"/>
+  </g>
+</svg>

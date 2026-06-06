@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 150" fill="none">
+  <!-- empty hairline callout cell -->
+  <rect x="8" y="14" width="120" height="48" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <!-- terracotta leader line from cell corner to anchor point on the frame -->
+  <g stroke="#C8552B" stroke-width="1.5" stroke-linecap="round" fill="none">
+    <path d="M128 62 L168 104 L196 124"/>
+  </g>
+  <!-- anchor dot at the target -->
+  <circle cx="196" cy="124" r="4" fill="#C8552B"/>
+</svg>

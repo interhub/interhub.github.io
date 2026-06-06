@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- coffee surface accent fill (terracotta) -->
+    <path d="M68 98 C70 92 80 89 100 89 C120 89 130 92 132 98 C131 103 119 106 100 106 C81 106 69 103 68 98 Z" fill="#C8552B" stroke="none"/>
+    <!-- mug body, generous wobbly bell shape -->
+    <path d="M64 96 C66 90 78 87 100 87 C122 87 134 90 136 96 C137 112 134 132 126 146 C122 153 112 157 100 157 C88 157 78 153 74 146 C66 132 63 112 64 96 Z"/>
+    <!-- coffee surface ellipse line -->
+    <path d="M67 97 C70 102 82 105 100 105 C118 105 130 102 133 97"/>
+    <!-- handle, right -->
+    <path d="M136 102 C150 100 160 106 160 117 C160 128 150 134 135 133"/>
+    <!-- saucer under mug -->
+    <path d="M50 162 C56 158 78 156 100 156 C122 156 144 158 150 162 C145 168 124 171 100 171 C76 171 55 168 50 162 Z"/>
+    <path d="M62 165 C72 167 128 167 138 165"/>
+
+    <!-- rising steam, three living wavy wisps -->
+    <path d="M82 78 C88 70 76 62 82 53 C87 46 78 38 84 30"/>
+    <path d="M100 76 C107 67 94 59 101 49 C107 41 97 33 104 24"/>
+    <path d="M118 78 C124 70 112 63 118 54 C123 47 114 40 120 32"/>
+  </g>
+</svg>

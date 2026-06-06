@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <g stroke="currentColor" fill="none" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- even grid of small hand-drawn circles, 6x6 -->
+    <circle cx="9.4" cy="9.1" r="1.9"/><circle cx="22.1" cy="8.8" r="1.8"/><circle cx="34.9" cy="9.3" r="1.9"/><circle cx="47.6" cy="8.7" r="1.8"/><circle cx="60.3" cy="9.2" r="1.9"/><circle cx="71.4" cy="8.9" r="1.8"/>
+    <circle cx="9.1" cy="21.6" r="1.8"/><circle cx="22" cy="22.1" r="1.9"/><circle cx="34.6" cy="21.4" r="1.8"/><circle cx="47.9" cy="22" r="1.9"/><circle cx="60" cy="21.5" r="1.8"/><circle cx="71.1" cy="21.9" r="1.9"/>
+    <circle cx="9.6" cy="34.2" r="1.9"/><circle cx="21.7" cy="34.8" r="1.8"/><circle cx="35.1" cy="34.1" r="1.9"/><circle cx="47.4" cy="34.7" r="1.8"/><circle cx="60.4" cy="34" r="1.9"/><circle cx="71.5" cy="34.6" r="1.8"/>
+    <circle cx="9.2" cy="46.8" r="1.8"/><circle cx="22.2" cy="47.3" r="1.9"/><circle cx="34.7" cy="46.6" r="1.8"/><circle cx="48" cy="47.2" r="1.9"/><circle cx="60.1" cy="46.7" r="1.8"/><circle cx="71.2" cy="47.1" r="1.9"/>
+    <circle cx="9.5" cy="59.4" r="1.9"/><circle cx="21.9" cy="59.9" r="1.8"/><circle cx="35" cy="59.2" r="1.9"/><circle cx="47.5" cy="59.8" r="1.8"/><circle cx="60.5" cy="59.1" r="1.9"/><circle cx="71.3" cy="59.7" r="1.8"/>
+    <circle cx="9.3" cy="71.4" r="1.8"/><circle cx="22.3" cy="71" r="1.9"/><circle cx="34.8" cy="71.5" r="1.8"/><circle cx="47.7" cy="70.9" r="1.9"/><circle cx="60.2" cy="71.4" r="1.8"/><circle cx="71" cy="71" r="1.9"/>
+  </g>
+</svg>

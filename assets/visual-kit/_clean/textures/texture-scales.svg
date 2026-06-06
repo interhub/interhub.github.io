@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <defs>
+    <!-- one fish-scale lobe: a wide rounded U (smile) ~16 wide, ~9 deep, drawn as a half-round cup -->
+    <path id="scale" d="M-8 -9 C-8 -1.4 -4.4 2 0 2 C4.4 2 8 -1.4 8 -9" />
+  </defs>
+  <g stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- rows step 7px so each cup overlaps the row above; alt rows offset by 8 (half a lobe) -->
+    <!-- row 1 y=9 -->
+    <use href="#scale" x="0" y="9" /><use href="#scale" x="16" y="9" /><use href="#scale" x="32" y="9" /><use href="#scale" x="48" y="9" /><use href="#scale" x="64" y="9" /><use href="#scale" x="80" y="9" />
+    <!-- row 2 y=16 offset 8 -->
+    <use href="#scale" x="-8" y="16" /><use href="#scale" x="8" y="16" /><use href="#scale" x="24" y="16" /><use href="#scale" x="40" y="16" /><use href="#scale" x="56" y="16" /><use href="#scale" x="72" y="16" /><use href="#scale" x="88" y="16" />
+    <!-- row 3 y=23 -->
+    <use href="#scale" x="0" y="23" /><use href="#scale" x="16" y="23" /><use href="#scale" x="32" y="23" /><use href="#scale" x="48" y="23" /><use href="#scale" x="64" y="23" /><use href="#scale" x="80" y="23" />
+    <!-- row 4 y=30 offset 8 -->
+    <use href="#scale" x="-8" y="30" /><use href="#scale" x="8" y="30" /><use href="#scale" x="24" y="30" /><use href="#scale" x="40" y="30" /><use href="#scale" x="56" y="30" /><use href="#scale" x="72" y="30" /><use href="#scale" x="88" y="30" />
+    <!-- row 5 y=37 -->
+    <use href="#scale" x="0" y="37" /><use href="#scale" x="16" y="37" /><use href="#scale" x="32" y="37" /><use href="#scale" x="48" y="37" /><use href="#scale" x="64" y="37" /><use href="#scale" x="80" y="37" />
+    <!-- row 6 y=44 offset 8 -->
+    <use href="#scale" x="-8" y="44" /><use href="#scale" x="8" y="44" /><use href="#scale" x="24" y="44" /><use href="#scale" x="40" y="44" /><use href="#scale" x="56" y="44" /><use href="#scale" x="72" y="44" /><use href="#scale" x="88" y="44" />
+    <!-- row 7 y=51 -->
+    <use href="#scale" x="0" y="51" /><use href="#scale" x="16" y="51" /><use href="#scale" x="32" y="51" /><use href="#scale" x="48" y="51" /><use href="#scale" x="64" y="51" /><use href="#scale" x="80" y="51" />
+    <!-- row 8 y=58 offset 8 -->
+    <use href="#scale" x="-8" y="58" /><use href="#scale" x="8" y="58" /><use href="#scale" x="24" y="58" /><use href="#scale" x="40" y="58" /><use href="#scale" x="56" y="58" /><use href="#scale" x="72" y="58" /><use href="#scale" x="88" y="58" />
+    <!-- row 9 y=65 -->
+    <use href="#scale" x="0" y="65" /><use href="#scale" x="16" y="65" /><use href="#scale" x="32" y="65" /><use href="#scale" x="48" y="65" /><use href="#scale" x="64" y="65" /><use href="#scale" x="80" y="65" />
+    <!-- row 10 y=72 offset 8 -->
+    <use href="#scale" x="-8" y="72" /><use href="#scale" x="8" y="72" /><use href="#scale" x="24" y="72" /><use href="#scale" x="40" y="72" /><use href="#scale" x="56" y="72" /><use href="#scale" x="72" y="72" /><use href="#scale" x="88" y="72" />
+    <!-- row 11 y=79 -->
+    <use href="#scale" x="0" y="79" /><use href="#scale" x="16" y="79" /><use href="#scale" x="32" y="79" /><use href="#scale" x="48" y="79" /><use href="#scale" x="64" y="79" /><use href="#scale" x="80" y="79" />
+  </g>
+</svg>

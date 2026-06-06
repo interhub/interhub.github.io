@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- House: pentagon outline (a space to think), drawn with a confident hand, slightly imperfect -->
+  <path d="M44 96
+           C44 95 45 94 46 93
+           L98 50
+           C99 49 101 49 102 50
+           L155 94
+           C156 95 156 96 156 97
+           L156 156
+           C156 158 154 160 152 160
+           L48 160
+           C46 160 44 158 44 156
+           Z"
+        stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Dandelion-spark inside the house: thin stems fanning from one root, tipped with seed-dots -->
+  <g transform="translate(100 122)">
+    <!-- central tall stem -->
+    <path d="M0 30 C-1 14 0 2 0 -22" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+    <!-- left stems -->
+    <path d="M0 30 C-6 12 -14 0 -24 -10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M0 30 C-4 16 -10 6 -14 -14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- right stems -->
+    <path d="M0 30 C6 12 14 0 24 -9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M0 30 C4 16 10 6 15 -13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+
+    <!-- seed-dots at each tip -->
+    <circle cx="-24" cy="-12" r="3.4" fill="currentColor"/>
+    <circle cx="-14" cy="-16" r="3" fill="currentColor"/>
+    <circle cx="0" cy="-24" r="3.6" fill="currentColor"/>
+    <circle cx="15" cy="-15" r="3" fill="currentColor"/>
+    <circle cx="24" cy="-11" r="3.4" fill="currentColor"/>
+
+    <!-- the central tip = the spark, terracotta 4-point sparkle -->
+    <path d="M0 -34 c.5 5 2 6.5 7 7 -5 .5 -6.5 2-7 7 -.5-5-2-6.5-7-7 5-.5 6.5-2 7-7z"
+          fill="#C8552B" transform="translate(0 2)"/>
+  </g>
+
+  <!-- handwritten flourish under the house (the 'rm/pm' squiggle) -->
+  <path d="M58 178
+           C58 172 60 168 62 170
+           C63 172 62 178 62 178
+           C62 173 64 169 67 170
+           C69 171 68 177 68 178
+           C68 173 71 169 74 171
+           C77 173 76 179 80 179
+           C86 179 92 174 96 171
+           C100 168 105 168 108 172
+           C111 176 108 181 104 181"
+        stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

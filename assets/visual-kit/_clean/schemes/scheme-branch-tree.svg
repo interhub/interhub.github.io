@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" fill="none">
+  <!-- terracotta connectors (drawn under cells) -->
+  <g stroke="#C8552B" stroke-width="1.5" stroke-linecap="round" fill="none">
+    <!-- root down to level-1 trunk -->
+    <path d="M120 38 V62"/>
+    <!-- level-1 horizontal split -->
+    <path d="M58 62 H182"/>
+    <!-- drops to the two level-1 nodes -->
+    <path d="M58 62 V78"/>
+    <path d="M182 62 V78"/>
+    <!-- left node down to level-2 trunk -->
+    <path d="M58 110 V128"/>
+    <path d="M30 128 H86"/>
+    <path d="M30 128 V144"/>
+    <path d="M86 128 V144"/>
+    <!-- right node down to a single level-2 child -->
+    <path d="M182 110 V144"/>
+  </g>
+  <!-- hairline cells -->
+  <g stroke="currentColor" stroke-width="1.5" fill="none">
+    <!-- root -->
+    <rect x="92" y="10" width="56" height="28"/>
+    <!-- level 1 -->
+    <rect x="32" y="78" width="52" height="32"/>
+    <rect x="156" y="78" width="52" height="32"/>
+    <!-- level 2 -->
+    <rect x="10" y="144" width="40" height="26"/>
+    <rect x="66" y="144" width="40" height="26"/>
+    <rect x="160" y="144" width="44" height="26"/>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- terracotta storefront base block (single filled accent) -->
+  <path d="M55 108 C54.5 112 54 120 53.6 138 C53.3 152 53.4 162 54 170 C71 170.6 86 170.8 100 170.7 C100.2 162 100.1 153 100 146 C103 145.8 109 145.7 116 146 C116.2 154 116.1 163 116 170.6 C129 170.4 138 170.2 147 169.8 C147.6 158 147.8 142 147.4 128 C147.1 119 146.6 112 146 108 C124 107.2 100 106.9 76 107.2 C68 107.3 61 107.6 55 108 Z" fill="#C8552B"/>
+
+  <!-- awning: one connected canopy with a scalloped bottom edge (marquee), confident wobbly contour -->
+  <path d="M46 73 C45.8 80 45.6 90 46 100 C46 103 47 104.6 48.6 102.4 C52 98 54.5 92 60 92 C65.5 92 68 98 71.5 103 C73 105 74.5 105 76 103 C79.5 98 82 92 87.5 92 C93 92 95.5 98 99 103 C100.6 105 102.2 105 103.8 103 C107.2 98 109.6 92 115 92 C120.4 92 123 98 126.4 103 C128 105 129.6 105 131.2 103 C134.6 98 137 92 142 92 C146 92 148 96 149 101 C149.4 95 149.6 82 149 73 C115 72 81 72 46 73 Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- vertical seams dividing the canopy into four panels -->
+  <path d="M71.5 75 C71.6 82 71.6 89 71.3 96" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M97.5 75 C97.6 82 97.6 89 97.3 96" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M123 75 C123.1 82 123.1 89 122.8 96" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- awning top board / signboard frame -->
+  <path d="M46 70.5 C45.4 65 45.2 58 45.6 52 C61 51 80 50.4 99 50.3 C118 50.2 133 50.6 148 51.4 C148.4 57 148.5 64 148 70.6 C114 71.4 80 71.4 46 70.5 Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- sign text mark: handwritten squiggle ~ open/shop -->
+  <path d="M64 61 C66 58.4 68 58.6 69 61 C69.6 62.6 69.4 64.4 71 64.6 C73 64.8 74 62.4 75.6 61.2 C77 60.2 78.6 60.8 79 62.6 C79.4 64.8 78.6 66.4 80.8 66.4 C82.6 66.4 84 64 86 61" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M96 61 C97.6 58.6 99.6 58.8 100.6 61 C101.4 62.8 101 64.6 102.8 64.8 C104.8 65 105.8 62.4 107.6 61.2 C109 60.4 110.6 61 111 62.8 C111.4 64.8 110.8 66.6 113 66.4" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- store outer walls (above base, left & right uprights) -->
+  <path d="M55 108 C54.4 110 54 113 53.8 116" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- door inside base: arched doorway carved out (ink outline over terracotta) -->
+  <path d="M84 170.4 C83.8 158 83.6 146 84 138 C84.6 132 88 128.4 94 127.8 C98 127.4 102 127.4 106 127.9 C112 128.6 115.4 132 116 138 C116.4 146 116.2 158 116 170.4" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- door knob -->
+  <circle cx="110" cy="150" r="2.4" stroke="currentColor" stroke-width="2.6"/>
+
+  <!-- window left of door, hairline cell on the base -->
+  <path d="M62 120 C68 119.4 74 119.4 80 120 C80.4 126 80.4 132 80 138 C74 138.6 68 138.6 62 138 C61.6 132 61.6 126 62 120 Z" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M71 119.6 C71.2 126 71.2 132 71 138.4" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- ground line, loose hand stroke -->
+  <path d="M40 172 C70 173 110 173.2 162 171.6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- little flag pennant on top, character detail -->
+  <path d="M97 50 C97.2 44 97.2 39 97 34" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M97 34.5 C102 35.4 107 36.4 112 38 C108 40.2 104 41.6 97 42" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 4-point brand spark, small, near sign top-left margin -->
+  <path d="M36 48 C36.3 51.4 37.8 52.9 41.2 53.2 C37.8 53.5 36.3 55 36 58.4 C35.7 55 34.2 53.5 30.8 53.2 C34.2 52.9 35.7 51.4 36 48 Z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+</svg>

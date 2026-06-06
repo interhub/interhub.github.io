@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- bottom book: widest, slight left tilt, front cover face + spine + pages -->
+    <path d="M44 150 C44 147 46 145 49 145 L142 140 C146 139 149 141 150 145 L153 161 C153 165 151 167 147 167 L52 171 C48 171 45 169 45 166 Z"/>
+    <!-- page block striations on bottom book front edge -->
+    <path d="M49 158 L146 153" stroke-width="2.2"/>
+    <path d="M50 163 L147 158" stroke-width="2.2"/>
+
+    <!-- middle book: tilted the other way, sitting on top, a touch narrower -->
+    <path d="M58 134 C57 131 59 128 62 128 L150 121 C154 121 157 123 157 127 L158 140 C158 144 156 146 152 146 L62 142 C59 142 57 140 57 137 Z"/>
+    <path d="M62 137 L153 130" stroke-width="2.2"/>
+
+  </g>
+
+  <!-- top book: spine is the ONE accent terracotta fill -->
+  <path d="M70 116 C69 113 71 110 74 110 L150 104 C154 104 157 106 157 110 L157 122 C157 125 155 127 151 127 L74 124 C71 124 69 122 69 119 Z"
+        fill="#C8552B" stroke="#C8552B" stroke-width="3" stroke-linejoin="round"/>
+  <!-- a thin paper-colored binding line on the terracotta spine for life -->
+  <path d="M82 110 L83 125" stroke="#F4EDE2" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- floating 4-point Claude spark above, hand-drawn with a little wobble -->
+  <g stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M119 64
+             C121 54 122 49 132 47
+             C122 45 120 40 118 30
+             C116 40 114 45 104 47
+             C114 49 116 54 119 64 Z"/>
+  </g>
+  <!-- tiny rising motion ticks between spark and books -->
+  <g stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+    <path d="M99 78 C100 75 99 73 98 71"/>
+    <path d="M139 80 C141 77 141 75 140 72"/>
+  </g>
+</svg>

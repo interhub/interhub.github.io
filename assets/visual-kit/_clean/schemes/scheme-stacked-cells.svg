@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 184" fill="none">
+  <!-- vertical stack of hairline cells, even rhythm, sharp corners -->
+  <g stroke="currentColor" stroke-width="1.5" fill="none">
+    <rect x="4" y="4" width="192" height="30"/>
+    <rect x="4" y="42" width="192" height="30"/>
+    <rect x="4" y="80" width="192" height="30"/>
+    <rect x="4" y="118" width="192" height="30"/>
+    <rect x="4" y="156" width="192" height="30"/>
+  </g>
+  <!-- leading tick accent on one row -->
+  <line x1="14" y1="95" x2="36" y2="95" stroke="#C8552B" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

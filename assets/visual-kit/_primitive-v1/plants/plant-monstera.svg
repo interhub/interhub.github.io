@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130" fill="none">
+  <g stroke="currentColor" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- petiole, curving from base up into the leaf -->
+    <path d="M60 124 C58 112 56 100 55 88 C54.6 80 54 72 53 66"/>
+
+    <!-- left half: outer edge dipping into finger splits back toward the midrib -->
+    <path d="M53 66
+             C46 63 37 64 31 70
+             C36 71 41 72 45 73
+             C38 76 31 81 27 89
+             C33 88 39 87 44 87
+             C37 92 31 99 28 108
+             C34 105 40 102 45 100
+             C44 105 44 111 45 117"/>
+
+    <!-- right half: mirror -->
+    <path d="M53 66
+             C60 63 69 64 75 70
+             C70 71 65 72 61 73
+             C68 76 75 81 79 89
+             C73 88 67 87 62 87
+             C69 92 75 99 78 108
+             C72 105 66 102 61 100
+             C62 105 62 111 61 117"/>
+
+    <!-- lower tip closing the leaf -->
+    <path d="M45 117 C47 121 50 124 53 122 C56 124 59 121 61 117"/>
+
+    <!-- central midrib -->
+    <path d="M53 67 C52 78 51 89 51 100 C50.6 107 50.4 114 50 121"/>
+
+    <!-- right lateral veins, one per lobe -->
+    <path d="M52 74 C58 73 65 72 71 71"/>
+    <path d="M51 86 C58 86 65 87 72 88"/>
+    <path d="M50 99 C56 101 62 103 68 105"/>
+
+    <!-- left lateral veins -->
+    <path d="M52 74 C46 73 39 72 33 71"/>
+    <path d="M51 86 C44 86 37 87 30 88"/>
+    <path d="M50 99 C44 101 38 103 32 105"/>
+  </g>
+</svg>

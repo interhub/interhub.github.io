@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130" fill="none">
+  <g stroke="currentColor" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- bare twig, a single slow S-curve from base to tip -->
+    <path d="M56 124 C54 110 50 96 46 82 C42 68 38 54 37 40 C36.5 34 37 29 39 24"/>
+
+    <!-- a couple of small side shoots -->
+    <path d="M48 88 C43 85 40 81 38 76"/>
+    <path d="M42 64 C46 61 49 57 51 52"/>
+
+    <!-- two leaf buds and a tiny leaflet -->
+    <path d="M38 76 C36 73 35 70 36 66 C38 69 39 73 38 76 Z"/>
+    <path d="M51 52 C54 50 56 47 56 43 C53 45 51 48 51 52 Z"/>
+
+    <!-- bud at the tip -->
+    <path d="M39 24 C38 21 38 18 40 16 C42 18 42 21 41 23"/>
+  </g>
+</svg>

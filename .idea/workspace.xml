@@ -305,6 +305,7 @@
       <workItem from="1780501355341" duration="1264000" />
       <workItem from="1780564976239" duration="657000" />
       <workItem from="1780594004355" duration="2000" />
+      <workItem from="1780668146348" duration="613000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -586,14 +587,6 @@
       <option name="project" value="LOCAL" />
       <updated>1677017583783</updated>
     </task>
-    <task id="LOCAL-00042" summary="fix kist fancly 1">
-      <option name="closed" value="true" />
-      <created>1778524840155</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1778524840155</updated>
-    </task>
     <task id="LOCAL-00043" summary="fix kist fancly 1">
       <option name="closed" value="true" />
       <created>1780474327786</created>
@@ -658,7 +651,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780568346020</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="fix kist fancly 1">
+      <option name="closed" value="true" />
+      <created>1780668158834</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1780668158834</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

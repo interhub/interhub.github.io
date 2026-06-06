@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- cone of light: single clay filled accent, spilling from lamp head onto paper -->
+  <path d="M101 70 C108 73 115 78 121 86 C128 96 133 108 136 120 C124 124 110 126 96 126 C90 113 86 98 86 84 C90 77 95 72 101 70 Z" fill="#E0A24E" fill-opacity="0.9"/>
+
+  <!-- paper sheet on the desk, slightly tilted, ink outline OVER the light cone -->
+  <path d="M118 96 C117.4 110 117 128 117 150 C117 156 117.2 161 117.6 165 C131 165.6 145 165.4 158 164.6 C158.4 150 158.6 128 158.2 108 C158 102 157.6 97 157 93 C144 92.6 131 93 118 96 Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- handwritten "uu" scribble on the paper (like reference) -->
+  <path d="M126 116 C125.6 121 125.4 126 127 127.6 C129 129.4 131 126 131.4 121.6 C131.6 119 131.8 117.4 132.2 116.4 C132.4 119 132.2 124 133.2 127.4 C133.8 129 135 129 136 127.6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M125 134 C124.4 140 124 146 126 148 C128.4 150.2 130.4 146 131 140.4 C131.2 137.6 131.4 135.8 131.8 134.8 C132 138 131.8 144 132.8 147.8 C133.4 150 135 150 136.4 148 C138 145.6 139 140 139.4 134" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- lamp head / shade: bell-shaped, confident wobbly contour -->
+  <path d="M70 56 C70 49 74 43 82 40 C90 37 100 37.4 108 41 C114 43.6 116.6 48 115 53 C113.4 58 107 62.4 100 64.6 C92 67 83 67 77 63.6 C72.6 61.2 70 58.6 70 56 Z" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- shade top knob -->
+  <path d="M88 40 C88.4 36 89.6 33.4 92 33.2 C94.4 33 95.8 35.4 96 39.2" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- shade rim detail -->
+  <path d="M74 60 C82 64.4 96 65 110 60" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- upper arm of the lamp (from shade joint down to elbow) -->
+  <path d="M76 62 C72 70 67 80 60 90" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- elbow joint -->
+  <circle cx="58.5" cy="92.5" r="3.4" stroke="currentColor" stroke-width="2.8"/>
+  <!-- lower arm (elbow down to base) -->
+  <path d="M58 96 C60 108 62 122 64 138" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- base: rounded weighted foot, confident -->
+  <path d="M50 156 C50.4 150 53 145 60 143.6 C66.6 142.3 74 142.4 80 144 C86 145.6 88.6 150 89 156 C76 157.4 63 157.4 50 156 Z" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- neck into base -->
+  <path d="M64 138 C64 140 65 142 66 143.6" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- desk line under everything -->
+  <path d="M38 158 C70 159.2 120 159.4 168 157.4" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 4-point brand spark glinting near the bulb / light -->
+  <path d="M104 80 C104.3 83.6 105.9 85.2 109.5 85.5 C105.9 85.8 104.3 87.4 104 91 C103.7 87.4 102.1 85.8 98.5 85.5 C102.1 85.2 103.7 83.6 104 80 Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+</svg>

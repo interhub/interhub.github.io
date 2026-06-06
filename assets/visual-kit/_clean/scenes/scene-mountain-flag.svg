@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- ===== Sun, top-left, hand-circle ===== -->
+  <path d="M44 40
+           C34 38 30 46 33 54
+           C36 62 48 63 53 56
+           C58 49 53 42 44 40 Z"
+        stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ===== Little cloud, upper-right ===== -->
+  <path d="M132 50
+           C129 44 138 40 143 44
+           C146 39 156 40 157 47
+           C163 47 165 54 159 56
+           C150 57 138 57 133 56
+           C129 55 129 51 132 50 Z"
+        stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ===== Back peak (smaller, behind) ===== -->
+  <path d="M28 158
+           C28 158 56 116 64 106
+           C66 103 69 103 71 106
+           C77 114 92 138 96 146"
+        stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ===== Main mountain (front, big, confident) ===== -->
+  <path d="M22 162
+           C22 162 78 84 94 64
+           C97 60 102 60 105 64
+           C112 73 124 90 132 102
+           C124 100 116 101 112 108
+           C120 112 128 118 134 124
+           C148 142 168 162 168 162"
+        stroke="currentColor" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ===== Ground line, hand-drawn, asymmetric ===== -->
+  <path d="M14 162 C56 161 130 161 184 162" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- ===== Winding dashed trail up to the summit ===== -->
+  <path d="M52 160
+           C64 150 58 142 72 136
+           C86 130 80 120 92 112
+           C100 106 96 96 100 82"
+        stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+        stroke-dasharray="1.5 8"/>
+
+  <!-- ===== Flagpole at the summit ===== -->
+  <path d="M100 64 L100 30" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+
+  <!-- ===== Flag (accent terracotta fill), pennant fluttering right ===== -->
+  <path d="M100 31
+           C112 28 124 35 135 31
+           C132 39 134 44 135 50
+           C124 46 112 53 100 50 Z"
+        fill="#C8552B"/>
+  <path d="M100 30
+           C112 27 124 34 135 30
+           C132 38 134 44 135 51
+           C124 47 112 54 100 51"
+        stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
