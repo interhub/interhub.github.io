@@ -34,7 +34,7 @@ window.SITE_CONTENT = {
       headlineBefore: "Я ",
       headlineAccent: "внедряю",
       headlineAccentMark: "underline",
-      headlineMid: " AI в реальный бизнес и ",
+      headlineMid: " AI в бизнес и ",
       headlineAccent2: "отвечаю",
       headlineAccent2Mark: "circle",
       headlineAfter: " за технические показатели компании.",

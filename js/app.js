@@ -336,7 +336,6 @@
         ctaLink(hero.ctaPrimary, "#work", "btn btn--primary", true, "primary"),
         ctaLink(hero.ctaSecondary, "#contact", "btn btn--ghost", false, "secondary"),
       ]),
-      kitIllu("coffee", "hero", "hero__illu reveal"),
       el("div", { class: "hero__marker mono", "aria-hidden": "true" }, ["ST"]),
     ]));
   }

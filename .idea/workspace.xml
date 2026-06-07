@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="fix kist fancly 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/content.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +20,7 @@
     </execution>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="303" />
+    <option name="cachedIndexableFilesCount" value="477" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -306,6 +308,8 @@
       <workItem from="1780564976239" duration="657000" />
       <workItem from="1780594004355" duration="2000" />
       <workItem from="1780668146348" duration="613000" />
+      <workItem from="1780776979122" duration="610000" />
+      <workItem from="1780830708106" duration="604000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -587,14 +591,6 @@
       <option name="project" value="LOCAL" />
       <updated>1677017583783</updated>
     </task>
-    <task id="LOCAL-00043" summary="fix kist fancly 1">
-      <option name="closed" value="true" />
-      <created>1780474327786</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1780474327786</updated>
-    </task>
     <task id="LOCAL-00044" summary="fix kist fancly 1">
       <option name="closed" value="true" />
       <created>1780480843067</created>
@@ -659,7 +655,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780668158834</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="fix kist fancly 1">
+      <option name="closed" value="true" />
+      <created>1780776987429</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1780776987429</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
