@@ -13,7 +13,7 @@ window.SITE_CONTENT = {
       title:
         "Степан Турченко - внедрение ИИ, Senior Fullstack и Tech Lead",
       description:
-        "Специалист по внедрению ИИ, Senior Fullstack инженер и Tech Lead. Внедряю ИИ в реальные процессы компаний и отвечаю за инженерию, которая держит продукты в продакшене в США, Европы.",
+        "Специалист по внедрению ИИ, Senior Fullstack инженер и Tech Lead. Внедряю ИИ в реальные процессы компаний и отвечаю за инженерию, которая держит продукты в продакшене в США, Европе и России.",
       skipLink: "Перейти к содержимому",
     },
     nav: {
@@ -37,11 +37,20 @@ window.SITE_CONTENT = {
       headlineMid: " AI в бизнес и ",
       headlineAccent2: "отвечаю",
       headlineAccent2Mark: "circle",
-      headlineAfter: " за технические показатели компании.",
+      headlineAfter: " за технические показатели с 2020 года",
       subtext:
-        "Более 6 лет строю и поддерживаю продакшен-продукты в США, Европы.",
+        "Более 6 лет строю и поддерживаю продакшен-продукты в США, Европе и России.",
       ctaPrimary: "Смотреть работы",
       ctaSecondary: "Связаться",
+    },
+    infographic: {
+      eyebrow: "Рейтинг",
+      lead: "Если выстроить сотни разработчиков по отдаче за спринт, большинство держится у среднего. Единицы выходят за пределы.",
+      avg: "среднее",
+      cluster: [["Senior", "3.4σ"], ["Tech Lead", "3.9σ"], ["Архитектор", "4.4σ"]],
+      name: "СТЕПАН",
+      sig: "5.9σ",
+      caption: "В духе того самого графика про Месси. Вектор примерно такой.",
     },
     proof: {
       leadBefore: "",
@@ -49,7 +58,7 @@ window.SITE_CONTENT = {
       leadAfter: "",
       items: [
         { lead: "Боевой опыт 6+ лет", qualifier: "выпущено и работает, не демо" },
-        { lead: "США · Великобритания · Россия", qualifier: "продукты на трёх рынках" },
+        { lead: "США · Европа · Россия", qualifier: "продукты на трёх рынках" },
         { lead: "Основатель Nana800", qualifier: "моя собственная платформа автоматизации" },
         { lead: "От стартапов до госмасштаба", qualifier: "включая работу над гос заказами" },
       ],
@@ -89,6 +98,8 @@ window.SITE_CONTENT = {
           { title: "Сведённый воедино слой ИИ", body: "Навык - это способность, описанная текстом, написанная один раз и переиспользуемая вместо переписывания того же промпта. Общие и расширяемые навыки, общий контекст, правила и форматы превращают разрозненный ИИ в повторяемые процессы компании." },
         ],
       },
+      expandMore: "Развернуть подробнее",
+      collapse: "Свернуть",
     },
     cases: {
       index: "Работы",
@@ -138,7 +149,7 @@ window.SITE_CONTENT = {
     about: {
       index: "О себе",
       headline: "Обо мне",
-      body: "Более 6 лет работаю над тяжёлыми приложениями и командами вокруг них: от women-health стартапа в Делавэре до ритейл- и B2B-продуктов в России и agentic-мобильной разработки в Великобритании. Веду всё целиком: архитектуру, релизы, DevOps, найм и ту работу по надёжности - мониторинг, алерты и разбор инцидентов, - без которой продукт не держит реальную нагрузку. Провожу собеседования, переговоры и релизы на английском, одинаково спокойно беру и весь роадмап, и одну сложную задачу. Сейчас большая часть внимания уходит на внедрение ИИ-агентов и автоматизации в реальную работу компаний.",
+      body: "Более 6 лет работаю над тяжёлыми приложениями и командами вокруг них: от women-health стартапа в Делавэре до ритейл- и B2B-продуктов в России и agentic-мобильной разработки в Европе. Веду всё целиком: архитектуру, релизы, DevOps, найм и ту работу по надёжности - мониторинг, алерты и разбор инцидентов, - без которой продукт не держит реальную нагрузку. Провожу собеседования, переговоры и релизы на английском, одинаково спокойно беру и весь роадмап, и одну сложную задачу. Сейчас большая часть внимания уходит на внедрение ИИ-агентов и автоматизации в реальную работу компаний.",
       facts: "База - Калининград, Россия. Английский свободный, русский родной. Доступен для полной удалённой занятости.",
     },
     photos: {
@@ -148,9 +159,9 @@ window.SITE_CONTENT = {
     contact: {
       index: "Контакт",
       headlineBefore: "Расскажите, что вы ",
-      headlineAccent: "строите",
+      headlineAccent: "создаёте",
       headlineAfter: ".",
-      subline: "Внедрение ИИ, продукт для запуска или команда, которой нужен лид.",
+      subline: "и мы вместе построим стратегию развития вашего продукта.",
       cta: "Связаться",
       emailLabel: "Почта",
       phoneLabel: "Телефон",
@@ -166,9 +177,9 @@ window.SITE_CONTENT = {
     meta: {
       lang: "en",
       ogLocale: "en_US",
-      title: "Stepan Turchenko - AI Integration Specialist & Senior Fullstack",
+      title: "Stepan Turchenko - AI Integration Specialist, Senior Fullstack & Tech Lead",
       description:
-        "AI Integration Specialist, Senior Fullstack engineer and Tech Lead. I bring AI into real business processes and own the engineering that keeps products running in production across the US, UK and Russia.",
+        "AI Integration Specialist, Senior Fullstack engineer and Tech Lead. I bring AI into real business processes and own the engineering that keeps products running in production across the US, Europe and Russia.",
       skipLink: "Skip to content",
     },
     nav: {
@@ -192,21 +203,30 @@ window.SITE_CONTENT = {
       headlineMid: " AI into real business and ",
       headlineAccent2: "own",
       headlineAccent2Mark: "circle",
-      headlineAfter: " the company's technical metrics.",
+      headlineAfter: " technical metrics since 2020.",
       subtext:
-        "More than six years building and running production products across the US, UK and Russia.",
+        "More than six years building and running production products across the US, Europe and Russia.",
       ctaPrimary: "See selected work",
       ctaSecondary: "Get in touch",
     },
+    infographic: {
+      eyebrow: "Ranking",
+      lead: "Line up hundreds of developers by output per sprint: most stay near the average. A few break past the edge.",
+      avg: "average",
+      cluster: [["Senior", "3.4σ"], ["Tech Lead", "3.9σ"], ["Architect", "4.4σ"]],
+      name: "STEPAN",
+      sig: "5.9σ",
+      caption: "Same spirit as that Messi chart. The vector is about right.",
+    },
     proof: {
-      leadBefore: "Real ",
-      leadAccent: "work",
-      leadAfter: ", not vanity numbers.",
+      leadBefore: "",
+      leadAccent: "Metrics",
+      leadAfter: "",
       items: [
         { lead: "In production for 6+ years", qualifier: "shipped and kept running, not demos" },
-        { lead: "USA · UK · Russia", qualifier: "products across three markets" },
+        { lead: "USA · Europe · Russia", qualifier: "products across three markets" },
         { lead: "Founder, Nana800", qualifier: "my own automation platform" },
-        { lead: "From startups to state scale", qualifier: "including a city-scale Moscow government sport app" },
+        { lead: "From startups to state scale", qualifier: "including work on government contracts" },
       ],
     },
     approach: {
@@ -244,6 +264,8 @@ window.SITE_CONTENT = {
           { title: "One coherent AI layer", body: "A skill is a capability described in text, written once and reused instead of rewriting the same prompt. Shared, extendable skills plus shared context, rules, and formats turn ad-hoc AI into repeatable company processes." },
         ],
       },
+      expandMore: "Show details",
+      collapse: "Collapse",
     },
     cases: {
       index: "Work",
@@ -293,7 +315,7 @@ window.SITE_CONTENT = {
     about: {
       index: "About",
       headline: "About",
-      body: "More than six years on heavy applications and the teams behind them, from a women-health startup in Delaware to retail and B2B products in Russia and agentic mobile work in the UK. I run things end to end: architecture, delivery, DevOps, hiring, and the reliability work - monitoring, alerts, and incident response - that keeps a product up under real load. I interview, negotiate, and ship in English, and I am as comfortable owning a roadmap as I am taking on a single hard problem. Right now most of my attention goes to bringing AI agents and automation into how companies actually operate.",
+      body: "More than six years on heavy applications and the teams behind them, from a women-health startup in Delaware to retail and B2B products in Russia and agentic mobile work in Europe. I run things end to end: architecture, delivery, DevOps, hiring, and the reliability work - monitoring, alerts, and incident response - that keeps a product up under real load. I interview, negotiate, and ship in English, and I am as comfortable owning a roadmap as I am taking on a single hard problem. Right now most of my attention goes to bringing AI agents and automation into how companies actually operate.",
       facts: "Based in Kaliningrad, Russia. English proficient, Russian native. Available for full-time remote.",
     },
     photos: {
@@ -303,9 +325,9 @@ window.SITE_CONTENT = {
     contact: {
       index: "Contact",
       headlineBefore: "Let me know what you are ",
-      headlineAccent: "building",
+      headlineAccent: "creating",
       headlineAfter: ".",
-      subline: "AI integration, a product to ship, or an engineering team to lead.",
+      subline: "and together we'll build a growth strategy for your product.",
       cta: "Get in touch",
       emailLabel: "Email",
       phoneLabel: "Phone",
@@ -323,7 +345,7 @@ window.SITE_CONTENT = {
       ogLocale: "zh_CN",
       title: "斯捷潘·图尔琴科 - AI 集成专家 / 高级全栈工程师 / 技术负责人",
       description:
-        "AI 集成专家、高级全栈工程师与技术负责人。我把 AI 落地到企业真实的业务流程中，并负责支撑产品在美国、英国和俄罗斯稳定运行的整套工程。",
+        "AI 集成专家、高级全栈工程师与技术负责人。我把 AI 落地到企业真实的业务流程中，并负责支撑产品在美国、欧洲和俄罗斯稳定运行的整套工程。",
       skipLink: "跳到内容",
     },
     nav: {
@@ -347,20 +369,29 @@ window.SITE_CONTENT = {
       headlineMid: "到企业真实业务，并",
       headlineAccent2: "负责",
       headlineAccent2Mark: "circle",
-      headlineAfter: "公司的技术指标。",
-      subtext: "六年多在美国、英国和俄罗斯打造并运维生产环境中的产品。",
+      headlineAfter: "技术指标，自 2020 年起。",
+      subtext: "六年多在美国、欧洲和俄罗斯打造并运维生产环境中的产品。",
       ctaPrimary: "查看作品",
       ctaSecondary: "联系我",
     },
+    infographic: {
+      eyebrow: "排名",
+      lead: "把上百名开发者按每个冲刺的产出排列，多数集中在平均值附近，少数远远甩开其他人。",
+      avg: "平均",
+      cluster: [["资深", "3.4σ"], ["技术负责人", "3.9σ"], ["架构师", "4.4σ"]],
+      name: "斯捷潘",
+      sig: "5.9σ",
+      caption: "灵感来自那张梅西图，方向大致如此。",
+    },
     proof: {
-      leadBefore: "真实的",
+      leadBefore: "",
       leadAccent: "成果",
-      leadAfter: "，不是漂亮的数字。",
+      leadAfter: "",
       items: [
         { lead: "投入生产 6 年以上", qualifier: "已上线并持续运行，不是演示" },
-        { lead: "美国 · 英国 · 俄罗斯", qualifier: "横跨三个市场的产品" },
+        { lead: "美国 · 欧洲 · 俄罗斯", qualifier: "横跨三个市场的产品" },
         { lead: "Nana800 创始人", qualifier: "我自己的自动化平台" },
-        { lead: "从初创到政府级规模", qualifier: "包括为莫斯科市政府打造的城市级体育应用" },
+        { lead: "从初创到政府级规模", qualifier: "包括政府项目相关工作" },
       ],
     },
     approach: {
@@ -398,6 +429,8 @@ window.SITE_CONTENT = {
           { title: "整合为一体的 AI 层", body: "技能是用文字描述的一种能力，只写一次便可复用，无需每次重写相同的提示词。共享且可扩展的技能，加上共享的上下文、规则与格式，把临时拼凑的 AI 变成可重复的企业流程。" },
         ],
       },
+      expandMore: "展开详情",
+      collapse: "收起",
     },
     cases: {
       index: "作品",
@@ -447,7 +480,7 @@ window.SITE_CONTENT = {
     about: {
       index: "关于",
       headline: "关于",
-      body: "六年多专注于高负载应用以及支撑它们的团队，从特拉华州的一家女性健康初创公司，到俄罗斯的零售与 B2B 产品，再到英国的智能体移动端开发。我端到端地掌控一切：架构、交付、DevOps、招聘，以及让产品在真实负载下不宕机的可靠性工作：监控、告警与故障排查。我用英语进行面试、谈判和发布，既能独立扛起整条路线图，也能专注解决单个棘手的难题。眼下，我的大部分精力都投入在把 AI 智能体和自动化真正带进企业的日常运转中。",
+      body: "六年多专注于高负载应用以及支撑它们的团队，从特拉华州的一家女性健康初创公司，到俄罗斯的零售与 B2B 产品，再到欧洲的智能体移动端开发。我端到端地掌控一切：架构、交付、DevOps、招聘，以及让产品在真实负载下不宕机的可靠性工作：监控、告警与故障排查。我用英语进行面试、谈判和发布，既能独立扛起整条路线图，也能专注解决单个棘手的难题。眼下，我的大部分精力都投入在把 AI 智能体和自动化真正带进企业的日常运转中。",
       facts: "常驻俄罗斯加里宁格勒。英语流利，俄语母语。可全职远程。",
     },
     photos: {
@@ -457,9 +490,9 @@ window.SITE_CONTENT = {
     contact: {
       index: "联系",
       headlineBefore: "告诉我你在",
-      headlineAccent: "打造",
+      headlineAccent: "创造",
       headlineAfter: "什么。",
-      subline: "AI 集成、一个待交付的产品，或一支需要负责人的工程团队。",
+      subline: "我们一起为你的产品制定发展战略。",
       cta: "联系我",
       emailLabel: "邮箱",
       phoneLabel: "电话",
