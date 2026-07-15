@@ -863,14 +863,13 @@
   <line x1="240" y1="400" x2="240" y2="406" class="ig-ax"/><text x="240" y="420" text-anchor="middle" class="ig-tick">1σ</text><line x1="330" y1="400" x2="330" y2="406" class="ig-ax"/><text x="330" y="420" text-anchor="middle" class="ig-tick">2σ</text><line x1="420" y1="400" x2="420" y2="406" class="ig-ax"/><text x="420" y="420" text-anchor="middle" class="ig-tick">3σ</text><line x1="510" y1="400" x2="510" y2="406" class="ig-ax"/><text x="510" y="420" text-anchor="middle" class="ig-tick">4σ</text><line x1="600" y1="400" x2="600" y2="406" class="ig-ax"/><text x="600" y="420" text-anchor="middle" class="ig-tick">5σ</text><line x1="690" y1="400" x2="690" y2="406" class="ig-ax"/><text x="690" y="420" text-anchor="middle" class="ig-tick">6σ</text>
   <circle cx="150" cy="400" r="3.4" fill="#f2e9db"/><text x="150" y="434" text-anchor="middle" class="ig-avg">${g.avg}</text>
   <line x1="456" y1="400" x2="456" y2="318" class="ig-stem"/><circle cx="456" cy="400" r="3.2" fill="#f2e9db" opacity="0.9"/><text x="456" y="296" text-anchor="middle" class="ig-cname">${c[0][0]}</text><text x="456" y="311" text-anchor="middle" class="ig-csig">${c[0][1]}</text><line x1="501" y1="400" x2="501" y2="348" class="ig-stem"/><circle cx="501" cy="400" r="3.2" fill="#f2e9db" opacity="0.9"/><text x="501" y="326" text-anchor="middle" class="ig-cname">${c[1][0]}</text><text x="501" y="341" text-anchor="middle" class="ig-csig">${c[1][1]}</text><line x1="546" y1="400" x2="546" y2="378" class="ig-stem"/><circle cx="546" cy="400" r="3.2" fill="#f2e9db" opacity="0.9"/><text x="546" y="356" text-anchor="middle" class="ig-cname">${c[2][0]}</text><text x="546" y="371" text-anchor="middle" class="ig-csig">${c[2][1]}</text>
-  <line x1="681" y1="158" x2="681" y2="395" stroke="#c8552b" stroke-width="1.6"/>
-  <circle cx="681" cy="400" r="14" fill="#c8552b" opacity="0.28" filter="url(#igGlow)"/>
-  <circle cx="681" cy="400" r="10.5" fill="#c8552b" filter="url(#igGlow)"/>
-  <circle cx="681" cy="400" r="5.5" fill="#e0a24e"/>
-  <text x="681" y="120" text-anchor="middle" class="ig-name">${g.name}</text><text x="681" y="146" text-anchor="middle" class="ig-namesig">${g.sig}</text>
+  <line x1="582" y1="158" x2="582" y2="395" stroke="#c8552b" stroke-width="1.6"/>
+  <circle cx="582" cy="400" r="14" fill="#c8552b" opacity="0.28" filter="url(#igGlow)"/>
+  <circle cx="582" cy="400" r="10.5" fill="#c8552b" filter="url(#igGlow)"/>
+  <circle cx="582" cy="400" r="5.5" fill="#e0a24e"/>
+  <text x="582" y="120" text-anchor="middle" class="ig-name">${g.name}</text><text x="582" y="146" text-anchor="middle" class="ig-namesig">${g.sig}</text>
   </svg>`
         + '</div>'
-        + '<p class="ig-caption">'+g.caption+'</p>'
       + '</div>';
     host.appendChild(wrap);
   }

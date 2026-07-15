@@ -49,8 +49,7 @@ window.SITE_CONTENT = {
       avg: "среднее",
       cluster: [["Senior", "3.4σ"], ["Tech Lead", "3.9σ"], ["Архитектор", "4.4σ"]],
       name: "СТЕПАН",
-      sig: "5.9σ",
-      caption: "В духе того самого графика про Месси. Вектор примерно такой.",
+      sig: "4.8σ",
     },
     proof: {
       leadBefore: "",
@@ -215,8 +214,7 @@ window.SITE_CONTENT = {
       avg: "average",
       cluster: [["Senior", "3.4σ"], ["Tech Lead", "3.9σ"], ["Architect", "4.4σ"]],
       name: "STEPAN",
-      sig: "5.9σ",
-      caption: "Same spirit as that Messi chart. The vector is about right.",
+      sig: "4.8σ",
     },
     proof: {
       leadBefore: "",
@@ -380,8 +378,7 @@ window.SITE_CONTENT = {
       avg: "平均",
       cluster: [["资深", "3.4σ"], ["技术负责人", "3.9σ"], ["架构师", "4.4σ"]],
       name: "斯捷潘",
-      sig: "5.9σ",
-      caption: "灵感来自那张梅西图，方向大致如此。",
+      sig: "4.8σ",
     },
     proof: {
       leadBefore: "",
