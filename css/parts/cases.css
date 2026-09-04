@@ -1,0 +1,241 @@
+/* Projects and companies grid (cases / work section) */
+
+/* ---------------------------------------------------- WORK - one unified compact project grid */
+.cases__inner .headline { margin-top: 6px; max-width: 18ch; }
+.cases__lead { margin-top: 12px; max-width: 52ch; }
+/* headline + full-color still-life poster image, slight editorial tilt */
+.cases__intro {
+  display: grid;
+  grid-template-columns: 7fr 4fr;
+  gap: clamp(24px, 4vw, 56px);
+  align-items: end;
+}
+.cases__photo-wrap {
+  position: relative;
+  justify-self: end;
+  width: 100%;
+  max-width: 340px;
+  min-height: clamp(240px, 34vw, 320px);
+}
+.cases__photo-note {
+  position: absolute;
+  left: clamp(-72px, -14%, -28px);
+  bottom: 22%;
+  z-index: 2;
+  margin: 0;
+  max-width: 12ch;
+  font-size: 11px;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+  color: var(--terracotta);
+  transform: rotate(-5deg);
+}
+.cases__photo-arrow {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.65s var(--ease-out);
+}
+.cases__photo-wrap.is-arrow-drawn .cases__photo-arrow {
+  opacity: 1;
+}
+.cases__figure {
+  position: relative;
+  z-index: 0;
+  margin: 0 0 6px;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  background: #fff;
+  padding: clamp(8px, 1vw, 14px);
+  border: 1px solid var(--hairline-light);
+  box-shadow: 0 18px 50px -26px rgba(36, 27, 20, 0.5);
+  transform: rotate(1.6deg);
+}
+.cases__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+.cases__video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+  background: var(--ink);
+}
+/* tiny star legend */
+.cases__legends {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(14px, 2vw, 28px);
+  margin-top: clamp(22px, 3vw, 34px);
+}
+.cases__legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+.cases__legend .work-cell__stars {
+  position: static;
+  pointer-events: auto;
+}
+.cases__legend .work-cell__star {
+  width: 11px;
+  height: 11px;
+}
+
+/* compact 3-column flat grid: hairline-divided cells, small type */
+.cases__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--hairline-light);
+  border-left: 1px solid var(--hairline-light);
+  margin-top: clamp(16px, 2vw, 24px);
+}
+.work-cell {
+  position: relative;
+  border-right: 1px solid var(--hairline-light);
+  border-bottom: 1px solid var(--hairline-light);
+  padding: clamp(15px, 1.5vw, 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: var(--cream-bg-2);
+  transition: background-color 0.2s ease;
+}
+.work-cell:hover { background: var(--cream-bg); }
+.work-cell--major { background: rgba(200, 85, 43, 0.04); }
+.work-cell--medium { background: rgba(200, 85, 43, 0.02); }
+.work-cell__top { display: flex; align-items: baseline; gap: 8px; }
+.work-cell__num { font-size: 11px; color: var(--clay); }
+.work-cell__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--ink);
+}
+/* three terracotta sparks marking a major project */
+.work-cell__stars {
+  position: absolute;
+  top: clamp(10px, 1.1vw, 14px);
+  right: clamp(10px, 1.1vw, 14px);
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--terracotta);
+  pointer-events: none;
+}
+.work-cell__star {
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+}
+.work-cell__role {
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+}
+.work-cell__oneline { color: var(--ink-soft); font-size: 0.82rem; line-height: 1.45; }
+.work-cell__tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: auto; padding-top: 6px; }
+.work-cell__tags .tag { font-size: 11px; padding: 3px 8px; }
+
+.credential {
+  position: relative;
+  overflow: hidden;
+  margin-top: clamp(36px, 4vw, 60px);
+  border: 1px solid var(--terracotta);
+  border-left-width: 4px;
+  padding: clamp(22px, 3vw, 36px);
+  display: flex;
+  gap: clamp(16px, 3vw, 40px);
+  align-items: center;
+  flex-wrap: wrap;
+  background: var(--coffee-bg-2);
+}
+/* high-contrast b/w moment: clasped-hands photo, desaturated, behind the text */
+.credential::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url("../../assets/stock/hands-clasped-bw-01.jpg");
+  background-size: cover;
+  background-position: right center;
+  filter: grayscale(1) contrast(1.05);
+  opacity: 0.16;
+  mix-blend-mode: screen;
+}
+.credential > * { position: relative; z-index: 1; }
+.credential__text {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--paper);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  max-width: 70ch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-cell { transition: none; }
+  .cases__figure { transform: none; }
+  .cases__photo-wrap {
+    justify-self: start;
+    max-width: 280px;
+    min-height: 0;
+  }
+  .cases__photo-note {
+    position: static;
+    transform: none;
+    margin-bottom: 10px;
+    max-width: none;
+  }
+  .cases__photo-arrow { display: none; }
+}
+
+@media (max-width: 1024px) {
+  .cases__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 720px) {
+  .cases__grid { grid-template-columns: 1fr; }
+  .work-cell { border-right: none; }
+  .cases__intro { grid-template-columns: 1fr; }
+  .cases__photo-wrap {
+    justify-self: start;
+    width: 100%;
+    max-width: min(100%, 280px);
+    min-height: 0;
+  }
+  .cases__photo-note {
+    position: static;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    margin: 0 0 10px;
+    max-width: none;
+  }
+  .cases__photo-arrow { display: none; }
+  .cases__figure { max-width: 100%; transform: none; }
+}
+
+#work .section-index {
+  right: auto;
+  left: 58%;
+}
+
+@media (max-width: 900px) {
+  #work .section-index { right: var(--gutter); left: auto; }
+}

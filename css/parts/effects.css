@@ -1,0 +1,17 @@
+/* Grain overlay CSS (used by grained.js) */
+
+/* ---------------------------------------------------- GRAIN OVERLAY */
+#grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+}
+/* grained.js fills this absolute inner; absolute keeps grained from clobbering the fixed wrapper */
+#grain-inner {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}

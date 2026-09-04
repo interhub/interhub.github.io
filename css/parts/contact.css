@@ -1,0 +1,61 @@
+/* Contact section: channels list + CTA */
+
+/* CONTACT - terracotta clay, lighter, screen blend for a different feel */
+#contact .section__bg {
+  background-image: url("../../assets/stock/terracotta-clay-01.jpg");
+  opacity: 0.3;
+  mix-blend-mode: screen;
+}
+
+/* ---------------------------------------------------- CONTACT */
+.contact__inner { padding-bottom: clamp(80px, 10vw, 150px); }
+.contact__headline {
+  font-size: clamp(2.6rem, 8vw, 6.4rem);
+  max-width: 16ch;
+}
+.contact__hl-mark { color: var(--terracotta); }
+.contact__subline { margin-top: clamp(20px, 3vw, 34px); color: var(--paper-soft); max-width: 50ch; }
+.contact__channels {
+  list-style: none;
+  margin: clamp(36px, 5vw, 60px) 0 0;
+  padding: 0;
+  border-top: 1px solid var(--hairline-dark);
+  max-width: 760px;
+}
+.contact__channel {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--hairline-dark);
+}
+.contact__ch-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--paper-soft);
+  letter-spacing: 0.08em;
+  flex-shrink: 0;
+}
+.contact__ch-value {
+  font-family: var(--font-mono);
+  font-size: clamp(0.95rem, 1.6vw, 1.2rem);
+  color: var(--paper);
+  text-align: right;
+  word-break: break-word;
+  transition: color 0.2s ease;
+}
+.contact__ch-value:hover { color: var(--terracotta); }
+.contact__cta { margin-top: clamp(30px, 4vw, 48px); }
+
+@media (max-width: 720px) {
+  .contact__channel { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .contact__ch-value { text-align: left; }
+}
+
+/* 10. Contact headline - chat bubbles, paper. */
+.contact__illu {
+  width: 88px;
+  color: var(--paper);
+  margin-bottom: 16px;
+}

@@ -1,0 +1,316 @@
+/* Reset, theme blocks, section scaffolding, type primitives, buttons, tags, reveal/splitting motion */
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  margin: 0;
+  background: var(--coffee-bg);
+  color: var(--paper);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+body.menu-open { overflow: hidden; }
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+::selection { background: var(--terracotta); color: var(--paper); }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 200;
+  background: var(--terracotta);
+  color: var(--paper);
+  padding: 10px 16px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+.skip-link:focus { left: 12px; top: 12px; }
+
+:focus-visible {
+  outline: 2px solid var(--terracotta);
+  outline-offset: 3px;
+}
+
+/* ---------------------------------------------------- THEME BLOCKS */
+.section--dark {
+  --bg: var(--coffee-bg);
+  --bg-2: var(--coffee-bg-2);
+  --fg: var(--paper);
+  --fg-soft: var(--paper-soft);
+  --hairline: var(--hairline-dark);
+  background: var(--coffee-bg);
+  color: var(--paper);
+}
+.section--light {
+  --bg: var(--cream-bg);
+  --bg-2: var(--cream-bg-2);
+  --fg: var(--ink);
+  --fg-soft: var(--ink-soft);
+  --hairline: var(--hairline-light);
+  background: var(--cream-bg);
+  color: var(--ink);
+}
+
+.section {
+  position: relative;
+  overflow: hidden;
+}
+.section__inner {
+  position: relative;
+  z-index: 2;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: clamp(72px, 11vw, 168px) var(--gutter);
+}
+
+/* grunge seam between blocks (hard edge, not gradient) */
+.section + .section::before,
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--terracotta) 0 22px,
+    transparent 22px 44px
+  );
+  opacity: 0.32;
+  z-index: 3;
+}
+
+
+.section__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+}
+.section__bg-duotone {
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: multiply;
+  background: var(--coffee-bg);
+  opacity: 0.5;
+}
+
+.section--light::after {
+  /* faint paper texture on cream blocks */
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-image: url("../../assets/stock/cream-paper-01.jpg");
+  background-size: cover;
+  opacity: 0.16;
+  mix-blend-mode: multiply;
+}
+
+/* ---------------------------------------------------- TYPE PRIMITIVES */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: clamp(11px, 1.1vw, 13px);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  margin: 0 0 clamp(18px, 2.4vw, 32px);
+}
+.mono {
+  font-family: var(--font-mono);
+  letter-spacing: 0.06em;
+}
+.headline {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.4rem, 7.6vw, 6.4rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--fg);
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+.accent-word,
+.approach__hl-mark,
+.contact__hl-mark,
+.proof__lead-mark { color: var(--terracotta); }
+/* the accent word reads as a softer voice: weight contrast, not a font swap */
+.accent-word { font-weight: 500; }
+.hero__accent--second { color: var(--clay); }
+.hero__accent[data-rn="underline"].rn-plain {
+  text-decoration: none;
+  background-image:
+    linear-gradient(var(--terracotta), var(--terracotta)),
+    linear-gradient(var(--terracotta), var(--terracotta));
+  background-size: 100% 2px, 92% 2px;
+  background-position: 0 100%, 0 calc(100% + 5px);
+  background-repeat: no-repeat;
+}
+.hero__accent[data-rn="circle"].rn-plain {
+  text-decoration: none;
+  outline: 1.5px solid var(--clay);
+  outline-offset: 3px;
+  border-radius: 999px;
+}
+
+.lead-body {
+  font-family: var(--font-body);
+  color: var(--fg-soft);
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+  line-height: 1.6;
+  max-width: 62ch;
+  margin: 0;
+}
+
+/* clickable project title: subtle terracotta-tinted editorial underline */
+.project-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(200, 85, 43, 0.45);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.16em;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease, text-underline-offset 0.2s var(--ease-out);
+}
+.project-link:hover,
+.project-link:focus-visible {
+  color: var(--terracotta);
+  text-decoration-color: var(--terracotta);
+  text-underline-offset: 0.22em;
+}
+
+/* oversized faint section index in the margin rail */
+.section-index {
+  position: absolute;
+  top: clamp(40px, 6vw, 96px);
+  right: var(--gutter);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(5rem, 16vw, 15rem);
+  line-height: 0.8;
+  letter-spacing: -0.04em;
+  color: transparent;
+  z-index: 1;
+  pointer-events: none;
+  /* native background-clip:text texture fill */
+  background-image: url("../../assets/stock/terracotta-clay-01.jpg");
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 0.5;
+}
+.section--dark .section-index { opacity: 0.42; }
+
+
+/* ---------------------------------------------------- BUTTONS */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  padding: 14px 26px;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: transform 0.18s var(--ease-out), background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.btn--primary {
+  background: var(--terracotta);
+  color: var(--paper);
+  border-color: var(--terracotta);
+}
+.btn--primary:hover { background: var(--terracotta-deep); border-color: var(--terracotta-deep); }
+.btn--primary:active { transform: scale(0.97); }
+.btn--ghost {
+  background: transparent;
+  color: var(--fg);
+  border-color: var(--hairline);
+}
+.btn--ghost:hover { border-color: var(--terracotta); color: var(--terracotta); }
+.btn--ghost:active { transform: scale(0.97); }
+
+/* ---------------------------------------------------- TAGS / CHIPS */
+.tag,
+.chip {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--fg-soft);
+  border: 1px solid var(--hairline);
+  padding: 5px 11px;
+  border-radius: 0; /* sharp corners */
+  background: transparent;
+}
+.chip { font-size: 13px; padding: 7px 13px; color: var(--fg); }
+
+/* ---------------------------------------------------- MOTION: reveal */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+}
+.js .reveal.is-in { opacity: 1; transform: none; }
+/* gentle stagger inside grids */
+.js .proof__item:nth-child(2).is-in,
+.js .run:nth-child(2).is-in,
+.js .work-cell:nth-child(2).is-in { transition-delay: 0.05s; }
+.js .work-cell:nth-child(3).is-in { transition-delay: 0.1s; }
+
+/* ---------------------------------------------------- MOTION: Splitting headline */
+.js [data-splitting] .char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(0.32em);
+  transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out);
+  transition-delay: calc(var(--char-index, 0) * 18ms);
+}
+.js [data-splitting].is-revealed .char { opacity: 1; transform: none; }
+[data-splitting] .whitespace { white-space: pre; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+  .js [data-splitting] .char { opacity: 1; transform: none; transition: none; }
+  .btn { transition: none; }
+}
+
+@media (max-width: 720px) {
+  body { font-size: 16px; }
+  .section-index { font-size: clamp(4rem, 22vw, 8rem); top: clamp(28px, 8vw, 60px); }
+}
+
+.kit-illu {
+  display: block;
+  height: auto;
+  pointer-events: none;
+}
+.kit-illu svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.kit-illu--sm { width: 23px; }
+.kit-illu--md { width: 76px; }
+.kit-illu--hero { width: clamp(120px, 12vw, 150px); }
+.kit-illu--divider { width: 100%; }
+.kit-illu--divider svg { height: 26px; }

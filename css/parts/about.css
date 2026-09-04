@@ -1,0 +1,104 @@
+/* About section: bio copy + photo tiles */
+
+/* ABOUT - soft warm radial behind a full-color editorial side image */
+#about .section__bg { background-image: url("../../assets/stock/warm-radial-gradient-01.jpg"); opacity: 0.26; }
+
+/* ---------------------------------------------------- ABOUT */
+.about__inner { padding-bottom: clamp(88px, 12vw, 180px); }
+.about__headline {
+  margin-bottom: clamp(30px, 4vw, 56px);
+}
+.about__grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 340px) 1fr;
+  gap: clamp(24px, 4vw, 56px);
+  align-items: start;
+}
+.about__tiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 320px;
+}
+.about__tile {
+  margin: 0;
+}
+.about__tile-frame {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border: 1px solid var(--hairline-dark);
+  padding: 6px;
+  background: var(--coffee-bg-2);
+}
+.about__tile-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  cursor: zoom-in;
+}
+.photo-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(16px, 4vw, 48px);
+  background: rgba(12, 8, 6, 0.94);
+  cursor: zoom-out;
+}
+.photo-lightbox img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.about__tile-cap {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--paper-soft);
+  margin-top: 8px;
+}
+.about__col {
+  max-width: 62ch;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.about__body { color: var(--paper); font-size: clamp(1.05rem, 1.6vw, 1.28rem); line-height: 1.66; }
+.about__facts { font-size: 13px; color: var(--paper-soft); letter-spacing: 0.04em; line-height: 1.8; }
+.about__facts-link {
+  color: var(--terracotta);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.about__facts-link:hover { color: var(--clay); }
+
+@media (max-width: 720px) {
+  .about__grid { grid-template-columns: 1fr; }
+  .about__tiles { max-width: min(100%, 360px); margin-inline: auto; }
+  .about__col { order: 1; }
+  .about__tiles { order: 2; }
+}
+
+/* 7. About headline - mountain flag, paper. */
+.about__headline-row {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 3vw, 32px);
+  flex-wrap: wrap;
+}
+.about__headline-row .about__headline { margin: 0; }
+.about__headline-illu {
+  width: 80px;
+  flex: 0 0 auto;
+  color: var(--paper);
+}
+
+.about__tiles { position: relative; }
+
+@media (max-width: 640px) {
+  .about__headline-illu { width: 60px; }
+}

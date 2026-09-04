@@ -1,0 +1,76 @@
+/* Tech stack grid, management blurb, stack illustrations */
+
+/* ---------------------------------------------------- STACK */
+.stack__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: clamp(28px, 3vw, 54px);
+  margin-top: clamp(40px, 5vw, 72px);
+  border-top: 1px solid var(--hairline-light);
+  padding-top: clamp(32px, 4vw, 56px);
+}
+.stack__cluster { grid-column: span 4; }
+.stack__cluster--emph { grid-column: span 6; }
+.stack__cluster--emph .stack__cluster-title { color: var(--terracotta); }
+.stack__cluster--emph .stack__cluster-title[data-rn="box"].rn-plain {
+  display: inline-block;
+  box-shadow: inset 0 0 0 2px var(--terracotta);
+  padding: 2px 8px;
+}
+.stack__cluster--emph .chip { border-color: var(--terracotta); }
+.stack__cluster-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.3rem, 2vw, 1.7rem);
+  letter-spacing: -0.01em;
+  margin: 0 0 18px;
+  color: var(--ink);
+}
+.stack__chips { display: flex; flex-wrap: wrap; gap: 9px; }
+.stack__cert {
+  margin-top: clamp(32px, 4vw, 52px);
+  font-size: 13px;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+}
+.stack__cert--note { margin-top: 6px; }
+.stack__mgmt {
+  margin-top: clamp(40px, 5vw, 72px);
+  padding-top: clamp(32px, 4vw, 56px);
+  border-top: 1px solid var(--hairline-light);
+}
+.stack__mgmt-title { margin-bottom: 16px; }
+.stack__mgmt-body {
+  margin: 0;
+  max-width: 64ch;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 1024px) {
+  .stack__cluster,
+  .stack__cluster--emph { grid-column: span 6; }
+}
+
+@media (max-width: 720px) {
+  .stack__cluster,
+  .stack__cluster--emph { grid-column: span 12; }
+
+}
+
+/* 5. Stack DevOps/infra cluster title - gear, ink-soft. */
+.stack__cluster-title { position: relative; }
+.stack__cluster-icon {
+  width: 22px;
+  display: inline-block;
+  vertical-align: -0.32em;
+  margin-right: 9px;
+  color: var(--ink-soft);
+  opacity: 0.75;
+}
+
+/* 9. Stack -> About seam - wave divider, muted terracotta. */
+.stack__divider {
+  margin-top: clamp(36px, 6vh, 64px);
+  color: var(--terracotta);
+  opacity: 0.3;
+}

@@ -1,0 +1,17 @@
+/* Site footer */
+
+/* ---------------------------------------------------- FOOTER */
+.footer { position: relative; background: var(--coffee-bg); color: var(--paper); }
+.footer__inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 34px var(--gutter);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.footer__name { font-size: 13px; color: var(--paper-soft); letter-spacing: 0.06em; }
+.footer__back { font-size: 13px; color: var(--paper); letter-spacing: 0.06em; }
+.footer__back:hover { color: var(--terracotta); }

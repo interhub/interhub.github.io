@@ -1,0 +1,43 @@
+/* Design tokens: color palette, fonts, layout, easing curves */
+/* ---------------------------------------------------- TOKENS */
+:root {
+  /* light (cream editorial) */
+  --cream-bg: #f4ede2;
+  --cream-bg-2: #ede3d4;
+  --ink: #241b14;
+  --ink-soft: #5a4a3c;
+  --hairline-light: #c9b8a2;
+
+  /* dark (warm grunge) */
+  --coffee-bg: #1c1410;
+  --coffee-bg-2: #261b14;
+  --paper: #f2e9db;
+  --paper-soft: #b7a793;
+  --hairline-dark: #4a382c;
+
+  /* accents (identical across themes) */
+  --terracotta: #c8552b;
+  --terracotta-deep: #9e3e1c;
+  --clay: #e0a24e;
+
+  /* fonts */
+  --font-display: "Wix Madefor Display", "Noto Sans SC", system-ui, sans-serif;
+  --font-body: "Lora", "Noto Serif SC", Georgia, serif;
+  --font-mono: "JetBrains Mono", "Noto Sans SC", ui-monospace, monospace;
+
+  /* layout */
+  --maxw: 1400px;
+  --gutter: clamp(20px, 5vw, 80px);
+  --nav-h: 68px;
+
+  /* easing (emil: punchy custom curves) */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+
+  /* per-section theme vars (set by .section--light / --dark) */
+  --bg: var(--coffee-bg);
+  --bg-2: var(--coffee-bg-2);
+  --fg: var(--paper);
+  --fg-soft: var(--paper-soft);
+  --hairline: var(--hairline-dark);
+}
