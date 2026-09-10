@@ -1,26 +1,32 @@
 # Stepan Turchenko
 
-> AI Integration Specialist and Senior Fullstack engineer / Tech Lead.
+> AI integration specialist, fullstack engineer, tech lead and consultant.
 
-Stepan Turchenko brings AI into real business processes (Claude Code, AI agents, workflow automation) and owns the engineering that ships and runs production software end to end: mobile, backend, infrastructure, and the team around it. More than six years of production work across the US, UK and Russia.
+Stepan Turchenko brings AI agents and automation into business (Claude Code, AI agents, agent harnesses, workflow automation) and owns the creation of IT products from scratch: mobile, web, serverless, Telegram bots, agentic systems, analytics and infrastructure. Sixth year helping IT companies worldwide reach their goals across the US, Europe and Russia.
+
+## Results delivered
+- 2 large products in the USA taken to market.
+- 8 mid-size businesses in Russia taken to market.
+- 24 sites and apps helping entrepreneurs.
+- 100+ agents and harnesses automating business processes.
 
 ## What he does
-- Bring AI into the business: map where AI agents and automation save time, then build and integrate them into existing processes and tools.
-- Build and ship the product end to end: mobile and backend, payments, analytics, release, and the team.
-- Lead the engineering: set standards, run interviews and reviews, keep heavy systems stable under load.
+- AI integration: builds AI agents and the harnesses around them and wires them into existing tools and workflows - shared memory, rules, skills and scheduled agents that take over routine work in product, finance, QA and analytics.
+- Builds IT products from scratch: mobile and backend, payments, analytics, infrastructure, release, and the team around it.
+- Tech lead and consulting: owns the product and the whole technical side, runs interviews and negotiations in English.
 
 ## Selected work
-- Painta (https://painta.io): an AI art coach built as a full product - mobile app, backend, admin, payments, and automations.
-- Aspect Health (https://www.aspect-health.com): a Delaware women-health and wellness platform with an AI agentic app, run as a heavy production service.
+- Painta (https://painta.io): an AI art coach built as a full product - mobile app, backend, payments, and automations.
+- Aspect Health (https://www.aspect-health.com): a Delaware women-health platform with an AI app, run as a heavy production service.
 - Nana800 (http://nana800.io): his own low-code automation platform with visual scenarios, integrations, and AI blocks.
-- Moscow Sport (https://sport.mos.ru/): the Moscow government sport app, rescued and shipped after a state contractor failed.
+- Moscow Sport (https://sport.mos.ru/): the Moscow government sport app.
 
-## Stack
-AI & Automation: Claude Code, AI Agents, Prompt Engineering, N8N, Cursor.
+## What he uses
+AI & Automation: Claude Code, AI Agents, Prompt Engineering, N8N, Cursor, AI workflow automation.
 Frontend & Mobile: React, React Native, TypeScript, Zustand, Expo.
-Backend & Data: Node.js, Nest.js, PostgreSQL, Supabase, Redis, RabbitMQ, Microservices.
-DevOps & Cloud: Docker, CI/CD, Google Cloud, AWS, Grafana, Loki, Nginx, Traefik.
-W3-certified in TypeScript and React.
+Backend & Data: Node.js, Nest.js, Next.js, PostgreSQL, MongoDB, Supabase, Redis, RabbitMQ, Microservices.
+DevOps & Cloud: Docker, Dokploy, CI/CD, Google Cloud, AWS, Grafana, Loki, Nginx, Traefik.
+W3-certified in TypeScript and React. Fluent in English. Hackathon prize winner, 2022.
 
 ## Important links
 - Home: https://personal-info.ru/
@@ -30,21 +36,21 @@ W3-certified in TypeScript and React.
 - Telegram (preferred contact): https://t.me/Stepan_Turchenko
 - GitHub: https://github.com/interhub
 - X (Twitter): https://x.com/interhubs
-- Instagram: https://www.instagram.com/stepan_turchenko/
+- Instagram (personal blog about IT business and development): https://www.instagram.com/stepan_turchenko/
 
 ## FAQ
 
 Q: Who is Stepan Turchenko?
-A: AI Integration Specialist and Senior Fullstack Engineer / Tech Lead, 6+ years of production work across the US, UK and Russia; brings AI agents and automation into real business and owns the engineering end to end.
+A: AI integration specialist, fullstack engineer, tech lead and consultant. Sixth year helping IT companies worldwide across the US, Europe and Russia; brings AI agents and automation into business and owns the creation of IT products from scratch.
 
 Q: What can you hire him for?
-A: AI integration into business processes, building and shipping a product end to end (mobile, backend, infra), or leading an engineering team as tech lead. Available for full-time remote.
+A: AI integration into business processes, building an IT product from scratch (mobile, web, serverless, Telegram bots, analytics, infrastructure), leading an engineering team as tech lead, or consulting on product and technology.
 
 Q: What is his stack?
 A: Claude Code, AI agents, prompt engineering, N8N, Cursor; React, React Native, TypeScript; Node.js, Nest.js, PostgreSQL, Supabase; Docker, CI/CD, Google Cloud, AWS.
 
 Q: What has he built?
-A: Painta (AI art coach), Aspect Health (women-health platform), Nana800 (his own low-code automation platform), Moscow Sport (city-scale government app).
+A: Two large products in the USA, eight mid-size businesses in Russia, 24 sites and apps, 100+ agents and harnesses. Among them Painta (AI art coach), Aspect Health (women-health platform), Nana800 (his own low-code automation platform), Moscow Sport (Moscow government app).
 
 Q: How to contact him?
-A: Preferred: Telegram https://t.me/Stepan_Turchenko ; also email stepanstepan4@gmail.com and LinkedIn https://www.linkedin.com/in/stepanturchenko.
+A: Write about your product. Preferred: Telegram https://t.me/Stepan_Turchenko ; also email stepanstepan4@gmail.com and LinkedIn https://www.linkedin.com/in/stepanturchenko.

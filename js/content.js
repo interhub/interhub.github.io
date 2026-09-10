@@ -11,9 +11,9 @@ window.SITE_CONTENT = {
       lang: "ru",
       ogLocale: "ru_RU",
       title:
-        "Степан Турченко - внедрение ИИ, Senior Fullstack и Tech Lead",
+        "Степан Турченко - внедрение ИИ, Fullstack Engineer, Техлид и Консультации",
       description:
-        "Специалист по внедрению ИИ, Senior Fullstack инженер и Tech Lead. Внедряю ИИ в реальные процессы компаний и отвечаю за инженерию, которая держит продукты в продакшене в США, Европе и России.",
+        "Внедряю ИИ в бизнес и отвечаю за создание айти продуктов с нуля. Шестой год помогаю айти компаниям по всему миру достигать цели: ИИ-агенты и автоматизация, fullstack, техлид, консультации.",
       skipLink: "Перейти к содержимому",
     },
     nav: {
@@ -142,7 +142,7 @@ window.SITE_CONTENT = {
       index: "Работы",
       sectionTitle: "Проекты и компании",
       headline: "Список моих проектов и компаний.",
-      lead: "Компании, где я был не просто разработчиком: помогал выстраивать процессы, приносил идеи и отвечал за то, чтобы продукт рос. Звезда отмечает крупные проекты.",
+      lead: "Компании, где я строил процессы и отвечал за продукт. Звезда отмечает крупные проекты.",
       legend: "крупные проекты",
       legendMedium: "средняя сложность",
       photoNote: "я кайфую от своей работы",
@@ -186,7 +186,7 @@ window.SITE_CONTENT = {
     about: {
       index: "О себе",
       headline: "Обо мне",
-      body: "Шестой год делаю продукты и собираю команды вокруг них. Три года вёл сервисы women-health стартапа в Делавэре, потом ритейл и B2B в России, сейчас мобильная разработка с агентами в Европе. Отвечаю за архитектуру, релизы и инфраструктуру, разбираю инциденты. Собеседования и переговоры веду на английском. Сейчас внедряю ИИ-агентов в работу компаний.",
+      body: "Шестой год делаю продукты и собираю команды вокруг них. Работаю с women-health в США, ритейлом и B2B в России, мобильной разработкой с агентами в Европе. Отвечаю за продукт и всю техническую часть: архитектуру, релизы и инфраструктуру. Провожу интервью и переговоры, владею английским. Внедряю ИИ-агентов в работу компаний.",
       facts: "Веду небольшой личный блог про айти бизнес и разработку",
       interests: "Занимаюсь падел теннисом и немного боксом, владелец собаки, увлекаюсь экономикой и технологиями",
     },
@@ -196,10 +196,10 @@ window.SITE_CONTENT = {
     },
     contact: {
       index: "Контакт",
-      headlineBefore: "Расскажите, что вы ",
-      headlineAccent: "создаёте",
+      headlineBefore: "Пишите про свой ",
+      headlineAccent: "продукт",
       headlineAfter: ".",
-      subline: "и мы вместе построим стратегию развития вашего продукта.",
+      subline: "Отвечаю за техническую часть и результат.",
       cta: "Связаться",
       emailLabel: "Почта",
       phoneLabel: "Телефон",
@@ -215,9 +215,9 @@ window.SITE_CONTENT = {
     meta: {
       lang: "en",
       ogLocale: "en_US",
-      title: "Stepan Turchenko - AI Integration Specialist, Senior Fullstack & Tech Lead",
+      title: "Stepan Turchenko - AI Integration, Fullstack Engineer, Tech Lead & Consulting",
       description:
-        "AI Integration Specialist, Senior Fullstack engineer and Tech Lead. I bring AI into real business processes and own the engineering that keeps products running in production across the US, Europe and Russia.",
+        "I bring AI into business and own the creation of strong IT products from scratch. Sixth year helping IT companies worldwide reach their goals: AI agents and automation, fullstack engineering, tech lead, consulting.",
       skipLink: "Skip to content",
     },
     nav: {
@@ -346,7 +346,7 @@ window.SITE_CONTENT = {
       index: "Work",
       sectionTitle: "Projects and companies",
       headline: "A list of my projects and companies.",
-      lead: "Apps, platforms, and sites across AI, health, retail, sport, and B2B. The star marks major projects.",
+      lead: "Companies where I built the processes and owned the product. The star marks major projects.",
       legend: "major projects",
       legendMedium: "medium complexity",
       photoNote: "I love the work I do",
@@ -390,7 +390,7 @@ window.SITE_CONTENT = {
     about: {
       index: "About",
       headline: "About",
-      body: "Sixth year building products and the teams around them. Three years running the services of a women-health startup in Delaware, then retail and B2B in Russia, now agent-driven mobile work in Europe. I own architecture, releases and infrastructure, and I handle incidents. I interview and negotiate in English. Right now I bring AI agents into how companies work.",
+      body: "Sixth year building products and the teams around them. I work with women-health in the US, retail and B2B in Russia, agent-driven mobile development in Europe. I own the product and the whole technical side: architecture, releases and infrastructure. I run interviews and negotiations in English. I bring AI agents into how companies work.",
       facts: "I keep a small personal blog about IT business and development",
       interests: "I play padel and box a little, own a dog, and follow economics and technology",
     },
@@ -400,10 +400,10 @@ window.SITE_CONTENT = {
     },
     contact: {
       index: "Contact",
-      headlineBefore: "Let me know what you are ",
-      headlineAccent: "creating",
+      headlineBefore: "Write me about your ",
+      headlineAccent: "product",
       headlineAfter: ".",
-      subline: "and together we'll build a growth strategy for your product.",
+      subline: "I own the technical side and the result.",
       cta: "Get in touch",
       emailLabel: "Email",
       phoneLabel: "Phone",
@@ -419,9 +419,9 @@ window.SITE_CONTENT = {
     meta: {
       lang: "zh",
       ogLocale: "zh_CN",
-      title: "斯捷潘·图尔琴科 - AI 集成专家 / 高级全栈工程师 / 技术负责人",
+      title: "斯捷潘·图尔琴科 - AI 集成 / 全栈工程师 / 技术负责人 / 咨询",
       description:
-        "AI 集成专家、高级全栈工程师与技术负责人。我把 AI 落地到企业真实的业务流程中，并负责支撑产品在美国、欧洲和俄罗斯稳定运行的整套工程。",
+        "把 AI 落地到企业业务，并负责从零打造出色的 IT 产品。第六年帮助全球 IT 公司实现目标：AI 智能体与自动化、全栈开发、技术负责人、咨询。",
       skipLink: "跳到内容",
     },
     nav: {
@@ -549,7 +549,7 @@ window.SITE_CONTENT = {
       index: "作品",
       sectionTitle: "项目与公司",
       headline: "我参与的项目与公司清单。",
-      lead: "涵盖 AI、健康、零售、体育与 B2B 的应用、平台和网站。星标代表重点项目。",
+      lead: "这些公司里，我搭建流程并对产品负责。星标代表重点项目。",
       legend: "重点项目",
       legendMedium: "中等复杂度",
       photoNote: "我热爱自己的工作",
@@ -593,7 +593,7 @@ window.SITE_CONTENT = {
     about: {
       index: "关于",
       headline: "关于",
-      body: "第六年做产品，也带起围绕产品的团队。在特拉华州的女性健康初创公司做了三年服务端，之后是俄罗斯的零售与 B2B，现在在欧洲做带智能体的移动端。架构、发布和基础设施归我，故障也由我排查。面试和谈判用英语。眼下把 AI 智能体带进企业的日常工作。",
+      body: "第六年做产品，也带起围绕产品的团队。在美国做女性健康方向，在俄罗斯做零售与 B2B，在欧洲做带智能体的移动端。产品和整个技术面归我：架构、发布与基础设施。面试和谈判用英语。把 AI 智能体带进企业的日常工作。",
       facts: "我写一个关于 IT 业务与开发的小型个人博客",
       interests: "打匹克球，也练一点拳击，养狗，关注经济与技术",
     },
@@ -603,10 +603,10 @@ window.SITE_CONTENT = {
     },
     contact: {
       index: "联系",
-      headlineBefore: "告诉我你在",
-      headlineAccent: "创造",
-      headlineAfter: "什么。",
-      subline: "我们一起为你的产品制定发展战略。",
+      headlineBefore: "写信聊聊你的",
+      headlineAccent: "产品",
+      headlineAfter: "。",
+      subline: "技术部分和结果由我负责。",
       cta: "联系我",
       emailLabel: "邮箱",
       phoneLabel: "电话",
