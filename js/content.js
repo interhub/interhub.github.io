@@ -186,7 +186,7 @@ window.SITE_CONTENT = {
     about: {
       index: "О себе",
       headline: "Обо мне",
-      body: "Шестой год делаю продукты и собираю команды вокруг них. Среди моих проектов продукты из областей wellness, women health, sport & fitness, art, ритейла и продаж, ИИ-системы для B2B и B2C. Продукты в разных странах: США и Россия. Отвечаю за продукт и всю техническую часть: архитектуру, релизы и инфраструктуру. Провожу интервью и переговоры, владею английским. Внедряю ИИ-агентов в работу компаний.",
+      body: "Уже шесть лет создаю продукты и прокачиваю айти команды. Среди моих проектов продукты из областей wellness, women health, sport & fitness, art, ритейла и продаж, ИИ-системы для B2B и B2C. Продукты в разных странах: США и Россия. Отвечаю за продукт и всю техническую часть: архитектуру, релизы и инфраструктуру. Провожу интервью и переговоры, владею английским. Внедряю ИИ-агентов в работу компаний.",
       facts: "Веду небольшой личный блог про айти бизнес и разработку",
       interests: "Занимаюсь падел теннисом и немного боксом, владелец собаки, увлекаюсь экономикой и технологиями",
     },
@@ -390,7 +390,7 @@ window.SITE_CONTENT = {
     about: {
       index: "About",
       headline: "About",
-      body: "Sixth year building products and the teams around them. My projects span wellness, women health, sport & fitness, art, retail and sales, AI systems for B2B and B2C. Products in different countries: the US and Russia. I own the product and the whole technical side: architecture, releases and infrastructure. I run interviews and negotiations in English. I bring AI agents into how companies work.",
+      body: "Six years now building products and levelling up IT teams. My projects span wellness, women health, sport & fitness, art, retail and sales, AI systems for B2B and B2C. Products in different countries: the US and Russia. I own the product and the whole technical side: architecture, releases and infrastructure. I run interviews and negotiations in English. I bring AI agents into how companies work.",
       facts: "I keep a small personal blog about IT business and development",
       interests: "I play padel and box a little, own a dog, and follow economics and technology",
     },
@@ -593,7 +593,7 @@ window.SITE_CONTENT = {
     about: {
       index: "关于",
       headline: "关于",
-      body: "第六年做产品，也带起围绕产品的团队。我的项目涵盖 wellness、女性健康、运动健身、艺术、零售与销售、AI B2B 与 B2C 系统，产品分布在美国和俄罗斯。产品和整个技术面归我：架构、发布与基础设施。面试和谈判用英语。把 AI 智能体带进企业的日常工作。",
+      body: "六年来我打造产品，并帮助 IT 团队成长。我的项目涵盖 wellness、女性健康、运动健身、艺术、零售与销售、AI B2B 与 B2C 系统，产品分布在美国和俄罗斯。产品和整个技术面归我：架构、发布与基础设施。面试和谈判用英语。把 AI 智能体带进企业的日常工作。",
       facts: "我写一个关于 IT 业务与开发的小型个人博客",
       interests: "打匹克球，也练一点拳击，养狗，关注经济与技术",
     },
