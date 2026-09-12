@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="fix kist fancly 1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e6ecf52a-fd8f-471c-8781-32e9ae5378ca" name="Default Changelist" comment="site: remove major restyle stylesheet, simplifying CSS base" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +16,7 @@
     </execution>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="477" />
+    <option name="cachedIndexableFilesCount" value="506" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -312,6 +310,7 @@
       <workItem from="1780832791780" duration="476000" />
       <workItem from="1784111892760" duration="1842000" />
       <workItem from="1784174695681" duration="42000" />
+      <workItem from="1788557857814" duration="21000" />
     </task>
     <task id="LOCAL-00001" summary="add refactoring">
       <created>1616539522700</created>
@@ -593,14 +592,6 @@
       <option name="project" value="LOCAL" />
       <updated>1677017583783</updated>
     </task>
-    <task id="LOCAL-00049" summary="fix kist fancly 1">
-      <option name="closed" value="true" />
-      <created>1780506256810</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1780506256810</updated>
-    </task>
     <task id="LOCAL-00050" summary="fix kist fancly 1">
       <option name="closed" value="true" />
       <created>1780568346020</created>
@@ -665,7 +656,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784128347358</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="site: remove major restyle stylesheet, simplifying CSS base">
+      <option name="closed" value="true" />
+      <created>1788557868130</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1788557868130</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -715,7 +714,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add repo" />
     <MESSAGE value="add repo 2" />
     <MESSAGE value="add new model site" />
     <MESSAGE value="add full music cite" />
@@ -740,7 +738,8 @@
     <MESSAGE value="fix wedding" />
     <MESSAGE value="fix wedding 2" />
     <MESSAGE value="fix kist fancly 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix kist fancly 1" />
+    <MESSAGE value="site: remove major restyle stylesheet, simplifying CSS base" />
+    <option name="LAST_COMMIT_MESSAGE" value="site: remove major restyle stylesheet, simplifying CSS base" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kisa/index.html">

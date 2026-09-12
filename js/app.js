@@ -76,7 +76,6 @@
     SEC.nav(withVisibleNav(t));
     SEC.hero(t);
     SEC.proof(t);
-    SEC.services(t);
     if (!isHidden("infographic")) SEC.infographic(t);
     if (!isHidden("approach")) SEC.approach(t);
     SEC.stack(t);
@@ -119,16 +118,6 @@
     FX.initGrain();
     FX.initNavScroll();
     FX.initBackToTop();
-    scrollToHash();
-  }
-
-  /* Sections are rendered by JS after the browser has already handled the
-     URL hash, so a cold load of /#apps needs one explicit scroll. */
-  function scrollToHash() {
-    if (!location.hash || location.hash.length < 2) return;
-    var target = document.getElementById(location.hash.slice(1));
-    if (!target) return;
-    setTimeout(function () { target.scrollIntoView({ block: "start" }); }, 80);
   }
 
   window.SITE_APP = { setLang: setLang };
