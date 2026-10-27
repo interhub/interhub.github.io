@@ -16,7 +16,7 @@ Stepan Turchenko brings AI agents and automation into business (Claude Code, AI 
 - Tech lead and consulting: owns the product and the whole technical side, runs interviews and negotiations in English.
 
 ## Selected work
-- Painta (https://painta.io): an AI drawing coach for iOS, Android, iPad and web - MVP in the App Store in 36 days, 10k+ users, 4.5 stars, Supabase backend, subscriptions, AI agents.
+- Painta (https://app.painta.io): an AI drawing coach for iOS, Android, iPad and web - MVP in the App Store in 36 days, 10k+ users, 4.5 stars, Supabase backend, subscriptions, AI agents.
 - Aspect Health (https://www.aspect-health.com): a US women-health platform with $300k+ yearly revenue - 4 Node.js services on Google Cloud, 30+ integrations, team lead of 5.
 - Nana800 (http://nana800.io): his own low-code automation platform - 73 block types, 54 integrations, an MCP server with 44 tools for AI agents.
 - Moscow Sport (https://sport.mos.ru/): the Moscow city sport app, brought back to the stores after a failed contractor.

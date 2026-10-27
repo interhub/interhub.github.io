@@ -637,7 +637,7 @@ window.SITE_STATIC = {
   /* Real live URLs per project. Keyed by every localized title so the
      renderer can resolve a link regardless of the active language. */
   projectUrls: {
-    Painta: "https://painta.io",
+    Painta: "https://app.painta.io",
     "Aspect Health": "https://www.aspect-health.com",
     Nana800: "http://nana800.io",
     "Moscow Sport": "https://sport.mos.ru/",
