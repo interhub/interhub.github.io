@@ -16,10 +16,11 @@ Stepan Turchenko brings AI agents and automation into business (Claude Code, AI 
 - Tech lead and consulting: owns the product and the whole technical side, runs interviews and negotiations in English.
 
 ## Selected work
-- Painta (https://painta.io): an AI art coach built as a full product - mobile app, backend, payments, and automations.
-- Aspect Health (https://www.aspect-health.com): a Delaware women-health platform with an AI app, run as a heavy production service.
-- Nana800 (http://nana800.io): his own low-code automation platform with visual scenarios, integrations, and AI blocks.
-- Moscow Sport (https://sport.mos.ru/): the Moscow government sport app.
+- Painta (https://painta.io): an AI drawing coach for iOS, Android, iPad and web - MVP in the App Store in 36 days, 10k+ users, 4.5 stars, Supabase backend, subscriptions, AI agents.
+- Aspect Health (https://www.aspect-health.com): a US women-health platform with $300k+ yearly revenue - 4 Node.js services on Google Cloud, 30+ integrations, team lead of 5.
+- Nana800 (http://nana800.io): his own low-code automation platform - 73 block types, 54 integrations, an MCP server with 44 tools for AI agents.
+- Moscow Sport (https://sport.mos.ru/): the Moscow city sport app, brought back to the stores after a failed contractor.
+- VTB Investments (https://www.vtb.ru/invest/): the investment app of one of Russia's largest banks.
 
 ## What he uses
 AI & Automation: Claude Code, AI Agents, Prompt Engineering, N8N, Cursor, AI workflow automation.
@@ -50,7 +51,7 @@ Q: What is his stack?
 A: Claude Code, AI agents, prompt engineering, N8N, Cursor; React, React Native, TypeScript; Node.js, Nest.js, PostgreSQL, Supabase; Docker, CI/CD, Google Cloud, AWS.
 
 Q: What has he built?
-A: Two large products in the USA, eight mid-size businesses in Russia, 24 sites and apps, 100+ agents and harnesses. Among them Painta (AI art coach), Aspect Health (women-health platform), Nana800 (his own low-code automation platform), Moscow Sport (Moscow government app).
+A: Two large products in the USA, eight mid-size businesses in Russia, 24 sites and apps, 100+ agents and harnesses. Among them Painta (AI drawing coach), Aspect Health (US women-health platform), Nana800 (his own low-code automation platform), Moscow Sport (Moscow city sport app), VTB Investments (bank investment app).
 
 Q: How to contact him?
 A: Write about your product. Preferred: Telegram https://t.me/Stepan_Turchenko ; also email stepanstepan4@gmail.com and LinkedIn https://www.linkedin.com/in/stepanturchenko.

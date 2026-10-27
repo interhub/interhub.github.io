@@ -16,18 +16,21 @@ Stepan Turchenko is an AI integration specialist, fullstack engineer, tech lead 
 4. Consulting on product and technology for IT companies and entrepreneurs.
 
 ## Selected work (major projects)
-- Painta (https://painta.io): an AI art coach built as a full product. React Native app, Supabase backend, Directus admin, Adapty and Stripe payments, N8N automations, AI-assisted CI/CD. Role: AI product lead, fullstack.
-- Aspect Health (https://www.aspect-health.com): a Delaware women-health platform with an AI app, run as a heavy production service. Node.js and Nest.js backend, React Native app, GCP and DevOps, Redis, queues, Grafana and Amplitude monitoring. Role: fullstack engineer and engineering team management, three years.
-- Nana800 (http://nana800.io): his own low-code automation platform with visual scenarios, integrations, and AI blocks. Role: founder and technical lead.
-- Moscow Sport (https://sport.mos.ru/): the Moscow government sport app. Role: mobile engineer.
+- Painta (https://painta.io): an AI drawing coach for iOS, Android, iPad and web. MVP in the App Store 36 days after the first commit, 2,000+ commits, 10k+ users, 4.5 stars from 152 App Store ratings. React Native and Expo app, Supabase backend, Directus admin, Adapty and Stripe subscriptions, AI mentor chat and image generation, payment reconciliation in n8n that found $719 of lost payments, infrastructure cost cut from about $500 to $200 a month, AI agents for analytics, marketing and testing. Role: architecture and fullstack, team of 2.
+- Aspect Health (https://www.aspect-health.com): a US women-health platform with $300k+ yearly revenue. 4 Node.js services on Google Cloud, 7 RabbitMQ queues, about 315 REST endpoints and 30+ integrations, idempotent Stripe payments, server-side conversions to Meta and Google, Grafana and Sentry monitoring, a React Native app reading FreeStyle Libre glucose sensors over NFC. Role: fullstack engineer and team lead of 5, company-wide QA, January 2022 - September 2025.
+- Nana800 (http://nana800.io): his own low-code platform for backend logic and automation. 7 NestJS services, a React drag-and-drop builder, 73 block types, 54 integrations, sandboxed user JavaScript, OpenAPI docs per scenario, 4 npm libraries including an MCP server with 44 tools. Role: founder and fullstack developer.
+- Moscow Sport (https://sport.mos.ru/): the Moscow city sport app. In a team of five fixed the app left broken by a failed contractor and re-released it to the App Store and Google Play; wrote the YooKassa payment module for React Native. Role: mobile engineer.
 
 ## More work
-- Bigam (https://www.bigam.ru/): hardware-store chain retail app, catalog, delivery, payments, 1C integrations.
+- VTB Investments (https://www.vtb.ru/invest/): the investment app of one of Russia's largest banks, React Native screens and API work via Cloud Factory.
+- Bigam (https://www.bigam.ru/): hardware-store chain app, Node.js backend synced with 1C, 100k+ downloads, 5.0 on Google Play.
 - Small: cashier-free supermarket app with QR and barcode scanning and in-app payments.
 - Liverpool: food-delivery app for a restaurant chain with real-time tracking over web sockets.
 - Bismap (https://bismap.net/): B2B tenders app, full backend, handed to the client.
-- Stayfit (https://stayfitt.ru/): corporate wellbeing app, challenges, consultations, team competition.
-- GroupQ (https://groupq-ural.ru/): fuel-station loyalty app, bonuses, prices, maps, Yandex API and 1C.
+- Stayfit (https://stayfitt.ru/): corporate health platform, best innovation in Russian corporate sport 2022, 4.5 stars from 1,100+ ratings.
+- GroupQ (https://groupq-ural.ru/): fuel-station loyalty app, Node.js microservices, Yandex API and 1C, 10k+ downloads.
+- CoRegulate: meditation app on React Native, Expo and Firebase.
+- BoxLab: 3D packaging configurator on Three.js and WebGL.
 - Ageeva Stom (https://ageevastom.ru): private dental clinic site in Kaliningrad.
 - Solnechnaya Arka (http://solnechnayaarka.ru): greenhouse and garden-structures storefront.
 - ProFitness (https://pro-fitness-39.ru): fitness-chain site across four locations.
@@ -41,7 +44,7 @@ Technical management: runs engineering and designs whole systems end to end, set
 W3-certified in TypeScript and React. Fluent in English. Hackathon prize winner, 2022 (All-Russia programming championship: built a working product for Gazprombank in 48 hours with a team, https://hacks-ai.ru/).
 
 ## About
-Sixth year building products and the teams around them. Works with women-health in the US, retail and B2B in Russia, agent-driven mobile development in Europe. Owns the product and the whole technical side: architecture, releases and infrastructure. Runs interviews and negotiations in English. Brings AI agents into how companies work. Based in Kaliningrad, Russia, works with companies worldwide. Keeps a small personal blog about IT business and development on Instagram. Plays padel and boxes a little, owns a dog, follows economics and technology.
+Sixth year building products and the teams around them. Works with women-health in the US, AI consumer apps in the UK, retail, fintech and B2B in Russia. Owns the product and the whole technical side: architecture, releases and infrastructure. Runs interviews and negotiations in English. Brings AI agents into how companies work. Based in Kaliningrad, Russia, works with companies worldwide. Keeps a small personal blog about IT business and development on Instagram. Plays padel and boxes a little, owns a dog, follows economics and technology.
 
 ## Contacts
 Write about your product - he owns the technical side and the result.
