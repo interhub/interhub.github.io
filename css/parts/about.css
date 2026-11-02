@@ -1,7 +1,7 @@
 /* About section: bio copy + photo tiles */
 
 /* ABOUT - soft warm radial behind a full-color editorial side image */
-#about .section__bg { background-image: url("../../assets/stock/warm-radial-gradient-01.jpg"); opacity: 0.26; }
+#about .section__bg { background-image: url("../../assets/stock/warm-radial-gradient-01.webp"); opacity: 0.26; }
 
 /* ---------------------------------------------------- ABOUT */
 .about__inner { padding-bottom: clamp(88px, 12vw, 180px); }

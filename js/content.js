@@ -13,7 +13,7 @@ window.SITE_CONTENT = {
       title:
         "Степан Турченко - внедрение ИИ, Fullstack Engineer, Техлид и Консультации",
       description:
-        "Внедряю ИИ в бизнес и отвечаю за создание айти продуктов с нуля. Шестой год помогаю айти компаниям по всему миру достигать цели: ИИ-агенты и автоматизация, fullstack, техлид, консультации.",
+        "Внедряю ИИ в бизнес и отвечаю за создание айти продуктов с нуля. Более 6 лет помогаю айти компаниям по всему миру достигать цели: ИИ-агенты и автоматизация, fullstack, техлид, консультации.",
       skipLink: "Перейти к содержимому",
     },
     nav: {
@@ -220,7 +220,7 @@ window.SITE_CONTENT = {
       ogLocale: "en_US",
       title: "Stepan Turchenko - AI Integration, Fullstack Engineer, Tech Lead & Consulting",
       description:
-        "I bring AI into business and own the creation of strong IT products from scratch. Sixth year helping IT companies worldwide reach their goals: AI agents and automation, fullstack engineering, tech lead, consulting.",
+        "I bring AI into business and own the creation of strong IT products from scratch. More than six years helping IT companies worldwide reach their goals: AI agents and automation, fullstack engineering, tech lead, consulting.",
       skipLink: "Skip to content",
     },
     nav: {
@@ -427,7 +427,7 @@ window.SITE_CONTENT = {
       ogLocale: "zh_CN",
       title: "斯捷潘·图尔琴科 - AI 集成 / 全栈工程师 / 技术负责人 / 咨询",
       description:
-        "把 AI 落地到企业业务，并负责从零打造出色的 IT 产品。第六年帮助全球 IT 公司实现目标：AI 智能体与自动化、全栈开发、技术负责人、咨询。",
+        "把 AI 落地到企业业务，并负责从零打造出色的 IT 产品。六年多帮助全球 IT 公司实现目标：AI 智能体与自动化、全栈开发、技术负责人、咨询。",
       skipLink: "跳到内容",
     },
     nav: {
@@ -604,7 +604,7 @@ window.SITE_CONTENT = {
       headline: "关于",
       body: "六年来我打造产品，并帮助 IT 团队成长。我的项目涵盖 wellness、女性健康、运动健身、艺术、零售与销售、AI B2B 与 B2C 系统，产品与团队分布在美国、英国和俄罗斯。产品和整个技术面归我：架构、发布与基础设施。面试和谈判用英语。把 AI 智能体带进企业的日常工作。",
       facts: "我写一个关于 IT 业务与开发的小型个人博客",
-      interests: "打匹克球，也练一点拳击，养狗，关注经济与技术",
+      interests: "打板式网球（padel），也练一点拳击，养狗，关注经济与技术",
     },
     photos: {
       kicker: "作品背后的人",
@@ -628,45 +628,54 @@ window.SITE_CONTENT = {
 };
 
 /* ---- Language-independent data (channels, asset paths) ---- */
-window.SITE_STATIC = {
-  langs: [
-    { code: "ru", label: "RU" },
-    { code: "en", label: "EN" },
-    { code: "zh", label: "ZH" },
-  ],
-  /* Real live URLs per project. Keyed by every localized title so the
-     renderer can resolve a link regardless of the active language. */
-  projectUrls: {
-    Painta: "https://app.painta.io",
-    "Aspect Health": "https://www.aspect-health.com",
-    Nana800: "http://nana800.io",
-    "Moscow Sport": "https://sport.mos.ru/",
-    "VTB Investments": "https://www.vtb.ru/invest/",
-    "ВТБ Инвестиции": "https://www.vtb.ru/invest/",
-    "VTB 投资": "https://www.vtb.ru/invest/",
-    "Московский спорт": "https://sport.mos.ru/",
-    莫斯科体育: "https://sport.mos.ru/",
-    Bigam: "https://www.bigam.ru/",
-    Small: "https://apps.apple.com/ru/app/small/id1535215720",
-    Liverpool: "https://vk.com/lkcafe",
-    Bismap: "https://bismap.net/",
-    Stayfit: "https://stayfitt.ru/",
-    GroupQ: "https://groupq-ural.ru/",
-    "Ageeva Stom": "https://ageevastom.ru",
-    "Solnechnaya Arka": "http://solnechnayaarka.ru",
-    ProFitness: "https://pro-fitness-39.ru",
-  },
-  photos: [
-    "./assets/photos/stepan-01.webp",
-    "./assets/photos/stepan-02.webp",
-    "./assets/photos/stepan-03.webp",
-    "./assets/photos/stepan-04.webp",
-  ],
-  channels: [
-    { kind: "email", labelKey: "emailLabel", value: "stepanstepan4@gmail.com", href: "mailto:stepanstepan4@gmail.com" },
-    { kind: "phone", labelKey: "phoneLabel", value: "+7 962 263 98 09", href: "tel:+79622639809" },
-    { kind: "linkedin", label: "LinkedIn", value: "linkedin.com/in/stepanturchenko", href: "https://www.linkedin.com/in/stepanturchenko" },
-    { kind: "telegram", label: "Telegram", value: "t.me/Stepan_Turchenko", href: "https://t.me/Stepan_Turchenko" },
-    { kind: "instagram", label: "Instagram", value: "@stepan_turchenko", href: "https://www.instagram.com/stepan_turchenko/" },
-  ],
-};
+window.SITE_STATIC = (function () {
+  /* Site root URL: this file lives in /js/, so the root is one level up from
+     its own URL. Asset paths built from it resolve the same way from /, /en/
+     and /zh/, on localhost and under an S3 prefix. */
+  var script = document.currentScript;
+  var root = script && script.src ? new URL("../", script.src).href : "./";
+
+  return {
+    root: root,
+    langs: [
+      { code: "ru", label: "RU" },
+      { code: "en", label: "EN" },
+      { code: "zh", label: "ZH" },
+    ],
+    /* Real live URLs per project. Keyed by every localized title so the
+       renderer can resolve a link regardless of the active language. */
+    projectUrls: {
+      Painta: "https://app.painta.io",
+      "Aspect Health": "https://www.aspect-health.com",
+      Nana800: "https://nana800.io",
+      "Moscow Sport": "https://sport.mos.ru/",
+      "VTB Investments": "https://www.vtb.ru/invest/",
+      "ВТБ Инвестиции": "https://www.vtb.ru/invest/",
+      "VTB 投资": "https://www.vtb.ru/invest/",
+      "Московский спорт": "https://sport.mos.ru/",
+      莫斯科体育: "https://sport.mos.ru/",
+      Bigam: "https://www.bigam.ru/",
+      Small: "https://apps.apple.com/ru/app/small/id1535215720",
+      Liverpool: "https://vk.com/lkcafe",
+      Bismap: "https://bismap.net/",
+      Stayfit: "https://stayfitt.ru/",
+      GroupQ: "https://groupq-ural.ru/",
+      "Ageeva Stom": "https://ageevastom.ru",
+      "Solnechnaya Arka": "http://solnechnayaarka.ru",
+      ProFitness: "https://pro-fitness-39.ru",
+    },
+    photos: [
+      root + "assets/photos/stepan-01.webp",
+      root + "assets/photos/stepan-02.webp",
+      root + "assets/photos/stepan-03.webp",
+      root + "assets/photos/stepan-04.webp",
+    ],
+    channels: [
+      { kind: "email", labelKey: "emailLabel", value: "stepanstepan4@gmail.com", href: "mailto:stepanstepan4@gmail.com" },
+      { kind: "phone", labelKey: "phoneLabel", value: "+7 962 263 98 09", href: "tel:+79622639809" },
+      { kind: "linkedin", label: "LinkedIn", value: "linkedin.com/in/stepanturchenko", href: "https://www.linkedin.com/in/stepanturchenko" },
+      { kind: "telegram", label: "Telegram", value: "t.me/Stepan_Turchenko", href: "https://t.me/Stepan_Turchenko" },
+      { kind: "instagram", label: "Instagram", value: "@stepan_turchenko", href: "https://www.instagram.com/stepan_turchenko/" },
+    ],
+  };
+})();

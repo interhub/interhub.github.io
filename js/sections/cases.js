@@ -6,6 +6,7 @@
   var el = UI.el, clear = UI.clear, $ = UI.$;
   var casesPhotoWrap = UI.casesPhotoWrap, projectTitle = UI.projectTitle;
   var projectStars = UI.projectStars, projectStarCount = UI.projectStarCount, projectStarClass = UI.projectStarClass;
+  var ROOT = window.SITE_STATIC.root;
 
   function renderCases(t) {
     var host = $("cases-root");
@@ -25,10 +26,10 @@
           "cases__figure",
           "cases__video",
           [
-            { src: "./assets/video/work-vibe.webm", type: "video/webm" },
-            { src: "./assets/video/work-vibe.mp4", type: "video/mp4" },
+            { src: ROOT + "assets/video/work-vibe.webm", type: "video/webm" },
+            { src: ROOT + "assets/video/work-vibe.mp4", type: "video/mp4" },
           ],
-          "./assets/video/work-vibe-poster.webp"
+          ROOT + "assets/video/work-vibe-poster.webp"
         ),
       ]),
       el("div", { class: "cases__legends" }, [

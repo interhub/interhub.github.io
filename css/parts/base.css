@@ -120,7 +120,7 @@ a { color: inherit; text-decoration: none; }
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background-image: url("../../assets/stock/cream-paper-01.jpg");
+  background-image: url("../../assets/stock/cream-paper-01.webp");
   background-size: cover;
   opacity: 0.16;
   mix-blend-mode: multiply;
@@ -212,7 +212,7 @@ a { color: inherit; text-decoration: none; }
   z-index: 1;
   pointer-events: none;
   /* native background-clip:text texture fill */
-  background-image: url("../../assets/stock/terracotta-clay-01.jpg");
+  background-image: url("../../assets/stock/terracotta-clay-01.webp");
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;

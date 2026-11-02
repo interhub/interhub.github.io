@@ -172,7 +172,7 @@
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background-image: url("../../assets/stock/hands-clasped-bw-01.jpg");
+  background-image: url("../../assets/stock/hands-clasped-bw-01.webp");
   background-size: cover;
   background-position: right center;
   filter: grayscale(1) contrast(1.05);

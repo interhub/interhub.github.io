@@ -190,7 +190,7 @@
 
     host.appendChild(el("div", { class: "section__inner hero__inner" }, [
       el("p", { class: "eyebrow hero__eyebrow hero__seq hero__seq--1" }, [hero.eyebrow]),
-      el("h2", { class: "headline hero__headline hero__seq hero__seq--2" }, [
+      el("h1", { class: "headline hero__headline hero__seq hero__seq--2" }, [
         heroHeadlineMeasure(t, hero),
         el("span", { class: "hero__headline-live" }, buildHeroHeadlineChildren(hero)),
       ]),

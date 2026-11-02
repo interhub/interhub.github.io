@@ -2,7 +2,7 @@
 
 /* CONTACT - terracotta clay, lighter, screen blend for a different feel */
 #contact .section__bg {
-  background-image: url("../../assets/stock/terracotta-clay-01.jpg");
+  background-image: url("../../assets/stock/terracotta-clay-01.webp");
   opacity: 0.3;
   mix-blend-mode: screen;
 }

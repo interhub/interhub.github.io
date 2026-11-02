@@ -2,7 +2,7 @@
 
 > AI integration specialist, fullstack engineer, tech lead and consultant.
 
-Stepan Turchenko brings AI agents and automation into business (Claude Code, AI agents, agent harnesses, workflow automation) and owns the creation of IT products from scratch: mobile, web, serverless, Telegram bots, agentic systems, analytics and infrastructure. Sixth year helping IT companies worldwide reach their goals across the US, Europe and Russia.
+Stepan Turchenko brings AI agents and automation into business (Claude Code, AI agents, agent harnesses, workflow automation) and owns the creation of IT products from scratch: mobile, web, serverless, Telegram bots, agentic systems, analytics and infrastructure. More than six years helping IT companies worldwide reach their goals, with products and teams in the US, the UK and Russia.
 
 ## Results delivered
 - 2 large products in the USA taken to market.
@@ -18,7 +18,7 @@ Stepan Turchenko brings AI agents and automation into business (Claude Code, AI 
 ## Selected work
 - Painta (https://app.painta.io): an AI drawing coach for iOS, Android, iPad and web - MVP in the App Store in 36 days, 10k+ users, 4.5 stars, Supabase backend, subscriptions, AI agents.
 - Aspect Health (https://www.aspect-health.com): a US women-health platform with $300k+ yearly revenue - 4 Node.js services on Google Cloud, 30+ integrations, team lead of 5.
-- Nana800 (http://nana800.io): his own low-code automation platform - 73 block types, 54 integrations, an MCP server with 44 tools for AI agents.
+- Nana800 (https://nana800.io): his own low-code automation platform - 73 block types, 54 integrations, an MCP server with 44 tools for AI agents.
 - Moscow Sport (https://sport.mos.ru/): the Moscow city sport app, brought back to the stores after a failed contractor.
 - VTB Investments (https://www.vtb.ru/invest/): the investment app of one of Russia's largest banks.
 
@@ -30,7 +30,9 @@ DevOps & Cloud: Docker, Dokploy, CI/CD, Google Cloud, AWS, Grafana, Loki, Nginx,
 W3-certified in TypeScript and React. Fluent in English. Hackathon prize winner, 2022.
 
 ## Important links
-- Home: https://personal-info.ru/
+- Home (Russian): https://personal-info.ru/
+- English version: https://personal-info.ru/en/
+- Chinese version: https://personal-info.ru/zh/
 - Full version for LLM: https://personal-info.ru/llms-full.txt
 - Email: stepanstepan4@gmail.com
 - LinkedIn: https://www.linkedin.com/in/stepanturchenko
@@ -42,7 +44,7 @@ W3-certified in TypeScript and React. Fluent in English. Hackathon prize winner,
 ## FAQ
 
 Q: Who is Stepan Turchenko?
-A: AI integration specialist, fullstack engineer, tech lead and consultant. Sixth year helping IT companies worldwide across the US, Europe and Russia; brings AI agents and automation into business and owns the creation of IT products from scratch.
+A: AI integration specialist, fullstack engineer, tech lead and consultant from Kaliningrad, Russia. More than six years helping IT companies worldwide, with products and teams in the US, the UK and Russia. Brings AI agents and automation into business and owns the creation of IT products from scratch.
 
 Q: What can you hire him for?
 A: AI integration into business processes, building an IT product from scratch (mobile, web, serverless, Telegram bots, analytics, infrastructure), leading an engineering team as tech lead, or consulting on product and technology.
@@ -54,4 +56,4 @@ Q: What has he built?
 A: Two large products in the USA, eight mid-size businesses in Russia, 24 sites and apps, 100+ agents and harnesses. Among them Painta (AI drawing coach), Aspect Health (US women-health platform), Nana800 (his own low-code automation platform), Moscow Sport (Moscow city sport app), VTB Investments (bank investment app).
 
 Q: How to contact him?
-A: Write about your product. Preferred: Telegram https://t.me/Stepan_Turchenko ; also email stepanstepan4@gmail.com and LinkedIn https://www.linkedin.com/in/stepanturchenko.
+A: Write about your product. Preferred: Telegram https://t.me/Stepan_Turchenko. Also email stepanstepan4@gmail.com, phone +7 962 263 98 09 and LinkedIn https://www.linkedin.com/in/stepanturchenko.

@@ -2,7 +2,7 @@
 
 /* hero: heavier-handed warm duotone over stock */
 .hero__bg {
-  background-image: url("../../assets/stock/warm-abstract-waves-01.jpg");
+  background-image: url("../../assets/stock/warm-abstract-waves-01.webp");
   opacity: 0.62;
 }
 .hero__bg .section__bg-duotone {

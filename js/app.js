@@ -17,7 +17,11 @@
   var SECTION_HOSTS = { infographic: "infographic-root", approach: "approach" };
 
   /* ---------- language resolution ---------- */
+  /* A per-language page (/en/, /zh/) pins its language via <html data-lang>;
+     otherwise the saved choice wins, then Russian. */
   function detectLang() {
+    var pageLang = document.documentElement.getAttribute("data-lang");
+    if (pageLang && SUPPORTED.indexOf(pageLang) !== -1) return pageLang;
     var saved = null;
     try { saved = localStorage.getItem(STORE_KEY); } catch (e) { console.warn("localStorage unavailable:", e); }
     if (saved && SUPPORTED.indexOf(saved) !== -1) return saved;
